@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGW · Weekly Content Engine · Jun 29 – Jul 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0F14; --panel:#131A22; --panel2:#1A232E; --line:#243140;
+    --mint:#34E5A3; --gold:#F5C451; --text:#E8EEF2; --muted:#8A9BA8;
+    --p1:#34E5A3; --p2:#5B9BFF; --p3:#F5C451; --p4:#B98BFF; --p5:#FF8FB1; --p6:#FF7A59;
+    --disp:'Space Grotesk',system-ui,sans-serif;
+    --body:'Inter',system-ui,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(1200px 600px at 80% -10%,rgba(52,229,163,.06),transparent 60%);}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+  a{color:inherit}
+
+  header.top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:13px}
+  .mark{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:var(--disp);font-weight:700;color:#04120c;font-size:18px;letter-spacing:-.04em}
+  .brand h1{font-family:var(--disp);font-size:21px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+  .brand p{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-top:3px}
+  .weekchip{text-align:right}
+  .weekchip .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+  .weekchip .rng{font-family:var(--disp);font-size:18px;font-weight:600;color:var(--mint);margin-top:2px}
+  .weekchip .sub{font-size:12px;color:var(--muted)}
+
+  h2.sec{font-family:var(--disp);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px}
+  h2.sec::before{content:"";width:18px;height:2px;background:var(--mint);border-radius:2px}
+
+  .loop{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .loopcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .loopcard .n{font-family:var(--mono);font-size:12px;color:var(--mint);font-weight:600}
+  .loopcard h3{font-family:var(--disp);font-size:15px;font-weight:600;margin:7px 0 6px}
+  .loopcard p{font-size:13px;color:var(--muted)}
+
+  /* Last week's numbers panel */
+  .nums{background:linear-gradient(160deg,#16212c,#101820);border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:0}
+  .nums .hd{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .nums .hd h3{font-family:var(--disp);font-size:17px;font-weight:600}
+  .nums .hd span{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em}
+  .statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .platbox{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:15px}
+  .platbox .pl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;font-weight:600}
+  .platbox.yt .pl{color:var(--p6)} .platbox.tt .pl{color:var(--p1)} .platbox.ig .pl{color:var(--p5)}
+  .metric{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+  .metric:last-child{border:none}
+  .metric .k{color:var(--muted)}
+  .metric .v{font-family:var(--mono);font-weight:600}
+  .metric .up{color:var(--mint)} .metric .down{color:var(--p5)}
+  .leadin{margin-top:14px;background:rgba(52,229,163,.06);border:1px solid rgba(52,229,163,.2);border-radius:12px;padding:14px 16px;font-size:13.5px;color:#cdd8e1}
+  .leadin b{color:var(--mint)}
+  .unavail{margin-top:10px;font-family:var(--mono);font-size:11.5px;color:var(--gold);background:rgba(245,196,81,.07);border:1px solid rgba(245,196,81,.22);border-radius:9px;padding:9px 12px}
+
+  .anchor{background:linear-gradient(160deg,#16212c,#101820);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;overflow:hidden}
+  .anchor::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(245,196,81,.14),transparent 70%)}
+  .anchor .tag{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--gold);background:rgba(245,196,81,.1);border:1px solid rgba(245,196,81,.25);padding:5px 11px;border-radius:99px;text-transform:uppercase}
+  .anchor h3{font-family:var(--disp);font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1.18;margin:15px 0 8px;max-width:42ch}
+  .anchor .why{font-size:14px;color:var(--muted);max-width:64ch}
+  .anchor .when{margin-top:14px;font-family:var(--mono);font-size:12px;color:#cdd8e1;position:relative;z-index:1}
+  .anchor .when b{color:var(--mint)}
+
+  .ladder{display:grid;gap:11px}
+  .day{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s}
+  .day:hover{border-color:#33485c}
+  .day.key{border-color:rgba(255,122,89,.4)}
+  .dayhead{display:flex;align-items:center;gap:14px;padding:15px 18px;cursor:pointer;user-select:none}
+  .dow{font-family:var(--disp);font-weight:700;font-size:15px;width:84px;flex-shrink:0}
+  .dow small{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.06em}
+  .pill{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;padding:4px 9px;border-radius:6px;flex-shrink:0;text-transform:uppercase}
+  .hook{flex:1;font-weight:600;font-size:14.5px;min-width:0}
+  .fmt{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.06em;flex-shrink:0;text-transform:uppercase}
+  .chev{color:var(--muted);font-size:13px;transition:transform .25s;flex-shrink:0}
+  .day.open .chev{transform:rotate(90deg)}
+  .daybody{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .day.open .daybody{max-height:720px}
+  .daybody-in{padding:2px 18px 18px;border-top:1px solid var(--line)}
+  .beats{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:15px 0 7px}
+  .beats-list{font-size:13.5px;color:#cdd8e1;display:grid;gap:5px}
+  .beats-list div{padding-left:16px;position:relative}
+  .beats-list div::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:var(--mint)}
+
+  .drops{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:16px 0 8px}
+  .platrow{display:flex;flex-wrap:wrap;gap:7px}
+  .plat{font-family:var(--mono);font-size:10.5px;font-weight:600;padding:4px 9px;border-radius:6px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+  .plat.yt{color:var(--p6);border-color:rgba(255,122,89,.3)}
+  .plat.short{color:var(--gold);border-color:rgba(245,196,81,.3)}
+  .plat.ig{color:var(--p5);border-color:rgba(255,143,177,.3)}
+  .plat.comm{color:var(--p4);border-color:rgba(185,139,255,.3)}
+  .plat.tt{color:var(--p1);border-color:rgba(52,229,163,.3)}
+  .plat.off{color:var(--muted);border-style:dashed;text-decoration:line-through}
+  .win{font-size:12.5px;color:#cdd8e1;margin-top:11px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.2);border-radius:9px;padding:9px 12px}
+  .win b{color:var(--gold)}
+
+  .ctarow{margin-top:13px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .cta{font-size:12.5px;padding:7px 13px;border-radius:8px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+  .cta b{color:var(--gold)}
+  .status{display:flex;gap:7px;margin-left:auto}
+  .tog{font-family:var(--mono);font-size:10px;letter-spacing:.05em;padding:6px 11px;border-radius:7px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;text-transform:uppercase;transition:all .15s}
+  .tog.on{background:var(--mint);color:#04120c;border-color:var(--mint);font-weight:600}
+
+  .pegs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .pegcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px}
+  .pegcard h4{font-family:var(--disp);font-size:13px;letter-spacing:.04em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  .pegcard ul{list-style:none;display:grid;gap:9px}
+  .pegcard li{font-size:13px;color:#cdd8e1;padding-left:14px;position:relative;line-height:1.4}
+  .pegcard li::before{content:"›";position:absolute;left:0;color:var(--muted)}
+  .pegcard li b{color:var(--text)}
+
+  .refcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .refcard h4{font-family:var(--disp);font-size:13px;letter-spacing:.05em;margin-bottom:13px;color:var(--gold)}
+  .pat{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
+  .pat:last-child{border:none}
+  .pat .v{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--mint);width:74px;flex-shrink:0}
+  .pat .f{font-size:13px}
+  .pat .f small{color:var(--muted);display:block;font-size:11.5px;margin-top:1px}
+  .ref{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .ctaref{display:grid;gap:11px}
+  .ctaref div{font-size:13px}
+  .ctaref .k{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:2px}
+  .ctaref .v{color:#cdd8e1}
+
+  .bridge{margin-top:14px;background:linear-gradient(120deg,rgba(52,229,163,.07),rgba(91,155,255,.07));border:1px solid var(--line);border-radius:14px;padding:18px}
+  .bridge .k{font-family:var(--mono);font-size:11px;color:var(--mint);letter-spacing:.1em;text-transform:uppercase}
+  .bridge p{margin-top:7px;font-size:14px;color:#cdd8e1}
+  .bridge b{color:var(--text)}
+
+  footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);text-align:center;line-height:1.7}
+  footer b{color:var(--mint)}
+
+  .day.open .daybody{max-height:5000px}
+
+  /* hooks + green-screen gallery + script (the hub) */
+  .hooks{margin-top:16px;background:rgba(255,122,89,.05);border:1px solid rgba(255,122,89,.22);border-radius:12px;padding:13px 15px}
+  .hooks .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--p6);text-transform:uppercase}
+  .hooks .cold{font-family:var(--disp);font-size:18px;font-weight:700;margin:5px 0 3px;color:var(--text)}
+  .hooks .sus{font-size:13.5px;color:#cdd8e1}
+  .hooks .sus b{color:var(--gold)}
+  .gsgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}
+  .gsthumb{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#000;aspect-ratio:9/16;display:block;position:relative}
+  .gsthumb img,.gsthumb video{width:100%;height:100%;object-fit:cover;display:block}
+  .gsthumb .cap{position:absolute;left:0;right:0;bottom:0;font-family:var(--mono);font-size:8.5px;letter-spacing:.04em;color:#cdd8e1;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:10px 5px 4px;text-transform:uppercase}
+  .gsthumb .vbadge{position:absolute;top:5px;right:5px;font-family:var(--mono);font-size:8px;font-weight:600;background:var(--gold);color:#04120c;padding:2px 5px;border-radius:4px;letter-spacing:.04em}
+  .gsnote{font-size:11.5px;color:var(--muted);margin-top:7px}
+  details.script{margin-top:14px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.02);overflow:hidden}
+  details.script>summary{cursor:pointer;list-style:none;padding:12px 15px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);display:flex;align-items:center;gap:8px}
+  details.script>summary::-webkit-details-marker{display:none}
+  details.script>summary::before{content:"▶";font-size:9px;transition:transform .2s}
+  details.script[open]>summary::before{transform:rotate(90deg)}
+  .scriptbody{padding:4px 16px 16px;font-size:13px;color:#cdd8e1;line-height:1.55;border-top:1px solid var(--line)}
+  .scriptbody h5{font-family:var(--disp);font-size:13px;color:var(--text);margin:13px 0 4px;font-weight:600}
+  .scriptbody .lbl{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;display:block;margin:12px 0 3px}
+  .scriptbody ul{list-style:none;display:grid;gap:4px;margin:3px 0}
+  .scriptbody li{padding-left:14px;position:relative}
+  .scriptbody li::before{content:"›";position:absolute;left:0;color:var(--muted)}
+  .scriptbody .cta-line{color:var(--gold)}
+  .scriptbody .cap-box{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin-top:6px;font-size:12.5px;color:var(--muted)}
+
+  @media(max-width:760px){.loop,.pegs,.statgrid{grid-template-columns:1fr}.ref{grid-template-columns:1fr}.anchor h3{font-size:20px}.dayhead{flex-wrap:wrap}.hook{flex-basis:100%;order:5}.dow{width:auto}.status{margin-left:0}.gsgrid{grid-template-columns:repeat(2,1fr)}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark">TG</div>
+      <div>
+        <h1>Weekly Content Engine</h1>
+        <p>THINKINGENWEALTH · GENTHINKERS</p>
+      </div>
+    </div>
+    <div class="weekchip">
+      <div class="lbl">This Week</div>
+      <div class="rng">Jun 29 – Jul 5, 2026</div>
+      <div class="sub">Recorded Sun Jun 28 · jobs-report week · holiday Fri/Sat</div>
+    </div>
+  </header>
+
+  <!-- LAST WEEK'S NUMBERS -->
+  <h2 class="sec">Last week's numbers <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jun 24 · week of Jun 17–23</span></h2>
+  <div class="nums">
+    <div class="hd"><h3>How the platforms did + what to lean into</h3><span>YouTube Studio + TikTok Studio · IG unavailable</span></div>
+    <div class="statgrid">
+      <div class="platbox yt">
+        <div class="pl">▶ YouTube · 7-day</div>
+        <div class="metric"><span class="k">Views</span><span class="v">1,694 <span class="up">+12%</span></span></div>
+        <div class="metric"><span class="k">Watch time</span><span class="v">16.3 h <span class="up">+11%</span></span></div>
+        <div class="metric"><span class="k">Subs gained</span><span class="v">+5 <span class="up">+150%</span></span></div>
+        <div class="metric"><span class="k">Total subs</span><span class="v">413</span></div>
+        <div class="metric"><span class="k">Top video</span><span class="v">Microsoft $80B · 779</span></div>
+      </div>
+      <div class="platbox tt">
+        <div class="pl">♪ TikTok · 7-day</div>
+        <div class="metric"><span class="k">Video views</span><span class="v">3,800 <span class="down">−11%</span></span></div>
+        <div class="metric"><span class="k">Likes</span><span class="v">98 <span class="down">−20%</span></span></div>
+        <div class="metric"><span class="k">Shares</span><span class="v">13 <span class="up">+160%</span></span></div>
+        <div class="metric"><span class="k">Search traffic</span><span class="v">64.8%</span></div>
+        <div class="metric"><span class="k">Top post</span><span class="v">FOMC explainer · 407</span></div>
+      </div>
+      <div class="platbox ig">
+        <div class="pl">◎ Instagram</div>
+        <div class="metric"><span class="k">Status</span><span class="v" style="color:var(--gold)">UNAVAILABLE</span></div>
+        <div class="metric"><span class="k">Reason</span><span class="v" style="font-size:11px">Account locked out</span></div>
+        <div class="metric"><span class="k">Action</span><span class="v" style="font-size:11px">Regain access</span></div>
+        <p style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.45">No IG numbers pulled this run. Reels slots below are flagged SKIPPED until access is back.</p>
+      </div>
+    </div>
+    <div class="leadin">
+      <b>The read → lean into this week:</b> Fresh <b>market-event reactions</b> crushed everything on YouTube — "Microsoft $80B" (779) and "South Korea −10%" (588, 52.7% avg viewed) dwarfed the measurement Shorts ("Why didn't the Fed cut?" 62, "official vs real-time" 35). The methodology angle <b>holds</b> attention (52–59% avg viewed) but doesn't win a cold click — keep it in long-form, hook Shorts on concrete market moves. TikTok volume dipped but <b>shares jumped +160%</b> and Search held 64.8%; the Jan-2025 candlesticks clip still pulled 275 views/wk (95K all-time). Translation: <b>peg the news to a real market move (this week = the jobs report), keep one evergreen trade asset, clip the Fed story but don't ask Shorts to carry it.</b>
+    </div>
+    <div class="unavail">⚠ Instagram fully unavailable this run (account lockout). IG Reels are marked SKIPPED on the ladder — re-add the reaction Reel + interview cross-post once access is restored.</div>
+  </div>
+
+  <h2 class="sec">How the engine runs</h2>
+  <div class="loop">
+    <div class="loopcard"><div class="n">01 · Already recorded</div><h3>Sunday's anchor is in the can</h3><p>The rate-path flagship + an evergreen trading co-ep were filmed Sun Jun 28. This week is the rollout + the Thursday jobs-day spike.</p></div>
+    <div class="loopcard"><div class="n">02 · The clips fan out</div><h3>One recording, three platforms</h3><p>Riverside clips → the TikTok ladder, the YouTube long-form + 3 Shorts, 3 Community posts. IG Reels paused this week (lockout).</p></div>
+    <div class="loopcard"><div class="n">03 · Post on a schedule</div><h3>Front-load news, bank evergreen</h3><p>Flagship Mon, jobs reach-spike Thu, evergreen fills the holiday gap. Markets closed Fri Jul 3 — post light.</p></div>
+  </div>
+
+  <div class="bridge" style="margin-top:0">
+    <span class="k">◆ This week's live pegs</span>
+    <p>The marquee: <b>June jobs report drops Thu Jul 2, 8:30am ET</b> (BLS) — pulled forward from Friday because <b>markets are closed Fri Jul 3</b> for the July 4th holiday (NYSE also closes early 1pm Thu). May printed <b>+172K jobs, 4.3% unemployment</b> (3rd straight month). Backdrop: <b>Warsh's first Fed meeting came in hawkish</b> — held at 3.50–3.75%, and <b>9 of 18 officials now pencil in a HIKE in 2026, only 1 a cut.</b> Plus <b>ISM Manufacturing Wed Jul 1, 10am ET</b> (May was 54). <span style="color:var(--muted)">Sources: bls.gov · federalreserve.gov · ismworld.org · nyse.com</span></p>
+  </div>
+
+  <h2 class="sec">Recorded Sunday — now rolling out <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">flagship posts Mon · trade evergreen banked for Sun Jul 5</span></h2>
+  <div class="anchor">
+    <span class="tag">▶ Flagship · drops Mon Jun 29 · P6 · NEWS/REACT</span>
+    <h3>Everyone's Waiting for a Rate Cut. The Fed Just Signaled a Hike.</h3>
+    <p class="why">The cut-vs-hike gap. Knowledge-gap title, measured underneath: Warsh's first dot plot has 9 of 18 officials seeing at least one hike in 2026 and only 1 seeing a cut — the opposite of what the timeline assumes. Thursday's jobs report is the data that tips it either way, so the long-form sets up the whole week.</p>
+    <div class="when">▶ <b>YouTube long-form goes live Monday AM ET</b> — lead with it while the hawkish-Fed read is fresh and before Thursday's jobs print reframes everything. Numbers dated to Sunday; don't sit on it.</div>
+  </div>
+  <div class="anchor" style="margin-top:14px">
+    <span class="tag" style="color:var(--p1);background:rgba(52,229,163,.1);border-color:rgba(52,229,163,.25)">● Evergreen co-ep · banked → drops Sun Jul 5 · P1 · TRADE</span>
+    <h3>The Portfolio That Doesn't Care What the Fed Does</h3>
+    <p class="why">Search-durable trading education — our strongest evergreen vein (candlesticks + option chain still compounding from Search). No news decay, so it's this week's bank: clip it for the Wed trade slot and Shorts now, drop the full long-form as next Sunday's flagship.</p>
+    <div class="when">● <b>Full episode holds to Sun Jul 5</b> · its clips (the "3-fund" Short, the Wed chart-read TikTok) run mid-week into the holiday gap.</div>
+  </div>
+
+  <h2 class="sec">The 7-day posting schedule <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">all platforms · tap any day to expand</span></h2>
+  <div class="ladder" id="ladder">
+
+    <!-- MON -->
+    <div class="day key">
+      <div class="dayhead">
+        <div class="dow">MON<small>JUN 29</small></div>
+        <span class="pill" style="background:rgba(255,122,89,.12);color:var(--p6)">P6 · React</span>
+        <span class="hook">Flagship day — the Fed's talking hike, not cut</span>
+        <span class="fmt">Long-form + Short</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">Lead the week — set up the jobs print</div>
+        <div class="beats-list">
+          <div>YouTube long-form (the rate-path flagship) goes live.</div>
+          <div>TikTok clip pulls the "9 of 18 see a hike, only 1 sees a cut" moment → points to the full breakdown.</div>
+          <div>Short #1 answers "Wait — the Fed might HIKE?" → "full breakdown on the channel."</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat yt">▶ YT long-form</span><span class="plat short">YT Short #1</span><span class="plat tt">TikTok clip</span><span class="plat comm">Community poll</span></div>
+        <div class="win">⏱ <b>Window:</b> long-form <b>AM ET</b> so it indexes before the evening surge · Short + TikTok into your evening peak · <b>post early</b> — owns the cut-vs-hike narrative before Thursday's data.</div>
+        <div class="hooks">
+          <span class="k">▶ Green-screen hooks · Atlas style</span>
+          <div class="cold">Cold-open: "CUT? Try HIKE."</div>
+          <div class="sus">Sustained caption: <b>"Everyone's Waiting for a Rate Cut. The Fed Just Signaled a Hike."</b></div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="greenscreen/MON/MON_01_dotplot.png" target="_blank"><img src="greenscreen/MON/MON_01_dotplot.png" alt="dot plot"><span class="cap">01 · Dot plot</span></a>
+            <a class="gsthumb" href="greenscreen/MON/MON_02_held.png" target="_blank"><img src="greenscreen/MON/MON_02_held.png" alt="fed held"><span class="cap">02 · Fed held</span></a>
+            <a class="gsthumb" href="greenscreen/MON/MON_03_meaning.png" target="_blank"><img src="greenscreen/MON/MON_03_meaning.png" alt="what it means"><span class="cap">03 · For you</span></a>
+            <a class="gsthumb" href="greenscreen/MON/MON_clip.mp4" target="_blank"><video src="greenscreen/MON/MON_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
+          </div>
+          <div class="gsnote">Cut 01 → 02 → 03 as you hit each point. Hover the clip to preview · tap any tile for full size.</div>
+        </div>
+        <details class="script"><summary>Full script — talking points</summary><div class="scriptbody">
+          <span class="lbl">Selected hook</span>"Everyone's waiting for a rate cut. 9 of 18 Fed officials just said the next move is a HIKE."
+          <h5>Point 1 — What they said</h5><ul><li>Held at 3.50–3.75%, but the projections lean up (Fed SEP).</li></ul>
+          <h5>Point 2 — The gap</h5><ul><li>9 see a hike in 2026, only 1 sees a cut — markets are positioned the opposite way.</li></ul>
+          <h5>Point 3 — What it means for you</h5><ul><li>Variable debt (cards, car loans) gets pricier first; cash / HYSA stays rewarded.</li></ul>
+          <h5>Close + CTA</h5><ul><li class="cta-line">"Full breakdown on the channel. Comment HIKE and I'll send the dot-plot cheat sheet."</li></ul>
+          <div class="cap-box">Caption: The Fed held rates — but the projections say the next move might be up, not down. Here's what that does to your money. 📌 #fed #interestrates #ratehike #personalfinance #moneytok</div>
+        </div></details>
+        <div class="ctarow">
+          <span class="cta">Comment-trigger · "Comment <b>HIKE</b> for the dot-plot cheat sheet."</span>
+          <div class="status"><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- TUE -->
+    <div class="day">
+      <div class="dayhead">
+        <div class="dow">TUE<small>JUN 30</small></div>
+        <span class="pill" style="background:rgba(255,122,89,.12);color:var(--p6)">P6 · News</span>
+        <span class="hook">What a rate hike actually costs you — the 3 bills</span>
+        <span class="fmt">Short + Greenscreen</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">Funnel into the long-form</div>
+        <div class="beats-list">
+          <div>Short #2: "If the Fed hikes, what gets more expensive?" — credit cards, car loans, mortgages → channel.</div>
+          <div>TikTok greenscreen on the dot plot — the visual of 9 hike vs 1 cut is the hook.</div>
+          <div>IG Reel — <b>SKIPPED this week (account lockout).</b> Bank the clip to post once access is back.</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat short">YT Short #2</span><span class="plat tt">TikTok</span><span class="plat off">IG Reel</span></div>
+        <div class="win">⏱ <b>Window:</b> into your peak active window (TikTok Studio) · still news-adjacent, keep it front of the week ahead of Wednesday's ISM + Thursday's jobs print.</div>
+        <div class="hooks">
+          <span class="k">▶ Green-screen hooks · Atlas style</span>
+          <div class="cold">Cold-open: "3 Bills Go Up."</div>
+          <div class="sus">Sustained caption: <b>"If the Fed Hikes, These 3 Bills Go Up First — and One Doesn't."</b></div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="greenscreen/TUE/TUE_01_3bills.png" target="_blank"><img src="greenscreen/TUE/TUE_01_3bills.png" alt="3 bills"><span class="cap">01 · 3 bills</span></a>
+            <a class="gsthumb" href="greenscreen/TUE/TUE_02_cards.png" target="_blank"><img src="greenscreen/TUE/TUE_02_cards.png" alt="cards"><span class="cap">02 · Cards first</span></a>
+            <a class="gsthumb" href="greenscreen/TUE/TUE_03_fixed.png" target="_blank"><img src="greenscreen/TUE/TUE_03_fixed.png" alt="fixed safe"><span class="cap">03 · Fixed = safe</span></a>
+            <a class="gsthumb" href="greenscreen/TUE/TUE_clip.mp4" target="_blank"><video src="greenscreen/TUE/TUE_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
+          </div>
+          <div class="gsnote">Cut 01 → 02 → 03 · hover the clip to preview · tap any tile for full size.</div>
+        </div>
+        <details class="script"><summary>Full script — talking points</summary><div class="scriptbody">
+          <span class="lbl">Short #2 + TikTok</span>"If the Fed hikes, here's the 3 bills that go up first."
+          <h5>The 3 (variable)</h5><ul><li>Credit cards — APRs track prime, almost instantly.</li><li>New auto loans.</li><li>HELOCs / ARMs — variable by design.</li></ul>
+          <h5>The sharpener</h5><ul><li>Fixed-rate debt you already locked? Untouched — that's the point of locking.</li></ul>
+          <h5>Close + CTA</h5><ul><li class="cta-line">"Full breakdown on the channel — link in bio."</li></ul>
+          <div class="cap-box">Caption: A rate hike doesn't hit everything equally. Here's what moves first — and what's safe. #fed #interestrates #credit #moneytok</div>
+        </div></details>
+        <div class="ctarow">
+          <span class="cta">Soft CTA · "Full breakdown on the channel — link in bio."</span>
+          <div class="status"><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- WED -->
+    <div class="day">
+      <div class="dayhead">
+        <div class="dow">WED<small>JUL 1 · ISM 10AM</small></div>
+        <span class="pill" style="background:rgba(52,229,163,.12);color:var(--p1)">P1 · Trade</span>
+        <span class="hook">The charts that move if jobs run hot tomorrow</span>
+        <span class="fmt">Chart</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">Evergreen-leaning · sets up jobs day · clips from the banked trade ep</div>
+        <div class="beats-list">
+          <div>Quick chart read: what a hot vs cool jobs print would do to rate-hike odds and the rally near records.</div>
+          <div>Teach one thing — why a STRONG jobs report can be bad for stocks right now (hawkish Fed). Primes Thursday.</div>
+          <div>Community quick tip: "watch wage growth + revisions, not just the headline number." (ISM Manufacturing also drops 10am — note it.)</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat tt">TikTok</span><span class="plat comm">Community tip</span></div>
+        <div class="win">⏱ <b>Window:</b> flexible — evergreen-ish. Peak window is fine; no rush. ISM Manufacturing (June) lands 10am ET if you want a live hook.</div>
+        <div class="hooks">
+          <span class="k">▶ Green-screen hooks · Atlas style</span>
+          <div class="cold">Cold-open: "Good News = Bad News."</div>
+          <div class="sus">Sustained caption: <b>"Why a STRONG Jobs Report Tomorrow Could Drop the Market."</b></div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="greenscreen/WED/WED_01_goodnews.png" target="_blank"><img src="greenscreen/WED/WED_01_goodnews.png" alt="good news"><span class="cap">01 · Good=bad</span></a>
+            <a class="gsthumb" href="greenscreen/WED/WED_02_mechanism.png" target="_blank"><img src="greenscreen/WED/WED_02_mechanism.png" alt="mechanism"><span class="cap">02 · Mechanism</span></a>
+            <a class="gsthumb" href="greenscreen/WED/WED_03_watch.png" target="_blank"><img src="greenscreen/WED/WED_03_watch.png" alt="what to watch"><span class="cap">03 · What to watch</span></a>
+            <a class="gsthumb" href="greenscreen/WED/WED_clip.mp4" target="_blank"><video src="greenscreen/WED/WED_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
+          </div>
+          <div class="gsnote">Cut 01 → 02 → 03 · hover the clip to preview · tap any tile for full size.</div>
+        </div>
+        <details class="script"><summary>Full script — talking points</summary><div class="scriptbody">
+          <span class="lbl">TikTok chart read</span>"Good news is bad news again — here's why a strong jobs report tomorrow could DROP the market."
+          <h5>Point 1 — Setup</h5><ul><li>S&P near records (verify day-of); rally partly built on hope for cuts.</li></ul>
+          <h5>Point 2 — The mechanism</h5><ul><li>Hot jobs → hike odds up → cut hope fades → rate-sensitive stocks pull back. Cool jobs → opposite.</li></ul>
+          <h5>Point 3 — What to watch tomorrow</h5><ul><li>Wage growth + prior-month revisions, not just headline payrolls. (ISM Manufacturing also drops 10am — May was 54.)</li></ul>
+          <h5>Close + CTA</h5><ul><li class="cta-line">"Chart literacy, not a prediction. Link in bio for the watchlist."</li></ul>
+          <div class="cap-box">Caption: "Good news is bad news" sounds backwards until you see how rate expectations drive the tape. #stocks #jobsreport #technicalanalysis #stockmarket</div>
+        </div></details>
+        <div class="ctarow">
+          <span class="cta">Soft CTA · "Link in bio for the watchlist."</span>
+          <div class="status"><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- THU -->
+    <div class="day key">
+      <div class="dayhead">
+        <div class="dow">THU<small>JUL 2 · JOBS DAY</small></div>
+        <span class="pill" style="background:rgba(255,122,89,.12);color:var(--p6)">P6 · React</span>
+        <span class="hook">The jobs report just dropped — 3 ways it hits your money</span>
+        <span class="fmt">Greenscreen / React</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">FILM AFTER 8:30am ET once BLS releases — this is the week's reach spike</div>
+        <div class="beats-list">
+          <div>"The June jobs number just came out." React to headline payrolls + unemployment vs May's +172K / 4.3%.</div>
+          <div>Tie it to the flagship: strong jobs = the Fed's hike case gets louder; weak jobs = the cut camp wins. The 3-ways structure (our 2.2M pattern).</div>
+          <div>3 ways it hits you: your rate path, your debt cost, the cut-vs-hike odds for the rest of 2026.</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat tt">TikTok (3-ways)</span><span class="plat short">YT Short (optional pull)</span></div>
+        <div class="win">⏱ <b>Window:</b> film right after the <b>8:30am ET</b> release, post late morning / midday while it's the story. <b>Verify the live jobs figure before you cite it.</b> (NYSE closes early 1pm — energy fades after, so post by midday.)</div>
+        <div class="hooks">
+          <span class="k">▶ Green-screen hooks · Atlas style · FILL LIVE</span>
+          <div class="cold">Cold-open: "Jobs Report Just Dropped."</div>
+          <div class="sus">Sustained caption: <b>"The June Jobs Report Just Dropped. 3 Ways It Hits Your Money."</b></div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="greenscreen/THU/THU_01_jobs_FILLLIVE.png" target="_blank"><img src="greenscreen/THU/THU_01_jobs_FILLLIVE.png" alt="jobs fill live"><span class="cap">01 · KPIs (fill)</span></a>
+            <a class="gsthumb" href="greenscreen/THU/THU_02_trend.png" target="_blank"><img src="greenscreen/THU/THU_02_trend.png" alt="trend"><span class="cap">02 · Trend</span></a>
+            <a class="gsthumb" href="greenscreen/THU/THU_03_fedread.png" target="_blank"><img src="greenscreen/THU/THU_03_fedread.png" alt="fed read"><span class="cap">03 · Fed read</span></a>
+            <a class="gsthumb" href="greenscreen/THU/THU_clip.mp4" target="_blank"><video src="greenscreen/THU/THU_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
+          </div>
+          <div class="gsnote">⚠ Fill the 3 blanks on tile 01 with the verified June numbers before exporting. Cut 01 → 02 → 03.</div>
+        </div>
+        <details class="script"><summary>Full script — talking points · FILL LIVE</summary><div class="scriptbody">
+          <span class="lbl">TikTok 3-ways (reach spike)</span>"The jobs number the whole rate debate was waiting on just dropped — here's 3 ways it hits your money."
+          <h5>Point 1 — The number</h5><ul><li>June payrolls [____] vs May +172K; unemployment [____] vs 4.3% (BLS, today).</li></ul>
+          <h5>Point 2 — The Fed read</h5><ul><li>Strong → hike camp gets ammo · Weak → cut camp wins. Tie to Monday's 9:1 dot plot.</li></ul>
+          <h5>Point 3 — 3 ways it hits you</h5><ul><li>Your rate path · your debt cost if higher-for-longer holds · the cut-vs-hike odds for 2026.</li></ul>
+          <h5>Close + CTA</h5><ul><li class="cta-line">"Comment JOBS and I'll send the rate-path cheat sheet."</li></ul>
+          <div class="cap-box">⚠ Re-verify the live June figure before recording/posting. Caption: The June jobs report is here — and it just moved the odds on the Fed's next move. #jobsreport #nonfarmpayrolls #fed #moneytok</div>
+        </div></details>
+        <div class="ctarow">
+          <span class="cta">Comment-trigger · "Comment <b>JOBS</b> for the rate-path cheat sheet."</span>
+          <div class="status"><button class="tog">Filmed</button><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- FRI -->
+    <div class="day">
+      <div class="dayhead">
+        <div class="dow">FRI<small>JUL 3 · MKTS CLOSED</small></div>
+        <span class="pill" style="background:rgba(245,196,81,.12);color:var(--p3)">P3 · Budget</span>
+        <span class="hook">Markets are closed — don't let the 4th-of-July sales wreck you</span>
+        <span class="fmt">Talking head + Short</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">Holiday · markets closed · warm budget evergreen</div>
+        <div class="beats-list">
+          <div>TikTok: holiday-sale psychology — "you're not saving 40%, you're spending 60%." The 50/30/20 reset before the long weekend.</div>
+          <div>Short #3: "The 1 sinking fund that kills holiday-spend guilt" → channel.</div>
+          <div>Bridge: the money you don't blow on a sale is the money that funds the brokerage.</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat tt">TikTok</span><span class="plat short">YT Short #3</span></div>
+        <div class="win">⏱ <b>Window:</b> evergreen — markets are closed so there's no data to chase; post into your holiday-weekend peak (often midday). No time pressure.</div>
+        <div class="hooks">
+          <span class="k">▶ Green-screen hooks · Atlas style</span>
+          <div class="cold">Cold-open: "Sales ≠ Savings."</div>
+          <div class="sus">Sustained caption: <b>"That 40%-Off Sale Isn't Saving You 40%. It's Spending 60%."</b></div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="greenscreen/FRI/FRI_01_503020.png" target="_blank"><img src="greenscreen/FRI/FRI_01_503020.png" alt="50 30 20"><span class="cap">01 · 50/30/20</span></a>
+            <a class="gsthumb" href="greenscreen/FRI/FRI_02_reframe.png" target="_blank"><img src="greenscreen/FRI/FRI_02_reframe.png" alt="reframe"><span class="cap">02 · Reframe</span></a>
+            <a class="gsthumb" href="greenscreen/FRI/FRI_03_sinkingfund.png" target="_blank"><img src="greenscreen/FRI/FRI_03_sinkingfund.png" alt="sinking fund"><span class="cap">03 · Sinking fund</span></a>
+            <a class="gsthumb" href="greenscreen/FRI/FRI_clip.mp4" target="_blank"><video src="greenscreen/FRI/FRI_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
+          </div>
+          <div class="gsnote">Cut 01 → 02 → 03 · hover the clip to preview · tap any tile for full size.</div>
+        </div>
+        <details class="script"><summary>Full script — talking points</summary><div class="scriptbody">
+          <span class="lbl">TikTok (markets closed — budget evergreen)</span>"That 40%-off sale isn't saving you 40% — it's getting you to spend the other 60%."
+          <h5>Point 1 — The reframe</h5><ul><li>A discount only saves money if it was already a planned buy. Otherwise it's spending dressed as saving.</li></ul>
+          <h5>Point 2 — The frame</h5><ul><li>50/30/20 — holiday splurges come out of the 30% "wants" bucket, not savings or bills.</li></ul>
+          <h5>Point 3 — The move</h5><ul><li>Set a holiday-weekend number BEFORE you scroll. A small sinking fund kills the guilt.</li></ul>
+          <h5>Close + CTA</h5><ul><li class="cta-line">"Money you don't blow funds the brokerage. 50/30/20 reset template in the bio."</li></ul>
+          <div class="cap-box">Caption: Sales aren't savings. Here's the 50/30/20 reset before the long-weekend spend. 🇺🇸 #budgeting #503020 #personalfinance #savingmoney</div>
+        </div></details>
+        <div class="ctarow">
+          <span class="cta">Soft CTA · "50/30/20 reset template in the bio."</span>
+          <div class="status"><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- SAT -->
+    <div class="day">
+      <div class="dayhead">
+        <div class="dow">SAT<small>JUL 4</small></div>
+        <span class="pill" style="background:rgba(255,143,177,.12);color:var(--p5)">P5 · Proof</span>
+        <span class="hook">POV: financial independence hits different on the 4th</span>
+        <span class="fmt">Skit / talking head</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">Mindset · Independence Day energy · hard CTA</div>
+        <div class="beats-list">
+          <div>The take: there's the independence we celebrate today — and the financial kind you build. One you're given, one you earn.</div>
+          <div>You can't control the Fed, the jobs number, or the dot plot. You can control your file, your debt, your next deposit.</div>
+          <div>Social proof — what the TGW Discord is actually doing about it this week.</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat tt">TikTok</span><span class="plat comm">Community BTS</span></div>
+        <div class="win">⏱ <b>Window:</b> holiday weekend peak (often midday/evening) — hard CTAs are weekend-only, so this is the day to push the Discord.</div>
+        <div class="hooks">
+          <span class="k">▶ Green-screen hooks · Atlas style</span>
+          <div class="cold">Cold-open: "Two Kinds of Free."</div>
+          <div class="sus">Sustained caption: <b>"There's the Independence You Celebrate Today — and the Kind You Build."</b></div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="greenscreen/SAT/SAT_01_independence.png" target="_blank"><img src="greenscreen/SAT/SAT_01_independence.png" alt="independence"><span class="cap">01 · Can't/Can</span></a>
+            <a class="gsthumb" href="greenscreen/SAT/SAT_02_take.png" target="_blank"><img src="greenscreen/SAT/SAT_02_take.png" alt="the take"><span class="cap">02 · The take</span></a>
+            <a class="gsthumb" href="greenscreen/SAT/SAT_03_community.png" target="_blank"><img src="greenscreen/SAT/SAT_03_community.png" alt="community"><span class="cap">03 · Community</span></a>
+            <a class="gsthumb" href="greenscreen/SAT/SAT_clip.mp4" target="_blank"><video src="greenscreen/SAT/SAT_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
+          </div>
+          <div class="gsnote">Cut 01 → 02 → 03 · hover the clip to preview · tap any tile for full size.</div>
+        </div>
+        <details class="script"><summary>Full script — talking points</summary><div class="scriptbody">
+          <span class="lbl">TikTok (mindset · hard CTA)</span>"There's the independence we celebrate today — and the kind nobody hands you."
+          <h5>Point 1 — The take</h5><ul><li>One independence is a birthright; the financial kind you build deposit by deposit.</li></ul>
+          <h5>Point 2 — Control the controllables</h5><ul><li>Can't control: the Fed, the jobs number, the dot plot. Can control: your file, your debt, your next deposit.</li></ul>
+          <h5>Point 3 — Social proof</h5><ul><li>What the TGW community's been working on this week — fixing the file, then funding the account.</li></ul>
+          <h5>Close + CTA</h5><ul><li class="cta-line">"DM me GEN and I'll send you the Discord — come build the second kind of independence."</li></ul>
+          <div class="cap-box">Caption: Independence you're given vs independence you build. Happy 4th. 🇺🇸 #financialfreedom #fourthofjuly #moneymindset #genthinkers</div>
+        </div></details>
+        <div class="ctarow">
+          <span class="cta">Hard CTA · "DM me <b>GEN</b> and I'll send the Discord."</span>
+          <div class="status"><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- SUN -->
+    <div class="day">
+      <div class="dayhead">
+        <div class="dow">SUN<small>JUL 5</small></div>
+        <span class="pill" style="background:rgba(185,139,255,.12);color:var(--p4)">Drop + Record</span>
+        <span class="hook">Trade episode drops + record next week's anchor</span>
+        <span class="fmt">Promo + record</span>
+        <span class="chev">▶</span>
+      </div>
+      <div class="daybody"><div class="daybody-in">
+        <div class="beats">The loop resets</div>
+        <div class="beats-list">
+          <div>Drop the banked trade ep ("the portfolio that doesn't care what the Fed does") as Sunday's long-form + post the best 45-sec teaser clip.</div>
+          <div>Then record NEXT week's anchor around the new biggest story (post-jobs fallout, the July 28–29 FOMC preview, or fresh data).</div>
+          <div>Riverside clips overnight → feed next week's daily slots. Loop resets.</div>
+        </div>
+        <div class="drops">Drops today</div>
+        <div class="platrow"><span class="plat yt">▶ YT long-form (trade)</span><span class="plat tt">Teaser clip</span></div>
+        <div class="win">⏱ <b>Window:</b> long-form AM/midday ET · teaser into evening peak · hard CTA (weekend).</div>
+        <div class="ctarow">
+          <span class="cta">Hard CTA · "New episode live — link in bio."</span>
+          <div class="status"><button class="tog">Posted</button></div>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
+
+  <h2 class="sec">Live news pegs feeding this week</h2>
+  <div class="pegs">
+    <div class="pegcard">
+      <h4><span class="dot" style="background:var(--p6)"></span>Thursday: June jobs report</h4>
+      <ul>
+        <li><b>Releases Thu Jul 2, 8:30am ET</b> (BLS) — pulled forward from Friday for the holiday.</li>
+        <li><b>May was +172K jobs / 4.3%</b> unemployment (3rd straight month); wages +3.4% YoY — verify June before citing.</li>
+        <li><b>The week's reach spike</b> — strong print feeds the hike case, weak feeds the cut case.</li>
+      </ul>
+    </div>
+    <div class="pegcard">
+      <h4><span class="dot" style="background:var(--p4)"></span>The hawkish-Fed story</h4>
+      <ul>
+        <li><b>Held at 3.50–3.75%</b> at Warsh's first meeting — read as hawkish.</li>
+        <li><b>9 of 18 officials see ≥1 hike in 2026</b>, only 1 sees a cut — the opposite of the assumed timeline.</li>
+        <li><b>This is the flagship's gap</b> — everyone's positioned for a cut.</li>
+      </ul>
+    </div>
+    <div class="pegcard">
+      <h4><span class="dot" style="background:var(--p1)"></span>Markets, oil &amp; the calendar</h4>
+      <ul>
+        <li><b>ISM Manufacturing Wed Jul 1, 10am ET</b> (May 54) · <b>NYSE closed Fri Jul 3</b>, early close 1pm Thu.</li>
+        <li><b>Iran interim deal</b> — Strait of Hormuz reopening, Brent eased to ~$78; watch for reversals.</li>
+        <li><b>S&P near records</b> — the rally vs a possible hike is the Wed/Thu tension.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="sec">Always-on reference</h2>
+  <div class="refcard" style="margin-bottom:14px">
+    <h4>Posting windows — the timing playbook</h4>
+    <div class="pat"><span class="v" style="width:96px">News-pegged</span><span class="f">Post early, while it's hot<small>Flagship Mon AM · jobs report Thu right after the 8:30am release · don't let it sit</small></span></div>
+    <div class="pat"><span class="v" style="width:96px">Evergreen</span><span class="f">Flexible — fills the gaps<small>Trade, budget, mindset — post into your peak window, no rush; bank extras (holiday Fri/Sat)</small></span></div>
+    <div class="pat"><span class="v" style="width:96px">Long-form</span><span class="f">AM / early-afternoon ET<small>So it indexes before the evening watch surge</small></span></div>
+    <div class="pat"><span class="v" style="width:96px">Clips</span><span class="f">Your audience's peak window<small>TikTok Studio + YouTube "when viewers are online" is the real answer — not a fixed clock</small></span></div>
+  </div>
+  <div class="ref">
+    <div class="refcard">
+      <h4>Platform roles — one recording, three jobs</h4>
+      <div class="pat"><span class="v" style="color:var(--p1)">TikTok</span><span class="f">Reach &amp; discovery — the daily ladder<small>News spike + search-durable trade/credit evergreen (Search 64.8% last wk)</small></span></div>
+      <div class="pat"><span class="v" style="color:var(--p6)">YouTube</span><span class="f">Long-form reaction + monthly interview<small>Market-event reactions are winning the click · 3 Shorts/wk funnel</small></span></div>
+      <div class="pat"><span class="v" style="color:var(--p5)">Instagram</span><span class="f">Reaction &amp; interview Reels<small>PAUSED this week — account lockout; resume when access is back</small></span></div>
+    </div>
+    <div class="refcard">
+      <h4>CTA playbook</h4>
+      <div class="ctaref">
+        <div><span class="k">Soft · default</span><span class="v">"Link in bio." Use on weekday P1/P2/P3.</span></div>
+        <div><span class="k">Hard · weekends only</span><span class="v">"DM me GEN for the Discord." Sat + Sun.</span></div>
+        <div><span class="k">Comment-trigger DM</span><span class="v">"Comment [WORD]." For high-engagement news days (Mon, Thu).</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bridge">
+    <span class="k">◆ The bridge message — say it every week</span>
+    <p>Top posts pull people in with <b>credit, funding, and "how I did X."</b> The Discord pitch is investing. Connect them: <b>"Fix your credit → get approved for funding → open a brokerage → then put that capital to work."</b> One ladder, not two products.</p>
+  </div>
+
+  <footer>
+    <b>TGW Weekly Content Engine · Jun 29 – Jul 5</b> · recorded Sun Jun 28, rolling out on schedule<br>
+    Flagship Mon · jobs reach-spike Thu Jul 2 · markets closed Fri Jul 3 · trade evergreen banked for Sun · IG paused (lockout)<br>
+    <span style="color:var(--muted)">Every published asset carries the "educational content only — not financial advice" disclaimer.</span>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.dayhead').forEach(function(h){
+    h.addEventListener('click',function(e){
+      if(e.target.classList.contains('tog'))return;
+      h.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('.tog').forEach(function(b){
+    b.addEventListener('click',function(e){e.stopPropagation();b.classList.toggle('on');});
+  });
+</script>
+</body>
+</html>
