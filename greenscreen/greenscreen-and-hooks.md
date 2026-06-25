@@ -26,9 +26,9 @@ Backgrounds: THU_01_pce_FILLLIVE → THU_02_twomeasures → THU_03_fedread · Cl
 Backgrounds: FRI_01_denials → FRI_02_aprcall → FRI_03_bridge · Clip: FRI_clip
 - Cold-open: "Not the rates. This." · Sustained: "You're Not Denied Because of Rates. It's This."
 
-## SAT Jun 27 — Mindset (P5) · hard CTA
-Backgrounds: SAT_01_oneclean → SAT_02_control → SAT_03_community · Clip: SAT_clip
-- Cold-open: "No clean number." · Sustained: "You'll Never Get One Clean Inflation Number."
+## SAT Jun 27 — Collab / guest-reaction (NEW recurring beat) · IG-first · hard CTA
+Backgrounds: SAT_01_thetake → SAT_02_rightwrong → SAT_03_tgwtake · Clip: SAT_clip · (open by reacting to the creator's real clip — screenshot/stitch it)
+- Cold-open: "He's half right." · Sustained: "A Top Creator Says the Fed HAS to Hike. Here's Where He's Off."
 
 ## When a post needs a real news photo
 I can't pull copyrighted images — the sheet gives a screenshot instruction instead (e.g. "bls.gov → screenshot the CPI table"). Same two text layers; only the background source changes.
