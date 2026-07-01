@@ -83,6 +83,27 @@ A standing library of evergreen IG/TikTok reels the weekly engine pulls from to 
 
 ---
 
+## Demographic-driven adds — added Jun 29, 2026 (from the analytics audience pull)
+These fill real gaps for who actually watches: TikTok skews 25–34, YouTube skews 35–54, ~80–94% US, heavily male. Number them 36+ so they slot into rotation. Educational only; no tickers/price targets.
+
+**For the YouTube 35–54 core (go deeper than beginner) — lead these on YouTube long-form/Shorts:**
+- **36 · The 401(k) match you're leaving on the table** — the free "raise" most people skip. On-screen: *Free money* · comment-trigger.
+- **37 · Backdoor Roth in 3 steps** — for higher earners over the income limit. *Backdoor Roth* · comment-trigger (save-bait).
+- **38 · Your job pays you in stock — now what? (RSUs/ESPP)** — vesting, taxes, concentration risk. *Paid in stock* · soft.
+- **39 · Catch-up contributions after 50** — the over-50 boost most miss. *After 50* · soft.
+- **40 · Generational wealth 101 — the basics nobody teaches** — wills, beneficiaries, the first estate moves. *Pass it down* · soft.
+
+**For the TikTok 25–34 core (first-milestone money) — lead these on TikTok/IG:**
+- **41 · What to do with your first real paycheck** — order of operations for a new salary. *First paycheck* · soft.
+- **42 · First brokerage account — the exact setup** — account type → fund → automate (education-framed, no ticker). *Open your first* · soft.
+- **43 · Buy vs rent — the real math** — the numbers people skip. *Buy or rent?* · comment-trigger.
+- **44 · Kill your student loans faster** — avalanche vs snowball, what actually works. *Loan payoff* · soft.
+- **45 · Salary negotiation: the 10-minute prep that pays for years** — scripts + benchmarks. *Negotiate it* · comment-trigger.
+
+**For parents 30–44 + broadening female reach:**
+- **46 · Investing for your kid — custodial vs 529** — start-early math. *For your kid* · comment-trigger (save-bait).
+- **47 · Couples & money — the one conversation that saves your finances** — the money date. *Couples & money* · comment-trigger (debate/relatable — also broadens reach beyond the 81–94% male base).
+
 ## Shoot-day blocks (batch by setup — from the source list)
 - **Block A · Founder / story** (talking-head, personal energy): 1, 2, 5, 6, 7, 8, 9, 20, 29
 - **Block B · Quick-hit education** (lean on on-screen text): 3, 4, 11, 15, 18, 21, 25, 26, 27, 31, 33
