@@ -142,6 +142,15 @@
   .scriptbody li::before{content:"›";position:absolute;left:0;color:var(--muted)}
   .scriptbody .cta-line{color:var(--gold)}
   .scriptbody .cap-box{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin-top:6px;font-size:12.5px;color:var(--muted)}
+  .jump{display:flex;flex-wrap:wrap;gap:7px 16px;margin:16px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+  .jump a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line);padding-bottom:1px}
+  .jump a:hover{color:var(--mint);border-color:var(--mint)}
+  details.fold{margin:0}
+  details.fold>summary.fsum{list-style:none;cursor:pointer;font-family:var(--disp);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px;transition:color .15s}
+  details.fold>summary.fsum::-webkit-details-marker{display:none}
+  details.fold>summary.fsum::before{content:"▸";color:var(--mint);font-size:13px;transition:transform .2s}
+  details.fold[open]>summary.fsum::before{transform:rotate(90deg)}
+  details.fold>summary.fsum:hover{color:var(--text)}
   footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);text-align:center;line-height:1.7}
   footer b{color:var(--mint)}
   @media(max-width:760px){.loop,.pegs,.statgrid{grid-template-columns:1fr}.anchor h3{font-size:20px}.dayhead{flex-wrap:wrap}.hook{flex-basis:100%;order:5}.dow{width:auto}.status{margin-left:0}.gsgrid{grid-template-columns:repeat(2,1fr)}}
@@ -166,7 +175,16 @@
     </div>
   </header>
 
-  <h2 class="sec">Last week's numbers <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jun 28 · most recent 7 days</span></h2>
+  <nav class="jump">
+    <a href="#glance">▸ At a glance</a>
+    <a href="#plan">▸ 7-day plan</a>
+    <a href="#numbers">▸ Last week's numbers</a>
+    <a href="#audience">▸ Audience &amp; best times</a>
+    <a href="#bank">▸ Reel bank</a>
+    <a href="#podcast">▸ Podcast</a>
+  </nav>
+
+  <details class="fold" id="numbers"><summary class="fsum">Last week's numbers <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jun 28 · most recent 7 days</span></summary>
   <div class="nums">
     <div class="hd"><h3>How the platforms did + what to lean into</h3><span>YouTube + TikTok + Instagram</span></div>
     <div class="statgrid">
@@ -200,12 +218,16 @@
     </div>
   </div>
 
-  <h2 class="sec">How the engine runs</h2>
+  </details>
+
+  <details class="fold"><summary class="fsum">How the engine runs</summary>
   <div class="loop">
     <div class="loopcard"><div class="n">01 · Already recorded</div><h3>Sunday's anchor is in the can</h3><p>The AI-selloff flagship + a trading-evergreen co-ep were filmed Sun Jun 28. This week is the rollout + the jobs-day spike.</p></div>
     <div class="loopcard"><div class="n">02 · The clips fan out</div><h3>One recording, three platforms</h3><p>Riverside clips → the TikTok ladder, the YouTube long-form + 3 Shorts, IG Reels, 3 Community posts.</p></div>
     <div class="loopcard"><div class="n">03 · Post on a schedule</div><h3>Front-load news, bank evergreen</h3><p>AI flagship Mon, jobs reach-spike Thu, credit + mindset over the holiday weekend, trading ep banked for Sun.</p></div>
   </div>
+
+  </details>
 
   <div class="bridge" style="margin-top:0">
     <span class="k">◆ This week's live pegs</span>
@@ -226,7 +248,7 @@
     <div class="when">● <b>Full episode holds to Sun Jul 5</b> · its clips (the "3 signals" TikTok + Short) run Wednesday this week.</div>
   </div>
 
-  <h2 class="sec">This week's podcast <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">the anchor long-form · segment rundown + screen-shares</span></h2>
+  <details class="fold" id="podcast"><summary class="fsum">This week's podcast <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">the anchor long-form · segment rundown + screen-shares</span></summary>
   <div class="anchor" style="padding-bottom:18px">
     <span class="tag">🎙 Podcast = Sunday anchor · recorded Mon Jun 29 · Wolf + D Waugh · ~12–15 min</span>
     <h3 style="font-size:21px">The AI Dip Got Bought: Nasdaq +2%, Dow Tops 52,000 — Is the Reality Check Over?</h3>
@@ -249,7 +271,9 @@
     </div></details>
   </div>
 
-  <h2 class="sec">Why this week's lineup <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">the idea logic · proven pillar × timely peg × who's watching</span></h2>
+  </details>
+
+  <h2 class="sec" id="glance">This week at a glance <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pillar × peg × who's watching · tap any day below for the full brief</span></h2>
   <div class="refcard">
     <p style="font-size:13px;color:#cdd8e1;margin-bottom:14px">Every day crosses our 3 data streams: a <b style="color:var(--mint)">proven pillar</b> (what actually wins), a <b style="color:var(--gold)">timely peg</b> (what's happening now), and the <b style="color:var(--p5)">audience</b> it's aimed at (who's watching + where). Because TikTok skews 25–34 and YouTube skews 35–54, the same anchor gets <b>angled by age per platform</b> — one recording, two cuts.</p>
     <div class="pat"><span class="v" style="width:64px;color:var(--p6)">MON</span><span class="f">Concrete news-reaction (all-time reach winner) × the AI round-trip<small>👥 TikTok 25–34: "your first $ — buy the dip?" · YouTube 35–54: "what a 2% swing does to your 401(k)/RSUs" · post at the peak (reach-spike)</small></span></div>
@@ -261,7 +285,7 @@
     <div class="pat"><span class="v" style="width:64px;color:var(--muted)">SUN</span><span class="f">Loop reset — drop the banked trading long-form, record next anchor<small>👥 Route next week's ideas the same way: pillar × peg × audience, angled by age</small></span></div>
   </div>
 
-  <h2 class="sec">The 7-day posting schedule <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">all platforms · tap any day to expand</span></h2>
+  <h2 class="sec" id="plan">The 7-day posting schedule <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">all platforms · tap any day for the full brief</span></h2>
   <div class="ladder" id="ladder">
 
     <!-- MON -->
@@ -666,7 +690,7 @@
 
   </div>
 
-  <h2 class="sec">Live news pegs feeding this week</h2>
+  <details class="fold"><summary class="fsum">Live news pegs feeding this week</summary>
   <div class="pegs">
     <div class="pegcard">
       <h4><span class="dot" style="background:var(--p6)"></span>The AI round-trip</h4>
@@ -694,7 +718,9 @@
     </div>
   </div>
 
-  <h2 class="sec">Evergreen Reel Bank <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">the standing 35-reel library · pull 1–2 to fill light weeks</span></h2>
+  </details>
+
+  <details class="fold" id="bank"><summary class="fsum">Evergreen Reel Bank <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">the standing 35-reel library · pull 1–2 to fill light weeks</span></summary>
   <div class="refcard" style="margin-bottom:14px">
     <h4 style="color:var(--gold)">This week's pull</h4>
     <p style="font-size:13.5px;color:#cdd8e1">None needed — Jun 29–Jul 5 ran a full slate (AI-selloff flagship + collab + chart evergreen + jobs spike + credit + July-4 mindset). The bank stands ready for lighter weeks; the engine pulls TIER 1 first and logs the rotation. Full file ships with the site: <a href="TGW Evergreen Reel Bank.md" target="_blank" style="color:var(--mint)">TGW Evergreen Reel Bank.md</a>.</p>
@@ -760,7 +786,9 @@
     <div class="cap-box">⚠ The bank does NOT replace the weekly chart-read trading evergreen (candlesticks / option chains / reading a selloff — the 95–125K Search vein). The "trading" reels here are concept pieces, not chart reads. No tickers, no price targets.</div>
   </div></details>
 
-  <h2 class="sec">Your audience — best times + who's watching <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jun 29 · from platform analytics</span></h2>
+  </details>
+
+  <details class="fold" id="audience"><summary class="fsum">Your audience — best times + who's watching <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jun 29 · from platform analytics</span></summary>
   <div class="refcard" style="margin-bottom:14px">
     <h4>Best times to post (ET) — from your "when followers are active" data</h4>
     <div class="pat"><span class="v" style="color:var(--p1);width:96px">TikTok</span><span class="f">Peak <b style="color:var(--mint)">6–7pm</b> · strong 2–7pm<small>Evening is the window (viewers most active Jun 28, 6–7pm). Weakest overnight/early AM.</small></span></div>
@@ -801,6 +829,8 @@
     <div class="pat"><span class="v" style="width:150px;color:var(--p2)">80–94% US</span><span class="f">Lean US-specific<small>Roth/401(k)/FICO/US brokerages land — don't dilute with generic global content. Almost no under-18 or 55+, so keep it working-age.</small></span></div>
     <div class="pat"><span class="v" style="width:150px;color:var(--p4)">88–98% new viewers</span><span class="f">Discovery-first, then retain<small>You're not subscriber-driven yet — keep strong cold hooks AND give a concrete reason to follow/subscribe (a series, a free resource) to convert the discovery.</small></span></div>
   </div>
+
+  </details>
 
   <div class="bridge">
     <span class="k">◆ The bridge message — say it every week</span>
