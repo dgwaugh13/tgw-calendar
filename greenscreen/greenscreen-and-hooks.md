@@ -14,10 +14,10 @@ Backgrounds: MON_01_selloff → MON_02_capex → MON_03_shift · Clip: MON_clip
 - **Cold-open:** "Wall Street stopped clapping." · **Sustained:** "$452B Spent on AI. Wall Street Wants the Payoff Now."
 - Cut 01 (Nasdaq −2.2%, the wobble) → 02 ($452B capex) → 03 (spending → payoff). Optional: screenshot a Jun 24 market-red headline as a 4th bg (we can't pull copyrighted images — grab it live).
 
-## TUE Jun 30 — Collab / guest-reaction (IG-FIRST recurring beat)
-Backgrounds: TUE_01_thetake → TUE_02_rightoff → TUE_03_tgwplay · Clip: TUE_clip · **open by reacting to the creator's real clip — stitch/screenshot it**
-- **Cold-open:** "Bubble? He's half right." · **Sustained:** "A Top Creator Calls AI 'Dot-Com 2.0.' Here's the Catch."
-- This is the format that just hit 21.8K on IG ("Buy the dip?"). React to a finance creator's AI-bubble take (Earn Your Leisure / Atlas Berry / Patrick Boyle style). Agree where right, sharpen where off.
+## TUE Jun 30 — DEEP DIVE (filming Wed Jul 1): AI buildout ≠ dot-com — REVISED per Wolf
+Backgrounds: TUE_01_earnings → TUE_02_cashflow → TUE_03_thecatch · Clip: TUE_clip (regenerated) · Script: `scripts/tuesday-ai-vs-dotcom.md`
+- **Cold-open:** "This isn't 1999." · **Sustained:** "3 Numbers Say AI Isn't Dot-Com 2.0. One Says Careful."
+- Balanced deep dive replacing the original reaction beat (old tiles TUE_01_thetake/02_rightoff/03_tgwplay kept in folder if the stitch format is still wanted as the opener). Cut 01 (Cisco 109x/$18.9B-yr vs Nvidia 47x/$81.6B-qtr) → 02 (debt vs $725B cash-funded capex) → 03 (the catch: 94% of cash flow, $8–10 per $1, $136B debt, BIS warning). Claim + sharpener caption per Atlas.
 
 ## WED Jul 1 — Trading evergreen (P1) · the guaranteed weekly trade asset
 Backgrounds: WED_01_dipvstop → WED_02_signals → WED_03_watch · Clip: WED_clip
