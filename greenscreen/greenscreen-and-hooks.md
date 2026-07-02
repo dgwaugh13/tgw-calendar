@@ -24,10 +24,11 @@ Backgrounds: WED_01_dipvstop → WED_02_signals → WED_03_watch · Clip: WED_cl
 - **Cold-open:** "Dip or top?" · **Sustained:** "3 Chart Signals That Tell a Dip From a Top."
 - Search-durable chart education (the 95K–125K vein). ISM Manufacturing PMI also drops 10am ET — mention as context, keep the post evergreen.
 
-## THU Jul 2 — JOBS DAY reach spike (P6) · FILL LIVE
-Backgrounds: THU_01_jobs_FILLLIVE → THU_02_trend → THU_03_fedread · Clip: THU_clip
-- **Cold-open:** "Jobs report just dropped." · **Sustained:** "June Jobs Just Dropped — 3 Ways It Hits Your Money."
-- ⚠ FILL the blanks on tile 01 + 02 with the verified June numbers (payrolls, unemployment, wages) **from bls.gov before exporting.** Released 8:30am ET — film right after, post late morning while it's the story. Last trading day before the long weekend (markets closed Fri Jul 3).
+## THU Jul 2 — JOBS DAY reach spike (P6) · ✅ NUMBERS FILLED (BLS, released 8:30am ET Jul 2)
+Backgrounds (regenerated with the real June figures): THU_01_jobs_FILLLIVE ("The Rate Fell. Look Closer.") → THU_02_trend ("74K Jobs, Revised Away") → THU_03_fedread ("Fed Read: Cuts Back On Deck?") · Clip: THU_clip (Ken Burns over tile 01)
+- **Cold-open:** "Unemployment fell. That's bad." · **Sustained:** "Unemployment Fell To 4.2% — Here's Why That's Actually Bad News."
+- Angle updated post-release (claim + sharpener, per Atlas): payrolls **+57K** vs ~110K expected · unemployment **4.2%** (from 4.3%) — but participation fell 0.3pt to **61.5%**, so the rate fell because people left the labor force, not because hiring picked up. Receipts: Apr −31K / May −43K revisions (−74K combined), 12-mo avg +36K/mo, leisure & hospitality −61K, wages +3.5% YoY ($37.64).
+- Platforms: TikTok + **IG Reel (added — week's biggest concrete event)** + YT Short #3. Film now, post late-morning/midday (IG 12–3pm peak). Tile 03 keeps the Fed read qualitative — pull CME FedWatch live before citing an odds number. Markets closed Fri Jul 3 — today is the reaction day.
 
 ## FRI Jul 3 — Credit (P2) · market closed · Independence-weekend framing
 Backgrounds: FRI_01_closed → FRI_02_triggers → FRI_03_bridge · Clip: FRI_clip
