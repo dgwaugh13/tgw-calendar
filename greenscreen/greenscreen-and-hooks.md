@@ -30,10 +30,11 @@ Backgrounds (regenerated with the real June figures): THU_01_jobs_FILLLIVE ("The
 - Angle updated post-release (claim + sharpener, per Atlas): payrolls **+57K** vs ~110K expected · unemployment **4.2%** (from 4.3%) — but participation fell 0.3pt to **61.5%**, so the rate fell because people left the labor force, not because hiring picked up. Receipts: Apr −31K / May −43K revisions (−74K combined), 12-mo avg +36K/mo, leisure & hospitality −61K, wages +3.5% YoY ($37.64).
 - Platforms: TikTok + **IG Reel (added — week's biggest concrete event)** + YT Short #3. Film now, post late-morning/midday (IG 12–3pm peak). Tile 03 keeps the Fed read qualitative — pull CME FedWatch live before citing an odds number. Markets closed Fri Jul 3 — today is the reaction day.
 
-## FRI Jul 3 — Credit (P2) · market closed · Independence-weekend framing
-Backgrounds: FRI_01_closed → FRI_02_triggers → FRI_03_bridge · Clip: FRI_clip
-- **Cold-open:** "Markets closed. Fix this." · **Sustained:** "Markets Are Closed Friday. Fix Your Credit File Instead."
-- Evergreen credit how-to with a holiday hook (NYSE closed Jul 3). 3 denial triggers → the funding-ladder bridge.
+## FRI Jul 3 — Credit (P2) · ✦ SWAPPED Jul 3 · Love Island Movie Night peg
+Backgrounds (regenerated Jul 3, same filenames): FRI_01_closed ("Lenders Have Movie Night Too" — big-screen frame) → FRI_02_triggers ("The 3 Clips That Get You Dumped" — utilization >30% / thin file / clustered pulls + FICO weights) → FRI_03_bridge ("Win The Recoupling" — the ladder) · Clip: FRI_clip (Ken Burns over tile 01)
+- **Cold-open:** "Lenders have Movie Night too." · **Sustained:** "Your Credit Report Is Movie Night — And Lenders See Every Clip."
+- Metaphor: Movie Night = your credit report (receipts on a big screen for the people deciding your fate); tonight's recoupling/fallout ep (9pm ET, Peacock) = the approval decision. Same proven P2 triggers underneath. **Post everything BEFORE 9pm ET.**
+- IG Reel opener needs a real headline: screenshot a Movie Night recap headline (e.g. Today.com "Movie Night's Winners, Losers and Surprises") — react to what aired, never trash an islander.
 
 ## SAT Jul 4 — Independence Day mindset (P5) · hard CTA
 Backgrounds: SAT_01_independence → SAT_02_paycheck → SAT_03_community · Clip: SAT_clip
