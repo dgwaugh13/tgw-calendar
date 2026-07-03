@@ -30,10 +30,10 @@ Backgrounds (regenerated with the real June figures): THU_01_jobs_FILLLIVE ("The
 - Angle updated post-release (claim + sharpener, per Atlas): payrolls **+57K** vs ~110K expected · unemployment **4.2%** (from 4.3%) — but participation fell 0.3pt to **61.5%**, so the rate fell because people left the labor force, not because hiring picked up. Receipts: Apr −31K / May −43K revisions (−74K combined), 12-mo avg +36K/mo, leisure & hospitality −61K, wages +3.5% YoY ($37.64).
 - Platforms: TikTok + **IG Reel (added — week's biggest concrete event)** + YT Short #3. Film now, post late-morning/midday (IG 12–3pm peak). Tile 03 keeps the Fed read qualitative — pull CME FedWatch live before citing an odds number. Markets closed Fri Jul 3 — today is the reaction day.
 
-## FRI Jul 3 — Credit (P2) · ✦ SWAPPED Jul 3 · Love Island Movie Night peg
-Backgrounds (regenerated Jul 3, same filenames): FRI_01_closed ("Lenders Have Movie Night Too" — big-screen frame) → FRI_02_triggers ("The 3 Clips That Get You Dumped" — utilization >30% / thin file / clustered pulls + FICO weights) → FRI_03_bridge ("Win The Recoupling" — the ladder) · Clip: FRI_clip (Ken Burns over tile 01)
-- **Cold-open:** "Lenders have Movie Night too." · **Sustained:** "Your Credit Report Is Movie Night — And Lenders See Every Clip."
-- Metaphor: Movie Night = your credit report (receipts on a big screen for the people deciding your fate); tonight's recoupling/fallout ep (9pm ET, Peacock) = the approval decision. Same proven P2 triggers underneath. **Post everything BEFORE 9pm ET.**
+## FRI Jul 3 — Credit (P2) · ✦ SWAPPED Jul 3 · Love Island peg · rev 2 DISPUTES
+Backgrounds (regenerated Jul 3 rev 2, same filenames): FRI_01_closed ("That Clip Was Edited" — big-screen frame, a late payment that wasn't yours + the 1-in-4 FTC stat) → FRI_02_triggers ("Watch Your Own Tape" — AnnualCreditReport.com + what to scan for) → FRI_03_bridge ("Get The Clip Pulled" — the 4-step dispute play) · Clip: FRI_clip (Ken Burns over tile 01)
+- **Cold-open:** "That clip was edited." · **Sustained:** "1 In 4 Credit Reports Plays A Clip That Isn't True."
+- Metaphor: post-Movie Night everyone yells "the edit did me dirty" — your credit report pulls the same edit (FTC: 1 in 4 has a score-affecting error; 1 in 5 who dispute get it fixed; FCRA 30-day clock). Tonight's recoupling ep (9pm ET, Peacock) = the approval decision. **Post everything BEFORE 9pm ET.** Angle changed from denial triggers (ran Fri Jun 26).
 - IG Reel opener needs a real headline: screenshot a Movie Night recap headline (e.g. Today.com "Movie Night's Winners, Losers and Surprises") — react to what aired, never trash an islander.
 
 ## SAT Jul 4 — Independence Day mindset (P5) · hard CTA

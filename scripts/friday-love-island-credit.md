@@ -1,64 +1,77 @@
-# FRI Jul 3 — "Lenders Have Movie Night Too" (P2 Credit × Love Island peg)
+# FRI Jul 3 — "That Clip Was Edited" (P2 Credit × Love Island peg · DISPUTES angle)
 
-> Educational content only — not financial advice. Swapped in Jul 3 (Wolf's call): same proven P2 denial-triggers angle, wrapped in the Love Island USA S8 Movie Night peg. Movie Night Pt 2 dropped Thu Jul 2 (Zach, KC, Aniya, Sincere in the hot seat); the fallout/recoupling episode drops TONIGHT Fri Jul 3, 9pm ET on Peacock. **Post everything BEFORE 9pm ET** to ride the pre-episode scroll.
+> Educational content only — not financial advice. Rev 2 (Jul 3): pivoted from denial triggers (ran last Fri Jun 26 — too soon to repeat) to **credit-report ERRORS + the dispute play**. Same Movie Night wrapper, fresh substance. Movie Night Pt 2 dropped Thu Jul 2; the fallout/recoupling ep drops TONIGHT Fri Jul 3, 9pm ET on Peacock. **Post everything BEFORE 9pm ET.**
 
-**The metaphor (one line):** Movie Night = your credit report — everything you did in the dark, played on a big screen in front of the people deciding your fate. The recoupling = the approval decision.
+**The metaphor (one line):** After every Movie Night someone yells "that clip was edited!" — your credit report pulls the same move. FTC: 1 in 4 consumers had a report error that could affect their score. Here's how to get the edited clip pulled.
 
-**Reference-safe show facts (verified Jul 3):** Movie Night Pt 1 aired ~Jun 30, Pt 2 Thu Jul 2; receipts played on Zach, KC, Aniya, Sincere; Corbin's Kenzie comments exposed while he pursued Parmida (Casa Amor). Stick to what aired — react, don't trash anyone.
+**Verified stats (sources at bottom — re-verify before citing anything else):**
+- 1 in 4 consumers found an error that might affect their score; 1 in 5 had a report corrected after disputing; 5% had errors serious enough to mean worse loan terms (FTC congressional study).
+- Consumer Reports volunteer study: 34% found at least one error; a later CR study found 44% spotted problems.
+- FCRA: bureaus generally must investigate a dispute within 30 days (up to 45 in some cases); unverifiable info must be removed.
+- AnnualCreditReport.com — free reports from all 3 bureaus, weekly, permanently.
 
 ---
 
 ## TikTok (1–2 min, bullet talking points — speak naturally, don't read)
 
-TOPIC: The 3 clips on your credit report that get you dumped at the approval table.
+TOPIC: Your credit report plays edited clips too — the dispute play, step by step.
 
 HOOK VARIANTS:
-1. "Lenders have Movie Night too. It's called your credit report."
-2. "Movie Night wrecked half the villa this week. Your credit report does the same thing — every time you apply."
-3. "The villa saw everyone's receipts. Here's what a lender sees on yours."
+1. "Every Movie Night, somebody screams 'that clip was edited.' Your credit report does the same thing — and the FTC proved it."
+2. "The villa got shown edited clips this week. So did your lender."
+3. "1 in 4 credit reports is playing a clip that isn't true."
 
-SELECTED HOOK: #1 — then one beat: "Everything you did in the dark, on a big screen, in front of the person deciding your fate. Here are the 3 clips that get you dumped."
+SELECTED HOOK: #1 — then the beat: "1 in 4 people had an error on their report that could hurt their score — FTC study. Difference is, in the villa you can't fix the edit. On your report, you can. Here's the play."
 
-POINT 1 — The "spread thin" clip: utilization over 30%
-- Amounts owed ≈ 30% of your FICO score (myFICO). Balances over ~30% of your limits read like the clip of you cracking on with every bombshell at once — spread across every connection you've got.
-- 30-day fix: pay the balance down BEFORE the statement cuts (that's the number that gets reported), not just by the due date.
+POINT 1 — Watch your own tape first
+- AnnualCreditReport.com — the actual free reports from all 3 bureaus, every week. Not an app score — the real file lenders see.
+- Scan for: accounts you never opened, late payments you didn't make, wrong balances/limits, closed accounts showing open, someone else's info mixed in.
+- Long weekend, markets closed — this is a 20-minute couch task before tonight's episode.
 
-POINT 2 — The bombshell problem: a thin file
-- Length of credit history ≈ 15% of FICO. A bombshell walks in with zero track record — nobody couples up day one. Thin file = no history, no trust, denial.
-- Fix: keep the oldest card open, get added as an authorized user, let accounts age. Time in the villa builds trust.
+POINT 2 — Dispute the edit
+- File with the bureau reporting it (online or mail), attach your receipts — statements, payment confirmations.
+- FCRA rule: they generally have 30 days to investigate (up to 45 in some cases). Can't verify it? It comes off.
+- It's not a scam-letter trick — it's a legal right. No "credit repair" service needed for this.
 
-POINT 3 — The "recouples every episode" clip: clustered hard pulls
-- New credit ≈ 10% of FICO. 4 applications in a month looks like the islander who switches couples every recoupling — nobody trusts it.
-- Fix: space applications ~6 months apart; pre-qualify first (soft pull — it's the flirty chat that doesn't hit the screen).
+POINT 3 — The receipts say it works
+- FTC: 1 in 5 people who disputed got their report corrected.
+- 5% had errors bad enough to change what loans cost them — one fake late payment can follow you for years.
+- Fix the edit before your recoupling — the next application gets decided off this tape.
 
 CLOSE + CTA
-- "Tonight's episode is the recoupling — the villa decides off the receipts. Your recoupling is your next application. Fix the file before the lender hits play."
-- Bridge: fix the file → get approved cheap → fund a brokerage → put capital to work. One ladder.
+- "Tonight's recoupling gets decided off the receipts. Make sure yours are actually yours."
+- Bridge: clean file → get approved cheap → fund a brokerage → put capital to work.
 - Soft CTA (weekday): "90-day credit plan in the bio."
 
 CAPTION
-Movie Night, but the screen is your credit report and the villa is your lender. The 3 clips that get you dumped — and the 30-day fixes. Posting this before tonight's episode 👀
-#loveisland #loveislandusa #credit #creditscore #personalfinance #moneytok
+Everyone yells "that clip was edited" after Movie Night. FTC says 1 in 4 credit reports actually has one. How to get the fake clip pulled — before your next recoupling. Posting before tonight's episode 👀
+#loveisland #loveislandusa #credit #creditreport #creditscore #personalfinance
 
 ---
 
 ## IG Reel (reaction format — our #1 IG format)
 
-- Same recording, IG cut: open on the Movie Night receipts moment ("half the villa got exposed this week"), then the pivot: "your credit report is Movie Night for lenders."
-- Background: green-screen over a Movie Night recap HEADLINE screenshot (we can't pull show footage/photos — screenshot a recap headline, e.g. Today.com's "Movie Night's Winners, Losers and Surprises"). Then cut to the TGW tiles.
-- Post midday 12–3pm ET (IG peak) — the pre-episode anticipation window.
+- Same recording, IG cut: open on the "edited clips" discourse ("half the villa says the edit did them dirty"), pivot: "the FTC says your credit report pulls the same edit — 1 in 4 have an error."
+- Background: green-screen over a Movie Night recap HEADLINE screenshot (no show footage/photos — e.g. Today.com "Movie Night's Winners, Losers and Surprises"). Then cut to the TGW tiles.
+- Post midday 12–3pm ET (IG peak) — pre-episode anticipation window.
 
 ## YouTube Short #3 (<45s)
 
-- TITLE: "Love Island's Movie Night explains why you got denied"
-- HOOK (0–3s): "Lenders have Movie Night too."
-- ANSWER (3–40s): the metaphor + ONE anchor — payment history 35% + amounts owed 30% = two-thirds of your FICO is just receipts of how you behave. One fix: pay before the statement cuts.
+- TITLE: "Love Island proves your credit report might be lying"
+- HOOK (0–3s): "That clip was edited — and it's on your credit report."
+- ANSWER (3–40s): 1 in 4 reports has a score-affecting error (FTC). Pull all 3 free at AnnualCreditReport.com, dispute with receipts, 30-day FCRA clock, unverifiable = deleted.
 - CTA (40–45s): "Full credit breakdown on the channel."
 
 ## Windows (ET) — all BEFORE the 9pm episode drop
-- IG Reel: 12–3pm (peak) · TikTok: 6–7pm (peak, right in the pre-episode scroll) · Short: with TikTok, early evening.
+- IG Reel: 12–3pm (peak) · TikTok: 6–7pm (peak, pre-episode scroll) · Short: with TikTok, early evening.
 
-## Green-screen set (greenscreen/FRI/ — regenerated Jul 3)
-- FRI_01 "Lenders Have Movie Night Too" (big-screen frame) → FRI_02 "The 3 Clips That Get You Dumped" (utilization / thin file / hard pulls + FICO weights) → FRI_03 "Win The Recoupling" (the ladder) · FRI_clip = Ken Burns over 01.
-- Cold-open text (≤5 words): **"Lenders have Movie Night too."**
-- Sustained caption (Atlas box): **"Your Credit Report Is Movie Night — And Lenders See Every Clip."**
+## Green-screen set (greenscreen/FRI/ — regenerated Jul 3, rev 2)
+- FRI_01 "That Clip Was Edited" (big-screen frame: a late payment that wasn't yours + the 1-in-4 stat) → FRI_02 "Watch Your Own Tape" (AnnualCreditReport.com + what to scan for) → FRI_03 "Get The Clip Pulled" (the 4-step dispute play) · FRI_clip = Ken Burns over 01.
+- Cold-open text (≤5 words): **"That clip was edited."**
+- Sustained caption (Atlas box): **"1 In 4 Credit Reports Plays A Clip That Isn't True."**
+
+## Sources
+- FTC credit report accuracy study (2013) + follow-up (2015): ftc.gov press releases — 1 in 4 errors, 1 in 5 corrected, 5% serious.
+- Consumer Reports error studies (34% / 44% figures): consumerreports.org.
+- FCRA dispute rules (30/45-day investigation): consumerfinance.gov.
+- Free weekly reports: annualcreditreport.com.
