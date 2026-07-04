@@ -3,6 +3,8 @@
 Atlas-style: stand in front of the green screen and cut between multiple backgrounds per post. Each post = 3 still backgrounds (one per talking point) + 1 animated clip, in the day subfolder. All 1080×1920, TGW dark theme.
 
 Two text layers per post: **cold-open** (≤5 words, first 1–2 sec) + **sustained Atlas-box caption** (≤~12 words, Title Case, number/gap first).
+
+**★ NEW Jul 4 — the TGW signature system now applies.** (1) Captions render in the **locked TGW box**: dark navy panel, gold Title-Case text, key number in mint, upper-third centered — baked into the backgrounds from SAT onward, and matched manually in Meta Edits for moving captions. (2) Hooks are **desire/emotion-cut**: sell the outcome the viewer wants with a specific number attached, never the lesson. (3) Every video ends CTA-then-sign-off: "It's Wolf / It's D Waugh, I'm outta here." — sign-off always last, untouched.
 > Educational content only — not financial advice. Re-verify the live June jobs figures Thursday before posting.
 
 **Borrowed from Atlas Berry this run (@atlasberry008, 241K):** his feed is currently ALL AI/tech-power green-screens — which is exactly our anchor lane this week. Two patterns worth copying: (1) the **"claim + sharpener"** caption — a statement followed by a punchy qualifier ("Largest Chip Factory on Earth. Or Galaxy?!", "$1.8B Startup With $20,000. No Team. No VC."); (2) he runs a **creator reaction/stitch** (Earn Your Leisure) right in the grid — confirming our Tuesday collab beat. We applied claim+sharpener to Mon/Tue/Sat captions.
@@ -36,10 +38,10 @@ Backgrounds (regenerated Jul 3 rev 2, same filenames): FRI_01_closed ("That Clip
 - Metaphor: post-Movie Night everyone yells "the edit did me dirty" — your credit report pulls the same edit (FTC: 1 in 4 has a score-affecting error; 1 in 5 who dispute get it fixed; FCRA 30-day clock). Tonight's recoupling ep (9pm ET, Peacock) = the approval decision. **Post everything BEFORE 9pm ET.** Angle changed from denial triggers (ran Fri Jun 26).
 - IG Reel opener needs a real headline: screenshot a Movie Night recap headline (e.g. Today.com "Movie Night's Winners, Losers and Surprises") — react to what aired, never trash an islander.
 
-## SAT Jul 4 — Independence Day mindset (P5) · hard CTA
-Backgrounds: SAT_01_independence → SAT_02_paycheck → SAT_03_community · Clip: SAT_clip
-- **Cold-open:** "Real independence?" · **Sustained:** "Real Independence Isn't a Paycheck. It's Owning Assets."
-- July 4 tie-in: financial independence = ownership, not a bigger paycheck. Weekend = hard CTA (DM GEN for the Discord).
+## SAT Jul 4 — Independence Day mindset (P5) · hard CTA · ★ RE-CUT Jul 4 to the new desire-hook + signature box
+Backgrounds: SAT_01_independence → SAT_02_paycheck → SAT_03_community · Clip: SAT_clip (all regenerated Jul 4 with the signature box baked in)
+- **Cold-open:** "Paid At The Cookout?" · **Sustained:** "A Paycheck Stops When You Do — Ownership Starts With $10."
+- Desire cut: money coming in while you're OFF (cookout, asleep) — outcome first, $10 entry point as the number. Weekend = hard CTA (DM GEN for the Discord), then the sign-off last.
 
 ## SUN Jul 5 — Drop + Record (no green-screen set)
 Teaser clip only. Drop the banked long-form, record next week's anchor. No standalone green-screen backgrounds needed.
