@@ -1,50 +1,69 @@
-# TGW Green-Screen + Hook-Text Sheet — Week of Jun 29 – Jul 5, 2026
+# Green-screen backgrounds + hook text — week of Jul 6–12, 2026
 
-Atlas-style: stand in front of the green screen and cut between multiple backgrounds per post. Each post = 3 still backgrounds (one per talking point) + 1 animated clip, in the day subfolder. All 1080×1920, TGW dark theme.
+Every background carries the locked TGW signature caption box baked into the pixels (navy `#131A22` panel, `#243140` border, gold Title-Case hook, key number in mint `#34E5A3`, upper-third centered). Meta Edits only adds the moving captions on top — match the spec manually, never improvise.
 
-Two text layers per post: **cold-open** (≤5 words, first 1–2 sec) + **sustained Atlas-box caption** (≤~12 words, Title Case, number/gap first).
+**Atlas Berry check (Jul 5):** current posts still run the claim + sharpener two-parter, always with a specific dollar figure in the boxed hook ("Microsoft Just Bet $2.5B That You Don't Trust AI Labs With Your Data", "OpenAI Just Offered the Gov't 5% — Now Why Would They Do That?", "Why Did a $126 Billion Firm Just Hire Novak Djokovic?"). Two things worth borrowing this week: (1) he ends hooks on a QUESTION twist far more than we do — Tuesday's collab reaction uses it; (2) he stands in front of the actual company/newsroom photo (Microsoft HQ, WSJ building) — where we can't pull a copyrighted image, our data-tile plays that role; for Monday an optional 4th background is a self-taken screenshot of Thursday's "Dow record close" headline.
 
-**★ NEW Jul 4 — the TGW signature system now applies.** (1) Captions render in the **locked TGW box**: dark navy panel, gold Title-Case text, key number in mint, upper-third centered — baked into the backgrounds from SAT onward, and matched manually in Meta Edits for moving captions. (2) Hooks are **desire/emotion-cut**: sell the outcome the viewer wants with a specific number attached, never the lesson. (3) Every video ends CTA-then-sign-off: "It's Wolf / It's D Waugh, I'm outta here." — sign-off always last, untouched.
-> Educational content only — not financial advice. Re-verify the live June jobs figures Thursday before posting.
-
-**Borrowed from Atlas Berry this run (@atlasberry008, 241K):** his feed is currently ALL AI/tech-power green-screens — which is exactly our anchor lane this week. Two patterns worth copying: (1) the **"claim + sharpener"** caption — a statement followed by a punchy qualifier ("Largest Chip Factory on Earth. Or Galaxy?!", "$1.8B Startup With $20,000. No Team. No VC."); (2) he runs a **creator reaction/stitch** (Earn Your Leisure) right in the grid — confirming our Tuesday collab beat. We applied claim+sharpener to Mon/Tue/Sat captions.
+Hook doctrine applies to every layer below: outcome or stakes first, specific number mandatory, Title Case, no hype, no price predictions.
 
 ---
 
-## MON Jun 29 — Flagship (P6) · AI / Mag-7 selloff
-Backgrounds: MON_01_selloff → MON_02_capex → MON_03_shift · Clip: MON_clip
-- **Cold-open:** "Wall Street stopped clapping." · **Sustained:** "$452B Spent on AI. Wall Street Wants the Payoff Now."
-- Cut 01 (Nasdaq −2.2%, the wobble) → 02 ($452B capex) → 03 (spending → payoff). Optional: screenshot a Jun 24 market-red headline as a 4th bg (we can't pull copyrighted images — grab it live).
+## MON Jul 6 — Flagship: the Great Rotation (P6 · React)
+- Cold-open (≤5 words): **"Record High. Tech Bled."**
+- Sustained caption (≤12 words): **"The Dow Hit 52,900 While Chips Lost Billions — Follow The Money."**
+- Backgrounds, in cut order:
+  1. `MON/MON_01_divergence.png` — the same-day split (Dow record vs chips −4.5%)
+  2. `MON/MON_02_micron.png` — Micron's $138B one-day wipeout
+  3. `MON/MON_03_rotation.png` — where the money rotated (Q2 monsters → Dow value)
+  - Clip: `MON/MON_clip.mp4` (motion pass on the divergence tile — use on the cold open)
+- Optional 4th bg: screenshot Thursday's "Dow jumps ~600 to record close" headline yourself (we can't pull copyrighted images).
 
-## TUE Jun 30 — DEEP DIVE (filming Wed Jul 1): AI buildout ≠ dot-com — REVISED per Wolf
-Backgrounds: TUE_01_earnings → TUE_02_cashflow → TUE_03_thecatch · Clip: TUE_clip (regenerated) · Script: `scripts/tuesday-ai-vs-dotcom.md`
-- **Cold-open:** "This isn't 1999." · **Sustained:** "3 Numbers Say AI Isn't Dot-Com 2.0. One Says Careful."
-- Balanced deep dive replacing the original reaction beat (old tiles TUE_01_thetake/02_rightoff/03_tgwplay kept in folder if the stitch format is still wanted as the opener). Cut 01 (Cisco 109x/$18.9B-yr vs Nvidia 47x/$81.6B-qtr) → 02 (debt vs $725B cash-funded capex) → 03 (the catch: 94% of cash flow, $8–10 per $1, $136B debt, BIS warning). Claim + sharpener caption per Atlas.
+## TUE Jul 7 — Collab / guest-reaction beat (IG-first)
+- Cold-open: **"The AI Trade Died?"**
+- Sustained caption: **"Down 13% In A Day — Still Up 241% This Year. Zoom Out."**
+- Backgrounds, in cut order:
+  1. `TUE/TUE_01_thetake.png` — the claim vs the tape
+  2. `TUE/TUE_02_receipts.png` — down 13% day / up 241% year
+  3. `TUE/TUE_03_playbook.png` — rotation-proof your first $100
+  - Clip: `TUE/TUE_clip.mp4` (receipts tile in motion)
+- **Stitch/duet instruction (this is the collab beat):** open on 3–5 seconds of a big finance creator's "the AI trade is over / sell everything" take (stitch on TikTok, remix/reaction split on IG — react to the take, never trash the creator). Pick the take fresh on Tuesday from the FYP; screenshot it as the opening background if the stitch tool won't cooperate. Then cut to tile 01.
 
-## WED Jul 1 — Trading evergreen (P1) · the guaranteed weekly trade asset
-Backgrounds: WED_01_dipvstop → WED_02_signals → WED_03_watch · Clip: WED_clip
-- **Cold-open:** "Dip or top?" · **Sustained:** "3 Chart Signals That Tell a Dip From a Top."
-- Search-durable chart education (the 95K–125K vein). ISM Manufacturing PMI also drops 10am ET — mention as context, keep the post evergreen.
+## WED Jul 8 — FOMC minutes day, 2:00pm ET (P6 · React) — FILL LIVE
+- Cold-open: **"The Fed's Cards, Face-Up."**
+- Sustained caption: **"Warsh Killed The Forecasts — These Minutes Are The Only Tell."**
+- Backgrounds, in cut order:
+  1. `WED/WED_01_minutes_FILLLIVE.png` — ⚠ TEMPLATE with blanks (tone / on-hikes / on-cuts / the quote line). **Numbers and quotes are NOT final until the minutes drop at 2pm ET — fill from federalreserve.gov, re-render or hand-annotate, and verify before posting.**
+  2. `WED/WED_02_warshfed.png` — no forecasts, no dot, 5 years over target
+  3. `WED/WED_03_yourmoney.png` — what the pause costs you monthly (~21% APR)
+  - Clip: `WED/WED_clip.mp4` (Warsh-Fed tile in motion)
 
-## THU Jul 2 — JOBS DAY reach spike (P6) · ✅ NUMBERS FILLED (BLS, released 8:30am ET Jul 2)
-Backgrounds (regenerated with the real June figures): THU_01_jobs_FILLLIVE ("The Rate Fell. Look Closer.") → THU_02_trend ("74K Jobs, Revised Away") → THU_03_fedread ("Fed Read: Cuts Back On Deck?") · Clip: THU_clip (Ken Burns over tile 01)
-- **Cold-open:** "Unemployment fell. That's bad." · **Sustained:** "Unemployment Fell To 4.2% — Here's Why That's Actually Bad News."
-- Angle updated post-release (claim + sharpener, per Atlas): payrolls **+57K** vs ~110K expected · unemployment **4.2%** (from 4.3%) — but participation fell 0.3pt to **61.5%**, so the rate fell because people left the labor force, not because hiring picked up. Receipts: Apr −31K / May −43K revisions (−74K combined), 12-mo avg +36K/mo, leisure & hospitality −61K, wages +3.5% YoY ($37.64).
-- Platforms: TikTok + **IG Reel (added — week's biggest concrete event)** + YT Short #3. Film now, post late-morning/midday (IG 12–3pm peak). Tile 03 keeps the Fed read qualitative — pull CME FedWatch live before citing an odds number. Markets closed Fri Jul 3 — today is the reaction day.
+## THU Jul 9 — Trading evergreen: reading a rotation (P1 · Trade)
+- Cold-open: **"Money Never Leaves."**
+- Sustained caption: **"3 Charts That Show Where The Money Actually Went."**
+- Backgrounds, in cut order:
+  1. `THU/THU_01_rotates.png` — out of chips, into value, same week
+  2. `THU/THU_02_charts.png` — the 3 charts (relative strength, 52-wk highs, volume)
+  3. `THU/THU_03_read.png` — follow leaders, not headlines
+  - Clip: `THU/THU_clip.mp4` (3-charts tile in motion)
 
-## FRI Jul 3 — Credit (P2) · ✦ SWAPPED Jul 3 · Love Island peg · rev 2 DISPUTES
-Backgrounds (regenerated Jul 3 rev 2, same filenames): FRI_01_closed ("That Clip Was Edited" — big-screen frame, a late payment that wasn't yours + the 1-in-4 FTC stat) → FRI_02_triggers ("Watch Your Own Tape" — AnnualCreditReport.com + what to scan for) → FRI_03_bridge ("Get The Clip Pulled" — the 4-step dispute play) · Clip: FRI_clip (Ken Burns over tile 01)
-- **Cold-open:** "That clip was edited." · **Sustained:** "1 In 4 Credit Reports Plays A Clip That Isn't True."
-- Metaphor: post-Movie Night everyone yells "the edit did me dirty" — your credit report pulls the same edit (FTC: 1 in 4 has a score-affecting error; 1 in 5 who dispute get it fixed; FCRA 30-day clock). Tonight's recoupling ep (9pm ET, Peacock) = the approval decision. **Post everything BEFORE 9pm ET.** Angle changed from denial triggers (ran Fri Jun 26).
-- IG Reel opener needs a real headline: screenshot a Movie Night recap headline (e.g. Today.com "Movie Night's Winners, Losers and Surprises") — react to what aired, never trash an islander.
+## FRI Jul 10 — Credit: the minimum-payment trap, travel cut (P2 · Credit — bank reel #24)
+- Cold-open: **"Your Trip Costs Double."**
+- Sustained caption: **"A $1,200 Trip On Minimums Becomes ~$2,000 — Here's The Escape."**
+- Backgrounds, in cut order:
+  1. `FRI/FRI_01_trip.png` — the $1,200 → ~$2,000 math
+  2. `FRI/FRI_02_trap.png` — minimums are the product (~21% Fed / ~23.8% new offers)
+  3. `FRI/FRI_03_play.png` — kill it in 6 months ($210/mo)
+  - Clip: `FRI/FRI_clip.mp4` (trip-math tile in motion)
+- 🔢 **Verify the live APRs before posting** (Fed ~21% carried / LendingTree ~23.79% new offers were the June figures — re-pull both).
 
-## SAT Jul 4 — Independence Day mindset (P5) · hard CTA · ★ RE-CUT Jul 4 to the new desire-hook + signature box
-Backgrounds: SAT_01_independence → SAT_02_paycheck → SAT_03_community · Clip: SAT_clip (all regenerated Jul 4 with the signature box baked in)
-- **Cold-open:** "Paid At The Cookout?" · **Sustained:** "A Paycheck Stops When You Do — Ownership Starts With $10."
-- Desire cut: money coming in while you're OFF (cookout, asleep) — outcome first, $10 entry point as the number. Weekend = hard CTA (DM GEN for the Discord), then the sign-off last.
+## SAT Jul 11 — Mindset: think vs reality (P5 · Proof — bank reel #16)
+- Cold-open: **"That's Not Investing."**
+- Sustained caption: **"Real Investing Is $50 On Autopilot — Not 6 Monitors."**
+- Backgrounds, in cut order:
+  1. `SAT/SAT_01_think.png` — the fantasy
+  2. `SAT/SAT_02_reality.png` — $50 on autopilot
+  3. `SAT/SAT_03_community.png` — what the Discord is building (DM "GEN")
+  - Clip: `SAT/SAT_clip.mp4` (reality tile in motion)
 
-## SUN Jul 5 — Drop + Record (no green-screen set)
-Teaser clip only. Drop the banked long-form, record next week's anchor. No standalone green-screen backgrounds needed.
-
-## When a post needs a real news photo or a creator's clip
-I can't pull copyrighted images — the sheet gives a screenshot/stitch instruction instead (e.g. "stitch the creator's reel" for Tue, "screenshot a Jun 24 market-red headline" for Mon, "bls.gov → screenshot the jobs table" for Thu). Same two text layers; only the background source changes.
+## SUN Jul 12 — Drop + record day
+No green-screen assets — promo teaser cuts from the banked "Reading the Rotation" episode; next week's automation builds Jul 13–19.

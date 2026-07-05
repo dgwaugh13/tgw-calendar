@@ -115,5 +115,6 @@ These fill real gaps for who actually watches: TikTok skews 25–34, YouTube ske
 ---
 
 ## Rotation log (engine updates each run — mark IDs used, newest first)
-- *Week of Jul 6–12, 2026:* (to be filled by the next run)
+- *Week of Jul 13–19, 2026:* (to be filled by the next run)
+- *Week of Jul 6–12, 2026:* pulled **#24** (credit habit quietly costing you — Fri Jul 10 credit slot, pegged to Delta-earnings/summer-travel; re-verify the live APR before posting) and **#16** (what people think investing is vs what it is — Sat Jul 11 P5 slot, TIER 1 IG lead; lands perfectly after a rotation/selloff week). Neither may repeat before ~Sep 7.
 - *Week of Jun 29 – Jul 5, 2026:* none pulled — this week ran the AI-selloff flagship + collab + chart evergreen + jobs spike + credit + July-4 mindset (full slate, no gap to fill). Bank stands ready for lighter weeks.
