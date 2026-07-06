@@ -6,11 +6,13 @@ Every background carries the locked TGW signature caption box baked into the pix
 
 Hook doctrine applies to every layer below: outcome or stakes first, specific number mandatory, Title Case, no hype, no price predictions.
 
+**★ RE-CUT Jul 6 to the life-outcome rule (viewer-subject test):** the viewer's life is the subject of every hook; the event/document/chart is only the pretext. Hero tiles (each day's `_01`) were re-rendered with the new captions; tiles 02/03 keep their per-point claims. The video must EARN the hook with the actual math (promise → number → proof).
+
 ---
 
 ## MON Jul 6 — Flagship: the Great Rotation (P6 · React)
-- Cold-open (≤5 words): **"Record High. Tech Bled."**
-- Sustained caption (≤12 words): **"The Dow Hit 52,900 While Chips Lost Billions — Follow The Money."**
+- Cold-open (≤5 words): **"Retire In Which Decade?"**
+- Sustained caption (≤12 words): **"This 52,900 Record Could Shift Which Decade You Retire In."**
 - Backgrounds, in cut order:
   1. `MON/MON_01_divergence.png` — the same-day split (Dow record vs chips −4.5%)
   2. `MON/MON_02_micron.png` — Micron's $138B one-day wipeout
@@ -19,8 +21,8 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
 - Optional 4th bg: screenshot Thursday's "Dow jumps ~600 to record close" headline yourself (we can't pull copyrighted images).
 
 ## TUE Jul 7 — Collab / guest-reaction beat (IG-first)
-- Cold-open: **"The AI Trade Died?"**
-- Sustained caption: **"Down 13% In A Day — Still Up 241% This Year. Zoom Out."**
+- Cold-open: **"Should You Sell Everything?"**
+- Sustained caption: **"Your First $100 Rides On Who's Right — Down 13%, Up 241%."**
 - Backgrounds, in cut order:
   1. `TUE/TUE_01_thetake.png` — the claim vs the tape
   2. `TUE/TUE_02_receipts.png` — down 13% day / up 241% year
@@ -29,8 +31,8 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
 - **Stitch/duet instruction (this is the collab beat):** open on 3–5 seconds of a big finance creator's "the AI trade is over / sell everything" take (stitch on TikTok, remix/reaction split on IG — react to the take, never trash the creator). Pick the take fresh on Tuesday from the FYP; screenshot it as the opening background if the stitch tool won't cooperate. Then cut to tile 01.
 
 ## WED Jul 8 — FOMC minutes day, 2:00pm ET (P6 · React) — FILL LIVE
-- Cold-open: **"The Fed's Cards, Face-Up."**
-- Sustained caption: **"Warsh Killed The Forecasts — These Minutes Are The Only Tell."**
+- Cold-open: **"A Home In 2027?"**
+- Sustained caption: **"3 Ways These Minutes Decide If Your Family Buys In 2027."** *(when re-rendering the FILL-LIVE tile at 2pm, use this caption)*
 - Backgrounds, in cut order:
   1. `WED/WED_01_minutes_FILLLIVE.png` — ⚠ TEMPLATE with blanks (tone / on-hikes / on-cuts / the quote line). **Numbers and quotes are NOT final until the minutes drop at 2pm ET — fill from federalreserve.gov, re-render or hand-annotate, and verify before posting.**
   2. `WED/WED_02_warshfed.png` — no forecasts, no dot, 5 years over target
@@ -38,8 +40,8 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
   - Clip: `WED/WED_clip.mp4` (Warsh-Fed tile in motion)
 
 ## THU Jul 9 — Trading evergreen: reading a rotation (P1 · Trade)
-- Cold-open: **"Money Never Leaves."**
-- Sustained caption: **"3 Charts That Show Where The Money Actually Went."**
+- Cold-open: **"Retire 10 Years Early?"**
+- Sustained caption: **"3 Charts That Could Move Your Retirement Up 10 Years."**
 - Backgrounds, in cut order:
   1. `THU/THU_01_rotates.png` — out of chips, into value, same week
   2. `THU/THU_02_charts.png` — the 3 charts (relative strength, 52-wk highs, volume)
@@ -57,8 +59,8 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
 - 🔢 **Verify the live APRs before posting** (Fed ~21% carried / LendingTree ~23.79% new offers were the June figures — re-pull both).
 
 ## SAT Jul 11 — Mindset: think vs reality (P5 · Proof — bank reel #16)
-- Cold-open: **"That's Not Investing."**
-- Sustained caption: **"Real Investing Is $50 On Autopilot — Not 6 Monitors."**
+- Cold-open: **"$50 House Fund?"**
+- Sustained caption: **"Your First $50 Could Be Building The House Fund Tonight."**
 - Backgrounds, in cut order:
   1. `SAT/SAT_01_think.png` — the fantasy
   2. `SAT/SAT_02_reality.png` — $50 on autopilot
