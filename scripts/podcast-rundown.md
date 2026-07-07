@@ -1,7 +1,7 @@
 # TGW Podcast Rundown — week of Jul 6–12, 2026
 **Episode (Sunday anchor long-form): "This Market Flip Could Shift Which Decade You Retire In (The Great Rotation)"**
 *(title re-cut Jul 6 to the life-outcome rule — old title "The Dow Hit a Record While Tech Bled — Where Did the Money Actually Go?" kept as the B-test option)*
-Wolf + D Waugh · ~12–15 min · **⟳ RESET Jul 7: records TODAY, Tue Jul 7** (Sunday/Monday session missed — nothing shipped Mon; flagship + clips drop Tue PM) · figures updated Jul 7 AM to the **Mon Jul 6 close** — **re-verify everything live at record time.**
+**D WAUGH SOLO this week** · ~12–15 min · **⟳ RESET Jul 7: records TODAY, Tue Jul 7** · teleprompter-ready copy: `scripts/podcast-teleprompter.txt` (Sunday/Monday session missed — nothing shipped Mon; flagship + clips drop Tue PM) · figures updated Jul 7 AM to the **Mon Jul 6 close** — **re-verify everything live at record time.**
 
 **What changed since this was first built (Jul 5):** Monday Jul 6 the Dow closed above 53,000 for the first time ever (**53,055.91, +155.84 / +0.29%**) while the chips that got crushed **snapped back** (Micron +3.5% to ~$1,009 · Broadcom +4.8% · Nasdaq +1.12% to 26,121 · S&P +0.72% to 7,537) on Foxconn's stronger-than-expected AI-driven quarterly sales; Samsung's Tue-morning guidance then printed a record ~₩89.4T operating profit (~19× YoY) — and its stock fell 6%+ on profit-taking. The rotation now has a third act — washout → record → snapback — and the episode is better for it. The chart-read co-ep records tomorrow (Wed) before the 2pm minutes.
 
@@ -54,7 +54,7 @@ Screen-shares this episode:
 ## Outro (12:30–end)
 - 3 takeaways: a record Dow and bleeding tech can both be true — that's rotation · read relative strength, highs, and volume — not headlines · the plan survives the rotation, the prediction doesn't.
 - Bridge (one beat before sign-off): "Fix the credit file → get approved for funding → open the brokerage → put capital to work. We're tracking the rotation all week in the Discord — link in bio."
-- Sign-off, last and clean: **"It's Wolf, I'm outta here."** / **"It's D Waugh, I'm outta here."**
+- Sign-off, last and clean: **"It's D Waugh, I'm outta here."** *(solo this week)*
 
 ---
 
