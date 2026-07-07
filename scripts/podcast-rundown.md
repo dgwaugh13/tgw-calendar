@@ -67,4 +67,6 @@ Screen-shares this episode:
 - Calendar: FOMC minutes Wed Jul 8, 2pm ET; claims + existing home sales Thu; Delta/Levi's/PepsiCo earnings (Kiplinger, Investing.com — verify dates/times).
 - Warsh June-meeting quotes: Kiplinger Fed-meeting coverage ("Persistently high prices are a burden for the American people"; forward guidance "not well suited").
 
+**Recording-day staleness guard (added Jul 7):** every market claim in this rundown is DATED (yesterday / last Thursday / this morning) — say them that way and today's afternoon tape cannot invalidate the recording. Do not describe today's intraday market on air. At ~4:05pm, before posting, run the 2-minute close check on the board's TUE card: normal day → post as recorded; big move against the story → post anyway + pinned comment ("today it swung again — that's the point, rotations breathe") and consider a bonus reaction clip. Never rescind, never predict — top it.
+
 **Compliance:** educational content only — not financial advice. No trade recs, no price targets, no predictions about where the rotation goes next.
