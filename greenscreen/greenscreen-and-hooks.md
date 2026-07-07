@@ -8,19 +8,21 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
 
 **★ RE-CUT Jul 6 to the life-outcome rule (viewer-subject test):** the viewer's life is the subject of every hook; the event/document/chart is only the pretext. Hero tiles (each day's `_01`) were re-rendered with the new captions; tiles 02/03 keep their per-point claims. The video must EARN the hook with the actual math (promise → number → proof).
 
+**⟳ SCHEDULE RESET — Tue Jul 7.** Nothing shipped Monday; recording is Tuesday. The day→asset mapping moved but the FOLDER NAMES DID NOT (paths below stay valid): the flagship now records + posts **TUE** using the `MON/` assets (tile 01 + clip regenerated Jul 7 with Monday's first-ever close over 53K and the chip snapback); the collab beat moves to **SAT** using the `TUE/` assets; the SAT mindset reel (#16) returns to the bank — its `SAT/` tiles stay on disk for its next rotation. WED / THU / FRI are unchanged.
+
 ---
 
-## MON Jul 6 — Flagship: the Great Rotation (P6 · React)
+## ⟳ TUE Jul 7 — Flagship: the Great Rotation (P6 · React) — was MON's slot; assets in `MON/`
 - Cold-open (≤5 words): **"Retire In Which Decade?"**
-- Sustained caption (≤12 words): **"This 52,900 Record Could Shift Which Decade You Retire In."**
+- Sustained caption (≤12 words): **"This 53,055 Record Could Shift Which Decade You Retire In."** *(number updated Jul 7 — Monday's first-ever close above 53K; tile 01 + clip regenerated to match)*
 - Backgrounds, in cut order:
-  1. `MON/MON_01_divergence.png` — the same-day split (Dow record vs chips −4.5%)
+  1. `MON/MON_01_divergence.png` — ⟳ REGENERATED Jul 7: the record + the snapback (Dow 53,055 · Nasdaq +1.12% · Micron +3.5% · the Thu split as the fourth row)
   2. `MON/MON_02_micron.png` — Micron's $138B one-day wipeout
   3. `MON/MON_03_rotation.png` — where the money rotated (Q2 monsters → Dow value)
-  - Clip: `MON/MON_clip.mp4` (motion pass on the divergence tile — use on the cold open)
-- Optional 4th bg: screenshot Thursday's "Dow jumps ~600 to record close" headline yourself (we can't pull copyrighted images).
+  - Clip: `MON/MON_clip.mp4` (⟳ regenerated — motion pass on the new record/snapback tile — use on the cold open)
+- Optional 4th bg: screenshot Monday's "Dow closes above 53,000 for the first time" headline yourself (we can't pull copyrighted images).
 
-## TUE Jul 7 — Collab / guest-reaction beat (IG-first)
+## ⟳ SAT Jul 11 — Collab / guest-reaction beat (IG-first) — was TUE's slot; assets in `TUE/`
 - Cold-open: **"Should You Sell Everything?"**
 - Sustained caption: **"Your First $100 Rides On Who's Right — Down 13%, Up 241%."**
 - Backgrounds, in cut order:
@@ -28,7 +30,7 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
   2. `TUE/TUE_02_receipts.png` — down 13% day / up 241% year
   3. `TUE/TUE_03_playbook.png` — rotation-proof your first $100
   - Clip: `TUE/TUE_clip.mp4` (receipts tile in motion)
-- **Stitch/duet instruction (this is the collab beat):** open on 3–5 seconds of a big finance creator's "the AI trade is over / sell everything" take (stitch on TikTok, remix/reaction split on IG — react to the take, never trash the creator). Pick the take fresh on Tuesday from the FYP; screenshot it as the opening background if the stitch tool won't cooperate. Then cut to tile 01.
+- **Stitch/duet instruction (this is the collab beat):** open on 3–5 seconds of a big finance creator's "the AI trade is over / sell everything" take (stitch on TikTok, remix/reaction split on IG — react to the take, never trash the creator). Pick the take fresh on SATURDAY from the FYP; screenshot it as the opening background if the stitch tool won't cooperate. Then cut to tile 01. Extra receipt since the reset: the takes aged badly in two trading days (Micron +3.5%, Broadcom +4.8% by Mon).
 
 ## WED Jul 8 — FOMC minutes day, 2:00pm ET (P6 · React) — FILL LIVE
 - Cold-open: **"A Home In 2027?"**
@@ -58,7 +60,7 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
   - Clip: `FRI/FRI_clip.mp4` (trip-math tile in motion)
 - 🔢 **Verify the live APRs before posting** (Fed ~21% carried / LendingTree ~23.79% new offers were the June figures — re-pull both).
 
-## SAT Jul 11 — Mindset: think vs reality (P5 · Proof — bank reel #16)
+## ✗ PULLED (Jul 7 reset) — Mindset: think vs reality (P5 · Proof — bank reel #16) — returned to the bank; tiles stay on disk for its next rotation
 - Cold-open: **"$50 House Fund?"**
 - Sustained caption: **"Your First $50 Could Be Building The House Fund Tonight."**
 - Backgrounds, in cut order:
