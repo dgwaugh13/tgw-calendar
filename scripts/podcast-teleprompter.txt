@@ -1,0 +1,169 @@
+TGW PODCAST — TELEPROMPTER SCRIPT
+"This Market Flip Could Shift Which Decade You Retire In (The Great Rotation)"
+Wolf + D Waugh · ~13 min · records Tue Jul 7 · figures as of Mon Jul 6 close — verify before recording.
+Read only the spoken lines. [BRACKETS] = cues, never read aloud. 🎬 = planted clip line — say it clean and verbatim, it becomes a Short.
+
+=======================================================
+COLD OPEN
+[SCREEN: rotation-dashboard.html — KPI row]
+=======================================================
+
+WOLF:
+Whether you and your partner retire in your fifties or your sixties probably won't be decided by how much you save — it'll be decided by whether you understand weeks like these.
+
+Two weeks ago, Micron lost 138 billion dollars in a single session.
+
+Last Thursday, the Dow jumped almost 600 points to a record — while chips kept falling.
+
+And yesterday? The Dow closed above 53,000 for the first time ever — and the same chips everyone left for dead snapped right back.
+
+Same market. All of it true. That's a rotation — and by the end of this episode, you'll be able to read one on a chart.
+
+We're going to walk through what happened, why it happened, the snapback nobody saw coming, how to read a rotation yourself — and what to watch tomorrow at 2pm, because the Fed's about to show its hand.
+
+=======================================================
+SEGMENT 1 — THE SPLIT, THEN THE SNAPBACK
+[SCREEN: stay on Act 2 KPI row]
+=======================================================
+
+WOLF:
+Start with last Thursday, July 2nd. One day. Two completely different stories on the same screen.
+
+The Dow — up 594 points. One point one four percent. Record close, 52,900.
+
+Same day: the S&P went nowhere. The Nasdaq dropped almost 1 percent. And the chip index — SMH — fell 4 and a half percent. Second straight down day.
+
+[DRAW: circle Dow +1.14% and SMH −4.5% side by side]
+
+Same day. One screen says boom, the other says bust. That's not a contradiction. That's money moving.
+
+D WAUGH:
+And Thursday wasn't even the start of it. The opening shot was June 23rd — Micron down 13 percent in one day. That's roughly 138 billion dollars of market value, gone in a session.
+
+Then Thursday brought the second wave. Teradyne down 13.6. KLA down 11.5. Lam down 10. Micron falls another 5 and a half. Even Tesla dropped 7 percent — on a day it BEAT delivery expectations. That's sentiment selling, not results selling.
+
+WOLF:
+So that's the setup everyone doom-posted all weekend. Now here's what actually happened next.
+
+[SCREEN: scroll to "Act 3 · The snapback" KPI row]
+
+Yesterday — Monday, July 6th — the Dow closed at 53,055. First close above 53,000 in history. The S&P up nearly three-quarters of a percent. The Nasdaq up over 1 percent.
+
+And the chips everyone buried? Micron up 3 and a half percent, back around a thousand dollars a share. Broadcom up almost 5.
+
+D WAUGH:
+The driver was real data, not vibes. Foxconn — the company that assembles Nvidia's hardware — posted stronger-than-expected quarterly sales, driven by AI demand.
+
+And this morning Samsung confirmed it: a record 89 trillion won in operating profit — that's about 58 billion dollars — roughly 19 times what they made a year ago. Third straight record quarter, all on AI and memory demand.
+
+And here's the part you should sit with: even ON that record print, Samsung's stock fell more than 6 percent today. Record earnings. Red day. Green year.
+
+WOLF:
+That's the whole episode in one stock.
+
+🎬 [CLIP LINE — say clean:]
+Money never leaves the market — it moves seats. Your job isn't to predict the next seat, it's to own the row.
+
+=======================================================
+SEGMENT 2 — WHY: THE 4 CATALYSTS
+[SCREEN: scroll to catalysts table]
+=======================================================
+
+WOLF:
+So why did the money move in the first place? Four catalysts, all hitting the same two weeks.
+
+One — supply talk. Reports that SK Hynix is slowing its high-bandwidth-memory expansion. HBM is the fuel line of the whole AI-memory trade, so any wobble there hits every chip name.
+
+Two — the AI return-on-investment debate. Same question as two weeks ago, new week: does roughly 725 billion dollars of AI capex actually pay back fast enough? Nobody knows yet. When conviction wavers, profits get taken.
+
+D WAUGH:
+Three — the Fed. Kevin Warsh's first meeting gave us a pause with a hard line on inflation. No forecasts, no dot plot, no forward guidance. Markets hate a Fed they can't read.
+
+Four — the jobs report. 57,000 jobs added versus about 110,000 expected. Unemployment ticked to 4.2 percent, and a lot of that was participation math. That one print flipped the conversation from "will they hike" to "when do they cut."
+
+WOLF:
+Now hold those four next to this context: the chip index just finished a RECORD quarter — up 71 percent in Q2. SanDisk is up 750 percent this year. Micron was up 241 percent on the year even AFTER its worst day.
+
+A 13-percent down day on a 241-percent up year is profit-taking. It's not a funeral.
+
+🎬 [CLIP LINE — say clean:]
+Your first 100 dollars rides on who's right — the guy screaming "the AI trade is dead," or the tape that's still up 241 percent this year.
+
+D WAUGH:
+And yesterday's snapback is the receipt. The sell-everything takes aged badly in exactly two trading days. A rotation is the economy re-pricing — not dying.
+
+=======================================================
+SEGMENT 3 — HOW TO READ A ROTATION (THE CHART LESSON)
+[SCREEN: back to washout + Q2 winners panels · this is the evergreen core — clips feed Thursday + Sunday]
+=======================================================
+
+WOLF:
+Okay — the part you can actually use. Because you don't need to predict any of this. You need to be able to SEE it.
+
+🎬 [CLIP LINE — say clean:]
+These 3 charts could move your retirement up 10 years — chart literacy, not luck.
+
+Chart 1 — relative strength. Take any leader and divide its price by the S&P 500. That line rising means money is flowing IN while the headlines cry. Over the past two weeks, value names' relative strength turned up while chip strength rolled over — then chips bounced without breaking the new trend. That's a rotation breathing, right there on one line.
+
+Chart 2 — the new 52-week-high list. Don't ask "what's falling." Ask "who replaced the old leaders at the top?" These past two weeks the answer was Dow value names. The high list tells you where money landed — no opinion required.
+
+Chart 3 — volume. Heavy-volume down days that keep coming? That's distribution — real selling. Selling that dries up after a shock? That's a pause, not an exit. Micron's snapback on real buying is exactly what a pause looks like afterward.
+
+[DRAW: arrow from the chips bar to the Dow bar — "the money went HERE"]
+
+D WAUGH:
+And the structure check that ties it together: higher lows mean rotation. Lower highs mean the trend itself is changing. Two different diagnoses, two very different responses — and most people never check which one they're looking at.
+
+WOLF:
+Here's how this lands for your money. You don't chase the seat money just left, and you don't guess the next one. You own a basket — broad, diversified — and you automate the buys. Then every rotation is happening INSIDE your portfolio, and you're already sitting where the money rotates to.
+
+Chart literacy, not predictions. That's the whole game.
+
+=======================================================
+SEGMENT 4 — WEEK AHEAD + WHAT IT MEANS FOR YOU
+[SCREEN: fomc-minutes-dashboard.html — FILL-LIVE boxes stay blank, that's tomorrow's video]
+=======================================================
+
+WOLF:
+Now — what to watch, starting tomorrow.
+
+Wednesday, July 8th, 2pm Eastern: the FOMC minutes from Kevin Warsh's first meeting. Remember — no dot plot anymore, no forward guidance. These minutes are the only tell left. It's the one document that shows how the new Fed actually talks when the doors are closed.
+
+🎬 [CLIP LINE — say clean:]
+Tomorrow's minutes help decide if your family buys a home in 2027 — one document, 2pm, and we read it so you don't have to.
+
+We'll react tomorrow right after the release — nothing gets quoted before the document drops.
+
+D WAUGH:
+Rest of the week: Thursday, jobless claims — last print was 215,000, still historically low. Friday, Delta opens earnings season before the bell, call's at 10am. Levi's and Pepsi report mid-week too.
+
+And here's the wallet link, because the Fed isn't abstract. While the Fed holds, credit-card APRs hold with it — the average is sitting around 21 percent. The rate path IS your debt cost. That's why we read these documents.
+
+WOLF:
+After this week, the next checkpoints: June CPI next Tuesday, July 14th. And the next Fed meeting, July 28th and 29th.
+
+=======================================================
+OUTRO
+=======================================================
+
+WOLF:
+Three things to walk away with.
+
+One — a record Dow and bleeding tech can both be true on the same day. That's what rotation looks like.
+
+Two — read relative strength, the new-high list, and volume. Not headlines.
+
+Three — the plan survives the rotation. The prediction doesn't.
+
+D WAUGH:
+And everything you heard today is education — not financial advice. No targets, no calls. Numbers and sources, like always.
+
+WOLF:
+The ladder's the same as it's always been: fix the credit file, get approved for funding, open the brokerage, put capital to work. We're tracking this rotation all week in the Discord — link in bio.
+
+It's Wolf, I'm outta here.
+
+D WAUGH:
+It's D Waugh, I'm outta here.
+
+[END — hold 2 seconds, then cut]
