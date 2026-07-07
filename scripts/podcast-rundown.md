@@ -12,7 +12,7 @@ Screen-shares this episode:
 ---
 
 ## Cold open · 0:00–0:45 · life-outcome cut (updated Jul 7)
-- Hook (read verbatim): "Whether you and your partner retire in your fifties or your sixties probably won't be decided by how much you save — it'll be decided by whether you understand weeks like this one. Micron lost $138 billion in one session. A week later the Dow closed above 53,000 for the first time ever. And yesterday the same chips everyone left for dead snapped right back. Same market. All three true. That's a rotation — and by the end of this episode you'll be able to read one on a chart."
+- Hook (read verbatim): "Whether you and your partner retire in your fifties or your sixties probably won't be decided by how much you save — it'll be decided by whether you understand weeks like these. Two weeks ago Micron lost $138 billion in a single session. Last Thursday the Dow jumped almost 600 points to a record while chips kept falling. And yesterday? The Dow closed above 53,000 for the first time ever — and the same chips everyone left for dead snapped right back. Same market. All of it true. That's a rotation — and by the end of this episode you'll be able to read one on a chart."
 - Tease the 5 beats: what happened → why (4 catalysts) → the snapback → how to READ a rotation on a chart → what to watch (FOMC minutes TOMORROW 2pm).
 - 🖥️ SCREEN SHARE: rotation-dashboard.html, KPI row on screen.
 
@@ -23,10 +23,10 @@ Screen-shares this episode:
 4. "Money never leaves the market — it moves seats. Your job isn't to predict the next seat, it's to own the row." *(the shareable line — use anywhere)*
 
 ## Segment 1 — The same-day split (0:45–3:30)
-- Thu Jul 2 close: Dow +594 (+1.14%) to a record 52,900 · S&P flat 7,483 · Nasdaq −0.8% to 25,833 · SMH −4.5%, second straight down day.
-- The stretch's chip damage — two waves: the opening shot was Micron −13% in a day (~$138B, Tue Jun 23, on the South Korea ETF warning); then Thursday Jul 2's second wave — Teradyne −13.6%, KLA −11.5%, Lam −10.2%, AMAT −7.4%, Micron another −5.5%; Nvidia −1.4%. Tesla −7% Thursday DESPITE a delivery beat — sentiment, not results. (SanDisk −10% / Intel −9% / AMD −7% per Intellectia/Kavout — verify live.)
-- **Act three (added Jul 7) — Mon Jul 6 close: Dow +155.84 to 53,055.91, first close over 53K · S&P +0.72% to 7,537 · Nasdaq +1.12% to 26,121 · Micron +3.5% (~$1,009) · Broadcom +4.8%.** The driver: Foxconn (Nvidia's assembler) beat on AI-driven quarterly sales; Samsung reports Tue with an expected ~18× profit jump. The "dead" trade got bought back in two sessions.
-- ✏️ DRAW: circle the Dow +1.14% and SMH −4.5% side by side — "same day." Then: "and by Monday the money came BACK." (Dashboard KPI row shows the Jul 2 split — say Monday's numbers on camera or cut to the regenerated tile 01.)
+- LAST Thu (Jul 2) close: Dow +594 (+1.14%) to a record 52,900 · S&P flat 7,483 · Nasdaq −0.8% to 25,833 · SMH −4.5%, second straight down day. *(Say "last Thursday" on air — the split was last week.)*
+- The stretch's chip damage — two waves: the opening shot was Micron −13% in a day (~$138B, Tue Jun 23, on the South Korea ETF warning); then last Thursday's (Jul 2) second wave — Teradyne −13.6%, KLA −11.5%, Lam −10.2%, AMAT −7.4%, Micron another −5.5%; Nvidia −1.4%. Tesla −7% that day DESPITE a delivery beat — sentiment, not results. (SanDisk −10% / Intel −9% / AMD −7% per Intellectia/Kavout — verify live.)
+- **Act three (added Jul 7) — YESTERDAY, Mon Jul 6 close: Dow +155.84 to 53,055.91, first close over 53K · S&P +0.72% to 7,537 · Nasdaq +1.12% to 26,121 · Micron +3.5% (~$1,009) · Broadcom +4.8%.** The driver: Foxconn (Nvidia's assembler) beat on AI-driven quarterly sales; Samsung reports TODAY with an expected ~18× profit jump — check the actual print before recording; if it's out, it's a fresh on-air line. The "dead" trade got bought back in two sessions.
+- ✏️ DRAW: circle the Dow +1.14% and SMH −4.5% side by side — "same day." Then: "and by yesterday the money came BACK." (Dashboard KPI row shows the Jul 2 split — say yesterday's numbers on camera or cut to the regenerated tile 01.)
 - Frame: money didn't leave the market. It moved seats — twice.
 
 ## Segment 2 — Why: the 4 catalysts (3:30–6:30)
