@@ -71,3 +71,33 @@ Hook doctrine applies to every layer below: outcome or stakes first, specific nu
 
 ## SUN Jul 12 — Drop + record day
 No green-screen assets — promo teaser cuts from the banked "Reading the Rotation" episode; next week's automation builds Jul 13–19.
+
+---
+
+# ★ PEXELS B-ROLL — added Jul 9, 2026 (new pipeline: real footage replaces generated art)
+
+Wolf's call (Jul 9): green-screen backgrounds now come from **Pexels** (free license, no attribution required). Each remaining day this week gets **6–8 real clips + 3–4 photos**, every one with the locked TGW signature caption box **baked into the pixels** (navy `#131A22` / border `#243140` / gold Title-Case hook / key number in mint `#34E5A3`, upper-third, Poppins Bold). Pick whichever clips fit each talking point — captions are identical per day, so any cut order works. Raw uncaptioned originals sit next to the `captioned/` folder if you want a clean plate.
+
+**Folders: `greenscreen … weeks/Jul-6-12/broll/<DAY>/captioned/`** (raws one level up). The generated data tiles (THU/FRI etc.) stay on disk — use them for any beat that needs OUR numbers on screen; Pexels can't show TGW math.
+
+## THU Jul 9 — Trading evergreen (caption: "3 Charts That Could Move Your Retirement Up 10 Years")
+- Clips: THU_V1 watching-market-screen · V2 tablet-candlestick-touch · V3 stylus-chart-annotation · V4 trading-screen-hand · V5 desk-multi-screen · V6 graphs-magnifying-glass · V7 laptop-analysis · V8 monitoring-market
+- Photos: P1 stock-market-screen · P2 chart-black-bg · P3 chart-growth
+- Suggested cut: V2 cold open → V3 on "relative strength" → V5 on "52-week highs" → V4 on "volume". Data tile `THU_02_charts.png` for the 3-chart beat.
+
+## FRI Jul 10 — Credit / minimum-payment trap, travel cut (caption: "A $1,200 Trip On Minimums Becomes ~$2,000 — Here's The Escape")
+- Clips: FRI_V1 paying-with-card · V2 holding-credit-card · V3 card-online-checkout · V4 card-online-purchase · V5 airplane-window · V6 luggage-airport-walk · V7 airport-terminal-plane · V8 airport-waiting
+- Photos: P1 travel-money-eiffel · P2 suit-credit-cards · P3 payment-terminal · P4 card-atm
+- Suggested cut: V5 airplane-window cold open → V1 on the $1,200 math → V7 on the trap → V2 on the escape plan. Tile `FRI_01_trip.png` for the $1,200→$2,000 math beat. ⚠ verify live APRs before posting.
+
+## SAT Jul 11 — Collab/guest-reaction: "the AI trade is over" (caption: "Your First $100 Rides On Who's Right — Down 13%, Up 241%")
+- Clips: SAT_V1 humanoid-robot · V2 robot-chess · V3 standing-robot · V4 motherboard-closeup · V5 circuit-board-neon · V6 ai-visualisation-1 · V7 ai-visualisation-2 · V8 trading-screens
+- Photos: P1 robot-conference · P2 robot-toy · P3 industrial-robot · P4 robot-arm-bw
+- Suggested cut: creator-take stitch open → SAT_V1 robot on the claim → V8 trading-screens on the receipts (−13% day / +241% year) → V4 motherboard on the playbook. Tile `TUE_02_receipts.png` still carries the exact numbers.
+
+## SUN Jul 12 — Podcast / episode teaser (caption: "This Market Flip Could Shift Which Decade You Retire In")
+- Clips: POD_V1 nyse-building-flags · V2 wall-street-scene · V3 wall-street-landscape (16:9) · V4 trinity-church-street · V5 broad-wall-street-signs · V6 stock-exchange-screens
+- Photos: P1 wall-street-skyline · P2 trinity-church-view · P3 wall-broadway-signs · P4 urban-canyon
+- Use: vertical clips = Sun teaser cuts + cold-open b-roll; V3 landscape = episode insert b-roll between screen-share segments.
+
+**License note:** all Pexels-license footage — free for commercial use, no attribution, but don't resell the raw clips as-is. Full picks list = the filenames above (Pexels IDs kept in each filename's history: see raw files).
