@@ -1,6 +1,8 @@
 # TGW Scripts — week of Jul 6–12, 2026
 Bullet talking points, never prose to read verbatim (except hooks, stats, CTA). Voice: knowledgeable mentor in your group chat. Every asset: "educational content only — not financial advice." Sign-off structure is fixed: Discord/CTA line one beat BEFORE, then the untouched closer LAST — **"It's Wolf, I'm outta here." / "It's D Waugh, I'm outta here."**
 
+**★ SORA STORY PASS — Fri Jul 10 revamp.** FRI / SAT / SUN below were rebuilt through `TGW Storytelling Guide (Sora).md`: 5-beat spine (cold open → stakes → rising loop → payoff withheld → loop-close), but/therefore transitions, Pt 1/2/3 on-screen progress headers, clip cues inline. **Sora's structural adjustment #1 (from this week's watch-through):** "Trump accounts" held 48.9% avg-viewed because the payoff was a concrete reveal; lesson-frame posts died at ~22%. So: the number-promise goes in the first 2 seconds, the math is withheld to the final 15%, and the Pt headers act as an on-screen progress bar so viewers know the payoff is coming.
+
 ---
 
 ## MON Jul 6 — Flagship · P6 React · "The Great Rotation" (Wolf)
@@ -119,60 +121,86 @@ CAPTION: Money never leaves — it rotates. 3 charts that show where it went, on
 
 ---
 
-## FRI Jul 10 — Credit · P2 · bank reel #24, travel cut (D Waugh)
+## FRI Jul 10 — Credit · P2 · bank reel #24, travel cut (D Waugh) — ★ SORA REBUILD
 
 Peg: Delta opens earnings season today + peak summer-trip booking. 🔢 Verify the live APRs before posting (Fed ~21% carried, Q1 2026 · LendingTree ~23.79% new offers, Jun 2026).
 
-SELECTED HOOK: "Airlines report earnings today because summer travel is booming — and a $1,200 trip on minimum payments quietly becomes about $2,000. Here's the escape."
+**STORY MAP (5-beat spine · ~60s · Pt headers = the on-screen progress bar):**
+| Time | Beat | Clip on screen | Loop |
+|---|---|---|---|
+| 0:00–0:02 | Cold open | `FRI_V5_airplane-window` (INTRO hook box) | OPENS: $1,200 → $2,000, and a $700 escape |
+| 0:02–0:08 | Stakes | hold V5 → cut to `FRI_V6_luggage` (clean) | personal: "you already booked it" |
+| 0:08–0:20 | Pt 1 | `FRI_V2_holding-credit-card` (PT 1 box) | small loop: the years, not the dollars |
+| 0:20–0:24 | MID RE-HOOK | tile `FRI_01_trip.png` (our math) | re-opens: "the escape is one setting — hold on" |
+| 0:24–0:38 | Pt 2 | `FRI_V1_paying-with-card` (PT 2 box) | but/therefore: the trap is the design |
+| 0:38–0:52 | Pt 3 = PAYOFF | `FRI_V3_card-online-checkout` (PT 3 box) | CLOSES: $210/mo → ~$75 interest → ~$700 saved |
+| 0:52–end | Loop-close + sign-off | back to airplane (clean V5 or intro) | ties back to the cold open |
 
-POINT 1 — The real price (tile 01)
-- $1,200 on a card at ~21% APR, minimums only: ~6–7 years to clear, roughly $800 in interest. (Illustrative — run your own numbers.)
-- The trip ends in a week; the balance doesn't.
+BEAT 1 — COLD OPEN (in-scene, no greeting): "The trip you just booked is going to charge you twice. Once at checkout — and once, quietly, for the next six years. That's how $1,200 becomes $2,000."
 
-POINT 2 — The trap is the design (tile 02)
-- Minimums mostly cover interest — the balance barely moves. Avg APR actually paid: ~21% (Fed) · new offers ~23.8% (LendingTree). Verify live.
+BEAT 2 — STAKES: "If that trip's already sitting on your card, this is about your next six summers. There IS a $700 escape — it's one setting on your phone — but it only works if you see the trap first. Three parts."
 
-POINT 3 — The play (tile 03)
-- Fixed $210/month clears $1,200 at ~21% in ~6 months — about $75 interest instead of ~$800.
-- Set autopay ABOVE the minimum the day you book. Bridge: clean file → cheap approval → fund the brokerage → deploy.
+BEAT 3 — RISING LOOP:
+- **Pt 1: The Real Price Of Minimums** (PT 1 clip) — $1,200 at ~21% APR on minimums: ~6–7 years to clear, roughly $800 in interest. (Illustrative — run your own numbers.) The trip ends in a week; the balance outlives your phone.
+- *MID RE-HOOK (~0:20, over the math tile):* "And here's where most people scroll away — right before the part that pays for the next trip."
+- **Pt 2: The Trap Is The Design** (PT 2 clip) — BUT this isn't you being bad with money: minimums are engineered so the payment mostly covers interest and the balance barely moves (~21% Fed avg carried · ~23.8% new offers — verify live). THEREFORE "pay more when I can" can't fix it — only something automatic can.
 
-CLOSE + CTA + SIGN-OFF
-- "Same trip, $700 cheaper — the difference is one autopay setting."
+BEAT 4 — PAYOFF (the math the hook promised):
+- **Pt 3: The One-Setting $700 Escape** (PT 3 clip) — fixed $210/month autopay: $1,200 gone in ~6 months, ~$75 interest instead of ~$800. **Same trip, ~$700 cheaper — one autopay setting, set the day you book.**
+- Bridge: clean file → cheap approval → fund the brokerage → deploy.
+
+BEAT 5 — LOOP-CLOSE + CTA + SIGN-OFF
+- Loop-close (back on the airplane shot): "Book the trip. Just don't let the trip book YOU for six years."
 - "Comment TRIP and I'll send the payoff calculator. 90-day credit plan in the bio."
 - "It's D Waugh, I'm outta here."
 
-CAPTION: Summer trips are booked on cards — and minimum payments turn $1,200 into ~$2,000. The 6-month escape plan inside. Educational only. #credit #creditcards #travel #personalfinance #debtfree
+CAPTION: Summer trips are booked on cards — and minimums turn $1,200 into ~$2,000. The $700 escape is one phone setting. Pt 1–3 inside. Educational only. #credit #creditcards #travel #personalfinance #debtfree
 
 ---
 
-## SAT Jul 11 — Mindset · P5 · bank reel #16 "think vs reality" (Wolf) — weekend hard CTA
+## SAT Jul 11 — ★ COLLAB / GUEST-REACTION (IG-first, moved from Tue) · "The AI trade is over?" (Wolf) — ★ SORA REBUILD · weekend hard CTA
+*(The Jul 7 reset moved the collab beat here; bank reel #16 returned to the bank. This replaces the old SAT mindset script.)*
 
-SELECTED HOOK: "Everything you think investing looks like — six monitors, lambos, perfect entries — is wrong. Real investing is $50 on autopilot."
+Format: stitch/duet a big finance creator's "the AI trade is dead — sell everything" take (pick fresh Saturday from the FYP; react to the take, never trash the creator). **EYL borrow: open on the PERSON, not the point — the guest's claim IS the cold open.** IG leads (the ~100× format; "Buy the dip?" react is now at 27.3K + 16.2K FB with 106 follows).
 
-POINT 1 — The fantasy (tile 01)
-- The feed sells monitors and adrenaline because the lifestyle sells courses.
+**STORY MAP (5-beat spine · ~55s):**
+| Time | Beat | Clip on screen | Loop |
+|---|---|---|---|
+| 0:00–0:05 | Cold open | the creator's take (stitch clip) → `SAT_V1_humanoid-robot` (INTRO hook box) | OPENS: down 13% or up 241% — who's right? |
+| 0:05–0:10 | Stakes | hold V1 | "your first $100 rides on this" |
+| 0:10–0:22 | Pt 1 | `SAT_V8_trading-screens` (PT 1 box) | small loop: both screens are true |
+| 0:22–0:26 | MID RE-HOOK | tile `TUE_02_receipts.png` (our numbers) | re-opens: "two days later the market answered — wait for it" |
+| 0:26–0:38 | Pt 2 | `SAT_V2_robot-chess` (PT 2 box) | but/therefore: zoom out |
+| 0:38–0:50 | Pt 3 = PAYOFF | `SAT_V4_motherboard-closeup` (PT 3 box) | CLOSES: the $100 playbook |
+| 0:50–end | Loop-close + sign-off | back to the creator freeze-frame or V1 | answers the cold-open question |
 
-POINT 2 — The reality (tile 02)
-- Boring, automatic, consistent. Time in market > timing it. Fractional shares start at $10.
-- This week's rotation is the proof: the plan survived, the loud predictions didn't.
+BEAT 1 — COLD OPEN: [3–5s of the creator's "sell everything" take] → "That was the loudest take on my feed this week. Two trading days later, the market answered him — and the answer decides what your first $100 does Monday."
 
-POINT 3 — Social proof (tile 03)
-- What the TGW Discord actually does: fix the file, fund the account, pick the basket, automate. Together.
+BEAT 2 — STAKES: "Because if he's right, you sell. If the tape's right, you just got handed a discount. Down 13% or up 241% — same stock. Three parts, and the last one is the playbook."
 
-CLOSE + CTA + SIGN-OFF (hard CTA — weekend only)
-- "If your picture of investing came from the feed, replace it with a system."
-- "DM me GEN and I'll send you the Discord."
-- "It's Wolf, I'm outta here."
+BEAT 3 — RISING LOOP:
+- **Pt 1: The Claim Vs The Tape** (PT 1 clip) — chips fell hard, that part's real. BUT the same week: the Dow's first close over 53,000 — and within two sessions the same chips snapped back (Micron +3.5%, Broadcom +4.8%). If the market were "over," neither happens.
+- *MID RE-HOOK (~0:22, over the receipts tile):* "And this is the part the loud takes never show you—"
+- **Pt 2: Zoom Out — Red Day, Green Year** (PT 2 clip) — Micron: −13% in a day (Jun 23), still +241% on the year, back over $1,000 by Monday. SanDisk: −10% day, +750% YTD. THEREFORE a red day on a green year is profit-taking, not a funeral. Panic is a strategy for people who never zoomed out.
 
-CAPTION: What people think investing is vs what it actually is. Real one inside. #investing #mindset #moneytok #financialliteracy
+BEAT 4 — PAYOFF:
+- **Pt 3: Rotation-Proof Your First $100** (PT 3 clip) — basket over one lane · automatic buys · plan > prediction. No prediction on where chips go — that's the whole point. The $100 doesn't need you to be right about chips; it needs you to be diversified and automatic.
+
+BEAT 5 — LOOP-CLOSE + CTA + SIGN-OFF (hard CTA — weekend only)
+- Loop-close: "So — was he right? Doesn't matter. Loud takes get views; the tape pays patience. Educational only."
+- "Comment ZOOM and I'll send the zoom-out checklist. We're debating this exact take in the Discord — link in bio."
+- "It's Wolf, I'm outta here." *(or D Waugh — his cut: "a rotation is the economy re-pricing, not dying")*
+
+CAPTION: He said sell everything. Two sessions later the same stock was green and the Dow closed over 53K. Down 13% or up 241% — who's right? Pt 1–3 inside. Educational only. #ai #stocks #investing #stitch #moneytok
 
 **Community BTS post:** shot from Sunday's record session.
 
 ---
 
-## SUN Jul 12 — Drop + record (both)
+## SUN Jul 12 — Drop + record (both) — ★ SORA through-line on the teaser
 
-- Drop the banked long-form: **"Reading the Rotation: 3 Charts That Show Where Money Goes"** — YouTube AM/midday. Teaser clip (45s) into the evening peak: desire cut — "Stop guessing what's next — 3 charts show where money already went."
+- Drop the banked long-form: **"Reading the Rotation: 3 Charts That Show Where Money Goes"** — YouTube AM/midday. Teaser clip (45s) into the evening peak, cut as a mini-loop: open on the through-line question ("which decade do you retire in?"), tease chart 3 as the payoff, END the teaser on the question — the episode is the loop-close. Desire cut: "Stop guessing what's next — 3 charts show where money already went."
+- Teaser b-roll: `broll/PODCAST/captioned/` set (NYSE/Wall Street clips) — episode-insert cuts between segments.
 - Then record next week's anchor around the new biggest story: **June CPI lands Tue Jul 14, 8:30am ET** and big-bank earnings open the same week — CPI week is the obvious spike. Hard CTA (weekend): "New episode live — link in bio."
 - Sunday automation rebuilds Jul 13–19.
 

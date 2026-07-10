@@ -151,6 +151,14 @@
   details.fold>summary.fsum::before{content:"▸";color:var(--mint);font-size:13px;transition:transform .2s}
   details.fold[open]>summary.fsum::before{transform:rotate(90deg)}
   details.fold>summary.fsum:hover{color:var(--text)}
+  .smap{margin-top:14px;border:1px solid rgba(185,139,255,.35);border-radius:12px;background:rgba(185,139,255,.05);padding:13px 15px}
+  .smap .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--p4);text-transform:uppercase;display:block;margin-bottom:8px}
+  .smaprow{display:grid;grid-template-columns:74px 118px 1fr;gap:10px;font-size:12.5px;color:#cdd8e1;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);align-items:baseline}
+  .smaprow:last-child{border:none}
+  .smaprow .t{font-family:var(--mono);font-size:11px;color:var(--p4)}
+  .smaprow .b{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--gold)}
+  .smaprow .d b{color:var(--text)} .smaprow .d i{color:var(--mint);font-style:normal;font-family:var(--mono);font-size:11px}
+  .ptb{display:inline-block;font-family:var(--mono);font-size:8.5px;font-weight:600;background:rgba(52,229,163,.15);color:var(--mint);border:1px solid rgba(52,229,163,.35);padding:1px 5px;border-radius:4px;margin-right:4px;letter-spacing:.04em}
   footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);text-align:center;line-height:1.7}
   footer b{color:var(--mint)}
   .refcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
@@ -178,7 +186,7 @@
     <div class="weekchip">
       <div class="lbl">This Week</div>
       <div class="rng">Jul 6 – 12, 2026</div>
-      <div class="sub">✚ MID-WEEK CHECK Thu Jul 9 AM · flagship + minutes reaction both UNSHIPPED · Pexels b-roll now live for THU–SUN · rotation story holds until CPI Tue Jul 14</div>
+      <div class="sub">★ SORA REVAMP Fri Jul 10 · FRI/SAT/SUN rebuilt on the 5-beat story spine · new Pt 1/2/3 caption scheme · fresh numbers pulled Fri AM</div>
     </div>
   </header>
 
@@ -191,6 +199,16 @@
     <a href="#podcast">▸ Podcast</a>
   </nav>
 
+  <div style="margin:14px 0;padding:14px 16px;background:var(--panel);border:1px solid rgba(185,139,255,.5);border-radius:12px">
+    <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--p4);text-transform:uppercase;margin-bottom:8px">★ Sora revamp — Fri Jul 10 · fresh numbers + the story pass now on FRI / SAT / SUN</div>
+    <div style="font-size:13px;line-height:1.7;color:var(--text)">
+      <b style="color:var(--gold)">Fresh pull (Fri AM):</b> TikTok 7-day <b class="down">2.5K (−32.5%)</b>, Search 67.5%, 0 comments · IG followers <b>7,513</b> (flat) — but <b style="color:var(--mint)">"Buy the dip?" is still compounding: 27,336 views + 16,238 on Facebook · 106 saves · 167 shares · 106 FOLLOWS</b> (biggest follower event since tracking — the reaction format IS the IG engine) · YouTube: "Trump accounts" finished <b style="color:var(--mint)">502 views · 48.9% avg viewed · ranked 1 of 10</b> · ⚠ the <b>YT strike warning is STILL active (day 5)</b> — clear it before the weekend uploads.<br>
+      <b style="color:var(--gold)">What changed today:</b> (1) <b>Sora story pass</b> — FRI + SAT scripts rebuilt onto the 5-beat spine (cold open → stakes → rising loop → payoff withheld → loop-close) with a <b>Story map</b> card in each day below; (2) <b>new caption scheme</b> — only the INTRO clip carries the full hook box; each step of the 3-part process gets its own <b>Pt 1 / Pt 2 / Pt 3</b> header clip (an on-screen progress bar); spares ship clean; (3) full scripts now live INSIDE each day with clip cues telling you exactly which b-roll to use on which line; (4) Sora adjustment #1: number-promise in the first 2s, math withheld to the final 15% ("Trump accounts" held 48.9% because the payoff was a concrete reveal — lesson-frames die at ~22%).<br>
+      <b style="color:var(--gold)">The weekend:</b> FRI credit reel (D Waugh, verify APRs) · SAT collab react is the <b>MUST-SHIP</b> (the 27K/16K/106-follow receipt above is the argument) · SUN drop the banked episode + record CPI-week anchor (CPI Tue Jul 14).
+    </div>
+  </div>
+
+  <details class="fold"><summary class="fsum">Mid-week check — Thu Jul 9 <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">what shipped, what didn't</span></summary>
   <div style="margin:14px 0;padding:14px 16px;background:var(--panel);border:1px solid var(--orange,#FF7A59);border-radius:12px;border-color:rgba(255,122,89,.5)">
     <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--p6);text-transform:uppercase;margin-bottom:8px">✚ Mid-week check — Thu Jul 9 AM · what shipped, what didn't, the go-forward</div>
     <div style="font-size:13px;line-height:1.7;color:var(--text)">
@@ -200,6 +218,7 @@
       <b style="color:var(--gold)">⚠ Still open:</b> the YouTube <b>Community Guidelines strike warning</b> is active for a 4th day — clear/appeal before the weekend uploads.
     </div>
   </div>
+  </details>
 
   <details class="fold" id="numbers"><summary class="fsum">Last week's numbers <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jul 5 · Jun 28 – Jul 4</span></summary>
   <div class="nums">
@@ -544,26 +563,41 @@
           <div class="pp"><span class="ppl yt">YouTube</span><span><b>Short</b> — the 35–54 cut: "the family-vacation balance that never dies" → 90-day credit plan in bio.</span></div>
         </div>
         <div class="win">⏱ <b>Windows (ET):</b> IG <b>12–3pm</b> · TikTok <b>4–7pm</b> · Short early evening. 🔢 Re-pull both APR figures before recording.</div>
-        <div class="hooks">
-          <span class="k">▶ Green-screen hooks · Atlas style</span>
-          <div class="cold">Cold-open: "Your Trip Costs Double."</div>
-          <div class="sus">Sustained caption: <b>"A $1,200 Trip On Minimums Becomes ~$2,000 — Here's The Escape."</b></div>
-          <div class="gsgrid">
-            <a class="gsthumb" href="greenscreen/FRI/FRI_01_trip.png" target="_blank"><img src="greenscreen/FRI/FRI_01_trip.png" alt="trip math"><span class="cap">01 · The math</span></a>
-            <a class="gsthumb" href="greenscreen/FRI/FRI_02_trap.png" target="_blank"><img src="greenscreen/FRI/FRI_02_trap.png" alt="the trap"><span class="cap">02 · The trap</span></a>
-            <a class="gsthumb" href="greenscreen/FRI/FRI_03_play.png" target="_blank"><img src="greenscreen/FRI/FRI_03_play.png" alt="the play"><span class="cap">03 · The play</span></a>
-            <a class="gsthumb" href="greenscreen/FRI/FRI_clip.mp4" target="_blank"><video src="greenscreen/FRI/FRI_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
-          </div>
-          <div class="gsnote">Cut 01 → 02 → 03 · the illustrative payoff math is on the tiles — say "run your own numbers" on camera · hover the clip to preview.</div>
-          <div class="gsnote" style="margin-top:14px"><b style="color:#F5C451">★ NEW · Pexels b-roll (Jul 9)</b> — real footage, TGW caption box baked in. Full set (clips + photos, raws beside): <code>broll/FRI/captioned/captioned/</code> · cut suggestions in greenscreen-and-hooks.md</div><div class="gsrow" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><a class="gsthumb" href="broll/FRI/captioned/FRI_V5_airplane-window.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V5_airplane-window.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">airplane window</span></a><a class="gsthumb" href="broll/FRI/captioned/FRI_V1_paying-with-card.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V1_paying-with-card.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">paying with card</span></a><a class="gsthumb" href="broll/FRI/captioned/FRI_V7_airport-terminal-plane.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V7_airport-terminal-plane.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">airport terminal plane</span></a><a class="gsthumb" href="broll/FRI/captioned/FRI_V2_holding-credit-card.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V2_holding-credit-card.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">holding credit card</span></a></div>
+        <div class="smap">
+          <span class="k">★ Sora story map — 5-beat spine · ~60s · Pt headers = on-screen progress bar</span>
+          <div class="smaprow"><span class="t">0:00–0:02</span><span class="b">Cold open</span><span class="d"><b>"The trip you just booked is going to charge you twice."</b> · INTRO clip (airplane window, hook box) · <i>loop OPENS: $1,200→$2,000 + a $700 escape</i></span></div>
+          <div class="smaprow"><span class="t">0:02–0:08</span><span class="b">Stakes</span><span class="d">"If it's already on your card, this is your next six summers. The escape is one phone setting — three parts." · cut to clean luggage clip</span></div>
+          <div class="smaprow"><span class="t">0:08–0:20</span><span class="b">Pt 1</span><span class="d"><b>The Real Price Of Minimums</b> — ~6–7 years, ~$800 interest · PT 1 clip (holding card)</span></div>
+          <div class="smaprow"><span class="t">0:20–0:24</span><span class="b">Mid re-hook</span><span class="d">"Here's where most people scroll away — right before the part that pays for the next trip." · data tile FRI_01 (our math) · <i>re-opens the loop</i></span></div>
+          <div class="smaprow"><span class="t">0:24–0:38</span><span class="b">Pt 2</span><span class="d"><b>The Trap Is The Design</b> — BUT it's not you; minimums are engineered (~21% / ~23.8%, verify) · PT 2 clip (paying with card)</span></div>
+          <div class="smaprow"><span class="t">0:38–0:52</span><span class="b">Pt 3 · payoff</span><span class="d"><b>The One-Setting $700 Escape</b> — $210/mo autopay → ~6 months, ~$75 interest · PT 3 clip (checkout) · <i>loop CLOSES: the math earns the hook</i></span></div>
+          <div class="smaprow"><span class="t">0:52–end</span><span class="b">Loop-close</span><span class="d">"Book the trip. Just don't let the trip book YOU for six years." → CTA → <b>"It's D Waugh, I'm outta here."</b> · back on the airplane shot</span></div>
         </div>
-        <details class="script"><summary>Full script — talking points · verify APRs live</summary><div class="scriptbody">
-          <span class="lbl">Selected hook</span>"Airlines report earnings today because summer travel is booming — and a $1,200 trip on minimum payments quietly becomes about $2,000. Here's the escape."
-          <h5>Point 1 — The real price (tile 01)</h5><ul><li>$1,200 on a card at ~21% APR, minimums only: ~6–7 years to clear, roughly $800 in interest. (Illustrative — run your own numbers.)</li><li>The trip ends in a week; the balance doesn't.</li></ul>
-          <h5>Point 2 — The trap is the design (tile 02)</h5><ul><li>Minimums mostly cover interest — the balance barely moves. Avg APR actually paid: ~21% (Fed) · new offers ~23.8% (LendingTree). Verify live.</li></ul>
-          <h5>Point 3 — The play (tile 03)</h5><ul><li>Fixed $210/month clears $1,200 at ~21% in ~6 months — about $75 interest instead of ~$800.</li><li>Set autopay ABOVE the minimum the day you book. Bridge: clean file → cheap approval → fund the brokerage → deploy.</li></ul>
-          <h5>Close + CTA + sign-off</h5><ul><li>"Same trip, $700 cheaper — the difference is one autopay setting."</li><li class="cta-line">"Comment TRIP and I'll send the payoff calculator. 90-day credit plan in the bio."</li><li><b>"It's D Waugh, I'm outta here."</b></li></ul>
-          <div class="cap-box">Caption: Summer trips are booked on cards — and minimum payments turn $1,200 into ~$2,000. The 6-month escape plan inside. Educational only. #credit #creditcards #travel #personalfinance #debtfree</div>
+        <div class="hooks">
+          <span class="k">▶ Caption scheme · ★ NEW Jul 10 — intro hook box + Pt headers (progress bar), spares clean</span>
+          <div class="cold">Intro box: "Your $1,200 Trip Becomes $2,000"</div>
+          <div class="sus">Then per-step headers: <b>Pt 1 · The Real Price Of Minimums → Pt 2 · The Trap Is The Design → Pt 3 · The One-Setting $700 Escape</b> — only the intro carries the full hook; the Pt clips tell the viewer where they are; everything else clean.</div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="broll/FRI/captioned/FRI_V5_airplane-window.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V5_airplane-window.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">INTRO</span><span class="cap">Hook box · airplane</span></a>
+            <a class="gsthumb" href="broll/FRI/captioned/FRI_V2_holding-credit-card.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V2_holding-credit-card.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 1</span><span class="cap">Real price · card</span></a>
+            <a class="gsthumb" href="broll/FRI/captioned/FRI_V1_paying-with-card.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V1_paying-with-card.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 2</span><span class="cap">The trap · paying</span></a>
+            <a class="gsthumb" href="broll/FRI/captioned/FRI_V3_card-online-checkout.mp4" target="_blank"><video src="broll/FRI/captioned/FRI_V3_card-online-checkout.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 3</span><span class="cap">The escape · checkout</span></a>
+            <a class="gsthumb" href="broll/FRI/FRI_V6_luggage-airport-walk.mp4" target="_blank"><video src="broll/FRI/FRI_V6_luggage-airport-walk.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Spare · luggage</span></a>
+            <a class="gsthumb" href="broll/FRI/FRI_V7_airport-terminal-plane.mp4" target="_blank"><video src="broll/FRI/FRI_V7_airport-terminal-plane.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Spare · terminal</span></a>
+            <a class="gsthumb" href="broll/FRI/FRI_P1_travel-money-eiffel.jpg" target="_blank"><img src="broll/FRI/FRI_P1_travel-money-eiffel.jpg" alt="travel money"><span class="vbadge">PHOTO</span><span class="cap">Clean · travel money</span></a>
+            <a class="gsthumb" href="broll/FRI/FRI_P2_suit-credit-cards.jpg" target="_blank"><img src="broll/FRI/FRI_P2_suit-credit-cards.jpg" alt="credit cards"><span class="vbadge">PHOTO</span><span class="cap">Clean · cards</span></a>
+          </div>
+          <div class="gsnote">Cut = the story map above: INTRO → clean luggage (stakes) → PT 1 → data tile <a href="greenscreen/FRI/FRI_01_trip.png" target="_blank" style="color:var(--mint)">FRI_01_trip.png</a> (mid re-hook, our math) → PT 2 → PT 3 → airplane loop-close. Data tiles <a href="greenscreen/FRI/FRI_02_trap.png" target="_blank" style="color:var(--mint)">02</a>/<a href="greenscreen/FRI/FRI_03_play.png" target="_blank" style="color:var(--mint)">03</a> + more clean raws in <code>broll/FRI/</code>. ⚠ Older full-hook captioned files superseded — use the 4 above + clean spares.</div>
+        </div>
+        <details class="script"><summary>Full script — ★ Sora rebuild · clip cues inline · verify APRs live</summary><div class="scriptbody">
+          <span class="lbl">Beat 1 · Cold open (0:00, in-scene — no greeting) <span class="ptb">INTRO clip · airplane window</span></span>"The trip you just booked is going to charge you twice. Once at checkout — and once, quietly, for the next six years. That's how $1,200 becomes $2,000."
+          <span class="lbl">Beat 2 · Stakes (0:02–0:08) <span class="ptb">cut → CLEAN luggage clip</span></span>"If that trip's already sitting on your card, this is about your next six summers. There IS a $700 escape — it's one setting on your phone — but it only works if you see the trap first. Three parts."
+          <h5>Beat 3 · Pt 1 — The Real Price Of Minimums <span class="ptb">PT 1 clip · holding card</span></h5><ul><li>$1,200 at ~21% APR, minimums only: ~6–7 years to clear, roughly $800 in interest. (Illustrative — run your own numbers.)</li><li>The trip ends in a week; the balance outlives your phone.</li></ul>
+          <span class="lbl">Mid re-hook (~0:20) <span class="ptb">data tile FRI_01_trip.png</span></span>"And here's where most people scroll away — right before the part that pays for the next trip."
+          <h5>Beat 3 · Pt 2 — The Trap Is The Design <span class="ptb">PT 2 clip · paying with card</span></h5><ul><li>BUT this isn't you being bad with money: minimums are engineered so the payment mostly covers interest and the balance barely moves. ~21% Fed avg carried · ~23.8% new offers — verify live.</li><li>THEREFORE "pay more when I can" can't fix it — only something automatic can.</li></ul>
+          <h5>Beat 4 · Pt 3 — The One-Setting $700 Escape (the payoff the hook promised) <span class="ptb">PT 3 clip · checkout</span></h5><ul><li>Fixed $210/month autopay: $1,200 gone in ~6 months, ~$75 interest instead of ~$800. <b>Same trip, ~$700 cheaper — one autopay setting, set the day you book.</b></li><li>Bridge: clean file → cheap approval → fund the brokerage → deploy.</li></ul>
+          <h5>Beat 5 · Loop-close + CTA + sign-off <span class="ptb">back on the airplane shot</span></h5><ul><li>"Book the trip. Just don't let the trip book YOU for six years."</li><li class="cta-line">"Comment TRIP and I'll send the payoff calculator. 90-day credit plan in the bio."</li><li><b>"It's D Waugh, I'm outta here."</b></li></ul>
+          <div class="cap-box">Caption: Summer trips are booked on cards — and minimums turn $1,200 into ~$2,000. The $700 escape is one phone setting. Pt 1–3 inside. Educational only. #credit #creditcards #travel #personalfinance #debtfree</div>
         </div></details>
         <div class="ctarow">
           <span class="cta">Comment-trigger · "Comment <b>TRIP</b> for the payoff calculator."</span>
@@ -608,26 +642,41 @@
           <div class="pp"><span class="ppl comm">Community</span><span>BTS: recording-week shot + "Sunday's chart episode loading."</span></div>
         </div>
         <div class="win">⏱ <b>Windows (ET):</b> weekend — IG <b>midday–3pm</b> lead · TikTok <b>4–7pm</b> · Short evening. Hard CTAs are weekend-only: push the Discord today. If the stitch tool fights you, screenshot the take as the opening background.</div>
-        <div class="hooks">
-          <span class="k">▶ Green-screen hooks · Atlas style · question-twist (borrowed from his current run)</span>
-          <div class="cold">Cold-open: "Should You Sell Everything?"</div>
-          <div class="sus">Sustained caption: <b>"Your First $100 Rides On Who's Right — Down 13%, Up 241%."</b></div>
-          <div class="gsgrid">
-            <a class="gsthumb" href="greenscreen/TUE/TUE_01_thetake.png" target="_blank"><img src="greenscreen/TUE/TUE_01_thetake.png" alt="the take vs the tape"><span class="cap">01 · The take</span></a>
-            <a class="gsthumb" href="greenscreen/TUE/TUE_02_receipts.png" target="_blank"><img src="greenscreen/TUE/TUE_02_receipts.png" alt="receipts"><span class="cap">02 · Receipts</span></a>
-            <a class="gsthumb" href="greenscreen/TUE/TUE_03_playbook.png" target="_blank"><img src="greenscreen/TUE/TUE_03_playbook.png" alt="playbook"><span class="cap">03 · The playbook</span></a>
-            <a class="gsthumb" href="greenscreen/TUE/TUE_clip.mp4" target="_blank"><video src="greenscreen/TUE/TUE_clip.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLIP</span><span class="cap">Motion</span></a>
-          </div>
-          <div class="gsnote">⭐ Assets live in <b>greenscreen/TUE/</b> (kept the folder name from the original Tuesday slot). Creator clip first (3–5s), then cut 01 → 02 → 03. React to the take, never trash the creator. Pick the take fresh Saturday. <span style="color:var(--muted)">The old SAT/ mindset tiles stay on disk for the banked reel #16 — next rotation.</span></div>
-          <div class="gsnote" style="margin-top:14px"><b style="color:#F5C451">★ NEW · Pexels b-roll (Jul 9)</b> — real footage, TGW caption box baked in. Full set (clips + photos, raws beside): <code>broll/SAT/captioned/captioned/</code> · cut suggestions in greenscreen-and-hooks.md</div><div class="gsrow" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><a class="gsthumb" href="broll/SAT/captioned/SAT_V1_humanoid-robot.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V1_humanoid-robot.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">humanoid robot</span></a><a class="gsthumb" href="broll/SAT/captioned/SAT_V8_trading-screens.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V8_trading-screens.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">trading screens</span></a><a class="gsthumb" href="broll/SAT/captioned/SAT_V4_motherboard-closeup.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V4_motherboard-closeup.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">motherboard closeup</span></a><a class="gsthumb" href="broll/SAT/captioned/SAT_V2_robot-chess.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V2_robot-chess.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">B-ROLL</span><span class="cap">robot chess</span></a></div>
+        <div class="smap">
+          <span class="k">★ Sora story map — 5-beat spine · ~55s · EYL borrow: open on the PERSON, not the point</span>
+          <div class="smaprow"><span class="t">0:00–0:05</span><span class="b">Cold open</span><span class="d">[3–5s of the creator's "sell everything" take] → <b>"Two trading days later, the market answered him."</b> · INTRO clip (hook box) · <i>loop OPENS: down 13% or up 241% — who's right?</i></span></div>
+          <div class="smaprow"><span class="t">0:05–0:10</span><span class="b">Stakes</span><span class="d">"If he's right, you sell. If the tape's right, you got handed a discount. Your first $100 rides on this — three parts, the last one's the playbook."</span></div>
+          <div class="smaprow"><span class="t">0:10–0:22</span><span class="b">Pt 1</span><span class="d"><b>The Claim Vs The Tape</b> — chips fell, BUT Dow's first close over 53K + the snapback (Micron +3.5%, Broadcom +4.8%) · PT 1 clip (trading screens)</span></div>
+          <div class="smaprow"><span class="t">0:22–0:26</span><span class="b">Mid re-hook</span><span class="d">"And this is the part the loud takes never show you—" · data tile TUE_02_receipts (exact numbers) · <i>re-opens the loop</i></span></div>
+          <div class="smaprow"><span class="t">0:26–0:38</span><span class="b">Pt 2</span><span class="d"><b>Red Day, Green Year</b> — −13% day / +241% year · SanDisk −10% day / +750% YTD · THEREFORE profit-taking, not a funeral · PT 2 clip (robot chess)</span></div>
+          <div class="smaprow"><span class="t">0:38–0:50</span><span class="b">Pt 3 · payoff</span><span class="d"><b>Rotation-Proof Your First $100</b> — basket &gt; one lane · automatic buys · plan &gt; prediction · PT 3 clip (motherboard) · <i>loop CLOSES</i></span></div>
+          <div class="smaprow"><span class="t">0:50–end</span><span class="b">Loop-close</span><span class="d">"So — was he right? Doesn't matter. Loud takes get views; the tape pays patience." → hard CTA → <b>"It's Wolf, I'm outta here."</b> · creator freeze-frame</span></div>
         </div>
-        <details class="script"><summary>Full script — talking points</summary><div class="scriptbody">
-          <span class="lbl">Selected hook (after the creator clip)</span>"That was the loudest take on my feed this week. Here's what the tape said two days later."
-          <h5>Point 1 — The claim vs the tape (tile 01)</h5><ul><li>Chips fell hard — that part's real. Then: Dow's first close over 53,000 AND the same chips snapped back (Micron +3.5%, Broadcom +4.8%) within two sessions. If the market were "over," neither happens.</li></ul>
-          <h5>Point 2 — Zoom out (tile 02)</h5><ul><li>Micron: −13% day (Jun 23), still +241% on the year — and back over $1,000 by Monday. SanDisk: −10% day, still +750% YTD. A red day on a green year is profit-taking.</li></ul>
-          <h5>Point 3 — What you actually do (tile 03)</h5><ul><li>Rotation-proof the first $100: basket over one lane, automatic buys, plan &gt; prediction. No prediction on where chips go — that's the point.</li></ul>
-          <h5>Close + CTA + sign-off (hard CTA — weekend only)</h5><ul><li>"Loud takes get views. Charts pay bills — metaphorically. Educational only."</li><li class="cta-line">"Comment ZOOM and I'll send the zoom-out checklist. We're debating this take in the Discord — link in bio."</li><li><b>"It's Wolf, I'm outta here."</b> <i>(or D Waugh — his cut: "a rotation is the economy re-pricing, not dying")</i></li></ul>
-          <div class="cap-box">Caption: Everyone called the AI trade dead after a −13% day. Two sessions later the same stock was green and the Dow closed over 53K. Reaction + receipts inside. Educational only. #ai #stocks #investing #stitch #moneytok</div>
+        <div class="hooks">
+          <span class="k">▶ Caption scheme · ★ NEW Jul 10 — intro hook box + Pt headers, spares clean</span>
+          <div class="cold">Intro box: "Down 13% Or Up 241% — Who's Right?"</div>
+          <div class="sus">Then per-step headers: <b>Pt 1 · The Claim Vs The Tape → Pt 2 · Red Day, Green Year → Pt 3 · Rotation-Proof Your First $100</b> — the question-twist stays on the intro; the Pt clips are the progress bar.</div>
+          <div class="gsgrid">
+            <a class="gsthumb" href="broll/SAT/captioned/SAT_V1_humanoid-robot.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V1_humanoid-robot.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">INTRO</span><span class="cap">Hook box · robot</span></a>
+            <a class="gsthumb" href="broll/SAT/captioned/SAT_V8_trading-screens.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V8_trading-screens.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 1</span><span class="cap">Claim vs tape</span></a>
+            <a class="gsthumb" href="broll/SAT/captioned/SAT_V2_robot-chess.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V2_robot-chess.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 2</span><span class="cap">Red day, green year</span></a>
+            <a class="gsthumb" href="broll/SAT/captioned/SAT_V4_motherboard-closeup.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V4_motherboard-closeup.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 3</span><span class="cap">The $100 playbook</span></a>
+            <a class="gsthumb" href="broll/SAT/SAT_V6_ai-visualisation-1.mp4" target="_blank"><video src="broll/SAT/SAT_V6_ai-visualisation-1.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Spare · AI visual</span></a>
+            <a class="gsthumb" href="broll/SAT/SAT_V5_circuit-board-neon.mp4" target="_blank"><video src="broll/SAT/SAT_V5_circuit-board-neon.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Spare · circuit neon</span></a>
+            <a class="gsthumb" href="broll/SAT/SAT_P1_robot-conference.jpg" target="_blank"><img src="broll/SAT/SAT_P1_robot-conference.jpg" alt="robot conference"><span class="vbadge">PHOTO</span><span class="cap">Clean · robot conf</span></a>
+            <a class="gsthumb" href="broll/SAT/SAT_P3_industrial-robot.jpg" target="_blank"><img src="broll/SAT/SAT_P3_industrial-robot.jpg" alt="industrial robot"><span class="vbadge">PHOTO</span><span class="cap">Clean · industrial</span></a>
+          </div>
+          <div class="gsnote">Cut = the story map above: creator take → INTRO → PT 1 → data tile <a href="greenscreen/TUE/TUE_02_receipts.png" target="_blank" style="color:var(--mint)">TUE_02_receipts.png</a> (mid re-hook — the exact numbers) → PT 2 → PT 3 → creator freeze-frame. Tiles <a href="greenscreen/TUE/TUE_01_thetake.png" target="_blank" style="color:var(--mint)">01</a>/<a href="greenscreen/TUE/TUE_03_playbook.png" target="_blank" style="color:var(--mint)">03</a> + clip in <code>greenscreen/TUE/</code>; more clean raws in <code>broll/SAT/</code>. React to the take, never trash the creator — pick it fresh Saturday. ⚠ Older full-hook captioned files superseded.</div>
+        </div>
+        <details class="script"><summary>Full script — ★ Sora rebuild · clip cues inline</summary><div class="scriptbody">
+          <span class="lbl">Beat 1 · Cold open (0:00) <span class="ptb">creator clip 3–5s → INTRO clip</span></span>"That was the loudest take on my feed this week. Two trading days later, the market answered him — and the answer decides what your first $100 does Monday."
+          <span class="lbl">Beat 2 · Stakes (0:05–0:10) <span class="ptb">hold INTRO</span></span>"Because if he's right, you sell. If the tape's right, you just got handed a discount. Down 13% or up 241% — same stock. Three parts, and the last one is the playbook."
+          <h5>Beat 3 · Pt 1 — The Claim Vs The Tape <span class="ptb">PT 1 clip · trading screens</span></h5><ul><li>Chips fell hard — that part's real. BUT the same week: the Dow's first close over 53,000, and within two sessions the same chips snapped back (Micron +3.5%, Broadcom +4.8%). If the market were "over," neither happens.</li></ul>
+          <span class="lbl">Mid re-hook (~0:22) <span class="ptb">data tile TUE_02_receipts.png</span></span>"And this is the part the loud takes never show you—"
+          <h5>Beat 3 · Pt 2 — Zoom Out: Red Day, Green Year <span class="ptb">PT 2 clip · robot chess</span></h5><ul><li>Micron: −13% in a day (Jun 23), still +241% on the year — back over $1,000 by Monday. SanDisk: −10% day, +750% YTD.</li><li>THEREFORE a red day on a green year is profit-taking, not a funeral. Panic is a strategy for people who never zoomed out.</li></ul>
+          <h5>Beat 4 · Pt 3 — Rotation-Proof Your First $100 (the payoff) <span class="ptb">PT 3 clip · motherboard</span></h5><ul><li>Basket over one lane · automatic buys · plan &gt; prediction. No prediction on where chips go — that's the whole point. The $100 doesn't need you to be right about chips; it needs you to be diversified and automatic.</li></ul>
+          <h5>Beat 5 · Loop-close + CTA + sign-off (hard CTA — weekend only) <span class="ptb">creator freeze-frame</span></h5><ul><li>"So — was he right? Doesn't matter. Loud takes get views; the tape pays patience. Educational only."</li><li class="cta-line">"Comment ZOOM and I'll send the zoom-out checklist. We're debating this exact take in the Discord — link in bio."</li><li><b>"It's Wolf, I'm outta here."</b> <i>(or D Waugh — his cut: "a rotation is the economy re-pricing, not dying")</i></li></ul>
+          <div class="cap-box">Caption: He said sell everything. Two sessions later the same stock was green and the Dow closed over 53K. Down 13% or up 241% — who's right? Pt 1–3 inside. Educational only. #ai #stocks #investing #stitch #moneytok</div>
         </div></details>
         <div class="ctarow">
           <span class="cta">Comment-trigger · "Comment <b>ZOOM</b> for the zoom-out checklist" + weekend Discord push.</span>
@@ -657,7 +706,7 @@
         <div class="beats">The loop resets</div>
         <div class="beats-list">
           <div>Drop the banked "Reading the Rotation: 3 Charts That Show Where Money Goes" as Sunday's YouTube long-form + the best 45-sec teaser.</div>
-          <div>Teaser desire-cut: "Stop guessing what's next — 3 charts show where money already went."</div>
+          <div>★ Sora teaser cut: open on the through-line question ("which decade do you retire in?"), tease chart 3 as the payoff, END on the question — the episode is the loop-close. Desire line: "Stop guessing what's next — 3 charts show where money already went." B-roll: <code>broll/PODCAST/captioned/</code>.</div>
           <div>Then record NEXT week's anchor: CPI Tue Jul 14 + big-bank earnings = the spike. Riverside clips overnight feed next week's slots.</div>
         </div>
         <div class="drops">Drops today</div>

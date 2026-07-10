@@ -85,15 +85,25 @@ Wolf's call (Jul 9): green-screen backgrounds now come from **Pexels** (free lic
 - Photos: P1 stock-market-screen · P2 chart-black-bg · P3 chart-growth
 - Suggested cut: V2 cold open → V3 on "relative strength" → V5 on "52-week highs" → V4 on "volume". Data tile `THU_02_charts.png` for the 3-chart beat.
 
-## FRI Jul 10 — Credit / minimum-payment trap, travel cut (caption: "A $1,200 Trip On Minimums Becomes ~$2,000 — Here's The Escape")
-- Clips: FRI_V1 paying-with-card · V2 holding-credit-card · V3 card-online-checkout · V4 card-online-purchase · V5 airplane-window · V6 luggage-airport-walk · V7 airport-terminal-plane · V8 airport-waiting
-- Photos: P1 travel-money-eiffel · P2 suit-credit-cards · P3 payment-terminal · P4 card-atm
-- Suggested cut: V5 airplane-window cold open → V1 on the $1,200 math → V7 on the trap → V2 on the escape plan. Tile `FRI_01_trip.png` for the $1,200→$2,000 math beat. ⚠ verify live APRs before posting.
+## FRI Jul 10 — Credit / minimum-payment trap, travel cut — ★ RE-CAPTIONED Jul 10 (intro-hook + Pt headers)
+**New scheme (Wolf's call, Jul 10): only the INTRO clip carries the full hook box; each Pt of the 3-step process gets its own "Pt N" header clip; everything else ships CLEAN (raw).**
+- **INTRO (hook box "Your $1,200 Trip Becomes $2,000"):** `captioned/FRI_V5_airplane-window.mp4` — the cold open, first 1–2s.
+- **PT 1 · "The Real Price Of Minimums":** `captioned/FRI_V2_holding-credit-card.mp4`
+- **PT 2 · "The Trap Is The Design":** `captioned/FRI_V1_paying-with-card.mp4`
+- **PT 3 · "The One-Setting $700 Escape":** `captioned/FRI_V3_card-online-checkout.mp4`
+- **Clean spares (raw, no caption — flexible cutaways):** V4 card-online-purchase · V6 luggage-airport-walk · V7 airport-terminal-plane · V8 airport-waiting · photos P1 travel-money-eiffel · P2 suit-credit-cards · P3 payment-terminal · P4 card-atm
+- Cut order = the story map in scripts.md: V5 intro → V6 clean (stakes) → V2 Pt 1 → tile `FRI_01_trip.png` (mid re-hook, our math) → V1 Pt 2 → V3 Pt 3 → airplane loop-close. ⚠ verify live APRs before posting.
+- ⚠ The other captioned files in `captioned/` still carry the OLD full-hook box — superseded by this scheme; use the 4 above + clean raws.
 
-## SAT Jul 11 — Collab/guest-reaction: "the AI trade is over" (caption: "Your First $100 Rides On Who's Right — Down 13%, Up 241%")
-- Clips: SAT_V1 humanoid-robot · V2 robot-chess · V3 standing-robot · V4 motherboard-closeup · V5 circuit-board-neon · V6 ai-visualisation-1 · V7 ai-visualisation-2 · V8 trading-screens
-- Photos: P1 robot-conference · P2 robot-toy · P3 industrial-robot · P4 robot-arm-bw
-- Suggested cut: creator-take stitch open → SAT_V1 robot on the claim → V8 trading-screens on the receipts (−13% day / +241% year) → V4 motherboard on the playbook. Tile `TUE_02_receipts.png` still carries the exact numbers.
+## SAT Jul 11 — Collab/guest-reaction: "the AI trade is over" — ★ RE-CAPTIONED Jul 10 (intro-hook + Pt headers)
+**Same new scheme: intro hook box + one Pt-header clip per step, clean spares.**
+- **INTRO (hook box "Down 13% Or Up 241% — Who's Right?"):** `captioned/SAT_V1_humanoid-robot.mp4` — cut to it right after the 3–5s creator clip.
+- **PT 1 · "The Claim Vs The Tape":** `captioned/SAT_V8_trading-screens.mp4`
+- **PT 2 · "Red Day, Green Year":** `captioned/SAT_V2_robot-chess.mp4`
+- **PT 3 · "Rotation-Proof Your First $100":** `captioned/SAT_V4_motherboard-closeup.mp4`
+- **Clean spares (raw):** V3 standing-robot · V5 circuit-board-neon · V6 ai-visualisation-1 · V7 ai-visualisation-2 · photos P1 robot-conference · P2 robot-toy · P3 industrial-robot · P4 robot-arm-bw
+- Cut order = the story map in scripts.md: creator take → V1 intro → V8 Pt 1 → tile `TUE_02_receipts.png` (mid re-hook, exact numbers) → V2 Pt 2 → V4 Pt 3 → creator freeze-frame loop-close.
+- ⚠ Other files in `captioned/` carry the OLD full-hook box — superseded; use the 4 above + clean raws.
 
 ## SUN Jul 12 — Podcast / episode teaser (caption: "This Market Flip Could Shift Which Decade You Retire In")
 - Clips: POD_V1 nyse-building-flags · V2 wall-street-scene · V3 wall-street-landscape (16:9) · V4 trinity-church-street · V5 broad-wall-street-signs · V6 stock-exchange-screens
