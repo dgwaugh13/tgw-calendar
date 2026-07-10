@@ -136,25 +136,39 @@ Peg: Delta opens earnings season today + peak summer-trip booking. 🔢 Verify t
 | 0:38–0:52 | Pt 3 = PAYOFF | `FRI_V3_card-online-checkout` (PT 3 box) | CLOSES: $210/mo → ~$75 interest → ~$700 saved |
 | 0:52–end | Loop-close + sign-off | back to airplane (clean V5 or intro) | ties back to the cold open |
 
-BEAT 1 — COLD OPEN (in-scene, no greeting): "The trip you just booked is going to charge you twice. Once at checkout — and once, quietly, for the next six years. That's how $1,200 becomes $2,000."
+**SUBSTANCE STANDARD (adopted Jul 10 after Wolf's note — every Pt carries: CLAIM → MECHANISM (how it actually works) → RECEIPT (where the viewer verifies it on their OWN account) → WORKED NUMBER → ACTION (the literal steps). Lines below are speakable "say-this" prose — riff on them, don't read them.**
 
-BEAT 2 — STAKES: "If that trip's already sitting on your card, this is about your next six summers. There IS a $700 escape — it's one setting on your phone — but it only works if you see the trap first. Three parts."
+BEAT 1 — COLD OPEN (in-scene, no greeting): "The trip you just booked is going to charge you twice. Once at checkout — and once, quietly, for about the next seven years. That's how a $1,200 trip ends up costing over $2,000."
+
+BEAT 2 — STAKES: "Delta reports earnings this morning because summer travel is record-breaking — and most of those trips are sitting on cards at 21%. If yours is one of them, the escape is one setting on your phone and it saves you seven hundred to a thousand dollars. But it only works if you see the trap first. Three parts."
 
 BEAT 3 — RISING LOOP:
-- **Pt 1: The Real Price Of Minimums** (PT 1 clip) — $1,200 at ~21% APR on minimums: ~6–7 years to clear, roughly $800 in interest. (Illustrative — run your own numbers.) The trip ends in a week; the balance outlives your phone.
-- *MID RE-HOOK (~0:20, over the math tile):* "And here's where most people scroll away — right before the part that pays for the next trip."
-- **Pt 2: The Trap Is The Design** (PT 2 clip) — BUT this isn't you being bad with money: minimums are engineered so the payment mostly covers interest and the balance barely moves (~21% Fed avg carried · ~23.8% new offers — verify live). THEREFORE "pay more when I can" can't fix it — only something automatic can.
+- **Pt 1: The Real Price Of Minimums** (PT 1 clip)
+  - MECHANISM (say this): "Here's how your minimum payment is actually calculated — most issuers charge the month's interest PLUS one percent of the balance. Sounds fine until you run month one: $1,200 at 21% is $21 of interest. Your minimum is about $33. So of the $33 you just paid... $21 went to the bank. Twelve dollars — TWELVE — touched what you actually owe. Sixty-four cents of every dollar, gone to interest."
+  - WORKED NUMBER: "Run that forward: eighty-six months. Seven-plus YEARS. Over a thousand dollars in interest on a twelve-hundred-dollar trip." (Model: interest + 1% of balance, $25 floor — exact figures: 86 months, ~$1,058. Some cards use flat 2–3% minimums, which lands ~$700–$1,000 — hence "seven hundred to a thousand.")
+  - RECEIPT: "Don't take my word for it. Open your last statement — by law, every US card statement has a Minimum Payment Warning box printed on it. It shows YOUR payoff date and YOUR total cost if you only pay minimums, right next to a 3-year payoff comparison. The bank is legally required to confess. Go look. That box is this whole video, on your own account."
+- *MID RE-HOOK (~0:25, over the math tile FRI_01):* "And here's where most people scroll away — right before the part that gets that thousand back."
+- **Pt 2: The Trap Is The Design** (PT 2 clip)
+  - MECHANISM: "BUT understand — this isn't you being bad with money. Card companies make most of their interest off 'revolvers' — people who carry a balance month to month. The minimum is calibrated to the exact number that keeps your balance alive as long as possible WITHOUT you defaulting. Interest plus one percent. It's not a payment plan; it's a subscription — and you're the product."
+  - The points trap (optional aside): "And if you're thinking 'but I earn travel points' — points pay you 1 to 2 percent. Carrying a balance costs 21. One month of carrying wipes out a year of points."
+  - THEREFORE: "So 'I'll pay extra when I can' loses to a system designed by actuaries. You don't beat a formula with willpower. You beat it with a different formula — set once, runs forever."
 
 BEAT 4 — PAYOFF (the math the hook promised):
-- **Pt 3: The One-Setting $700 Escape** (PT 3 clip) — fixed $210/month autopay: $1,200 gone in ~6 months, ~$75 interest instead of ~$800. **Same trip, ~$700 cheaper — one autopay setting, set the day you book.**
-- Bridge: clean file → cheap approval → fund the brokerage → deploy.
+- **Pt 3: The One-Setting $700 Escape** (PT 3 clip)
+  - ACTION (the literal steps): "Open your card's app. Payments → AutoPay. It's set to 'Minimum due' — that's the default, that's the trap. Switch it to 'Fixed amount.' The number: your balance divided by six, plus about ten bucks for interest. On $1,200 that's $210 a month."
+  - WORKED NUMBER: "$210 on autopay: the balance is DEAD in seven months, and total interest is about $75. Seventy-five, instead of a thousand. Same trip, same card — one setting, seven-hundred-plus back in your pocket." 
+  - FALLBACK (keeps it honest for tight months): "Can't swing $210? Even a fixed $70 — roughly double the minimum — kills it in 21 months at ~$239 interest. Still saves you five years and eight hundred dollars. The rule isn't the amount — it's FIXED beats MINIMUM, every time." (All illustrative — run your own numbers.)
+  - "And do it the day you book — before the first statement even cycles."
+- Bridge: "This is the first rung of the ladder we run in here: clean file → cheap approvals → fund the brokerage → put capital to work."
 
 BEAT 5 — LOOP-CLOSE + CTA + SIGN-OFF
-- Loop-close (back on the airplane shot): "Book the trip. Just don't let the trip book YOU for six years."
-- "Comment TRIP and I'll send the payoff calculator. 90-day credit plan in the bio."
+- Loop-close (back on the airplane shot): "Book the trip. Just don't let the trip book YOU for the next seven years."
+- "Comment TRIP and I'll send you the payoff calculator so you can run your exact card. 90-day credit plan in the bio."
 - "It's D Waugh, I'm outta here."
 
-CAPTION: Summer trips are booked on cards — and minimums turn $1,200 into ~$2,000. The $700 escape is one phone setting. Pt 1–3 inside. Educational only. #credit #creditcards #travel #personalfinance #debtfree
+CAPTION: Summer trips are booked on cards — and minimums turn $1,200 into $2,000+. Your statement legally confesses it (Pt 1 shows you where). The escape is one autopay setting. Educational only. #credit #creditcards #travel #personalfinance #debtfree
+
+🔢 VERIFY LIVE before recording: Fed avg carried APR (~21%, Q1 2026) · LendingTree new-offer avg (~23.79%, Jun 2026) · Delta reports pre-market today.
 
 ---
 
@@ -178,13 +192,20 @@ BEAT 1 — COLD OPEN: [3–5s of the creator's "sell everything" take] → "That
 
 BEAT 2 — STAKES: "Because if he's right, you sell. If the tape's right, you just got handed a discount. Down 13% or up 241% — same stock. Three parts, and the last one is the playbook."
 
-BEAT 3 — RISING LOOP:
-- **Pt 1: The Claim Vs The Tape** (PT 1 clip) — chips fell hard, that part's real. BUT the same week: the Dow's first close over 53,000 — and within two sessions the same chips snapped back (Micron +3.5%, Broadcom +4.8%). If the market were "over," neither happens.
+BEAT 3 — RISING LOOP (substance standard: claim → mechanism → receipt → number → action):
+- **Pt 1: The Claim Vs The Tape** (PT 1 clip)
+  - MECHANISM: "First — what's 'the tape'? It's the actual record of prices and volume. Not opinions, not thumbnails — what real money actually DID. A take is a prediction; the tape is a receipt. When they disagree, the tape is undefeated, because the tape already happened."
+  - THE RECEIPTS: "His claim: the AI trade is over, get out. The tape's answer: chips fell hard — that part's real — BUT the same week the Dow put in its first close over 53,000, and within two trading sessions the same chips snapped back: Micron +3.5%, Broadcom +4.8%. If the whole market were 'over,' you don't get a record AND a bounce in the same week. Money didn't leave. It moved seats."
 - *MID RE-HOOK (~0:22, over the receipts tile):* "And this is the part the loud takes never show you—"
-- **Pt 2: Zoom Out — Red Day, Green Year** (PT 2 clip) — Micron: −13% in a day (Jun 23), still +241% on the year, back over $1,000 by Monday. SanDisk: −10% day, +750% YTD. THEREFORE a red day on a green year is profit-taking, not a funeral. Panic is a strategy for people who never zoomed out.
+- **Pt 2: Zoom Out — Red Day, Green Year** (PT 2 clip)
+  - RECEIPT (the viewer does it themselves): "Here's a 5-second homework assignment. Open any charting app — even the free one in your brokerage. Type MU, Micron. The chart defaults to ONE DAY — that's the panic view, and it's the only view the loud takes ever show you. Now tap 1Y. One year. Same stock: that terrifying −13% day is a dent on a line that's up 241%. SanDisk, same move: −10% day... +750% year."
+  - MECHANISM: "That's why the pros call it profit-taking, not a collapse — after a +71% record quarter for the chip ETF, the people who RODE that run sold some winners to lock gains. Selling from strength looks identical to panic on a 1-day chart. It looks like nothing on a 1-year chart. THEREFORE: never make a decision on the chart timeframe the fear was sold to you on."
 
 BEAT 4 — PAYOFF:
-- **Pt 3: Rotation-Proof Your First $100** (PT 3 clip) — basket over one lane · automatic buys · plan > prediction. No prediction on where chips go — that's the whole point. The $100 doesn't need you to be right about chips; it needs you to be diversified and automatic.
+- **Pt 3: Rotation-Proof Your First $100** (PT 3 clip)
+  - WHAT A BASKET ACTUALLY IS: "Rotation-proof, step one: buy the basket, not the lane. A broad index ETF is one share that holds hundreds of companies — so when money rotates OUT of chips and INTO value names, you own the seat it lands in. You don't have to guess the winner; you own the whole row."
+  - THE LITERAL ACTION: "Step two: automate it. Every major brokerage has a recurring-buy setting — Trade → Recurring → pick the ETF → $25 a week. Set it once. Now you buy the red days AND the green days without ever making a fear decision — which, if you watched Pt 2, is exactly the decision most people get wrong."
+  - "Step three: that's it. No step three. The $100 doesn't need you to be right about chips — it needs you to be diversified and automatic. Plan beats prediction, every cycle." (Educational only — no recommendations on which fund; we're describing the mechanics.)
 
 BEAT 5 — LOOP-CLOSE + CTA + SIGN-OFF (hard CTA — weekend only)
 - Loop-close: "So — was he right? Doesn't matter. Loud takes get views; the tape pays patience. Educational only."
