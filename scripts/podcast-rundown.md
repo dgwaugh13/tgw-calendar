@@ -1,72 +1,73 @@
-# TGW Podcast Rundown — week of Jul 6–12, 2026
-**Episode (Sunday anchor long-form): "This Market Flip Could Shift Which Decade You Retire In (The Great Rotation)"**
-*(title re-cut Jul 6 to the life-outcome rule — old title "The Dow Hit a Record While Tech Bled — Where Did the Money Actually Go?" kept as the B-test option)*
-**D WAUGH SOLO this week** · ~12–15 min · **⟳ RESET Jul 7: records TODAY, Tue Jul 7** · teleprompter-ready copy: `scripts/podcast-teleprompter.txt` (Sunday/Monday session missed — nothing shipped Mon; flagship + clips drop Tue PM) · figures updated Jul 7 AM to the **Mon Jul 6 close** — **re-verify everything live at record time.**
+# TGW Podcast Rundown — Sunday Jul 19, 2026 (the week's anchor long-form)
+Records Sun Jul 19 · Wolf + D Waugh (Wolf leads Seg 1–2 markets/Fed · D Waugh leads Seg 3–4 banks/credit) · ~13–15 min · YouTube long-form + clips fan out to next week's ladder.
 
-**What changed since this was first built (Jul 5):** Monday Jul 6 the Dow closed above 53,000 for the first time ever (**53,055.91, +155.84 / +0.29%**) while the chips that got crushed **snapped back** (Micron +3.5% to ~$1,009 · Broadcom +4.8% · Nasdaq +1.12% to 26,121 · S&P +0.72% to 7,537) on Foxconn's stronger-than-expected AI-driven quarterly sales; Samsung's Tue-morning guidance then printed a record ~₩89.4T operating profit (~19× YoY) — and its stock fell 6%+ on profit-taking. The rotation now has a third act — washout → record → snapback — and the episode is better for it. The chart-read co-ep records tomorrow (Wed) before the 2pm minutes.
+**TITLE (knowledge-gap, ≤60 chars, 35–54 cut):**
+"A Fed HIKE in 2026? What This Week's 3.9% Really Decided"
+B-option: "The Week That Decided If Your Rates Go UP Again"
 
-Screen-shares this episode:
-- `screenshare/rotation-dashboard.html` — the same-day split, chip washout, Q2 winners, catalysts, week-ahead calendar
-- `screenshare/fomc-minutes-dashboard.html` — the Wednesday setup (tease segment; the FILL-LIVE boxes stay blank until Jul 8, 2pm ET)
+**THROUGH-LINE QUESTION (Sora §5 — opened in the cold open, not fully answered until Seg 4):**
+*"Did this week just green-light the first rate hike since 2023 — and what does that do to your family's numbers?"*
 
----
+**HOOK DOCTRINE — applied at exactly 4 points:** the title, the cold open below, the stakes re-anchor at each segment transition, and the 4 planted clip lines. Segment bodies stay measured and sourced — the episode earns the hook with the actual math.
 
-## Cold open · 0:00–0:45 · life-outcome cut (updated Jul 7)
-- Hook (read verbatim): "Whether you and your partner retire in your fifties or your sixties probably won't be decided by how much you save — it'll be decided by whether you understand weeks like these. Two weeks ago Micron lost $138 billion in a single session. Last Thursday the Dow jumped almost 600 points to a record while chips kept falling. And yesterday? The Dow closed above 53,000 for the first time ever — and the same chips everyone left for dead snapped right back. Same market. All of it true. That's a rotation — and by the end of this episode you'll be able to read one on a chart."
-- Tease the 5 beats: what happened → why (4 catalysts) → the snapback → how to READ a rotation on a chart → what to watch (FOMC minutes TOMORROW 2pm).
-- 🖥️ SCREEN SHARE: rotation-dashboard.html, KPI row on screen.
-
-## 🎬 Planted clip lines — say these verbatim on the recording (the Shorts/teasers get cut from this audio)
-1. "These 3 charts could move your retirement up 10 years — chart literacy, not luck." *(feeds THU's evergreen + SUN's teaser)*
-2. "Your first $100 rides on who's right — the guy screaming 'the AI trade is dead,' or the tape that's still up 241% this year." *(feeds SAT's collab clip — moved from Tue in the reset)*
-3. "Tomorrow's minutes help decide if your family buys a home in 2027 — one document, 2pm, and we read it so you don't have to." *(feeds WED's setup clip)*
-4. "Money never leaves the market — it moves seats. Your job isn't to predict the next seat, it's to own the row." *(the shareable line — use anywhere)*
-
-## Segment 1 — The same-day split (0:45–3:30)
-- LAST Thu (Jul 2) close: Dow +594 (+1.14%) to a record 52,900 · S&P flat 7,483 · Nasdaq −0.8% to 25,833 · SMH −4.5%, second straight down day. *(Say "last Thursday" on air — the split was last week.)*
-- The stretch's chip damage — two waves: the opening shot was Micron −13% in a day (~$138B, Tue Jun 23, on the South Korea ETF warning); then last Thursday's (Jul 2) second wave — Teradyne −13.6%, KLA −11.5%, Lam −10.2%, AMAT −7.4%, Micron another −5.5%; Nvidia −1.4%. Tesla −7% that day DESPITE a delivery beat — sentiment, not results. (SanDisk −10% / Intel −9% / AMD −7% per Intellectia/Kavout — verify live.)
-- **Act three (added Jul 7) — YESTERDAY, Mon Jul 6 close: Dow +155.84 to 53,055.91, first close over 53K · S&P +0.72% to 7,537 · Nasdaq +1.12% to 26,121 · Micron +3.5% (~$1,009) · Broadcom +4.8%.** The driver: Foxconn (Nvidia's assembler) beat on AI-driven quarterly sales. **And Samsung's print landed THIS MORNING (guidance, Jul 7): record ~₩89.4T operating profit, ~19× YoY, ~₩171T sales — third straight record quarter on AI/HBM demand — and the stock still fell 6%+ on profit-taking.** That's the whole episode in one stock: record earnings, red day, green year. The "dead" trade got bought back in two sessions.
-- ✏️ DRAW: circle the Dow +1.14% and SMH −4.5% side by side — "same day." Then: "and by yesterday the money came BACK." 🖥️ Scroll to the dashboard's **"Act 3 · The snapback"** KPI row (added Jul 7) — Dow 53,055.91 / Nasdaq +1.12% / Micron +3.5% / Broadcom +4.8% on screen.
-- Frame: money didn't leave the market. It moved seats — twice.
-
-## Segment 2 — Why: the 4 catalysts (3:30–6:30)
-- 1) Reports SK Hynix is slowing high-bandwidth-memory expansion — the memory trade's fuel line.
-- 2) AI-ROI skepticism — the same ~$725B-capex payoff debate from two weeks ago, new week.
-- 3) A hawkish Warsh Fed — pause plus a hard inflation line; no forecasts, no guidance.
-- 4) The soft jobs print — +57K vs ~110K expected, unemployment 4.2% (participation-driven) — flipped hike-watch to cut-watch.
-- 🖥️ Scroll to the catalysts table. Note the profit-taking context: SMH had a RECORD +71% Q2; SanDisk +750% YTD. A −13% day on a +241% year is profit-taking, not a funeral — **and Monday's snapback is the receipt: the sell-everything takes aged badly in two trading days.**
-
-## Segment 3 — How to read a rotation (the chart lesson) (6:30–10:00)
-- This is the evergreen core (clips feed Thursday's post + next Sunday's banked episode).
-- Chart 1 — relative strength: leader ÷ S&P 500. Rising line = money flowing in while headlines cry.
-- Chart 2 — the new 52-week-high list: who replaced the old leaders? This week: Dow value names.
-- Chart 3 — volume: heavy-volume down days that keep coming = distribution; drying-up selling = a pause.
-- ✏️ DRAW: arrow from the chips bar to the Dow bar — "the money went HERE."
-- Land it: you don't predict the next lane — you own a basket + automate so you're already there. Chart literacy, not predictions.
-
-## Segment 4 — Week ahead + what it means for you (10:00–12:30)
-- 🖥️ SCREEN SHARE: fomc-minutes-dashboard.html.
-- TOMORROW Wed Jul 8, 2pm ET: FOMC minutes — Warsh's first meeting. With the dot and forward guidance gone, minutes are the only tell left. We react Wednesday (FILL-LIVE — nothing gets quoted before the doc drops).
-- Thu: jobless claims (last was 215K — still low). Fri: Delta opens earnings season — **confirmed Fri Jul 10 pre-market, call 10am ET** (Levi's Wed, PepsiCo Thu — verify times).
-- The wallet link: while the Fed holds, card APRs (~21% avg) hold with it. Rate path → your debt cost.
-- Next checkpoints: June CPI Tue Jul 14 · FOMC Jul 28–29.
-
-## Outro (12:30–end)
-- 3 takeaways: a record Dow and bleeding tech can both be true — that's rotation · read relative strength, highs, and volume — not headlines · the plan survives the rotation, the prediction doesn't.
-- Bridge (one beat before sign-off): "Fix the credit file → get approved for funding → open the brokerage → put capital to work. We're tracking the rotation all week in the Discord — link in bio."
-- Sign-off, last and clean: **"It's D Waugh, I'm outta here."** *(solo this week)*
+🎬 **PLANTED CLIP LINES (say verbatim — next week's Shorts/teasers cut from this audio):**
+1. "One Tuesday morning decided whether your card's APR jumps past 21 percent."
+2. "$66 a month — that's what a single Fed move does to a $400K mortgage. $23,803 over the loan."
+3. "The banks know if you're cracking before you do — and this week they showed their hand."
+4. "Inflation 'fell' this week — and your grocery bill didn't get the memo."
 
 ---
 
-## Resources / sources to cite (verified Jul 7 AM — re-verify at record time)
-- **Mon Jul 6 closes: TheStreet / Yahoo Finance / CNBC — Dow 53,055.91 (+155.84, +0.29%, record — first close above 53K), S&P 7,537.43 (+0.72%), Nasdaq 26,121.16 (+1.12%); Micron +3.46% ≈ $1,009, Broadcom +4.83%; Foxconn AI-sales beat (Yahoo), Samsung Q2 due Tue (~18× profit jump expected).**
-- Thu Jul 2 closes: Yahoo Finance / TheStreet / CNBC — Dow 52,900.07 (+594.83), S&P 7,483.24, Nasdaq 25,832.67 (−0.8%), SMH −4.5%, Teradyne −13.6%, KLA −11.5%, Nvidia −1.4%, Micron −5.5%, Tesla −7%.
-- Micron −13% ≈ $138B single-session loss; Intel −9%, AMD −7% (Intellectia/Kavout, Jul 1); SK Hynix HBM reports.
-- Q2 winners: SanDisk +258%, Micron +241%, Intel +216%, Marvell +200% (Morningstar); SanDisk +750% YTD; SMH record +71% Q2.
-- June jobs: +57K vs ~110K expected, unemployment 4.2%, participation 61.5%, Apr+May −74K (BLS, Jul 2). Claims 215K (Schwab).
-- Calendar: FOMC minutes Wed Jul 8, 2pm ET; claims + existing home sales Thu; Delta/Levi's/PepsiCo earnings (Kiplinger, Investing.com — verify dates/times).
-- Warsh June-meeting quotes: Kiplinger Fed-meeting coverage ("Persistently high prices are a burden for the American people"; forward guidance "not well suited").
+## COLD OPEN (0:00–0:45)
+- Hook (life-outcome + number, 35–54 cut): "This week, one Tuesday morning — one inflation report, five bank earnings, and a brand-new Fed chair in front of Congress — moved the odds on whether you and your family pay MORE on every borrowed dollar in 2026. Inflation 'fell' to [FILL: actual headline]… and somehow a rate HIKE is still on the table. By the end of this episode you'll know exactly what that does to your mortgage, your card, and your plan — with the receipts."
+- Preview: the print → Warsh's first testimony → what the banks confessed → your money.
+- 🖥️ SCREEN SHARE: `screenshare/cpi-day-dashboard.html` (open on the FILL-LIVE headline panel).
 
-**Recording-day staleness guard (added Jul 7):** every market claim in this rundown is DATED (yesterday / last Thursday / this morning) — say them that way and today's afternoon tape cannot invalidate the recording. Do not describe today's intraday market on air. At ~4:05pm, before posting, run the 2-minute close check on the board's TUE card: normal day → post as recorded; big move against the story → post anyway + pinned comment ("today it swung again — that's the point, rotations breathe") and consider a bonus reaction clip. Never rescind, never predict — top it.
+## SEGMENT 1 — The print: headline vs core (0:45–3:45)
+- Going in, consensus said headline −0.1% m/m → ~3.9% y/y (down from May's 4.2%) and core +0.3% m/m → ~2.9% y/y. [FILL LIVE: the actual print, both lines.]
+- MECHANISM on air: oil −21% to ~$77 after the mid-June ceasefire / Strait of Hormuz reopening → energy dragged the headline down. Core — the trend line the Fed reads — [FILL: stuck at 2.9% / moved].
+- The worked cost: 3.9% on $60K of household spending = $2,340/yr; the gap vs the 2% target = $1,140/yr. "Falling inflation" still isn't free.
+- ✏️ DRAW: circle "All items" vs "All items less food and energy" on the dashboard's two-line panel.
+- **Stakes re-anchor (transition):** "That's the number — but a number doesn't set your APR. The guy who testified 90 minutes later does. Segment two."
 
-**Compliance:** educational content only — not financial advice. No trade recs, no price targets, no predictions about where the rotation goes next.
+## SEGMENT 2 — Warsh's first Humphrey-Hawkins + the hike math (3:45–7:00)
+- Tue Jul 14, 10am House · Wed Jul 15, 10am Senate — first Humphrey-Hawkins of his tenure. [FILL: 1–2 actual quotes on the 2% target / hike posture.]
+- The setup: fed funds 3.50–3.75%, held four straight meetings since Dec 2025. Futures priced ~22–30% odds of a HIKE at the Jul 28–29 meeting going into the week. [FILL: where the odds ended the week — CME FedWatch.]
+- 🖥️ SCREEN SHARE: `screenshare/hike-path-dashboard.html` (odds strip + the pass-through table).
+- The pass-through math (worked, verified): 25bp on a $400K 30-yr = $2,528 → $2,594/mo = **+$66/mo, +$23,803 over 30 years**. Card APRs float on prime → a hike lands on statements within 1–2 cycles; $5,000 at ~21% is already $87.50/mo in interest.
+- **Stakes re-anchor:** "So the Fed sets the price of your debt — but whether Americans can still PAY theirs, that's what the banks just told us. Segment three, D Waugh's lane."
+
+## SEGMENT 3 — What the banks confessed (7:00–10:30) · D Waugh leads
+- Tue Jul 14 pre-market: JPMorgan, Bank of America, Citigroup, Wells Fargo, Goldman — all in one morning. Consensus going in: JPM $5.49 EPS on $48.7B revenue (+10.7% y/y) · BAC $1.12 on $30.7B (~+25%). Options priced 4.4–6.0% single-day moves. [FILL LIVE: actuals + the tape reaction.]
+- What we actually read them for (mechanism): **net interest income** (what a hold-vs-hike world pays banks), **card delinquency + charge-off rates** (is the consumer cracking?), **loan-loss provisions** (what the banks EXPECT to go bad).
+- 🖥️ SCREEN SHARE: `screenshare/bank-earnings-dashboard.html` — the consumer-stress panel; ✏️ DRAW on the delinquency trend line [FILL].
+- Also this week in the same lane: ASML Wed · TSMC Thu (consensus ~$3.81/ADR, revenue ~$40.0B ≈ +33% y/y — the AI-capex health check) · retail sales Thu 8:30am [FILL] · UMich sentiment Fri.
+- **Stakes re-anchor:** "None of this matters as a scoreboard — it matters as YOUR borrowing costs and YOUR plan. Last segment: what we actually do."
+
+## SEGMENT 4 — Your money in a maybe-hike world (10:30–13:30)
+- The order stands regardless of the print (education, not advice): take the full employer match (on $60K at 50%-of-6%, that's $1,800/yr — skipping it a decade ≈ $24,870 at 7%) → kill 20%+ APR debt first (guaranteed 21% "return" beats any market average) → then automate investing past the match. A hike makes step 2 MORE valuable, not less.
+- If you're house-shopping: the ODDS move quotes before the vote does — that's why Tuesday mattered even with no meeting until the 29th.
+- DCA discipline: the plan doesn't flinch on one print in either direction. Bring back Saturday's EYL debate — the APR sort is the same answer here.
+- Tease next week: FOMC decision Jul 28–29 — we'll react same-day. June PCE lands late July before the meeting.
+
+## OUTRO (13:30–end)
+- 3 takeaways: (1) headline fell on gas, core is the tell · (2) a 25bp hike = $66/mo on a $400K mortgage, $87.50/mo is what a $5K card balance already costs · (3) the order — match → high-APR debt → automate — survives every print.
+- Bridge (one beat before the close): "Fix your credit → get funding → open the brokerage → put capital to work. We're tracking the FOMC run-up all week in the Discord — link in bio."
+- Sign-off, last and clean: **"It's Wolf, I'm outta here."** / D Waugh follows: **"It's D Waugh, I'm outta here."**
+
+---
+
+## RESOURCES / SOURCES (verified Jul 12 — re-verify all FILL items at record time)
+- CPI: BLS, June CPI released Tue Jul 14, 8:30am ET (bls.gov/schedule). Consensus: headline −0.1% m/m → ~3.9% y/y; core +0.3% → ~2.9% (BMO/consensus via Kiplinger preview). May CPI: 4.2% y/y.
+- Oil: ~$77/bbl, ~−21% after mid-June ceasefire / Strait of Hormuz reopening (Kiplinger/Continuum preview).
+- Fed: funds rate 3.50–3.75%, held since Dec 2025 (federalreserve.gov, Jun 17 statement); hike odds ~22–30% for Jul 28–29 (CME FedWatch / rateprobability, pulled Jul 12 — refresh live).
+- Warsh Humphrey-Hawkins: House Financial Services Tue Jul 14 10am · Senate Banking Wed Jul 15 10am.
+- Banks: JPM cons. $5.49 EPS / $48.7B rev (+10.7%) · BAC $1.12 / $30.7B (Zacks/IG previews) · implied single-day moves: GS 6.0% · C 5.5% · WFC 5.5% · BAC 4.5% · JPM 4.4%.
+- Chips: ASML Q2 Wed Jul 15 pre-market (cons. EPS ~$7.98) · TSMC Thu Jul 16 (cons. ~$3.81/ADR, rev ~$40.04B ≈ +33% y/y).
+- Market tape going in: Dow record close 53,055.91 (Mon Jul 6) → 52,478.41 Fri Jul 10 (−1.1% off the record) as oil rose on renewed Strait tension; SK Hynix ADR +13% debut pop.
+- Worked math (computed + verified this run): $400K @6.50% = $2,528.27/mo vs @6.75% = $2,594.39/mo (+$66.12, +$23,803/30yr) · $5,000 @21% = $1,050/yr = $87.50/mo · $60K spend @3.9% = $2,340/yr (vs 2% target: +$1,140) · match $1,800/yr → 10yr @7% = $24,870.
+
+## SCREEN-SHARE CUES (this week's dashboards, in `screenshare/`)
+1. `cpi-day-dashboard.html` — cold open + Seg 1. FILL-LIVE boxes: headline m/m + y/y, core m/m + y/y. Verify-before-posting banner stays until filled.
+2. `hike-path-dashboard.html` — Seg 2. Odds strip [FILL from FedWatch], the 25bp pass-through table (pre-computed), the held-since-Dec timeline.
+3. `bank-earnings-dashboard.html` — Seg 3. Consensus vs actual table [FILL], consumer-stress panel (NII / delinquencies / provisions) [FILL].

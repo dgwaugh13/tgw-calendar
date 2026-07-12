@@ -1,233 +1,206 @@
-# TGW Scripts — week of Jul 6–12, 2026
-Bullet talking points, never prose to read verbatim (except hooks, stats, CTA). Voice: knowledgeable mentor in your group chat. Every asset: "educational content only — not financial advice." Sign-off structure is fixed: Discord/CTA line one beat BEFORE, then the untouched closer LAST — **"It's Wolf, I'm outta here." / "It's D Waugh, I'm outta here."**
+# TGW Scripts — Week of Jul 13–19, 2026
+Built Jul 12, 2026 · Sora story pass applied to every script · all worked numbers computed + verified this run (bash) · figures sourced live Jul 12 — **re-verify anything time-sensitive at record time.** Educational content only — not financial advice. No trade recommendations, no price predictions.
 
-**★ SORA STORY PASS — Fri Jul 10 revamp.** FRI / SAT / SUN below were rebuilt through `TGW Storytelling Guide (Sora).md`: 5-beat spine (cold open → stakes → rising loop → payoff withheld → loop-close), but/therefore transitions, Pt 1/2/3 on-screen progress headers, clip cues inline. **Sora's structural adjustment #1 (from this week's watch-through):** "Trump accounts" held 48.9% avg-viewed because the payoff was a concrete reveal; lesson-frame posts died at ~22%. So: the number-promise goes in the first 2 seconds, the math is withheld to the final 15%, and the Pt headers act as an on-screen progress bar so viewers know the payoff is coming.
+**★ Sora structural adjustment #2 (this week):** last week's watch-through re-proved the concrete-reveal rule — "Trump accounts" held **49.1% avg viewed and ranked 1 of 10** while everything lesson-framed died. But the Pt-header progress-bar test is still UNRESOLVED (the FRI/SAT posts carrying it never shipped). This week: keep the Pt 1/2/3 headers, and additionally **cut to a data tile with the exact payoff number ON SCREEN in Beat 4** — reveals are what hold, so the payoff beat always lands on the number, visually, not just spoken. Track TUE/THU/SAT completion next pull.
 
----
-
-## MON Jul 6 — Flagship · P6 React · "The Great Rotation" (Wolf)
-
-**TikTok/IG clip (1–3 min) + YT Short #1**
-
-HOOK VARIANTS (desire/emotion-led, number attached):
-1. Material-outcome: "Your portfolio just lived through a rotation — here's how 52,900 and −13% happened the same week."
-2. Knowledge-gap: "The Dow hit a record while Micron lost $138B. Both are the same story."
-3. Question-twist (Atlas-style): "Tech bled, the Dow hit 52,900 — so is the AI trade over, or just moving?"
-
-SELECTED HOOK: #2 — "The Dow hit a record while Micron lost $138 billion. Both are the same story — let me show you."
-
-POINT 1 — The same-day split (tile 01)
-- Thu close: Dow +594 to a record 52,900 · Nasdaq −0.8% · chips (SMH) −4.5%, second straight down day. (Yahoo/CNBC — verify live.)
-- Why it matters: one screen says boom, one says bust — that's not a contradiction, it's a rotation.
-
-POINT 2 — The washout (tile 02)
-- The opening shot: Micron −13% in one day, ~$138B gone (Tue Jun 23). Thursday's second wave: Teradyne −13.6% · KLA −11.5% · Lam −10.2% · Micron another −5.5% (Intel −9% / AMD −7% per Intellectia — verify live).
-- Context: this comes AFTER a record +71% Q2 for the chip ETF. Profit-taking on monsters, not a collapse.
-
-POINT 3 — Where it went (tile 03)
-- Q2's winners: SanDisk +258%, Micron +241%, Intel +216%, Marvell +200% — those profits rolled into Dow value names (record) and the "next AI winners" hunt.
-- Takeaway: money never leaves, it moves seats. You don't chase it — you own a basket and automate.
-
-CLOSE + CTA + SIGN-OFF
-- One line: "Record and washout, same week — that's what rotation looks like."
-- "Full breakdown on the channel — and comment ROTATE for the 3-chart rotation cheat sheet."
-- "It's Wolf, I'm outta here."
-
-CAPTION: The Dow hit 52,900 the same week Micron lost $138B in a day. The money didn't leave — it rotated. Here's how to see it on a chart. 📊 Educational only — not financial advice. #stockmarket #investing #rotation #chipstocks #fintok
-
-**YT long-form** — the podcast episode (see podcast-rundown.md). Title (≤60 char, knowledge-gap): **"The Dow Hit a Record While Tech Bled. Here's Where Money Went."** YouTube 35–54 cut: lead with "what a rotation does to your 401(k) allocation" framing in the intro.
+**Cadence (adopted Jul 10):** 3 short-form posts + the Sunday podcast anchor. TUE = news-react (P6) · THU = chart/trading evergreen (P1) · SAT = collab/guest-reaction (IG-first). MON/WED/FRI are PREP/ENGAGE days. A 4th drop is authorized ONLY if Tuesday's CPI print is a shock either way (see TUE contingency).
 
 ---
 
-## TUE Jul 7 — Collab / guest-reaction (IG-first) · "The AI trade is over?" (Wolf or D Waugh)
+## TUE JUL 14 — FLAGSHIP NEWS-REACT (P6) · Wolf · record AFTER the 8:30am print
+**TOPIC:** June CPI drops 8:30am ET + all five big banks report pre-market + Fed Chair Warsh's first Humphrey-Hawkins testimony 10am — one morning that decides whether the Fed HIKES on Jul 29.
 
-Format: stitch/duet a big finance creator's "the AI trade is dead — sell everything" take (pick fresh Tuesday from FYP; react to the take, never trash the creator). This is the week's collab beat — IG's ~100× format.
+**⚠ FILL-LIVE:** consensus below is the SETUP, not the story. Record after 8:30am with the REAL print. The FILL-LIVE tile (broll/TUE) has blanks + a verify-before-posting banner.
 
-SELECTED HOOK (after the 3–5s creator clip): "That's the loudest take on my feed right now. Here's what the tape actually says."
+HOOK VARIANTS (life-outcome per doctrine — viewer's life is the subject, number mandatory):
+1. **Life-outcome (selected):** "Tuesday morning they'll tell you inflation FELL — but your money still buys **$2,340 less** this year. Here's the number that actually decides if your rates go UP this month."
+2. Material-outcome: "One Fed move adds **$66/month** to a $400K mortgage — and Tuesday at 8:30am decides if it's coming."
+3. Knowledge-gap: "3 numbers Tuesday morning decide your card's APR for the rest of 2026."
 
-POINT 1 — The claim vs the tape (tile 01)
-- Chips −6.3% Wed, −4.5% Thu — that part's real.
-- Same Thursday: Dow +594 to a record. If the market were "over," value names wouldn't be at all-time highs.
+**Platform age-split:** TikTok/IG (25–34): the card APR + car loan + "your first apartment's rent math" cut. YouTube Short (35–54): the $400K-mortgage / refi-timing cut ("$66/month, $23,803 over the loan").
 
-POINT 2 — Zoom out (tile 02)
-- Micron: −13% day, still +241% on the year. SanDisk: −10% day, still +750% YTD.
-- A red day on a green year is profit-taking. Panic is a strategy for people who never zoomed out.
+### SORA STORY SPINE (countdown 3→2→1, payoff withheld)
 
-POINT 3 — What you actually do (tile 03)
-- Rotation-proof the first $100: basket over one lane, automatic buys, plan > prediction.
-- No prediction on where chips go — that's the point.
+**BEAT 1 · COLD OPEN (0–2s)** — in-scene, mid-motion:
+> "They're about to tell you inflation just fell. Your grocery bill didn't get the memo."
+*(b-roll: INTRO clip with full TGW hook box — grocery/receipt footage)*
 
-CLOSE + CTA + SIGN-OFF
-- "Loud takes get views. Charts pay bills — metaphorically. Educational only."
-- "Comment ZOOM and I'll send the zoom-out checklist. We're debating this take in the Discord — link in bio."
-- "It's Wolf, I'm outta here." *(or D Waugh if he records — credit/econ angle: "a rotation is the economy re-pricing, not dying")*
+**BEAT 2 · STAKES (2–8s):**
+> "Tuesday, 8:30am, one report decides whether the Fed raises rates THIS MONTH — the first hike since 2023. That's your card's APR, your car loan, and whether a refi waits another year. Three numbers. The third one is the one they won't lead the news with — stay for that."
 
-CAPTION: Everyone's calling the AI trade dead after a −13% day. The same stock is up 241% this year. Reaction + receipts inside. Educational only. #ai #stocks #investing #stitch #moneytok
+**BEAT 3 · RISING LOOP:**
 
----
+**Pt 3 — The headline is about to lie to you** *(Pt-header clip 1)*
+- CLAIM: headline inflation is expected to DROP — maybe even print negative for the month.
+- MECHANISM: consensus says −0.1% month-over-month, pulling the yearly rate from 4.2% to ~3.9%. Why? Oil crashed ~21% to about $77 after the mid-June ceasefire reopened the Strait of Hormuz — and energy swings drag the headline number around like a dog on a leash. Gas got cheaper; your rent and groceries didn't.
+- RECEIPT: Tuesday at 8:30, open the BLS release yourself — bls.gov, first table. Compare the line "All items" to "All items less food and energy." Two different worlds on one page.
+- WORKED NUMBER: at 3.9%, a household spending $60K/yr pays **$2,340 more** for the same life. Even at the Fed's 2% target it'd be $1,200 — so you're still **$1,140/yr** past target. "Falling" inflation still costs you.
+- ACTION: don't retype the headline — read the core line before you react to anything Tuesday.
+- *Transition (but):* "But the Fed doesn't even read that headline number—"
 
-## WED Jul 8 — FOMC minutes day · P6 React · FILL LIVE after 2:00pm ET (Wolf)
+**Pt 2 — The number Warsh actually reads** *(Pt-header clip 2)*
+- CLAIM: core CPI is the tell, and it's expected to stay STUCK.
+- MECHANISM: core strips food + energy to show the trend. Consensus: +0.3% for the month, 2.9% for the year — exactly where it was a YEAR ago. No progress. And 90 minutes after the print, Warsh sits in front of Congress for his first Humphrey-Hawkins — rates are already at 3.50–3.75%, held since December, and futures markets price a **~1-in-4 chance of a HIKE on July 29**.
+- RECEIPT: the odds are public — CME FedWatch, free, updates live. Watch them move Tuesday morning.
+- WORKED NUMBER: core 2.9% vs target 2.0% = the entire reason "hike" is even in the conversation.
+- ACTION: check FedWatch before and after 8:30 Tuesday — the jump (or collapse) in hike odds IS the market's verdict, faster than any headline.
+- *Mid-video re-hook:* "And this is where it lands on YOUR statement—"
 
-⚠ FILM AFTER 2PM ET. Quote the minutes doc directly (federalreserve.gov). Tile 01 is a FILL-LIVE template — fill tone / hikes / cuts / the quote line, verify before posting.
+**Pt 1 — What a hike does to your actual numbers** *(Pt-header clip 3 → Beat 4 payoff tile)*
+- CLAIM: one 25-basis-point move is small on paper and real in your budget.
+- MECHANISM: card APRs float on the prime rate, which moves with the Fed — hikes pass through within 1–2 statements. Mortgages price off expectations, which is why the ODDS moving already matters.
+- RECEIPT: open your card app tonight → find your APR (it's on the statement, "Interest Charge Calculation"). Write it down. If the Fed hikes on the 29th, watch that number move by your next statement — your own account is the proof.
+- **WORKED NUMBER (payoff — on the tile, on screen):** a $5,000 balance at today's ~21% average APR already costs **$87.50/month** in interest before you touch the principal. And 25bp on a $400K 30-yr mortgage = **$66/month = $23,803 over the loan.** That's what Tuesday's 8:30am number is actually deciding.
+- ACTION: card APR written down tonight · anything charging you 20%+ gets attacked before any new investing (that's a guaranteed return no market promises) · if you're house-shopping, know that the ODDS move your quote before the Fed ever votes.
 
-SELECTED HOOK: "The Fed stopped telling you what happens next — today we got the only look behind the curtain. Here's what the minutes actually say."
+**BEAT 5 · LOOP-CLOSE + SIGN-OFF:**
+> "So Tuesday, when they tell you inflation fell — you'll know which number actually decides your year. Comment **CPI** and I'll send you the rate-path cheat sheet — we're tracking the print live in the Discord, link in bio. It's Wolf, I'm outta here."
 
-POINT 1 — Why these minutes matter more than usual (tile 02)
-- Warsh killed forward guidance and skipped the dot plot — the minutes are the last remaining tell.
-- Inflation has run above the 2% goal for 5+ years; the committee's dot median (without Warsh) still says 3.8%.
+CAPTION (TikTok/IG — doctrine: outcome + number):
+"Inflation 'falls' to ~3.9% Tuesday — your money still buys $2,340 less this year. The number that decides if rates go UP this month 👀 Comment CPI for the rate-path cheat sheet. Educational content only — not financial advice."
+#cpi #inflation #fed #ratehike #fintok #moneytok
 
-POINT 2 — What the doc says (tile 01, FILLED)
-- [FILL LIVE: tone · hike language · cut language · the one quotable line.]
-- Set it against the +57K jobs miss — jobs say cut, inflation says don't.
-
-POINT 3 — Your money (tile 03)
-- While the Fed holds, card APRs (~21% avg) hold with it — the pause has a monthly cost.
-- Next checkpoints: CPI Tue Jul 14 · FOMC Jul 28–29.
-
-CLOSE + CTA + SIGN-OFF
-- "No predictions — we read the document so you don't have to."
-- "Comment MINUTES for the plain-English breakdown. Deeper dive in the Discord — link in bio."
-- "It's Wolf, I'm outta here."
-
-CAPTION: The Fed's minutes just dropped — Warsh's first meeting, no forecasts, no guidance. What it says + what it costs you monthly. Educational only. #fed #fomc #interestrates #economy
-
----
-
-## THU Jul 9 — Trading evergreen · P1 · "Reading a rotation" (Wolf)
-
-The guaranteed weekly chart-read (95–125K Search vein). Evergreen: no dates in the spoken script, this week's tape is just the example. Clips the banked Sunday episode.
-
-SELECTED HOOK: "Money never leaves the market — it rotates. Here are the 3 charts that show where it went. Save this."
-
-POINT 1 — Relative strength (tile 02, row 1)
-- Any leader ÷ the S&P 500. Rising line = money flowing in even when headlines are scared.
-- Example this week: value names' RS turned up while chip RS rolled over.
-
-POINT 2 — The new-highs list (tile 02, row 2)
-- The 52-week-high list is the market's attendance sheet — who showed up when the old leaders sat down?
-
-POINT 3 — Volume (tile 02, row 3)
-- Repeated heavy-volume down days = distribution. Selling that dries up = a pause.
-- Structure check: higher lows intact = rotation; lower highs everywhere = trend change.
-
-CLOSE + CTA + SIGN-OFF
-- "This is chart literacy, not a prediction — it tells you where money IS, not where it's going."
-- "Link in bio for the rotation cheat sheet. Full chart breakdown drops Sunday."
-- "It's Wolf, I'm outta here."
-
-CAPTION: Money never leaves — it rotates. 3 charts that show where it went, on any stock, any cycle. Save this. 📈 Educational only. #charts #technicalanalysis #investing #stockmarket
-
-**YT Short #2:** one signal only (relative strength) → "full breakdown on the channel." Title: "The chart that catches every rotation early."
+**CONTINGENCY (the authorized 4th drop):** if the print shocks (core ≥0.4% or headline ≥4.1% — hike odds spike; or core ≤0.2% — odds collapse), cut a same-day evening follow-up: "the market just repriced your 2026 in one morning" using the live FedWatch move. Otherwise, 3 posts stand.
 
 ---
 
-## FRI Jul 10 — Credit · P2 · bank reel #24, travel cut (D Waugh) — ★ SORA REBUILD
+## THU JUL 16 — TRADING EVERGREEN (P1) · Wolf · record MON, post THU off-peak (AM)
+**TOPIC:** Strike price + breakeven — the option-chain math beginners skip. **Pulled straight from our own TikTok Search demand:** "options tutorial," "breakeven price options," "how to know what strike price" are hitting the account. The 95K–125K chart-read vein.
 
-Peg: Delta opens earnings season today + peak summer-trip booking. 🔢 Verify the live APRs before posting (Fed ~21% carried, Q1 2026 · LendingTree ~23.79% new offers, Jun 2026).
+All figures are a **clearly-labeled hypothetical** ("say a stock trades at $100…"). No tickers, no recommendations.
 
-**STORY MAP (5-beat spine · ~60s · Pt headers = the on-screen progress bar):**
-| Time | Beat | Clip on screen | Loop |
-|---|---|---|---|
-| 0:00–0:02 | Cold open | `FRI_V5_airplane-window` (INTRO hook box) | OPENS: $1,200 → $2,000, and a $700 escape |
-| 0:02–0:08 | Stakes | hold V5 → cut to `FRI_V6_luggage` (clean) | personal: "you already booked it" |
-| 0:08–0:20 | Pt 1 | `FRI_V2_holding-credit-card` (PT 1 box) | small loop: the years, not the dollars |
-| 0:20–0:24 | MID RE-HOOK | tile `FRI_01_trip.png` (our math) | re-opens: "the escape is one setting — hold on" |
-| 0:24–0:38 | Pt 2 | `FRI_V1_paying-with-card` (PT 2 box) | but/therefore: the trap is the design |
-| 0:38–0:52 | Pt 3 = PAYOFF | `FRI_V3_card-online-checkout` (PT 3 box) | CLOSES: $210/mo → ~$75 interest → ~$700 saved |
-| 0:52–end | Loop-close + sign-off | back to airplane (clean V5 or intro) | ties back to the cold open |
+HOOK VARIANTS:
+1. **Selected:** "This '$2' option is secretly a **7% bet** — and your broker prints the proof on the order screen. Most people never look."
+2. Material: "Your first $200 in options shouldn't evaporate over one formula — breakeven in 60 seconds."
+3. Knowledge-gap: "3 numbers on an option chain decide if the 'cheap' one is actually the expensive one."
 
-**SUBSTANCE STANDARD (adopted Jul 10 after Wolf's note — every Pt carries: CLAIM → MECHANISM (how it actually works) → RECEIPT (where the viewer verifies it on their OWN account) → WORKED NUMBER → ACTION (the literal steps). Lines below are speakable "say-this" prose — riff on them, don't read them.**
+**Platform age-split:** TikTok/IG (25–34): "your first $200" framing. YouTube Short (35–54): "the leverage math nobody shows you before you let your kid trade options" / position-sizing discipline cut.
 
-BEAT 1 — COLD OPEN (in-scene, no greeting): "The trip you just booked is going to charge you twice. Once at checkout — and once, quietly, for about the next seven years. That's how a $1,200 trip ends up costing over $2,000."
+### SORA STORY SPINE
 
-BEAT 2 — STAKES: "Delta reports earnings this morning because summer travel is record-breaking — and most of those trips are sitting on cards at 21%. If yours is one of them, the escape is one setting on your phone and it saves you seven hundred to a thousand dollars. But it only works if you see the trap first. Three parts."
+**BEAT 1 · COLD OPEN (0–2s):**
+> "This two-dollar option is a seven percent bet. Let me show you the math nobody does."
+*(INTRO clip, full hook box — trading-screen footage)*
 
-BEAT 3 — RISING LOOP:
-- **Pt 1: The Real Price Of Minimums** (PT 1 clip)
-  - MECHANISM (say this): "Here's how your minimum payment is actually calculated — most issuers charge the month's interest PLUS one percent of the balance. Sounds fine until you run month one: $1,200 at 21% is $21 of interest. Your minimum is about $33. So of the $33 you just paid... $21 went to the bank. Twelve dollars — TWELVE — touched what you actually owe. Sixty-four cents of every dollar, gone to interest."
-  - WORKED NUMBER: "Run that forward: eighty-six months. Seven-plus YEARS. Over a thousand dollars in interest on a twelve-hundred-dollar trip." (Model: interest + 1% of balance, $25 floor — exact figures: 86 months, ~$1,058. Some cards use flat 2–3% minimums, which lands ~$700–$1,000 — hence "seven hundred to a thousand.")
-  - RECEIPT: "Don't take my word for it. Open your last statement — by law, every US card statement has a Minimum Payment Warning box printed on it. It shows YOUR payoff date and YOUR total cost if you only pay minimums, right next to a 3-year payoff comparison. The bank is legally required to confess. Go look. That box is this whole video, on your own account."
-- *MID RE-HOOK (~0:25, over the math tile FRI_01):* "And here's where most people scroll away — right before the part that gets that thousand back."
-- **Pt 2: The Trap Is The Design** (PT 2 clip)
-  - MECHANISM: "BUT understand — this isn't you being bad with money. Card companies make most of their interest off 'revolvers' — people who carry a balance month to month. The minimum is calibrated to the exact number that keeps your balance alive as long as possible WITHOUT you defaulting. Interest plus one percent. It's not a payment plan; it's a subscription — and you're the product."
-  - The points trap (optional aside): "And if you're thinking 'but I earn travel points' — points pay you 1 to 2 percent. Carrying a balance costs 21. One month of carrying wipes out a year of points."
-  - THEREFORE: "So 'I'll pay extra when I can' loses to a system designed by actuaries. You don't beat a formula with willpower. You beat it with a different formula — set once, runs forever."
+**BEAT 2 · STAKES (2–8s):**
+> "If you're about to put your first $200 into options — this one formula is the difference between a plan and a donation. Three numbers. The third is the one the chain doesn't even print."
 
-BEAT 4 — PAYOFF (the math the hook promised):
-- **Pt 3: The One-Setting $700 Escape** (PT 3 clip)
-  - ACTION (the literal steps): "Open your card's app. Payments → AutoPay. It's set to 'Minimum due' — that's the default, that's the trap. Switch it to 'Fixed amount.' The number: your balance divided by six, plus about ten bucks for interest. On $1,200 that's $210 a month."
-  - WORKED NUMBER: "$210 on autopay: the balance is DEAD in seven months, and total interest is about $75. Seventy-five, instead of a thousand. Same trip, same card — one setting, seven-hundred-plus back in your pocket." 
-  - FALLBACK (keeps it honest for tight months): "Can't swing $210? Even a fixed $70 — roughly double the minimum — kills it in 21 months at ~$239 interest. Still saves you five years and eight hundred dollars. The rule isn't the amount — it's FIXED beats MINIMUM, every time." (All illustrative — run your own numbers.)
-  - "And do it the day you book — before the first statement even cycles."
-- Bridge: "This is the first rung of the ladder we run in here: clean file → cheap approvals → fund the brokerage → put capital to work."
+**BEAT 3 · RISING LOOP (countdown):**
 
-BEAT 5 — LOOP-CLOSE + CTA + SIGN-OFF
-- Loop-close (back on the airplane shot): "Book the trip. Just don't let the trip book YOU for the next seven years."
-- "Comment TRIP and I'll send you the payoff calculator so you can run your exact card. 90-day credit plan in the bio."
-- "It's D Waugh, I'm outta here."
+**Pt 3 — What the chain is actually showing you** *(Pt-header 1)*
+- CLAIM: an option's price isn't the price — it's the price × 100.
+- MECHANISM: say a stock trades at $100. The $105 call = the RIGHT to buy at $105 by expiry. Premium "$2" = $2 per share × 100 shares = **$200 real money out** the moment you tap buy.
+- RECEIPT: open any broker's option chain right now — one row: strike, bid/ask, expiry. That "$2" you see? The order ticket will show $200. Look before you ever trade.
+- WORKED NUMBER: $2.00 premium = $200 cost, on a $100 stock.
+- ACTION: read one chain tonight without buying anything. Just find: strike, premium, expiry.
+- *Transition (therefore):* "Therefore the real question isn't 'is $2 cheap' — it's how far the stock has to RUN—"
 
-CAPTION: Summer trips are booked on cards — and minimums turn $1,200 into $2,000+. Your statement legally confesses it (Pt 1 shows you where). The escape is one autopay setting. Educational only. #credit #creditcards #travel #personalfinance #debtfree
+**Pt 2 — Breakeven: the formula** *(Pt-header 2)*
+- CLAIM: breakeven = strike + premium. That's it — and it's brutal.
+- MECHANISM: $105 strike + $2 premium = **$107**. The stock has to climb **+7%** before expiry for you to get your own money back. Below that, you're paying for the ride.
+- RECEIPT: your broker literally prints "breakeven" on the order preview screen. Tap the order (don't submit) and read it.
+- WORKED NUMBER: stock finishes at $105 — up 5%! — and you lose **100%** ($200 gone: no intrinsic value at the strike). At $106: still −50%. At $107: you've earned exactly $0. Up 7% to break even.
+- ACTION: before ANY option: write strike + premium = breakeven, then ask "do I really expect that move in that time?"
+- *Mid-video re-hook:* "And here's the part the option chain doesn't print anywhere—"
 
-🔢 VERIFY LIVE before recording: Fed avg carried APR (~21%, Q1 2026) · LendingTree new-offer avg (~23.79%, Jun 2026) · Delta reports pre-market today.
+**Pt 1 — The asymmetry (why people still do this) + the hurdle (why most lose)** *(Pt-header 3 → payoff tile)*
+- CLAIM: options are leverage — both directions.
+- MECHANISM: past breakeven, gains run fast: at $110 the call is worth $500 → **+$300 on $200 = +150%** while the stock moved +10%. That asymmetry is the temptation. The catch is the clock: needing +7% inside ~30 days is a BIG ask — most months, most stocks don't move 7%.
+- RECEIPT: pull any stock's 1-month chart and count how many +7% months you see in the last year. That's your honest odds check, on your own screen.
+- **WORKED NUMBER (payoff tile, on screen):** same trade, three endings — stock +5% → option −100% · stock +7% → option ±0% · stock +10% → option +150%. The chain sells you the third row; the first two are more common.
+- ACTION: paper-trade it — pick one call, write strike/premium/breakeven, track it to expiry with zero dollars. Do that 3 times before real money. And never size an options position you couldn't lose 100% of.
 
----
+**BEAT 5 · LOOP-CLOSE + SIGN-OFF:**
+> "So next time someone shows you a 'cheap' $2 option — you'll see the 7% bet it really is. We break chains down every week in the Discord — link in bio. It's Wolf, I'm outta here."
 
-## SAT Jul 11 — ★ COLLAB / GUEST-REACTION (IG-first, moved from Tue) · "The AI trade is over?" (Wolf) — ★ SORA REBUILD · weekend hard CTA
-*(The Jul 7 reset moved the collab beat here; bank reel #16 returned to the bank. This replaces the old SAT mindset script.)*
-
-Format: stitch/duet a big finance creator's "the AI trade is dead — sell everything" take (pick fresh Saturday from the FYP; react to the take, never trash the creator). **EYL borrow: open on the PERSON, not the point — the guest's claim IS the cold open.** IG leads (the ~100× format; "Buy the dip?" react is now at 27.3K + 16.2K FB with 106 follows).
-
-**STORY MAP (5-beat spine · ~55s):**
-| Time | Beat | Clip on screen | Loop |
-|---|---|---|---|
-| 0:00–0:05 | Cold open | the creator's take (stitch clip) → `SAT_V1_humanoid-robot` (INTRO hook box) | OPENS: down 13% or up 241% — who's right? |
-| 0:05–0:10 | Stakes | hold V1 | "your first $100 rides on this" |
-| 0:10–0:22 | Pt 1 | `SAT_V8_trading-screens` (PT 1 box) | small loop: both screens are true |
-| 0:22–0:26 | MID RE-HOOK | tile `TUE_02_receipts.png` (our numbers) | re-opens: "two days later the market answered — wait for it" |
-| 0:26–0:38 | Pt 2 | `SAT_V2_robot-chess` (PT 2 box) | but/therefore: zoom out |
-| 0:38–0:50 | Pt 3 = PAYOFF | `SAT_V4_motherboard-closeup` (PT 3 box) | CLOSES: the $100 playbook |
-| 0:50–end | Loop-close + sign-off | back to the creator freeze-frame or V1 | answers the cold-open question |
-
-BEAT 1 — COLD OPEN: [3–5s of the creator's "sell everything" take] → "That was the loudest take on my feed this week. Two trading days later, the market answered him — and the answer decides what your first $100 does Monday."
-
-BEAT 2 — STAKES: "Because if he's right, you sell. If the tape's right, you just got handed a discount. Down 13% or up 241% — same stock. Three parts, and the last one is the playbook."
-
-BEAT 3 — RISING LOOP (substance standard: claim → mechanism → receipt → number → action):
-- **Pt 1: The Claim Vs The Tape** (PT 1 clip)
-  - MECHANISM: "First — what's 'the tape'? It's the actual record of prices and volume. Not opinions, not thumbnails — what real money actually DID. A take is a prediction; the tape is a receipt. When they disagree, the tape is undefeated, because the tape already happened."
-  - THE RECEIPTS: "His claim: the AI trade is over, get out. The tape's answer: chips fell hard — that part's real — BUT the same week the Dow put in its first close over 53,000, and within two trading sessions the same chips snapped back: Micron +3.5%, Broadcom +4.8%. If the whole market were 'over,' you don't get a record AND a bounce in the same week. Money didn't leave. It moved seats."
-- *MID RE-HOOK (~0:22, over the receipts tile):* "And this is the part the loud takes never show you—"
-- **Pt 2: Zoom Out — Red Day, Green Year** (PT 2 clip)
-  - RECEIPT (the viewer does it themselves): "Here's a 5-second homework assignment. Open any charting app — even the free one in your brokerage. Type MU, Micron. The chart defaults to ONE DAY — that's the panic view, and it's the only view the loud takes ever show you. Now tap 1Y. One year. Same stock: that terrifying −13% day is a dent on a line that's up 241%. SanDisk, same move: −10% day... +750% year."
-  - MECHANISM: "That's why the pros call it profit-taking, not a collapse — after a +71% record quarter for the chip ETF, the people who RODE that run sold some winners to lock gains. Selling from strength looks identical to panic on a 1-day chart. It looks like nothing on a 1-year chart. THEREFORE: never make a decision on the chart timeframe the fear was sold to you on."
-
-BEAT 4 — PAYOFF:
-- **Pt 3: Rotation-Proof Your First $100** (PT 3 clip)
-  - WHAT A BASKET ACTUALLY IS: "Rotation-proof, step one: buy the basket, not the lane. A broad index ETF is one share that holds hundreds of companies — so when money rotates OUT of chips and INTO value names, you own the seat it lands in. You don't have to guess the winner; you own the whole row."
-  - THE LITERAL ACTION: "Step two: automate it. Every major brokerage has a recurring-buy setting — Trade → Recurring → pick the ETF → $25 a week. Set it once. Now you buy the red days AND the green days without ever making a fear decision — which, if you watched Pt 2, is exactly the decision most people get wrong."
-  - "Step three: that's it. No step three. The $100 doesn't need you to be right about chips — it needs you to be diversified and automatic. Plan beats prediction, every cycle." (Educational only — no recommendations on which fund; we're describing the mechanics.)
-
-BEAT 5 — LOOP-CLOSE + CTA + SIGN-OFF (hard CTA — weekend only)
-- Loop-close: "So — was he right? Doesn't matter. Loud takes get views; the tape pays patience. Educational only."
-- "Comment ZOOM and I'll send the zoom-out checklist. We're debating this exact take in the Discord — link in bio."
-- "It's Wolf, I'm outta here." *(or D Waugh — his cut: "a rotation is the economy re-pricing, not dying")*
-
-CAPTION: He said sell everything. Two sessions later the same stock was green and the Dow closed over 53K. Down 13% or up 241% — who's right? Pt 1–3 inside. Educational only. #ai #stocks #investing #stitch #moneytok
-
-**Community BTS post:** shot from Sunday's record session.
+CAPTION: "The '$2' option that's secretly a 7% bet — breakeven math in 60 seconds. Save this before your first options trade. Educational content only — not financial advice." #options #optionstrading #stockmarket #investing101 #fintok
 
 ---
 
-## SUN Jul 12 — Drop + record (both) — ★ SORA through-line on the teaser
+## SAT JUL 18 — COLLAB / GUEST-REACTION (IG-FIRST) · D Waugh · ★ MUST-SHIP (4th planned week — 0 shipped so far)
+**TOPIC:** React to Earn Your Leisure's clip — **"Paying Off Debt Before Investing Could Be One Of Your Most Expensive Mistakes"** (posted on @earnyourleisure this week — screen-record the clip for the green-screen react; do NOT re-upload their video standalone; duet/stitch on TikTok, green-screen react on IG per the Atlas format).
+This is the audit's ~100× IG format: guest-reaction + debate-bait. EYL translation per Sora §6: lead with the CLAIM (their most contestable line), not the topic.
 
-- Drop the banked long-form: **"Reading the Rotation: 3 Charts That Show Where Money Goes"** — YouTube AM/midday. Teaser clip (45s) into the evening peak, cut as a mini-loop: open on the through-line question ("which decade do you retire in?"), tease chart 3 as the payoff, END the teaser on the question — the episode is the loop-close. Desire cut: "Stop guessing what's next — 3 charts show where money already went."
-- Teaser b-roll: `broll/PODCAST/captioned/` set (NYSE/Wall Street clips) — episode-insert cuts between segments.
-- Then record next week's anchor around the new biggest story: **June CPI lands Tue Jul 14, 8:30am ET** and big-bank earnings open the same week — CPI week is the obvious spike. Hard CTA (weekend): "New episode live — link in bio."
-- Sunday automation rebuilds Jul 13–19.
+HOOK VARIANTS:
+1. **Selected (debate cut):** "EYL says paying off debt first is a mistake. They're **half right** — and the half they skipped costs **$1,050 a year**."
+2. Life-outcome: "Get this order wrong and it quietly costs you **$24,870 a decade.** Here's the sort."
+3. Knowledge-gap: "Pay off debt or invest first? The answer is a number, not a vibe."
+
+**Platform age-split:** IG/TikTok (25–34): "your first real paycheck — where does dollar one go" cut. YouTube Short (35–54): "the $1,800/yr match you're skipping to feel debt-free" cut.
+
+### SORA STORY SPINE
+
+**BEAT 1 · COLD OPEN (0–2s)** — over the EYL clip freeze-frame:
+> "EYL just said paying off your debt could be your most expensive mistake. …They're half right."
+
+**BEAT 2 · STAKES (2–8s):**
+> "Get the ORDER wrong and it costs you real money either way — $1,050 a year in one direction, $24,870 a decade in the other. Here's the sort, with the math."
+
+**BEAT 3 · RISING LOOP (but/therefore):**
+
+**Pt 3 — Steelman their claim first** *(Pt-header 1 — play their strongest 5s)*
+- CLAIM: EYL's point is real — waiting years to be 100% debt-free before investing DOES cost people fortunes.
+- MECHANISM: time in the market is the one input you can't buy back; and an employer 401(k) match is an instant 50–100% return on contribution — no debt payoff "beats" it.
+- RECEIPT: your benefits portal → "employer match" line. If it says 50% up to 6%, that's the deal on the table.
+- WORKED NUMBER: on a $60K salary, 6% in = $3,600, match = **$1,800/yr free.** Skip it for 10 years to prepay a 3% student loan and at a 7% average return you gave up **~$24,870.** That's the "expensive mistake" they mean — and on that, they're right.
+- *Transition (but):* "BUT — they skipped the sorting step, and the sort is one number—"
+
+**Pt 2 — The APR decides, not the vibe** *(Pt-header 2)*
+- CLAIM: high-APR debt beats the market — every year, guaranteed.
+- MECHANISM: the average card rate on accounts actually carrying interest is ~21% (Federal Reserve, Q1 2026 — re-verify before posting). Paying that off is a guaranteed 21% return. The market's long-run average is ~10% and it's not guaranteed.
+- RECEIPT: your statement's "Interest Charged" line — that's the guaranteed loss you're funding while "investing."
+- WORKED NUMBER: $5,000 carried at 21% = **$1,050/yr** in interest — $87.50/month. The same $5,000 invested at a 10% average = $500 expected. The card wins by $550, every year, risk-free.
+- *Mid-video re-hook:* "So both sides have a receipt — which means the answer is an ORDER, not a side—"
+
+**Pt 1 — The sort (payoff)** *(Pt-header 3 → payoff tile)*
+- CLAIM: it was never debt VS investing — it's a 3-step order.
+- **WORKED (payoff tile, on screen):** **1) Take the full match, always** (instant 50–100%) → **2) kill anything ~10%+ APR** (guaranteed double-digit return; the 21% card first) → **3) then invest past the match** — while low-APR debt (~4% and under) just rides on schedule.
+- RECEIPT: this order maximizes guaranteed return first — check each debt's APR against those two thresholds and the list sorts itself.
+- ACTION: tonight — list every debt + its APR. One column, one number each. Over ~10% → attack. Under ~4% → minimum + invest. In between → judgment call (we break those down in the Discord).
+
+**BEAT 5 · LOOP-CLOSE + SIGN-OFF:**
+> "So was EYL wrong? No — they just skipped the sort. The APR is the answer, not the argument. Whose side were you on before the math? Comment **MATH** and I'll send the payoff-order sheet — or DM us 'DISCORD' to get in with the GenThinkers. It's D Waugh, I'm outta here."
+
+CAPTION (IG lead): "EYL says paying off debt first is a mistake. Half right — the half they skipped costs $1,050/yr. The 3-step sort inside 🧮 Comment MATH for the payoff-order sheet. Educational content only — not financial advice." #earnyourleisure #debtfree #investing #401k #creditcards #moneytok
+
+**Format note (Atlas/EYL borrow):** caption box carries THE CONTESTABLE CLAIM, not the topic — "Paying Off Debt First = Expensive Mistake?" — that's what EYL's 20K+ clips do. Weekend = hard DM CTA allowed; comment-trigger MATH is the primary.
 
 ---
 
-## Community tab (3/week)
-- Mon — Poll: "Where did YOUR eyes go this week — the record Dow or the chip selloff?"
-- Wed — Quick tip: "Minutes days move rates talk at 2pm ET. Set a calendar alert, not a panic alert."
-- Sat — BTS: recording-day shot + "Sunday's chart episode loading."
+## STORY MAPS (also rendered on the board)
+
+### TUE · CPI react
+| t | beat | line | b-roll cut | loop |
+|---|------|------|-----------|------|
+| 0:00 | Cold open | "…inflation just fell. Your grocery bill didn't get the memo." | INTRO clip (hook box) | OPEN: which number decides your year |
+| 0:03 | Stakes | "first hike since 2023 — your APR, your car loan, your refi" | grocery/receipt clip | stakes attached |
+| 0:08 | Pt 3 | headline lies — oil −21% → $77 | PT1-header clip + gas-station clip | small loop: why headline ≠ you |
+| 0:25 | Pt 2 | core 2.9%, stuck a full year · hike odds ~1-in-4 | PT2-header clip + Fed/capitol clip | closes Pt3, opens "so what" |
+| 0:40 | Re-hook | "where it lands on YOUR statement—" | phone/card clip | BIG loop re-opened |
+| 0:45 | Pt 1 | $87.50/mo card interest · $66/mo per 25bp | PT3-header clip | escalates to personal |
+| 0:52 | Payoff | **$66/mo = $23,803 over the loan** — on the tile | DATA TILE (number on screen) | BIG loop closes |
+| 0:58 | Loop-close + sign-off | "you'll know which number decides your year" → CTA → "It's Wolf, I'm outta here." | back to INTRO framing | closed |
+
+### THU · options breakeven
+| t | beat | line | b-roll cut | loop |
+|---|------|------|-----------|------|
+| 0:00 | Cold open | "$2 option is a 7% bet" | INTRO clip (hook box) | OPEN: the hidden math |
+| 0:04 | Stakes | "your first $200 — plan or donation" | trading-screen clip | personal |
+| 0:08 | Pt 3 | $2 = $200 (×100) | PT1-header + chain closeup | opens "so what's the real price" |
+| 0:22 | Pt 2 | breakeven $107 = +7% · +5% still = −100% | PT2-header + chart clip | escalates |
+| 0:38 | Re-hook | "the part the chain doesn't print—" | clock/time-lapse clip | BIG loop re-opened |
+| 0:42 | Pt 1 | +10% stock = +150% option — and why the clock kills it | PT3-header clip | asymmetry revealed |
+| 0:50 | Payoff | three endings table ON the tile (−100% / 0% / +150%) | DATA TILE | closes |
+| 0:57 | Loop-close + sign-off | "you'll see the 7% bet it really is" → Discord → "It's Wolf, I'm outta here." | back to INTRO | closed |
+
+### SAT · EYL debt-vs-invest react
+| t | beat | line | b-roll cut | loop |
+|---|------|------|-----------|------|
+| 0:00 | Cold open | "EYL said WHAT — half right" | EYL clip freeze (screen-record) | OPEN: which half |
+| 0:04 | Stakes | "$1,050/yr one way, $24,870/decade the other" | INTRO clip (hook box) | both stakes named |
+| 0:08 | Pt 3 | steelman: match = $1,800/yr free → $24,870/decade | PT1-header + their strongest 5s | their receipt |
+| 0:25 | Pt 2 | BUT 21% card = guaranteed $1,050/yr — beats any market year | PT2-header + statement closeup | our receipt |
+| 0:38 | Re-hook | "both sides have a receipt — so it's an ORDER—" | split-screen framing | BIG loop re-opened |
+| 0:43 | Pt 1 | the 3-step sort | PT3-header clip | resolution begins |
+| 0:50 | Payoff | sort ON the tile: match → 10%+ APR → invest | DATA TILE | closes |
+| 0:57 | Loop-close + sign-off | "the APR is the answer, not the argument" → MATH/DM CTA → "It's D Waugh, I'm outta here." | back to EYL freeze | closed |

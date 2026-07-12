@@ -115,6 +115,7 @@ These fill real gaps for who actually watches: TikTok skews 25–34, YouTube ske
 ---
 
 ## Rotation log (engine updates each run — mark IDs used, newest first)
-- *Week of Jul 13–19, 2026:* (to be filled by the next run)
+- *Week of Jul 20–26, 2026:* (to be filled by the next run)
+- *Week of Jul 13–19, 2026:* **none pulled — full slate** (CPI/banks/Warsh super-day Tue + options chart evergreen Thu + EYL collab react Sat + Sunday podcast; no open evergreen slot under the 3-post cadence). **Standby contingency:** #16 ("What people think investing is vs what it is") remains ready with tiles in `weeks/Jul-6-12/greenscreen/SAT/` — if the Sat collab can't ship for a 5th week, post #16 in its slot rather than shipping nothing.
 - *Week of Jul 6–12, 2026 (amended Jul 7 reset):* pulled **#24** (credit habit quietly costing you — Fri Jul 10 credit slot, pegged to Delta-earnings/summer-travel; re-verify the live APR before posting) — may not repeat before ~Sep 7. **#16 was pulled then RETURNED unused:** the Jul 7 schedule reset (Mon missed → flagship moved to Tue) pushed the collab beat to Saturday, displacing #16. Its tiles remain in `weeks/Jul-6-12/greenscreen/SAT/` ready to go — #16 stays fully available for any coming week.
 - *Week of Jun 29 – Jul 5, 2026:* none pulled — this week ran the AI-selloff flagship + collab + chart evergreen + jobs spike + credit + July-4 mindset (full slate, no gap to fill). Bank stands ready for lighter weeks.
