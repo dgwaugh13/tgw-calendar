@@ -7,7 +7,7 @@ All worked numbers below computed/verified this run (Python): $400K 30-yr mortga
 
 ---
 
-## TUE JUL 21 — P6 NEWS/REACT · "The $3.3 Trillion Selloff" (WOLF) · records Mon PM/Tue AM, posts Tue peak
+## TUE JUL 21 — P6 NEWS/REACT · "The $3.3 Trillion Selloff" (WOLF) · records Tue AM (no Monday recording — Wolf's rule), posts Tue peak
 **Platforms:** TikTok react (25–34 cut) · IG Reel ~3pm · YT Short (35–54 cut) by noon.
 **Hooks (viewer-subject test passed — the viewer's account is the subject, the selloff is the pretext):**
 1. LIFE-OUTCOME (selected): "$3.3 trillion just left the market — and if you own ANY index fund, about a third of your money felt it. 3 numbers decide what your account does next."
@@ -69,7 +69,7 @@ Comment **CHIPS** and I'll send you the earnings-week cheat sheet — we're trac
 
 ---
 
-## THU JUL 23 — P1 TRADE EVERGREEN · "Green Vs Red Candles" (WOLF) · recorded Mon, posts ~10–11am off-peak
+## THU JUL 23 — P1 TRADE EVERGREEN · "Green Vs Red Candles" (WOLF) · recorded in Tuesday's studio session, posts ~10–11am off-peak
 **Peg:** demand-pegged by our OWN TikTok Search queries this week: "What do green candlesticks mean and the red candlesticks" and "Obv macd" — the audience typed the brief again. This refreshes the all-time #1 evergreen vein (candlesticks 96K and STILL #1 this week at 280 views/wk 18 months later).
 **Hooks:**
 1. SELECTED: "Every candle on a stock chart is 4 numbers — and reading them takes 60 seconds. Learn it once, and a red week like this one never scares you out of your first $200 again."
