@@ -1,265 +1,177 @@
-# TGW Scripts — Week of Jul 13–19, 2026 · FULL WORD-FOR-WORD EDITION
-Rewritten Jul 18, 2026 per Wolf's call: **full spoken scripts, not talking points.** Every line below is meant to be said on camera exactly as written (riff freely, but the script stands alone). Every finance term gets explained in plain English the first time it shows up — a total beginner can follow every sentence. Sora's 5-beat story spine, the hook doctrine, the verified math, and the fixed sign-offs are all unchanged.
-Educational content only — not financial advice. No trade recommendations, no price predictions. **Re-verify anything time-sensitive at record time.**
+# TGW Scripts — Week of Jul 20–26, 2026
+Full-Script Standard (Jul 18): word-for-word spoken scripts, every term explained in plain English on first use, production cues in *[bracketed italics]*. Sora story pass applied: 5-beat spine, but/therefore transitions, countdown, mid-video re-hook, payoff ON the tile, loop-close. Sign-offs untouched and last.
 
-**★ Sora structural adjustment #2 (this week):** reveals are what hold ("Trump accounts" held 49.1% avg viewed, rank 1/10) — so the payoff beat always lands ON a data tile with the exact number on screen, not just spoken. Pt-header progress bar stays; track TUE/THU/SAT completion next pull.
+**Sora structural adjustment #3 (from last week's watch-through):** the CPI reveal held **52.1% avg viewed** (the week's best) while the options lesson held 30.4% — reveals retain, lessons don't, AGAIN. But the react shipped a day+ LATE and the spike window was gone (181/164 views vs the 505/663 of the on-time Trump-accounts week). Adjustment: **put the concrete receipt-number IN Beat 1 itself** (say "$3.3 trillion" in the first two seconds, don't just promise a reveal) — and treat ship-day as part of the format: a react that posts late isn't the same post.
 
-**Cadence:** 3 short-form posts + Sunday podcast anchor. TUE = news-react (P6) · THU = chart/trading evergreen (P1) · SAT = collab/guest-reaction (IG-first). MON/WED/FRI = PREP/ENGAGE.
-
-**How to read these scripts:** plain text = say it word-for-word. *[Bracketed italics]* = production cue (b-roll cut, tile, tone) — don't say it. Bold = the number that must land clearly.
+All worked numbers below computed/verified this run (Python): $400K 30-yr mortgage @6.50% = $2,528.27/mo vs @6.75% = $2,594.39/mo → **+$66.12/mo, +$23,803 over the loan** · $5K card @21% APR = **$87.50/mo** ($1,050/yr) interest · $10K − 20% = $8,000, needs **+25%** to get even; parked in 4% cash that takes **~5.7 years** · SOX +105% (Mar→Jun 22) then −20.2% = still **+63.6%** from March ($10K → $16,359) · $100 buys **25% more shares** at $80 than at $100 · $5K min-payments (2% floor $25) @21% ≈ **56 years, ~$33,000 paid**.
 
 ---
 
-## TUE JUL 14 — FLAGSHIP NEWS-REACT (P6) · Wolf · record AFTER the 8:30am print
-**TOPIC:** June CPI at 8:30am + big-bank earnings pre-market + Fed Chair Warsh's first testimony at 10am — one morning that decides whether the Fed RAISES rates on Jul 29.
+## TUE JUL 21 — P6 NEWS/REACT · "The $3.3 Trillion Selloff" (WOLF) · records Mon PM/Tue AM, posts Tue peak
+**Platforms:** TikTok react (25–34 cut) · IG Reel ~3pm · YT Short (35–54 cut) by noon.
+**Hooks (viewer-subject test passed — the viewer's account is the subject, the selloff is the pretext):**
+1. LIFE-OUTCOME (selected): "$3.3 trillion just left the market — and if you own ANY index fund, about a third of your money felt it. 3 numbers decide what your account does next."
+2. Material: "Your 401(k)'s worst 3 weeks of 2026 — the 3 numbers that decide the next 3."
+3. Knowledge-gap: "Chips just entered a bear market — 3 ways it hits YOUR money."
 
-**⚠ FILL-LIVE:** the numbers below are the consensus SETUP. Record after 8:30am with the REAL print and swap them in. The FILL-LIVE tile (broll/TUE) has blanks + a verify banner.
+**Story map (5-beat spine):**
+| Time | Beat | Line | Visual | Loop |
+|---|---|---|---|---|
+| 0:00 | Cold open | "$3.3 trillion just left the market." | TUE_V1 intro clip (hook box) | OPENS: what does YOUR account do next |
+| 0:04 | Stakes | "a third of your index fund is tech — you're in this trade" | TUE_S1 tile | — |
+| 0:09 | Pt 3 | what broke: SOX −20.2% in 3 weeks after a 105% run · Kimi K3 + capex doubt | TUE_S1 (PT 1 header) | mini-loop |
+| 0:26 | Pt 2 | your account: the −20% panic-sell trap · $8,000 needs +25% | TUE_S2 (PT 2 header) | escalates |
+| 0:40 | Re-hook | "and Wednesday night, this whole story gets its verdict—" | TUE_V1 re-use | BIG loop re-opens |
+| 0:44 | Pt 1 | Wed 4pm: Alphabet + Tesla · Thu: Intel — the 3 lines to read | TUE_S3 (PT 3 header) | — |
+| 0:53 | Payoff | sell-at-the-bottom math ON SCREEN: $8,000 vs $10,000 vs 5.7 years | TUE_S3 payoff numbers | CLOSES |
+| 0:58 | Close | "you'll know if it's a crash or a discount" → comment CHIPS → sign-off | — | loop-close |
 
-HOOK VARIANTS (life-outcome, number mandatory):
-1. **Selected:** "Tuesday morning they'll tell you inflation FELL — but your money still buys **$2,340 less** this year. Here's the number that actually decides if your rates go UP this month."
-2. Material: "One Fed move adds **$66/month** to a $400K mortgage — and Tuesday at 8:30am decides if it's coming."
-3. Knowledge-gap: "3 numbers Tuesday morning decide your card's APR for the rest of 2026."
+### FULL SCRIPT (~95s)
+*[Plain text = say word-for-word. Brackets = production cue, don't read. Educational content only — not financial advice; no trade recs, no price predictions.]*
 
-**Platform age-split:** TikTok/IG (25–34): card APR + car loan + first-apartment rent math. YouTube Short (35–54): the $400K-mortgage / refi-timing cut.
+**BEAT 1 · COLD OPEN** *[intro clip, hook box on screen, start mid-motion]*
+Three point three TRILLION dollars just left the stock market in three weeks. And I need you to understand — that includes some of YOUR money.
 
-### FULL SCRIPT (word-for-word · ~90 sec · countdown 3→2→1, payoff withheld to the end)
+**BEAT 2 · STAKES** *[cut: exposure tile]*
+If you have a 401(k) — that's the retirement account your job sets up — or any index fund, which is just a basket that buys a tiny slice of hundreds of companies at once, then roughly a THIRD of every dollar in there is riding on tech. You didn't pick that. It's just how the basket is built now. So when people say "the chip stocks are crashing," that's not Wall Street's problem — that's your account statement in August. There are 3 numbers that decide what happens next, I'm counting them down, and the last one is the difference between losing $2,000 and losing nothing. Stay for that one.
 
-**BEAT 1 · COLD OPEN** *[INTRO clip, full TGW hook box — grocery/receipt footage. Start mid-motion, no greeting.]*
+**Number 3 — what actually broke** *[PT 1 header tile]*
+The chip index — it's called the SOX, basically a scoreboard of the 30 biggest computer-chip companies, the ones building all the AI hardware — ran up ONE HUNDRED AND FIVE percent from March to late June. Then in three weeks it dropped 20 percent. That 20-percent line matters because that's the official definition of a "bear market" — Wall Street's phrase for "this isn't a dip anymore."
 
-They're about to tell you inflation just fell. Your grocery bill didn't get the memo.
+Two things hit at once. First, a Chinese startup called Moonshot released a free, open AI model — Kimi K3 — that they claim performs near the best American models. Free is a scary word when trillions have been spent assuming this stuff stays expensive. And second — but really THEREFORE — investors finally asked the question they'd been skipping: all these hundreds of billions going into AI data centers... when exactly does the profit show up?
 
-**BEAT 2 · STAKES** *[grocery checkout clip]*
+Here's the receipt you can check yourself: open your investing app, pull up any chip stock or the S&P 500, and tap the 3-month chart. That cliff on the right side — that's what $3.3 trillion leaving looks like. *[But before you touch the sell button—]*
 
-Tuesday morning, 8:30 AM, the government drops one report — and that one report decides whether the Fed raises interest rates THIS month, for the first time since 2023. And if that sounds like Wall Street's problem — it's not. It's the interest rate on your credit card, it's your car payment, it's whether buying a house waits another year. There are 3 numbers in that report that matter to you. I'm counting them down — and the third one is the one nobody's gonna lead the news with. Stay for that one.
+**Number 2 — the trap that turns a drawdown into a loss** *[PT 2 header tile]*
+Here's the math nobody does while they're panicking. Say you've got $10,000 in there and it drops 20 percent. You're at $8,000. On paper. It only becomes REAL when you sell. Because if you sell at $8,000, you now need a 25 percent gain just to get back to where you were — and if that money sits in a savings account earning 4 percent, getting back to $10,000 takes almost SIX YEARS. The person who did nothing? They're back at even whenever the market is. The person who sold the bottom bought themselves a half-decade detour.
 
-**BEAT 3 · RISING LOOP**
+And one more number for perspective: even after this 20 percent drop, that chip index is still up 63 percent from March. If you'd put in $10,000 in March, you'd still have about $16,300. The headline says crash. The 6-month chart says a monster year giving some back. Both are true — which one you act on decides everything. *[Therefore the real question isn't "should I sell" — it's "what happens Wednesday night."]*
 
-*[PT 1 header clip: "Pt 1 · The Headline Is About To Lie To You"]*
+**MID-VIDEO RE-HOOK** *[back to intro framing]*
+Because Wednesday night, this entire story gets its verdict.
 
-**Number 3 — the headline number, and why it's about to lie to you.**
+**Number 1 — Wednesday, 4pm, the verdict** *[PT 3 header tile]*
+Wednesday after the market closes, Alphabet — that's Google — and Tesla both report earnings. Thursday, Intel. Earnings are just a company's report card: what they made, what they spent. And this week, one line on Google's report card matters more than all the others: their cloud business — the part that sells AI computing power — is expected to grow 67 percent, to about $22.8 billion in three months. If that number shows up, the "AI has no payoff" story gets a lot weaker. If it misses — this selloff was the warm-up.
 
-Quick plain-English translation first: CPI stands for Consumer Price Index. All it is, is the government's receipt check. Every month they go price the exact same basket of stuff — groceries, rent, gas, all of it — and see how much more it costs than last time. That's the inflation number you hear on the news.
+You don't need to trade ANY of this. You need to not get shaken out of a plan by three red weeks — and if you're putting in money every paycheck, understand: the same $100 that bought one share at the top buys 25 percent MORE shares down here. Automatic investing is literally the only strategy that gets BETTER when the market gets worse.
 
-Here's the trick, though. Tuesday, that headline number is expected to DROP — from 4.2% down to around 3.9%. Maybe the news even says prices "fell" this month. But WHY did it drop? One reason: oil. Oil crashed about 21%, down to around $77 a barrel, after the ceasefire in June reopened shipping lanes. And gas prices drag that headline number around like a dog on a leash. So gas got cheaper. Your rent didn't. Your groceries didn't.
+**BEAT 4 · PAYOFF** *[payoff tile — numbers ON SCREEN]*
+So here's the tile to screenshot. Panic path: sell at $8,000, need +25%, roughly 5.7 years in cash to claw back. Boring path: keep the automatic buys on, own 25% more shares per dollar down here, and let Wednesday's report card — not your fear — tell you what the AI trade is actually worth.
 
-Want to check me? Tuesday at 8:30, go to bls.gov — that's the government's own website — and look at the first table. There are two lines: one that says "All items," and one that says "All items less food and energy." Two totally different stories on the same page.
+**BEAT 5 · CLOSE + CTA + SIGN-OFF** *[fixed order]*
+Wednesday night, when everyone's screaming about Google and Tesla — you'll know whether you're looking at a crash or a discount.
+Comment **CHIPS** and I'll send you the earnings-week cheat sheet — we're tracking all three reports live in the Discord, link in bio.
+**"It's Wolf, I'm outta here."**
 
-And here's what "falling" inflation still costs you: at 3.9%, a family that spends $60,000 a year is paying **$2,340 MORE** for the exact same life as last year. So don't repeat the headline Tuesday. Read the second line first.
+**Caption:** $3.3 trillion left the market in 3 weeks — and about a third of your index fund was in the trade. Wednesday night decides what happens next. Comment CHIPS for the earnings-week cheat sheet. Educational content only — not financial advice. #stockmarket #ai #nvidia #401k #investing #fintok
 
-But here's the thing — the Fed doesn't even use that headline number.
-
-*[PT 2 header clip: "Pt 2 · The Number The Fed Actually Reads"]*
-
-**Number 2 — the number the Fed actually reads.**
-
-It's called core CPI. "Core" just means they throw out food and gas prices — not because those don't matter, but because they bounce around so much they hide the real trend. Core is the slow, honest number. And Tuesday, core is expected to come in at 2.9% — which is EXACTLY where it was a full year ago. Translation: no progress. Stuck.
-
-Now here's why Tuesday is such a big morning. Ninety minutes after that report, the new Fed chair — Jerome Warsh — sits down in front of Congress for the first time. The Fed's job is to get inflation down to 2%. Core is stuck at 2.9%. And that gap is the entire reason that, right now, the betting markets give about a **1-in-4 chance the Fed RAISES rates on July 29th.**
-
-That's public, by the way — it's called CME FedWatch, it's free, you can look at it on your phone. Check it before 8:30 Tuesday, then check it right after. However those odds jump, THAT'S the market's real verdict — faster than any headline.
-
-And this is where it stops being a news story and lands on YOUR statement.
-
-*[PT 3 header clip: "Pt 3 · What It Does To Your Actual Bills"]*
-
-**Number 1 — what a rate hike actually does to your bills.**
-
-When the Fed raises rates, they're raising the base price of borrowing money — for everyone, on everything. Your credit card's interest rate — that's the APR, the annual percentage rate, literally the price tag on borrowing — floats on top of the Fed's rate. Fed goes up, your card follows within a statement or two. Automatically. Nobody calls to warn you.
-
-So here's your homework tonight — it takes 60 seconds. Open your credit card app, find your statement, look for the line called "Interest Charge Calculation." Your APR is right there. Write it down. If the Fed hikes on the 29th, watch that number on your very next statement. Your own account is the proof.
-
-**BEAT 4 · PAYOFF** *[cut to payoff tile — numbers ON SCREEN]*
-
-Now the math they promised you'd never need. The average card APR right now is about 21%. Carry a $5,000 balance at 21% and you're paying **$87.50 every month** in pure interest — before you've touched what you actually owe. And on a house: one small Fed hike — a quarter of one percent — on a $400,000 30-year mortgage is **$66 more every month**. Doesn't sound like much? Over the life of that loan it's **$23,803**. THAT is what Tuesday's 8:30 AM number is actually deciding.
-
-So: write your APR down tonight. If anything you owe is charging you 20% or more, attacking that debt comes BEFORE any new investing — paying off a 21% card is a guaranteed 21% return, and no market promises you that. And if you're house-shopping, know this: your mortgage quote moves when the ODDS move — before the Fed even votes.
-
-**BEAT 5 · LOOP-CLOSE + SIGN-OFF** *[back to INTRO framing]*
-
-So Tuesday, when they tell you inflation fell — you'll know which number actually decides your year. Comment **CPI** and I'll send you the rate-path cheat sheet — we're tracking the print live in the Discord, link in bio. It's Wolf, I'm outta here.
-
-CAPTION (TikTok/IG):
-"Inflation 'falls' to ~3.9% Tuesday — your money still buys $2,340 less this year. The number that decides if rates go UP this month 👀 Comment CPI for the rate-path cheat sheet. Educational content only — not financial advice."
-#cpi #inflation #fed #ratehike #fintok #moneytok
-
-**CONTINGENCY (authorized 4th drop):** if the print shocks (core ≥0.4% or headline ≥4.1% — hike odds spike; or core ≤0.2% — odds collapse), cut a same-day evening follow-up: "the market just repriced your 2026 in one morning," using the live FedWatch move. Otherwise, 3 posts stand.
+**YT Short (35–54 cut, <45s):** "Your 401(k) just had its worst 3 weeks of 2026 — a third of it is tech whether you chose that or not. $10K −20% = $8K; sell there and you need +25% back, ~5.7 years in cash. The people who retire on time are the ones who don't sell red weeks. Wednesday night Google's report card tells us if AI pays — full breakdown Sunday on the channel."
 
 ---
 
-## THU JUL 16 — TRADING EVERGREEN (P1) · Wolf · record MON, post THU off-peak (AM)
-**TOPIC:** Strike price + breakeven — the option-chain math beginners skip. Pulled from our own TikTok Search demand ("options tutorial," "breakeven price options," "how to know what strike price"). The 95K–125K chart-read vein.
+## THU JUL 23 — P1 TRADE EVERGREEN · "Green Vs Red Candles" (WOLF) · recorded Mon, posts ~10–11am off-peak
+**Peg:** demand-pegged by our OWN TikTok Search queries this week: "What do green candlesticks mean and the red candlesticks" and "Obv macd" — the audience typed the brief again. This refreshes the all-time #1 evergreen vein (candlesticks 96K and STILL #1 this week at 280 views/wk 18 months later).
+**Hooks:**
+1. SELECTED: "Every candle on a stock chart is 4 numbers — and reading them takes 60 seconds. Learn it once, and a red week like this one never scares you out of your first $200 again."
+2. Material: "The chart skill that keeps your first $200 in the game."
+3. Knowledge-gap: "Green vs red candles — what they actually mean."
 
-All figures are a **clearly-labeled hypothetical** ("say a stock trades at $100…"). No tickers, no recommendations.
+**Story map:**
+| Time | Beat | Line | Visual | Loop |
+|---|---|---|---|---|
+| 0:00 | Cold open | "This one candle is 4 numbers. Most beginners read zero of them." | THU_V1 intro clip (hook box) | OPENS: the 60-second read |
+| 0:05 | Stakes | "a red week just scared thousands out of the market — 60 seconds fixes that for good" | — | — |
+| 0:10 | Pt 3 | the candle: open/close/high/low · body vs wick | THU_S1 (PT 1 header) | mini-loop |
+| 0:28 | Pt 2 | the story candles tell: long wicks = rejection · this month's chip chart as the live example | THU_S2 (PT 2 header) | escalates |
+| 0:42 | Re-hook | "but a candle without volume is a rumor—" | — | BIG loop re-opens |
+| 0:45 | Pt 1 | volume + the 2 translators our Search asked for: OBV, MACD — plain English | THU_S3 (PT 3 header) | — |
+| 0:55 | Payoff | the 3-question pre-buy checklist ON SCREEN | THU_S3 payoff | CLOSES |
+| 1:00 | Close | "next red week, you'll read it instead of fearing it" → Discord → sign-off | — | loop-close |
 
-HOOK VARIANTS:
-1. **Selected:** "This '$2' option is secretly a **7% bet** — and your broker prints the proof on the order screen. Most people never look."
-2. Material: "Your first $200 in options shouldn't evaporate over one formula — breakeven in 60 seconds."
-3. Knowledge-gap: "3 numbers on an option chain decide if the 'cheap' one is actually the expensive one."
+### FULL SCRIPT (~100s)
+*[No tickers, no recommendations — chart mechanics only, using "a stock" and this month's index chart as the worked example.]*
 
-**Platform age-split:** TikTok/IG (25–34): "your first $200" framing. YouTube Short (35–54): the leverage-and-discipline cut.
+**BEAT 1 · COLD OPEN** *[intro clip, hook box]*
+This one candle on the chart is telling you four numbers. Most beginners read zero of them — and then let a red week make their decisions for them.
 
-### FULL SCRIPT (word-for-word · ~90 sec)
+**BEAT 2 · STAKES**
+The market just had its ugliest three weeks of the year, and thousands of people sold at the bottom of it because the chart LOOKED scary. Sixty seconds from now you'll read a chart instead of feeling it — and that's the difference between your first $200 surviving the market and your first $200 leaving with your confidence. Three things, counting down — and the third one is the tool the pros check that beginners have never even opened.
 
-**BEAT 1 · COLD OPEN** *[INTRO clip, full hook box — trading-screen footage]*
+**Number 3 — what one candle actually says** *[PT 1 header tile]*
+Every candle is one slice of time — on a daily chart, one candle is one day. The thick part — the body — shows two numbers: the price when that day STARTED, called the open, and the price when it ENDED, the close. Green just means it closed higher than it opened. Red means it closed lower. That's it. That's the whole secret.
 
-This two-dollar option is actually a seven percent bet. Let me show you the math almost nobody does before they hit buy.
+The thin lines poking out — the wicks — are the other two numbers: the highest and lowest price hit during the day. So one green candle with a long top wick literally reads as a sentence: "buyers pushed it way up... and sellers slapped it back down before the close." That's not decoration. That's a fight, and the wick shows you who won.
 
-**BEAT 2 · STAKES** *[trading-desk clip]*
+Receipt: open your investing app right now, tap any stock, switch the chart to "1M" — one month — and find the longest wick on the page. You just found the day the fight was hardest. *[But one candle is a word, not a sentence—]*
 
-If you're about to put your first $200 into options, this next 60 seconds is the difference between making a plan and making a donation. There are 3 numbers on that screen that decide everything — and the third one? Your broker doesn't even print it. That's the one to stay for.
+**Number 2 — the story candles tell together** *[PT 2 header tile]*
+Zoom out on this month's chip-stock index — the one all over the news. From March to June: staircase of green bodies, small wicks. Calm, steady buying. Late June: the candles get TALLER — bigger bodies, longer wicks. Then three weeks of heavy red bodies. Tall candles mean big disagreement — and big disagreement after a 105 percent run is the chart's way of saying "the easy part is over."
 
-**BEAT 3 · RISING LOOP**
+Here's what that reading is FOR: not predicting — the chart can't tell you tomorrow. It tells you what already changed, so headlines don't get to surprise you. Anyone who looked at those candles in early July saw the temperature rising before the "bear market" headline ever printed. *[Therefore — the last tool, the one that separates a real move from a fake one.]*
 
-*[PT 1 header clip: "Pt 1 · The Price Isn't The Price"]*
+**MID-VIDEO RE-HOOK**
+Because a candle without volume is just a rumor.
 
-**Number 3 — the price you see isn't the price you pay.**
+**Number 1 — volume, and the two translators** *[PT 3 header tile]*
+Volume is the bar at the bottom of the chart — how many shares actually traded. A big red candle on TINY volume? Few people even participated; weak signal. Big red candle on HUGE volume? The crowd really did change its mind.
 
-Real quick, what an option even is — plain English. Say a stock trades at $100. A "call option" is basically a coupon: it gives you the RIGHT to buy that stock at a locked-in price — called the strike price — before a deadline, called the expiration. You pay for that coupon up front. That payment is called the premium.
+And the two tools people keep searching us for, in plain English. OBV — on-balance volume — is just a running tally: it adds the day's volume when the candle's green, subtracts it when it's red. If price is flat but OBV is climbing, buyers are quietly loading up. MACD is two moving averages — a fast one and a slow one — and all it measures is whether the CURRENT mood is stronger or weaker than the recent trend. When the fast line crosses under the slow one, momentum is fading. Neither one is a crystal ball. Both are translators — they turn a thousand candles into one sentence.
 
-So you open the app and see a call with a $105 strike priced at "$2." Feels cheap, right? Here's the catch: every option contract covers 100 shares. So that "$2" is $2 times 100. The second you tap buy, **$200 real dollars** leave your account.
+**BEAT 4 · PAYOFF** *[payoff tile — checklist ON SCREEN]*
+So here's the 60-second read before you ever buy — screenshot this. One: what's the TREND — is the staircase going up or down? Two: what are the WICKS saying — calm agreement or a fight? Three: does VOLUME confirm it — did the crowd actually show up? Three questions. If you can't answer all three, you're not investing yet — you're guessing.
 
-Don't take my word for it — open any broker's option screen tonight. One row shows you the strike, the price, and the expiration date. Tap it like you're going to buy — don't submit — and the order ticket will say $200, not $2. Just read one. Buy nothing.
+**BEAT 5 · CLOSE + CTA + SIGN-OFF**
+Next red week — and there will be one — you'll read it instead of fearing it.
+We break down one real chart every week in the Discord — link in bio.
+**"It's Wolf, I'm outta here."**
 
-And once you know the real price, the real question isn't "is $2 cheap." It's: how far does this stock have to CLIMB before I even get my money back?
+**Caption:** Green vs red candles = 4 numbers, 60 seconds to learn. Save this before your next red week. Educational content only — not financial advice. #candlesticks #stockmarket #investingforbeginners #charts #fintok
 
-*[PT 2 header clip: "Pt 2 · Breakeven — The One Formula"]*
-
-**Number 2 — breakeven. One formula, kind of brutal.**
-
-Breakeven means exactly what it sounds like: the point where you stop losing money. And for a call option, the formula is just: strike price plus premium. That's it. $105 strike plus $2 premium = **$107**. The stock is at $100 today — so it has to climb **7%** before your deadline just for you to get your own $200 back. Anything less, you paid for a ride that didn't arrive.
-
-And here's the part that shocks people. Say the stock goes UP 5% — to $105. Great month! You still lose **100%.** All $200. Gone. Why? Because your coupon lets you buy at $105 — and the stock is AT $105. The coupon is worth nothing. At $106 you've lost half. At $107 — after a 7% climb — you've made exactly zero dollars.
-
-Your broker literally prints the word "breakeven" on the order preview screen. Tap the order, read that number, then ask yourself the only question that matters: do I honestly expect THAT move, in THAT amount of time?
-
-So why does anyone do this? Because of the part the chain doesn't print anywhere—
-
-*[PT 3 header clip — hourglass: "Pt 3 · The Clock Nobody Prints"]*
-
-**Number 1 — the payoff curve, and the clock attached to it.**
-
-Past breakeven, options move FAST. If that stock climbs 10% — to $110 — your $105 coupon lets you buy at $105 and the stock's worth $110. That's $5 a share, times 100: your $200 turned into $500. **Up 150%** while the stock moved 10%. That's the leverage. That's the temptation. That's the screenshot everybody posts.
-
-Here's what nobody posts: the clock. You didn't just bet the stock goes up — you bet it goes up 7% inside about 30 days. Want your honest odds? Pull up any stock's chart, set it to one year, and count how many times it jumped 7% in a single month. Most stocks, most months — it just doesn't happen.
-
-**BEAT 4 · PAYOFF** *[cut to payoff tile — three endings ON SCREEN]*
-
-Same trade. Three endings. Stock up 5% — you lose 100%. Stock up 7% — you make exactly nothing. Stock up 10% — you make 150%. The person selling you the "cheap" option is selling you row three. Rows one and two happen way more often.
-
-So here's the move: paper-trade it first — that means pick a real option, write down its strike, premium, and breakeven, and track it to expiration with ZERO dollars in. Do that 3 times before real money ever moves. And the iron rule: never put in more than you're fully okay losing 100% of — because as you just saw, 100% is a completely normal outcome.
-
-**BEAT 5 · LOOP-CLOSE + SIGN-OFF** *[back to INTRO framing]*
-
-So next time someone shows you a "cheap" $2 option — you'll see the 7% bet it really is. We break down option chains like this every single week in the Discord — link in bio. It's Wolf, I'm outta here.
-
-CAPTION: "The '$2' option that's secretly a 7% bet — breakeven math in 60 seconds. Save this before your first options trade. Educational content only — not financial advice." #options #optionstrading #stockmarket #investing101 #fintok
+**YT Short (35–54 cut):** the same 3-question checklist framed as "the pre-buy discipline that protects a retirement account: trend, wicks, volume — if you can't answer all three, it's a guess."
 
 ---
 
-## SAT JUL 18 — COLLAB / GUEST-REACTION (IG-FIRST) · D Waugh · ★ MUST-SHIP
-**TOPIC:** React to Earn Your Leisure's clip — **"Paying Off Debt Before Investing Could Be One Of Your Most Expensive Mistakes."** Screen-record the clip for the green-screen react; do NOT re-upload their video standalone; duet/stitch on TikTok, green-screen react on IG. Lead with their most contestable CLAIM, not the topic (EYL translation, Sora §6).
+## SAT JUL 25 — COLLAB / GUEST-REACTION (D WAUGH) · IG-FIRST · MUST-SHIP (recorded + scripted since Jul 13 — 5+ planned weeks, 0 ships)
+**Asset:** the EYL react — "Paying Off Debt Before Investing Could Be One Of Your Most Expensive Mistakes." Screen-record the EYL reel, open on their freeze-frame, green-screen react over it (IG) / stitch-duet (TikTok). Caption box carries the CONTESTABLE CLAIM verbatim (EYL borrow), not the topic. **Standby if the clip can't ship a 6th time: bank reel #16 tiles are ready in `weeks/Jul-6-12/greenscreen/SAT/`.**
+**Cold-open text:** `EYL Said WHAT?!` · **Sustained caption:** `EYL: Paying Off Debt First = Mistake? Half Right.`
 
-HOOK VARIANTS:
-1. **Selected (debate cut):** "EYL says paying off debt first is a mistake. They're **half right** — and the half they skipped costs **$1,050 a year**."
-2. Life-outcome: "Get this order wrong and it quietly costs you **$24,870 a decade.** Here's the sort."
-3. Knowledge-gap: "Pay off debt or invest first? The answer is a number, not a vibe."
+**Story map:**
+| Time | Beat | Line | Visual | Loop |
+|---|---|---|---|---|
+| 0:00 | Cold open | EYL freeze-frame + "one of the biggest finance channels just said paying off debt first is a MISTAKE" | EYL screen-record | OPENS: are they right? |
+| 0:04 | Stakes | "get this order wrong and it costs you $1,050 a year — get it right and it's free money" | SAT_S1 tile | — |
+| 0:08 | Pt 1 | steelman: play their strongest 5 seconds — where they're RIGHT | EYL clip | mini-loop |
+| 0:25 | Pt 2 | the number that flips it: your APR line · 21% is a guaranteed loss no market beats | SAT_S2 (PT 2 header) | escalates |
+| 0:40 | Re-hook | "so who's right? Both — in this exact order—" | — | BIG loop re-opens |
+| 0:44 | Pt 3 | THE SORT: match first → 20%+ APR debt → then invest past the match | SAT_S3 (PT 3 header) | — |
+| 0:52 | Payoff | the 3-step sort ON SCREEN with the numbers | SAT_S3 payoff | CLOSES |
+| 0:58 | Close | back to EYL freeze → "comment MATH / DM GEN" → sign-off | — | loop-close |
 
-**Platform age-split:** IG/TikTok (25–34): "your first real paycheck — where does dollar one go." YouTube Short (35–54): "the $1,800/yr match you're skipping to feel debt-free."
+### FULL SCRIPT (~90s)
+**BEAT 1 · COLD OPEN** *[open ON the EYL freeze-frame from your screen recording — their caption visible]*
+One of the biggest finance platforms in the country just told millions of people that paying off your debt before investing could be one of your most expensive mistakes. And the wild part? They're half right.
 
-### FULL SCRIPT (word-for-word · ~90 sec)
+**BEAT 2 · STAKES** *[stakes tile]*
+Getting this ORDER wrong — invest first or pay debt first — is quietly costing some of you a thousand dollars a year. Getting it right is the closest thing to free money that exists in personal finance. So let's actually settle it — with the math, not the vibes.
 
-**BEAT 1 · COLD OPEN** *[over the EYL clip freeze-frame]*
+**Pt 1 — where EYL is right** *[play their strongest ~5 seconds, then react]*
+Here's their best case, and it's a real one. If your job offers a 401(k) match — say they add 50 cents for every dollar you put in — that is an instant 50 percent return the moment it hits. No debt on earth charges you 50 percent. So yes: if you're skipping YEARS of employer match to slow-pay a car loan at 6 percent, EYL is right — that mistake compounds against you for decades. Time in the market is the one thing you can't buy back later. *[But — and this is the whole video — they said DEBT like it's one thing. It's not.]*
 
-Earn Your Leisure just said paying off your debt could be your most expensive mistake. …And they're half right.
+**Pt 2 — the number that flips the answer** *[PT 2 header tile]*
+Pull out your credit card statement — the real one — and find the line that says APR. That's the annual percentage rate: the price tag on borrowing, what the card charges you per year for carrying a balance. The average card right now sits around 21 percent. Carry $5,000 and you're paying about $87.50 a MONTH — $1,050 a year — in pure interest, before you've touched what you owe. Now flip it: paying that card off is a GUARANTEED 21 percent return. The stock market's long-run average is around 10 — and it's not guaranteed. Nothing legal pays you a locked-in 21. And if you only make minimum payments on that $5,000? On a typical 2-percent minimum, the math runs to roughly THIRTY-THREE THOUSAND dollars paid over decades. That's what "invest first, card later" actually costs at 21 percent.
 
-**BEAT 2 · STAKES** *[INTRO clip, hook box]*
+**MID-VIDEO RE-HOOK**
+So who's right — EYL or your uncle who says "debt-free first, always"? Both. In this exact order.
 
-This is the biggest argument in money — pay off debt first, or invest first — and here's why you can't get it wrong: one wrong answer costs you about **$1,050 a year**. The OTHER wrong answer costs you about **$24,870 a decade**. Yeah — you can lose either way. So let's settle it with actual math instead of vibes.
+**Pt 3 — the sort** *[PT 3 header tile]*
+One: grab every dollar of employer match — that 50 percent beats everything. Two: kill anything charging 8 to 10 percent or more — that 21 percent card is bleeding you faster than any index fund can heal you. Three: THEN automate investing past the match. That's it. That's the whole debate, sorted by one number: the APR on your statement versus the return you can actually expect.
 
-**BEAT 3 · RISING LOOP**
+**BEAT 4 · PAYOFF** *[the sort ON SCREEN]*
+Match first — it's 50 percent. High-APR debt second — killing 21 percent is a guaranteed win. Automate third. Screenshot it, tape it to your fridge, settle the argument at Thanksgiving.
 
-*[PT 1 header clip — play EYL's strongest 5 seconds first: "Pt 1 · Where EYL Is Dead Right"]*
+**BEAT 5 · CLOSE + CTA + SIGN-OFF** *[back to EYL freeze-frame]*
+So EYL — half right, and the half matters. Respect for starting the conversation.
+Comment **MATH** and I'll send the full sort with the numbers — or DM me **GEN** and I'll send you the Discord where we run this on real statements every week.
+**"It's D Waugh, I'm outta here."**
 
-**First — where EYL is dead right.**
-
-Their point is real: people wait YEARS to be 100% debt-free before they invest a single dollar, and that wait costs fortunes. Two reasons.
-
-One: time. When you invest, your money earns money, and then THAT money earns money — that's compounding, and the only ingredient it truly needs is years. Years you cannot buy back.
-
-Two — and this is the big one: the employer match. Plain English: a 401(k) is the retirement account you get through your job, and at most jobs, when you put money in, your company puts money in too. That is a 50 to 100 percent instant return on your money. It is, no exaggeration, free salary you have to opt into.
-
-Check your own deal right now: log into your benefits portal and find the line that says "employer match." If it says something like "50% up to 6%," here's what that means on a $60,000 salary: you put in 6% — $3,600 a year — and your company hands you **$1,800 a year. Free.**
-
-Now watch what skipping that costs. Say you skip the match for 10 years so every spare dollar can prepay a student loan charging 3% interest. Invested instead, at the market's rough 7% average, that match money would've grown to about **$24,870**. THAT'S the "expensive mistake" EYL means. And on that — they're right.
-
-BUT. They skipped the sorting step. And the sort comes down to one number—
-
-*[PT 2 header clip — credit-card statement closeup: "Pt 2 · The Number That Decides"]*
-
-**Second — the number that decides: your APR.**
-
-APR — annual percentage rate — is just the price tag on your debt. It's what borrowing costs you per year. And every debt you have has a different one. THAT'S what EYL's take skips: "debt" isn't one thing.
-
-Because here's a debt the market can't beat: the average credit card, for people carrying a balance, charges about 21% right now — per the Federal Reserve *(re-verify before posting)*. Paying that card off is a GUARANTEED 21% return. The stock market averages about 10% a year long-run — and it's never guaranteed.
-
-Run the numbers side by side. Carry $5,000 on that card: it costs you **$1,050 a year** — $87.50 a month — in pure interest. Invest that same $5,000 instead at 10% and you EXPECT about $500. The card wins by $550. Every year. Risk-free. The receipt is on your own statement — the line that says "Interest Charged." That's the guaranteed loss you're funding while you "invest."
-
-So EYL has a receipt. And the card has a receipt. Which means the answer was never a SIDE — it's an ORDER—
-
-*[PT 3 header clip: "Pt 3 · The Sort"]*
-
-**Third — the sort. Three steps, in order.**
-
-**BEAT 4 · PAYOFF** *[cut to payoff tile — the 3-step sort ON SCREEN]*
-
-Step 1: take the FULL employer match, always, first — nothing on Earth pays a guaranteed 50 to 100 percent. Step 2: kill any debt charging around 10% or more — starting with that 21% card — because that's a guaranteed double-digit return the market can't promise. Step 3: THEN invest past the match — while cheap debt, around 4% and under, just rides on its normal schedule. That's it. That's the whole answer, and it maximizes the guaranteed money at every step.
-
-So tonight: list every debt you have, and next to each one, its APR. One column, one number each. Over ~10% — attack it. Under ~4% — pay the minimum and invest. In between — judgment call, and we break those down in the Discord.
-
-**BEAT 5 · LOOP-CLOSE + SIGN-OFF** *[back to EYL freeze-frame]*
-
-So was EYL wrong? No — they just skipped the sort. The APR is the answer, not the argument. Whose side were you on before the math? Comment **MATH** and I'll send the payoff-order sheet — or DM us "DISCORD" to get in with the GenThinkers. It's D Waugh, I'm outta here.
-
-CAPTION (IG lead): "EYL says paying off debt first is a mistake. Half right — the half they skipped costs $1,050/yr. The 3-step sort inside 🧮 Comment MATH for the payoff-order sheet. Educational content only — not financial advice." #earnyourleisure #debtfree #investing #401k #creditcards #moneytok
-
-**Format note (Atlas/EYL borrow):** caption box carries THE CONTESTABLE CLAIM — "Paying Off Debt First = Expensive Mistake?" Weekend = hard DM CTA allowed; comment-trigger MATH primary.
-
----
-
-## STORY MAPS (also rendered on the board)
-
-### TUE · CPI react
-| t | beat | line | b-roll cut | loop |
-|---|------|------|-----------|------|
-| 0:00 | Cold open | "…inflation just fell. Your grocery bill didn't get the memo." | INTRO clip (hook box) | OPEN: which number decides your year |
-| 0:04 | Stakes | "first hike since 2023 — your card, your car, your house" | grocery/receipt clip | stakes attached |
-| 0:10 | Pt 3 | CPI = the receipt check · oil −21% dragged the headline | PT1-header + gas clip | why headline ≠ you |
-| 0:32 | Pt 2 | core = the honest number · stuck at 2.9% · 1-in-4 hike odds | PT2-header + Fed clip | closes Pt3, opens "so what" |
-| 0:52 | Re-hook | "where it lands on YOUR statement—" | phone/card clip | BIG loop re-opened |
-| 0:56 | Pt 1 | APR = the price of borrowing · write yours down tonight | PT3-header clip | escalates to personal |
-| 1:10 | Payoff | **$87.50/mo · $66/mo · $23,803** — on the tile | DATA TILE | BIG loop closes |
-| 1:25 | Close + sign-off | "you'll know which number decides your year" → CTA → "It's Wolf, I'm outta here." | back to INTRO framing | closed |
-
-### THU · options breakeven
-| t | beat | line | b-roll cut | loop |
-|---|------|------|-----------|------|
-| 0:00 | Cold open | "$2 option is a 7% bet" | INTRO clip (hook box) | OPEN: the hidden math |
-| 0:05 | Stakes | "first $200 — plan or donation · the 3rd number isn't printed" | trading-desk clip | personal |
-| 0:10 | Pt 3 | option = a coupon · $2 × 100 = $200 real | PT1-header + app clip | the real price |
-| 0:32 | Pt 2 | breakeven = strike + premium = $107 → +7% · up 5% = −100% | PT2-header + chart clip | escalates |
-| 0:55 | Re-hook | "the part the chain doesn't print—" | hourglass clip | BIG loop re-opened |
-| 1:00 | Pt 1 | +10% = +150% — then count the +7% months yourself | PT3-header clip | asymmetry + the clock |
-| 1:15 | Payoff | three endings ON the tile (−100% / 0% / +150%) | DATA TILE | closes |
-| 1:28 | Close + sign-off | "you'll see the 7% bet it really is" → Discord → "It's Wolf, I'm outta here." | back to INTRO | closed |
-
-### SAT · EYL debt-vs-invest react
-| t | beat | line | b-roll cut | loop |
-|---|------|------|-----------|------|
-| 0:00 | Cold open | "EYL said WHAT — half right" | EYL clip freeze | OPEN: which half |
-| 0:04 | Stakes | "$1,050/yr one way · $24,870/decade the other" | INTRO clip (hook box) | both stakes named |
-| 0:10 | Pt 3 | steelman: match = free salary → $1,800/yr → $24,870/decade | PT1-header + their best 5s | their receipt |
-| 0:35 | Pt 2 | BUT APR decides: 21% card = guaranteed $1,050/yr loss | PT2-header + statement closeup | our receipt |
-| 0:55 | Re-hook | "both sides have a receipt — so it's an ORDER—" | split-screen framing | BIG loop re-opened |
-| 1:00 | Pt 1 | the 3-step sort, spoken | PT3-header clip | resolution begins |
-| 1:08 | Payoff | sort ON the tile: match → 10%+ APR → invest | DATA TILE | closes |
-| 1:25 | Close + sign-off | "the APR is the answer, not the argument" → MATH/DM → "It's D Waugh, I'm outta here." | back to EYL freeze | closed |
+**Caption (IG):** EYL says paying off debt first is a mistake. The real answer is a 3-step sort — and it starts with one number on your statement. Comment MATH for the breakdown. Educational content only — not financial advice. #credit #investing #debtfree #eyl #moneytok #personalfinance

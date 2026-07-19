@@ -1,104 +1,65 @@
-# TGW Podcast Rundown — Sunday Jul 19, 2026 · FULL SPEAKABLE EDITION
-Records Sun Jul 19 · Wolf + D Waugh (Wolf leads Seg 1–2 markets/Fed · D Waugh leads Seg 3–4 banks/credit) · ~13–15 min · YouTube long-form + clips fan out to next week's ladder.
+# TGW Podcast Rundown — Sun Jul 26, 2026 · "The $3.3 Trillion Week — And The Fed Decides Tuesday"
+Wolf leads Seg 1–2 · D Waugh leads Seg 3–4 · ~13–15 min · records Sun AM with the week's ACTUALS filled into all three dashboards · publish early-PM ET · teaser clip into the evening window.
 
-**Rewritten Jul 18 per Wolf's full-script standard:** the cold open, every segment transition, the planted clip lines, and the outro are **word-for-word — say them as written.** Segment bodies are full spoken sentences you can read straight or riff from — every term explained in plain English on first use, so a total beginner can follow the whole episode. [FILL] items get the real number at record time.
+**B-option title:** "Chips Crashed, Inflation Fell — What Tuesday's Fed Call Does To Your Bills"
+**Through-line question (opened in the cold open, answered only in Seg 4):** was this the AI top — or the discount your future self wishes you'd bought? And either way, what does Tuesday's Fed decision do to what YOU pay and earn?
 
-**TITLE (≤60 chars, 35–54 cut):**
-"A Fed HIKE in 2026? What This Week's 3.9% Really Decided"
-B-option: "The Week That Decided If Your Rates Go UP Again"
+**Screen-shares:** `screenshare/chip-selloff-dashboard.html` (cold open + Seg 1) · `screenshare/earnings-verdict-dashboard.html` (Seg 2 — FILL-LIVE boxes for Alphabet/Tesla/Intel actuals) · `screenshare/fed-decision-dashboard.html` (Seg 3 — odds strip + 25bp pass-through table). **Fill every FILL-LIVE box with the week's actuals before recording.**
 
-**THROUGH-LINE QUESTION (opened in the cold open, not fully answered until Seg 4):**
-*"Did this week just green-light the first rate hike since 2023 — and what does that do to your family's numbers?"*
-
-🎬 **PLANTED CLIP LINES (say verbatim — next week's Shorts cut from this audio):**
-1. "One Tuesday morning decided whether your card's APR jumps past 21 percent."
-2. "$66 a month — that's what a single Fed move does to a $400K mortgage. $23,803 over the loan."
-3. "The banks know if you're cracking before you do — and this week they showed their hand."
-4. "Inflation 'fell' this week — and your grocery bill didn't get the memo."
+**Hook doctrine applies at 4 points only:** title, cold open, the re-anchor at each transition, and the planted clip lines. Segment bodies stay measured and sourced — the episode earns the hook with the math.
 
 ---
 
-## COLD OPEN (0:00–0:45) — word-for-word, Wolf
-🖥️ SCREEN SHARE: `screenshare/cpi-day-dashboard.html` (open on the FILL-LIVE headline panel).
+## COLD OPEN (0:00–0:45) — word-for-word
+"Three point three trillion dollars left the market in three weeks. Netflix dropped 10 percent in a day. The chip index that ran 105 percent since March just entered an official bear market. And on Tuesday — this Tuesday — the Federal Reserve decides whether every borrowed dollar in your life gets more expensive. If you've got a 401(k), a credit card, or a mortgage quote open in another tab, this week happened TO you. By the end of this episode you'll know exactly what it changed — your card's APR, your index fund, your plan — with the receipts on screen."
 
-> "This week, one Tuesday morning — one inflation report, five bank earnings, and a brand-new Fed chair in front of Congress — moved the odds on whether you and your family pay MORE on every single borrowed dollar in 2026. Inflation 'fell' to [FILL: actual headline]… and somehow a rate HIKE is still on the table. How does inflation fall and rates go UP? That's the question this whole episode answers — and by the end you'll know exactly what it does to your mortgage, your card, and your plan. With the receipts. Let's go."
+🎬 **PLANTED CLIP LINES (say verbatim — the Shorts inherit these):**
+1. "A third of your index fund is riding the AI trade — whether you picked it or not."
+2. "Selling at $8,000 costs you 5.7 years. Doing nothing costs you nothing."
+3. "One Fed vote Tuesday is $66 a month on a $400K mortgage — $23,803 over the loan."
+4. "Even after a 20 percent crash, the chip index is still up 63 percent since March. Both headlines are true — which one you act on decides everything."
 
-Then the preview, spoken naturally: "Here's the road map: first the inflation report and the trick inside it. Then the new Fed chair's first testimony and the actual hike math. Then D Waugh takes the bank earnings — what they confessed about the American consumer. And we land on what you actually DO with all of it."
+🖥️ chip-selloff-dashboard.html open on the $3.3T panel.
 
-## SEGMENT 1 — The print: headline vs core (0:45–3:45) · Wolf
-**Say-this flow (full sentences — read or riff):**
+## SEGMENT 1 — The week the AI trade broke (0:45–4:00) · Wolf
+Speakable body (read or riff — every term explained):
+- "The SOX — the scoreboard of the 30 biggest chip companies — peaked June 22, then fell 20.2 percent in three weeks. Twenty percent down from a peak is the official 'bear market' line. Globally, about $3.3 trillion in chip-company value evaporated. For scale: that's more than the entire German stock market."
+- Mechanism, two triggers: "One — Moonshot, a Chinese startup, released Kimi K3, a free open-source model claiming near-parity with the top US labs. When the product's free, the trillion-dollar hardware story needs re-checking. Two — the ROI question: US big tech is spending hundreds of billions on data centers, and investors finally asked when the profit lands. 'Harder to justify' was the phrase of the week."
+- Perspective before panic: "March to June this index DOUBLED — up 105 percent. Even after the 20 percent drop, $10,000 from March is still about $16,359. This is a monster year giving some back — AND a real warning about concentration. Both."
+- ✏️ DRAW on the dashboard: circle the Jun 22 peak → the −20.2% line.
+- **Re-anchor (word-for-word):** "That's the market's story. But your 401(k) doesn't care about drama — it cares about earnings. And this week, the report cards actually came in — segment two."
 
-- "Quick translation before any numbers: CPI is the Consumer Price Index. All it is, is the government's monthly receipt check — they price the same basket of stuff every month, groceries, rent, gas, and see how much more it costs than last time. That percent is 'inflation.'"
-- "Going into Tuesday, the consensus — the average guess of the pros — said prices actually FELL a tenth of a percent for the month, bringing the yearly number from May's 4.2% down to about 3.9%. [FILL LIVE: the actual print, both lines.]"
-- "And here's the trick inside that drop: oil. Oil crashed about 21%, down to around $77, after the June ceasefire reopened the shipping lanes. Cheap gas drags the whole headline number down. But your rent didn't fall. Groceries didn't fall."
-- "That's why the Fed reads a different line: CORE CPI. Core just means food and energy get thrown out — not because they don't matter, but because they swing so hard they hide the trend. Core is the honest, slow number. And core came in at [FILL — consensus said 2.9%, exactly where it was a YEAR ago. Stuck.]"
-- ✏️ DRAW: circle "All items" vs "All items less food and energy" on the dashboard's two-line panel. Say: "Same page, two different worlds — this line is the weather, this line is the climate."
-- **The worked cost, spoken:** "And even 'falling' inflation isn't free. At 3.9%, a household spending $60,000 a year pays **$2,340 more** for the exact same life. The Fed's target is 2% — even there you'd pay $1,200 more. So the gap between 'falling' and 'fixed' is still costing you about $1,140 a year."
-- 🎬 Planted clip line #4 lands here, verbatim: "Inflation 'fell' this week — and your grocery bill didn't get the memo."
+## SEGMENT 2 — The earnings verdict (4:00–7:30) · Wolf
+🖥️ earnings-verdict-dashboard.html — FILL boxes with actuals.
+- Going in, the consensus was: **Alphabet** Wed 4pm — EPS ~$2.88 (+24%), the line that mattered: Google Cloud ~$22.8B, +67% — the single cleanest "does AI pay?" receipt. [FILL: actuals + the after-hours move.]
+- **Tesla** Wed 4pm — EPS ~$0.52 (+30%), revenue ~$26.0B (+15%). [FILL.] **Intel** Thu — revenue ~$14.4B, EPS ~$0.06–0.10, down ~21% in the week before the print. [FILL.] **Netflix** already reported: beat on EPS ($0.80), revenue hair-miss ($12.56B vs $12.6B), weak Q3 guide, stock −10% — "a hair-miss at a record valuation gets punished. Remember that phrase: priced for perfect."
+- "What we told you Tuesday to watch: did Cloud's 67 percent show up? Did anyone RAISE their AI spending plans? [FILL: the answer.] That — not the red candles — is the actual verdict on the AI trade."
+- **Re-anchor (word-for-word):** "So that's whether your INVESTMENTS pay. Whether your DEBTS cost more — that gets decided in one room on Tuesday. D Waugh, take it."
 
-**Transition re-anchor (word-for-word):**
-> "So that's the number. But a number doesn't set your APR — the guy who testified 90 minutes later does. Segment two."
+## SEGMENT 3 — Fed-eve: the Tuesday decision (7:30–11:00) · D Waugh
+🖥️ fed-decision-dashboard.html.
+- The setup, plain: "The Fed meets Tuesday and Wednesday — decision Wednesday Jul 29, 2pm ET. Funds rate has sat at 3.50–3.75 percent since December. Two weeks ago a HIKE — the first since 2023 — had real odds because oil spiked when the Iran ceasefire collapsed. Then June CPI printed a 0.4 percent DROP — the biggest monthly fall since 2020 — headline down to 3.5 percent, core to 2.6. Hike odds collapsed to ~15 percent... then crept back over 30 as oil pushed past $80 again on the new strikes. [FILL: the FedWatch number Sunday AM.] That tug-of-war — cheap-oil June vs expensive-oil July — is the whole meeting."
+- The pass-through, verified math: "One 25-basis-point hike — a quarter of one percent — on a $400,000 30-year mortgage: payment goes $2,528 to $2,594. $66 more a month, $23,803 over the loan. Your credit card follows the Fed automatically within a statement or two — a $5,000 balance at today's ~21 percent average is already $87.50 a month in pure interest."
+- "And cuts? Markets price essentially zero cuts for all of 2026 — about a 76 percent chance of none. So 'wait for cheaper money' is not a plan this year. ✏️ underline the cuts row."
+- **Re-anchor (word-for-word):** "So chips crashed, earnings answered, and the Fed decides Tuesday. None of that is a scoreboard — it's your borrowing costs and your balance. Last segment: what we actually do."
 
-## SEGMENT 2 — Warsh's first testimony + the hike math (3:45–7:00) · Wolf
-🖥️ SCREEN SHARE: `screenshare/hike-path-dashboard.html` (odds strip + pass-through table).
-
-**Say-this flow:**
-
-- "Tuesday 10am House, Wednesday 10am Senate — Fed Chair Warsh's first Humphrey-Hawkins. Plain English: twice a year, the head of the Fed has to sit in front of Congress and explain what they're doing with interest rates. This was the new guy's first one. [FILL: 1–2 actual quotes on the 2% target / hike posture.]"
-- "The setup: the Fed's rate sits at 3.50 to 3.75 percent, and they've held it there for four straight meetings, since December. The Fed's rate is the base price of borrowing money in America — every card, car loan, and mortgage prices off of it."
-- "And because core is stuck at 2.9 against a 2.0 target, the futures market — where traders literally bet on the Fed's next move, and you can watch it free on CME FedWatch — priced roughly a 1-in-4 chance of a HIKE on July 29th going into the week. [FILL: where the odds ended the week.]"
-- **The pass-through math, spoken slowly (verified):** "Here's what one little quarter-point hike means. On a $400,000, 30-year mortgage: the payment goes from $2,528 a month to $2,594. **$66 more a month — $23,803 over the life of the loan.** From a quarter of one percent." 🎬 Planted clip line #2 lands here, verbatim.
-- "And your credit card is faster: card APRs float on the prime rate, which moves with the Fed automatically — a hike shows up on your statement within one or two cycles. A $5,000 balance at today's ~21% average is already $87.50 a month in pure interest." 🎬 Planted clip line #1 lands here, verbatim.
-
-**Transition re-anchor (word-for-word):**
-> "So the Fed sets the price of your debt — but whether Americans can still PAY their debt? The banks just told us. Segment three — D Waugh's lane."
-
-## SEGMENT 3 — What the banks confessed (7:00–10:30) · D Waugh
-🖥️ SCREEN SHARE: `screenshare/bank-earnings-dashboard.html` — consumer-stress panel; ✏️ DRAW on the delinquency trend line [FILL].
-
-**Say-this flow:**
-
-- "Tuesday before the market even opened: JPMorgan, Bank of America, Citigroup, Wells Fargo, Goldman — all reported earnings in one morning. Consensus going in: JPM $5.49 a share on $48.7 billion revenue, up about 10.7% — BAC $1.12 on $30.7 billion. [FILL LIVE: actuals + how the stocks reacted.]"
-- "But here's why WE read bank earnings — and it's not the stock prices. Banks see the American consumer's checkbook before anyone else. Three lines tell the story:"
-- "One — net interest income. That's just the gap between what a bank charges borrowers and what it pays savers. It tells you what a hold-versus-hike world is actually paying banks. [FILL]"
-- "Two — delinquencies and charge-offs. A delinquency is a card payment that's late; a charge-off is a debt the bank has given up collecting. When those tick up, the consumer is cracking. 🎬 Planted clip line #3 lands here, verbatim: 'The banks know if you're cracking before you do — and this week they showed their hand.' [FILL: the actual trend.]"
-- "Three — loan-loss provisions. That's money the bank sets aside TODAY for loans it EXPECTS to go bad TOMORROW. It's the banks' own forecast of pain. [FILL]"
-- "Same lane this week: ASML Wednesday, TSMC Thursday — consensus about $3.81 an ADR on roughly $40 billion, up ~33% — that's the AI-spending health check. Retail sales Thursday 8:30 [FILL]. Michigan consumer sentiment Friday [FILL]."
-
-**Transition re-anchor (word-for-word):**
-> "None of this matters as a scoreboard — it matters as YOUR borrowing costs and YOUR plan. Last segment: what we actually do about it."
-
-## SEGMENT 4 — Your money in a maybe-hike world (10:30–13:30) · D Waugh leads, Wolf joins
-**Say-this flow (education, not advice — the order stands regardless of the print):**
-
-- "Here's the part that doesn't change no matter what Tuesday said. Step one: take your full employer match — that's the free money your job adds when you put money in your 401(k). On a $60K salary with a 50%-of-6% match, that's $1,800 a year, free — and skipping it for a decade costs you about $24,870 at a 7% average return."
-- "Step two: kill the expensive debt — anything around 10% APR or more, and that 21% card first. Paying off a 21% card is a GUARANTEED 21% return. No market promises that. And notice: if the Fed hikes, that card gets MORE expensive — so a hike makes this step more valuable, not less."
-- "Step three: then automate your investing past the match — while cheap debt, around 4% and under, just rides on schedule."
-- "If you're house-shopping: your mortgage quote moves when the ODDS move, before the Fed ever votes — that's why Tuesday mattered even though the meeting isn't until the 29th."
-- "And DCA discipline — dollar-cost averaging, putting in the same amount on the same day every month no matter what the news says: the plan doesn't flinch on one print in either direction. This is the same answer as Saturday's EYL debate — the APR sort settles it."
-- Tease next week, spoken: "Next week is the main event — the Fed's actual decision, July 28th and 29th. We react same-day. And June PCE — the Fed's other favorite inflation number — lands right before it. Big week in the Discord."
+## SEGMENT 4 — Your playbook in a week like this (11:00–13:30) · D Waugh + Wolf
+- The order survives every headline (Saturday's EYL sort, restated): "Match first — 50 cents per dollar is a 50 percent return. High-APR debt second — killing a 21 percent card is a guaranteed win no index fund promises. Automate third — past the match, every paycheck, ESPECIALLY through red weeks: the same $100 buys 25 percent more shares 20 percent down."
+- The panic-sell tile one more time: "$10K → $8K is a paper loss until you sell it real. +25 percent to get even; ~5.7 years if you hide in 4-percent cash."
+- Concentration honesty: "A third of your index fund is tech. That's not a reason to sell — it IS a reason to know what you own and stop treating 'the S&P' like a savings account."
+- Tease next week: "FOMC decision Wednesday Jul 29, 2pm ET — we react same-day. June PCE — the Fed's preferred inflation gauge — lands Friday Jul 31. Two spikes, one week."
 
 ## OUTRO (13:30–end) — word-for-word
-> "Three things to walk away with. One: the headline fell because gas fell — core is the tell, and core is stuck. Two: one quarter-point hike is $66 a month on a $400K mortgage, and a $5,000 card balance already costs $87.50 a month at today's rates. Three: the order survives every print — take the match, kill the expensive debt, automate the rest."
+"Three takeaways. One: the AI trade didn't die this week — it got repriced, and earnings, not headlines, are the referee. Two: Tuesday's Fed call is $66 a month on a $400K mortgage — know your APR before they vote. Three: match, high-APR debt, automate — the order that survives every kind of week. We're tracking the Fed decision live all week in the Discord — link in bio."
+Then, last and clean: **"It's Wolf, I'm outta here."** / **"It's D Waugh, I'm outta here."**
 
-Bridge (one beat before the close, verbatim):
-> "Fix your credit → get funding → open the brokerage → put capital to work. We're tracking the FOMC run-up all week in the Discord — link in bio."
-
-Sign-off, last and clean: **"It's Wolf, I'm outta here."** → D Waugh follows: **"It's D Waugh, I'm outta here."**
-
----
-
-## RESOURCES / SOURCES (verified Jul 12 — re-verify all FILL items at record time)
-- CPI: BLS, June CPI released Tue Jul 14, 8:30am ET (bls.gov/schedule). Consensus: headline −0.1% m/m → ~3.9% y/y; core +0.3% → ~2.9% (BMO/consensus via Kiplinger preview). May CPI: 4.2% y/y.
-- Oil: ~$77/bbl, ~−21% after mid-June ceasefire / Strait of Hormuz reopening (Kiplinger/Continuum preview).
-- Fed: funds rate 3.50–3.75%, held since Dec 2025 (federalreserve.gov, Jun 17 statement); hike odds ~22–30% for Jul 28–29 (CME FedWatch / rateprobability, pulled Jul 12 — refresh live).
-- Warsh Humphrey-Hawkins: House Financial Services Tue Jul 14 10am · Senate Banking Wed Jul 15 10am.
-- Banks: JPM cons. $5.49 EPS / $48.7B rev (+10.7%) · BAC $1.12 / $30.7B (Zacks/IG previews) · implied single-day moves: GS 6.0% · C 5.5% · WFC 5.5% · BAC 4.5% · JPM 4.4%.
-- Chips: ASML Q2 Wed Jul 15 pre-market (cons. EPS ~$7.98) · TSMC Thu Jul 16 (cons. ~$3.81/ADR, rev ~$40.04B ≈ +33% y/y).
-- Market tape going in: Dow record close 53,055.91 (Mon Jul 6) → 52,478.41 Fri Jul 10 (−1.1% off the record) as oil rose on renewed Strait tension; SK Hynix ADR +13% debut pop.
-- Worked math (computed + verified): $400K @6.50% = $2,528.27/mo vs @6.75% = $2,594.39/mo (+$66.12, +$23,803/30yr) · $5,000 @21% = $1,050/yr = $87.50/mo · $60K spend @3.9% = $2,340/yr (vs 2% target: +$1,140) · match $1,800/yr → 10yr @7% = $24,870.
-
-## SCREEN-SHARE CUES (this week's dashboards, in `screenshare/`)
-1. `cpi-day-dashboard.html` — cold open + Seg 1. FILL-LIVE boxes: headline m/m + y/y, core m/m + y/y. Verify-before-posting banner stays until filled.
-2. `hike-path-dashboard.html` — Seg 2. Odds strip [FILL from FedWatch], the 25bp pass-through table (pre-computed), the held-since-Dec timeline.
-3. `bank-earnings-dashboard.html` — Seg 3. Consensus vs actual table [FILL], consumer-stress panel (NII / delinquencies / provisions) [FILL].
+## RESOURCES (verified Jul 19 — re-verify at record)
+- SOX −20.2% from Jun 22 record close, confirmed Fri Jul 17; +105% Mar→Jun run; ~$3.3T global chip value erased (Bloomberg/Yahoo Finance).
+- Moonshot AI "Kimi K3" open-source release Fri Jul 17.
+- June CPI (BLS, rel. Jul 14): −0.4% m/m (biggest monthly drop since 2020), 3.5% y/y; core flat m/m, 2.6% y/y.
+- FOMC Jul 28–29, decision Wed 2pm ET; funds 3.50–3.75% (5 holds); hike odds ~15%→30s% range post-CPI/oil (CME FedWatch — FILL Sunday); ~76% odds of zero 2026 cuts (Polymarket).
+- Oil: WTI ~$82 on US strikes in Iran; ceasefire collapsed Jul 8.
+- Earnings consensus: GOOGL $2.88 / Cloud $22.8B +67% (Zacks) · TSLA ~$0.52 / ~$26.0B (Zacks/CoinCentral) · INTC ~$0.06–0.10 / $14.4B (Yahoo/moomoo) · NFLX actual: $0.80 EPS, $12.56B rev, −10% Fri.
+- Data calendar: Mon LEI 10am · Thu jobless claims 8:30am · Fri flash PMIs 9:45am + June new home sales 10am (Kiplinger).
+- All worked math computed this run: mortgage $2,528.27→$2,594.39 (+$66.12/mo, +$23,803) · card $87.50/mo · $8K needs +25% (~5.7 yrs at 4%) · $10K Mar → $16,359 now · min-payment $5K ≈ 56 yrs/$33K.
+- B-roll: `greenscreen/PODCAST/` (teaser tile + Ken Burns clip). Educational content only — not financial advice.
