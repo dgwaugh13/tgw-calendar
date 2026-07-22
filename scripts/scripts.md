@@ -3,12 +3,16 @@ Full-Script Standard (Jul 18): word-for-word spoken scripts, every term explaine
 
 **Sora structural adjustment #3 (from last week's watch-through):** the CPI reveal held **52.1% avg viewed** (the week's best) while the options lesson held 30.4% — reveals retain, lessons don't, AGAIN. But the react shipped a day+ LATE and the spike window was gone (181/164 views vs the 505/663 of the on-time Trump-accounts week). Adjustment: **put the concrete receipt-number IN Beat 1 itself** (say "$3.3 trillion" in the first two seconds, don't just promise a reveal) — and treat ship-day as part of the format: a react that posts late isn't the same post.
 
+**⚠ SCHEDULE CHANGE (Jul 22 AM):** Tuesday's studio session didn't happen. Per the standing rule (Tue studio day → Wed backup), the FULL session records **today, Wednesday Jul 22**: react first (ship before the close), then the Thu evergreen and Sat collab back-to-back. Silver lining: the react now drops ON earnings day — every "Wednesday night" beat below becomes **"TONIGHT."** News re-verified Jul 22 AM: Alphabet + Tesla confirmed for tonight after the close (Intel tomorrow) · chips bounced hard Mon–Tue into the print (Micron +12%, AMD +8%, SK Hynix +14% Tue · Nvidia up on its 9.3% Nebius stake · Nasdaq +1.3%) · Brent pushing toward $90. The bounce is now written INTO the script as the setup for tonight's verdict. Drawdown numbers ($3.3T, −20.2%) remain Friday's confirmed closes.
+
+---
+
 All worked numbers below computed/verified this run (Python): $400K 30-yr mortgage @6.50% = $2,528.27/mo vs @6.75% = $2,594.39/mo → **+$66.12/mo, +$23,803 over the loan** · $5K card @21% APR = **$87.50/mo** ($1,050/yr) interest · $10K − 20% = $8,000, needs **+25%** to get even; parked in 4% cash that takes **~5.7 years** · SOX +105% (Mar→Jun 22) then −20.2% = still **+63.6%** from March ($10K → $16,359) · $100 buys **25% more shares** at $80 than at $100 · $5K min-payments (2% floor $25) @21% ≈ **56 years, ~$33,000 paid**.
 
 ---
 
-## TUE JUL 21 — P6 NEWS/REACT · "The $3.3 Trillion Selloff" (WOLF) · records Tue AM (no Monday recording — Wolf's rule), posts Tue peak
-**Platforms:** TikTok react (25–34 cut) · IG Reel ~3pm · YT Short (35–54 cut) by noon.
+## WED JUL 22 (moved from Tue — session missed) — P6 NEWS/REACT · "The $3.3 Trillion Selloff" (WOLF) · records Wed AM (the standing backup slot), ships BEFORE the 4pm close
+**Platforms:** record AM first, then: YT Short ASAP (by early afternoon — indexes into the earnings-night search wave) · IG Reel ~3pm · TikTok 3–7pm, lean late.
 **Hooks (viewer-subject test passed — the viewer's account is the subject, the selloff is the pretext):**
 1. LIFE-OUTCOME (selected): "$3.3 trillion just left the market — and if you own ANY index fund, about a third of your money felt it. 3 numbers decide what your account does next."
 2. Material: "Your 401(k)'s worst 3 weeks of 2026 — the 3 numbers that decide the next 3."
@@ -21,8 +25,8 @@ All worked numbers below computed/verified this run (Python): $400K 30-yr mortga
 | 0:04 | Stakes | "a third of your index fund is tech — you're in this trade" | TUE_S1 tile | — |
 | 0:09 | Pt 3 | what broke: SOX −20.2% in 3 weeks after a 105% run · Kimi K3 + capex doubt | TUE_S1 (PT 1 header) | mini-loop |
 | 0:26 | Pt 2 | your account: the −20% panic-sell trap · $8,000 needs +25% | TUE_S2 (PT 2 header) | escalates |
-| 0:40 | Re-hook | "and Wednesday night, this whole story gets its verdict—" | TUE_V1 re-use | BIG loop re-opens |
-| 0:44 | Pt 1 | Wed 4pm: Alphabet + Tesla · Thu: Intel — the 3 lines to read | TUE_S3 (PT 3 header) | — |
+| 0:40 | Re-hook | "and TONIGHT, this whole story gets its verdict—" | TUE_V1 re-use | BIG loop re-opens |
+| 0:44 | Pt 1 | TONIGHT 4pm: Alphabet + Tesla · tomorrow: Intel — the 3 lines to read | TUE_S3 (PT 3 header) | — |
 | 0:53 | Payoff | sell-at-the-bottom math ON SCREEN: $8,000 vs $10,000 vs 5.7 years | TUE_S3 payoff numbers | CLOSES |
 | 0:58 | Close | "you'll know if it's a crash or a discount" → comment CHIPS → sign-off | — | loop-close |
 
@@ -45,31 +49,31 @@ Here's the receipt you can check yourself: open your investing app, pull up any 
 **Number 2 — the trap that turns a drawdown into a loss** *[PT 2 header tile]*
 Here's the math nobody does while they're panicking. Say you've got $10,000 in there and it drops 20 percent. You're at $8,000. On paper. It only becomes REAL when you sell. Because if you sell at $8,000, you now need a 25 percent gain just to get back to where you were — and if that money sits in a savings account earning 4 percent, getting back to $10,000 takes almost SIX YEARS. The person who did nothing? They're back at even whenever the market is. The person who sold the bottom bought themselves a half-decade detour.
 
-And one more number for perspective: even after this 20 percent drop, that chip index is still up 63 percent from March. If you'd put in $10,000 in March, you'd still have about $16,300. The headline says crash. The 6-month chart says a monster year giving some back. Both are true — which one you act on decides everything. *[Therefore the real question isn't "should I sell" — it's "what happens Wednesday night."]*
+And one more number for perspective: even after this 20 percent drop, that chip index is still up 63 percent from March. If you'd put in $10,000 in March, you'd still have about $16,300. The headline says crash. The 6-month chart says a monster year giving some back. Both are true — which one you act on decides everything. *[Therefore the real question isn't "should I sell" — it's "what happens TONIGHT."]*
 
 **MID-VIDEO RE-HOOK** *[back to intro framing]*
-Because Wednesday night, this entire story gets its verdict.
+Because tonight — in about three hours — this entire story gets its verdict.
 
-**Number 1 — Wednesday, 4pm, the verdict** *[PT 3 header tile]*
-Wednesday after the market closes, Alphabet — that's Google — and Tesla both report earnings. Thursday, Intel. Earnings are just a company's report card: what they made, what they spent. And this week, one line on Google's report card matters more than all the others: their cloud business — the part that sells AI computing power — is expected to grow 67 percent, to about $22.8 billion in three months. If that number shows up, the "AI has no payoff" story gets a lot weaker. If it misses — this selloff was the warm-up.
+**Number 1 — tonight, 4pm, the verdict** *[PT 3 header tile]*
+TONIGHT, right after the market closes, Alphabet — that's Google — and Tesla both report earnings. Tomorrow, Intel. And here's the setup: after three brutal red weeks, chip stocks just ran up two straight green days — Micron up twelve percent in a single session — because the market is betting tonight's report goes well. Somebody is wrong by tomorrow morning. Earnings are just a company's report card: what they made, what they spent. And this week, one line on Google's report card matters more than all the others: their cloud business — the part that sells AI computing power — is expected to grow 67 percent, to about $22.8 billion in three months. If that number shows up, the "AI has no payoff" story gets a lot weaker. If it misses — this selloff was the warm-up.
 
 You don't need to trade ANY of this. You need to not get shaken out of a plan by three red weeks — and if you're putting in money every paycheck, understand: the same $100 that bought one share at the top buys 25 percent MORE shares down here. Automatic investing is literally the only strategy that gets BETTER when the market gets worse.
 
 **BEAT 4 · PAYOFF** *[payoff tile — numbers ON SCREEN]*
-So here's the tile to screenshot. Panic path: sell at $8,000, need +25%, roughly 5.7 years in cash to claw back. Boring path: keep the automatic buys on, own 25% more shares per dollar down here, and let Wednesday's report card — not your fear — tell you what the AI trade is actually worth.
+So here's the tile to screenshot. Panic path: sell at $8,000, need +25%, roughly 5.7 years in cash to claw back. Boring path: keep the automatic buys on, own 25% more shares per dollar down here, and let tonight's report card — not your fear — tell you what the AI trade is actually worth.
 
 **BEAT 5 · CLOSE + CTA + SIGN-OFF** *[fixed order]*
-Wednesday night, when everyone's screaming about Google and Tesla — you'll know whether you're looking at a crash or a discount.
+Tonight, when everyone's screaming about Google and Tesla — you'll know whether you're looking at a crash or a discount.
 Comment **CHIPS** and I'll send you the earnings-week cheat sheet — we're tracking all three reports live in the Discord, link in bio.
 **"It's Wolf, I'm outta here."**
 
-**Caption:** $3.3 trillion left the market in 3 weeks — and about a third of your index fund was in the trade. Wednesday night decides what happens next. Comment CHIPS for the earnings-week cheat sheet. Educational content only — not financial advice. #stockmarket #ai #nvidia #401k #investing #fintok
+**Caption:** $3.3 trillion left the market in 3 weeks — and about a third of your index fund was in the trade. TONIGHT's earnings decide what happens next. Comment CHIPS for the earnings-week cheat sheet. Educational content only — not financial advice. #stockmarket #ai #nvidia #401k #investing #fintok
 
-**YT Short (35–54 cut, <45s):** "Your 401(k) just had its worst 3 weeks of 2026 — a third of it is tech whether you chose that or not. $10K −20% = $8K; sell there and you need +25% back, ~5.7 years in cash. The people who retire on time are the ones who don't sell red weeks. Wednesday night Google's report card tells us if AI pays — full breakdown Sunday on the channel."
+**YT Short (35–54 cut, <45s):** "Your 401(k) just had its worst 3 weeks of 2026 — a third of it is tech whether you chose that or not. $10K −20% = $8K; sell there and you need +25% back, ~5.7 years in cash. The people who retire on time are the ones who don't sell red weeks. Tonight Google's report card tells us if AI pays — full breakdown Sunday on the channel."
 
 ---
 
-## THU JUL 23 — P1 TRADE EVERGREEN · "Green Vs Red Candles" (WOLF) · recorded in Tuesday's studio session, posts ~10–11am off-peak
+## THU JUL 23 — P1 TRADE EVERGREEN · "Green Vs Red Candles" (WOLF) · recorded in WEDNESDAY's studio session (moved from Tue), posts ~10–11am off-peak
 **Peg:** demand-pegged by our OWN TikTok Search queries this week: "What do green candlesticks mean and the red candlesticks" and "Obv macd" — the audience typed the brief again. This refreshes the all-time #1 evergreen vein (candlesticks 96K and STILL #1 this week at 280 views/wk 18 months later).
 **Hooks:**
 1. SELECTED: "Every candle on a stock chart is 4 numbers — and reading them takes 60 seconds. Learn it once, and a red week like this one never scares you out of your first $200 again."
@@ -131,7 +135,7 @@ We break down one real chart every week in the Discord — link in bio.
 
 ---
 
-## SAT JUL 25 — COLLAB / GUEST-REACTION (D WAUGH) · IG-FIRST · MUST-SHIP (recorded + scripted since Jul 13 — 5+ planned weeks, 0 ships)
+## SAT JUL 25 — COLLAB / GUEST-REACTION (D WAUGH) · IG-FIRST · MUST-SHIP (records in WEDNESDAY's session with the other two — 5+ planned weeks, 0 ships)
 **Asset:** the EYL react — "Paying Off Debt Before Investing Could Be One Of Your Most Expensive Mistakes." Screen-record the EYL reel, open on their freeze-frame, green-screen react over it (IG) / stitch-duet (TikTok). Caption box carries the CONTESTABLE CLAIM verbatim (EYL borrow), not the topic. **Standby if the clip can't ship a 6th time: bank reel #16 tiles are ready in `weeks/Jul-6-12/greenscreen/SAT/`.**
 **Cold-open text:** `EYL Said WHAT?!` · **Sustained caption:** `EYL: Paying Off Debt First = Mistake? Half Right.`
 

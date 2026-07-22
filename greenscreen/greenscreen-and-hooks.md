@@ -1,4 +1,4 @@
-# Green-screen backgrounds + hook text — Week of Jul 20–26, 2026 (rev 2 — real Pexels footage pulled Jul 19)
+# Green-screen backgrounds + hook text — Week of Jul 20–26, 2026 (rev 3, Jul 22 — react moved Tue→Wed; every "Wednesday night" spoken beat is now "TONIGHT")
 
 **Pipeline:** Pexels real footage (free license, no attribution) + Pillow data tiles. Raw sets live in `broll/<DAY>/` (7/6/6 clips + 3 photos per short-form post; podcast 5 clips + 2 photos). Caption scheme (Jul 10 spec): per post, FOUR clips carry baked captions in `broll/<DAY>/captioned/` — the INTRO clip gets the full TGW hook box, one clip per Pt gets the compact "PT N" header (on-screen progress bar; Pt 3 = payoff step). All raws ship clean beside them as flexible spares — never delete. Data tiles stay in `greenscreen/<DAY>/` (the payoff numbers land ON a tile per Sora adjustment #2) along with the Ken Burns tile-clips as extra spares.
 
@@ -8,7 +8,7 @@ Box spec locked: navy `#131A22`, border `#243140`, gold `#F5C451` Title Case, ke
 
 ---
 
-## TUE JUL 21 — $3.3T chip-selloff react (Wolf)
+## WED JUL 22 — $3.3T chip-selloff react (Wolf) · MOVED from Tue (session missed) — asset files keep their TUE_ prefix; paths unchanged
 - **Cold-open text (≤5 words):** `Your 401(k) Felt That`
 - **Sustained caption (baked, intro box):** `The $3.3 Trillion Selloff — What Your 401(k) Does Next`
 
@@ -23,7 +23,7 @@ Box spec locked: navy `#131A22`, border `#243140`, gold `#F5C451` Title Case, ke
 8. 0:58 loop-close — back to `TUE_V6` raw → sign-off
 - Spares: `TUE_V4`, `TUE_V5`, `TUE_V7` (clean) · photos `TUE_P1_bearish-chart.jpg`, `TUE_P2_stock-report.jpg`, `TUE_P3_screen-closeup.jpg` · tiles `TUE_T0/S1/S2/S3` + `TUE_V1_kenburns.mp4` in `greenscreen/TUE/`
 
-## THU JUL 23 — candlestick evergreen (Wolf)
+## THU JUL 23 — candlestick evergreen (Wolf) · records in Wednesday's session
 - **Cold-open text:** `Red Candles Aren't Random`
 - **Sustained caption:** `Green Vs Red Candles — The 4 Numbers In Every Bar`
 
