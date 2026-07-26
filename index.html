@@ -3,772 +3,600 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TGW · Weekly Content Engine · Jul 20 – 26</title>
+<title>TGW · Weekly Content Engine · Jul 27 – Aug 2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#0B0F14; --panel:#131A22; --panel2:#1A232E; --line:#243140;
-    --mint:#34E5A3; --gold:#F5C451; --text:#E8EEF2; --muted:#8A9BA8;
-    --p1:#34E5A3; --p2:#5B9BFF; --p3:#F5C451; --p4:#B98BFF; --p5:#FF8FB1; --p6:#FF7A59;
-    --disp:'Space Grotesk',system-ui,sans-serif;
-    --body:'Inter',system-ui,sans-serif;
-    --mono:'JetBrains Mono',ui-monospace,monospace;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--ink);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;
-    background-image:radial-gradient(1200px 600px at 80% -10%,rgba(255,122,89,.06),transparent 60%);}
-  .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
-  a{color:inherit}
-  header.top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
-  .brand{display:flex;align-items:center;gap:13px}
-  .mark{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:var(--disp);font-weight:700;color:#04120c;font-size:18px;letter-spacing:-.04em}
-  .brand h1{font-family:var(--disp);font-size:21px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
-  .brand p{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-top:3px}
-  .weekchip{text-align:right}
-  .weekchip .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
-  .weekchip .rng{font-family:var(--disp);font-size:18px;font-weight:600;color:var(--mint);margin-top:2px}
-  .weekchip .sub{font-size:12px;color:var(--muted)}
-  h2.sec{font-family:var(--disp);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px}
-  h2.sec::before{content:"";width:18px;height:2px;background:var(--mint);border-radius:2px}
-  .loop{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .loopcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .loopcard .n{font-family:var(--mono);font-size:12px;color:var(--mint);font-weight:600}
-  .loopcard h3{font-family:var(--disp);font-size:15px;font-weight:600;margin:7px 0 6px}
-  .loopcard p{font-size:13px;color:var(--muted)}
-  .nums{background:linear-gradient(160deg,#16212c,#101820);border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:0}
-  .nums .hd{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-  .nums .hd h3{font-family:var(--disp);font-size:17px;font-weight:600}
-  .nums .hd span{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em}
-  .statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-  .platbox{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:15px}
-  .platbox .pl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;font-weight:600}
-  .platbox.yt .pl{color:var(--p6)} .platbox.tt .pl{color:var(--p1)} .platbox.ig .pl{color:var(--p5)}
-  .metric{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04)}
-  .metric:last-child{border:none}
-  .metric .k{color:var(--muted)}
-  .metric .v{font-family:var(--mono);font-weight:600}
-  .metric .up{color:var(--mint)} .metric .down{color:var(--p5)}
-  .leadin{margin-top:14px;background:rgba(255,122,89,.06);border:1px solid rgba(255,122,89,.2);border-radius:12px;padding:14px 16px;font-size:13.5px;color:#cdd8e1}
-  .leadin b{color:var(--gold)}
-  .anchor{background:linear-gradient(160deg,#16212c,#101820);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;overflow:hidden}
-  .anchor::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(245,196,81,.14),transparent 70%)}
-  .anchor .tag{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--gold);background:rgba(245,196,81,.1);border:1px solid rgba(245,196,81,.25);padding:5px 11px;border-radius:99px;text-transform:uppercase}
-  .anchor h3{font-family:var(--disp);font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1.18;margin:15px 0 8px;max-width:44ch}
-  .anchor .why{font-size:14px;color:var(--muted);max-width:66ch}
-  .anchor .when{margin-top:14px;font-family:var(--mono);font-size:12px;color:#cdd8e1;position:relative;z-index:1}
-  .anchor .when b{color:var(--mint)}
-  .ladder{display:grid;gap:11px}
-  .day{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s}
-  .day:hover{border-color:#33485c}
-  .day.key{border-color:rgba(255,122,89,.4)}
-  .dayhead{display:flex;align-items:center;gap:14px;padding:15px 18px;cursor:pointer;user-select:none}
-  .dow{font-family:var(--disp);font-weight:700;font-size:15px;width:92px;flex-shrink:0}
-  .dow small{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.06em}
-  .pill{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;padding:4px 9px;border-radius:6px;flex-shrink:0;text-transform:uppercase}
-  .hook{flex:1;font-weight:600;font-size:14.5px;min-width:0}
-  .fmt{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.06em;flex-shrink:0;text-transform:uppercase}
-  .chev{color:var(--muted);font-size:13px;transition:transform .25s;flex-shrink:0}
-  .day.open .chev{transform:rotate(90deg)}
-  .daybody{max-height:0;overflow:hidden;transition:max-height .35s ease}
-  .day.open .daybody{max-height:6200px}
-  .daybody-in{padding:2px 18px 18px;border-top:1px solid var(--line)}
-  .beats{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:15px 0 7px}
-  .beats-list{font-size:13.5px;color:#cdd8e1;display:grid;gap:5px}
-  .beats-list div{padding-left:16px;position:relative}
-  .beats-list div::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:var(--mint)}
-  .play{background:linear-gradient(120deg,rgba(52,229,163,.06),rgba(245,196,81,.05));border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:15px;display:grid;gap:8px}
-  .play .ph{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);margin-bottom:1px}
-  .playrow{display:grid;grid-template-columns:70px 1fr;gap:11px;font-size:13px;color:#cdd8e1;align-items:baseline;line-height:1.45}
-  .playrow .pk{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;padding-top:3px}
-  .playrow .pk.pill{color:var(--mint)} .playrow .pk.peg{color:var(--gold)} .playrow .pk.who{color:var(--p5)} .playrow .pk.angle{color:var(--p4)} .playrow .pk.post{color:var(--p2)}
-  .playrow b{color:var(--text)}
-  .drops{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:16px 0 8px}
-  .platrow{display:flex;flex-wrap:wrap;gap:7px}
-  .plat{font-family:var(--mono);font-size:10.5px;font-weight:600;padding:4px 9px;border-radius:6px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
-  .plat.yt{color:var(--p6);border-color:rgba(255,122,89,.3)}
-  .plat.short{color:var(--gold);border-color:rgba(245,196,81,.3)}
-  .plat.ig{color:var(--p5);border-color:rgba(255,143,177,.3)}
-  .plat.comm{color:var(--p4);border-color:rgba(185,139,255,.3)}
-  .plat.tt{color:var(--p1);border-color:rgba(52,229,163,.3)}
-  .perplat{display:grid;gap:7px;margin-top:9px}
-  .pp{display:grid;grid-template-columns:104px 1fr;gap:11px;align-items:baseline;font-size:12.5px;color:#cdd8e1;line-height:1.45;background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:8px;padding:8px 11px}
-  .pp .ppl{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding-top:1px}
-  .pp .ppl.tt{color:var(--p1)} .pp .ppl.yt{color:var(--p6)} .pp .ppl.ig{color:var(--p5)} .pp .ppl.comm{color:var(--p4)}
-  .pp b{color:var(--text)}
-  .win{font-size:12.5px;color:#cdd8e1;margin-top:11px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.2);border-radius:9px;padding:9px 12px}
-  .win b{color:var(--gold)}
-  .ctarow{margin-top:13px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-  .cta{font-size:12.5px;padding:7px 13px;border-radius:8px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
-  .cta b{color:var(--gold)}
-  .status{display:flex;gap:7px;margin-left:auto}
-  .tog{font-family:var(--mono);font-size:10px;letter-spacing:.05em;padding:6px 11px;border-radius:7px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;text-transform:uppercase;transition:all .15s}
-  .tog.on{background:var(--mint);color:#04120c;border-color:var(--mint);font-weight:600}
-  .pegs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .pegcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px}
-  .pegcard h4{font-family:var(--disp);font-size:13px;letter-spacing:.04em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-  .pegcard ul{list-style:none;display:grid;gap:9px}
-  .pegcard li{font-size:13px;color:#cdd8e1;padding-left:14px;position:relative;line-height:1.4}
-  .pegcard li::before{content:"›";position:absolute;left:0;color:var(--muted)}
-  .pegcard li b{color:var(--text)}
-  .bridge{margin-top:14px;background:linear-gradient(120deg,rgba(52,229,163,.07),rgba(91,155,255,.07));border:1px solid var(--line);border-radius:14px;padding:18px}
-  .bridge .k{font-family:var(--mono);font-size:11px;color:var(--mint);letter-spacing:.1em;text-transform:uppercase}
-  .bridge p{margin-top:7px;font-size:14px;color:#cdd8e1}
-  .bridge b{color:var(--text)}
-  .hooks{margin-top:16px;background:rgba(255,122,89,.05);border:1px solid rgba(255,122,89,.22);border-radius:12px;padding:13px 15px}
-  .hooks .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--p6);text-transform:uppercase}
-  .hooks .cold{font-family:var(--disp);font-size:18px;font-weight:700;margin:5px 0 3px;color:var(--text)}
-  .hooks .sus{font-size:13.5px;color:#cdd8e1}
-  .hooks .sus b{color:var(--gold)}
-  .gsgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}
-  .gsthumb{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#000;aspect-ratio:9/16;display:block;position:relative}
-  .gsthumb img,.gsthumb video{width:100%;height:100%;object-fit:cover;display:block}
-  .gsthumb .cap{position:absolute;left:0;right:0;bottom:0;font-family:var(--mono);font-size:8.5px;letter-spacing:.04em;color:#cdd8e1;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:10px 5px 4px;text-transform:uppercase}
-  .gsthumb .vbadge{position:absolute;top:5px;right:5px;font-family:var(--mono);font-size:8px;font-weight:600;background:var(--gold);color:#04120c;padding:2px 5px;border-radius:4px;letter-spacing:.04em}
-  .gsnote{font-size:11.5px;color:var(--muted);margin-top:7px}
-  details.script{margin-top:14px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.02);overflow:hidden}
-  details.script>summary{cursor:pointer;list-style:none;padding:12px 15px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);display:flex;align-items:center;gap:8px}
-  details.script>summary::-webkit-details-marker{display:none}
-  details.script>summary::before{content:"▶";font-size:9px;transition:transform .2s}
-  details.script[open]>summary::before{transform:rotate(90deg)}
-  .scriptbody{padding:4px 16px 16px;font-size:13px;color:#cdd8e1;line-height:1.55;border-top:1px solid var(--line)}
-  .scriptbody h5{font-family:var(--disp);font-size:13px;color:var(--text);margin:13px 0 4px;font-weight:600}
-  .scriptbody .lbl{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;display:block;margin:12px 0 3px}
-  .scriptbody ul{list-style:none;display:grid;gap:4px;margin:3px 0}
-  .scriptbody li{padding-left:14px;position:relative}
-  .scriptbody li::before{content:"›";position:absolute;left:0;color:var(--muted)}
-  .scriptbody .cta-line{color:var(--gold)}
-  .scriptbody .cap-box{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin-top:6px;font-size:12.5px;color:var(--muted)}
-  .jump{display:flex;flex-wrap:wrap;gap:7px 16px;margin:16px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.04em}
-  .jump a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line);padding-bottom:1px}
-  .jump a:hover{color:var(--mint);border-color:var(--mint)}
-  details.fold{margin:0}
-  details.fold>summary.fsum{list-style:none;cursor:pointer;font-family:var(--disp);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px;transition:color .15s}
-  details.fold>summary.fsum::-webkit-details-marker{display:none}
-  details.fold>summary.fsum::before{content:"▸";color:var(--mint);font-size:13px;transition:transform .2s}
-  details.fold[open]>summary.fsum::before{transform:rotate(90deg)}
-  details.fold>summary.fsum:hover{color:var(--text)}
-  .smap{margin-top:14px;border:1px solid rgba(185,139,255,.35);border-radius:12px;background:rgba(185,139,255,.05);padding:13px 15px}
-  .smap .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--p4);text-transform:uppercase;display:block;margin-bottom:8px}
-  .smaprow{display:grid;grid-template-columns:74px 118px 1fr;gap:10px;font-size:12.5px;color:#cdd8e1;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);align-items:baseline}
-  .smaprow:last-child{border:none}
-  .smaprow .t{font-family:var(--mono);font-size:11px;color:var(--p4)}
-  .smaprow .b{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--gold)}
-  .smaprow .d b{color:var(--text)} .smaprow .d i{color:var(--mint);font-style:normal;font-family:var(--mono);font-size:11px}
-  .ptb{display:inline-block;font-family:var(--mono);font-size:8.5px;font-weight:600;background:rgba(52,229,163,.15);color:var(--mint);border:1px solid rgba(52,229,163,.35);padding:1px 5px;border-radius:4px;margin-right:4px;letter-spacing:.04em}
-  footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);text-align:center;line-height:1.7}
-  footer b{color:var(--mint)}
-  .refcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .refcard h4{font-family:var(--disp);font-size:13px;letter-spacing:.05em;margin-bottom:13px;color:var(--gold)}
-  .pat{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
-  .pat:last-child{border:none}
-  .pat .v{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--mint);width:74px;flex-shrink:0}
-  .pat .f{font-size:13px}
-  .pat .f small{color:var(--muted);display:block;font-size:11.5px;margin-top:1px}
-  @media(max-width:760px){.loop,.pegs,.statgrid{grid-template-columns:1fr}.anchor h3{font-size:20px}.dayhead{flex-wrap:wrap}.hook{flex-basis:100%;order:5}.dow{width:auto}.status{margin-left:0}.gsgrid{grid-template-columns:repeat(2,1fr)}}
-  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;
+--p1:#34E5A3;--p2:#5B9BFF;--p3:#F5C451;--p4:#B98BFF;--p5:#FF8FB1;--p6:#FF7A59;
+--disp:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;background-image:radial-gradient(1200px 600px at 80% -10%,rgba(52,229,163,.06),transparent 60%)}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+a{color:inherit}
+header.top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:13px}
+.mark{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:var(--disp);font-weight:700;color:#04120c;font-size:18px}
+.brand h1{font-family:var(--disp);font-size:21px;font-weight:600}
+.brand p{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-top:3px}
+.weekchip{text-align:right}
+.weekchip .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.weekchip .rng{font-family:var(--disp);font-size:18px;font-weight:600;color:var(--mint);margin-top:2px}
+.weekchip .sub{font-size:12px;color:var(--muted)}
+.jumpnav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.jumpnav a{font-family:var(--mono);font-size:11px;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--muted);text-decoration:none}
+.jumpnav a:hover{color:var(--mint);border-color:var(--mint)}
+h2.sec{font-family:var(--disp);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px}
+h2.sec::before{content:"";width:18px;height:2px;background:var(--mint);border-radius:2px}
+.anchor{background:linear-gradient(160deg,#16212c,#101820);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;overflow:hidden}
+.anchor::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(245,196,81,.14),transparent 70%)}
+.anchor .tag{display:inline-flex;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--gold);background:rgba(245,196,81,.1);border:1px solid rgba(245,196,81,.25);padding:5px 11px;border-radius:99px;text-transform:uppercase}
+.anchor h3{font-family:var(--disp);font-size:24px;font-weight:700;line-height:1.18;margin:15px 0 8px;max-width:46ch}
+.anchor .why{font-size:14px;color:var(--muted);max-width:70ch}
+.anchor .when{margin-top:14px;font-family:var(--mono);font-size:12px;color:#cdd8e1;position:relative;z-index:1}
+.anchor .when b{color:var(--mint)}
+.glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:14px}
+.gl{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.gl .d{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.gl .t{font-size:12.5px;font-weight:600;margin-top:4px}
+.gl.post{border-color:rgba(52,229,163,.45)}
+.gl.pod{border-color:rgba(245,196,81,.5)}
+.ladder{display:grid;gap:11px}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.day.key{border-color:rgba(255,122,89,.4)}
+.day.podday{border-color:rgba(245,196,81,.5)}
+.dayhead{display:flex;align-items:center;gap:14px;padding:15px 18px;cursor:pointer;user-select:none;flex-wrap:wrap}
+.dow{font-family:var(--disp);font-weight:700;font-size:15px;width:84px;flex-shrink:0}
+.dow small{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:500}
+.pill{font-family:var(--mono);font-size:10px;font-weight:600;padding:4px 9px;border-radius:6px;flex-shrink:0;text-transform:uppercase}
+.hook{flex:1;font-weight:600;font-size:14.5px;min-width:200px}
+.fmt{font-family:var(--mono);font-size:10px;color:var(--muted);flex-shrink:0;text-transform:uppercase}
+.chev{color:var(--muted);font-size:13px;transition:transform .25s}
+.day.open .chev{transform:rotate(90deg)}
+.daybody{display:none}
+.day.open .daybody{display:block}
+.daybody-in{padding:2px 18px 22px;border-top:1px solid var(--line)}
+.playcard{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:15px}
+.playcard .t{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--mint);text-transform:uppercase;margin-bottom:8px}
+.playrow{display:grid;grid-template-columns:88px 1fr;gap:8px;font-size:13px;padding:4px 0;border-bottom:1px dashed rgba(36,49,64,.6)}
+.playrow:last-child{border-bottom:none}
+.playrow b{font-family:var(--mono);font-size:10.5px;color:var(--gold);text-transform:uppercase;padding-top:2px}
+.smap{margin-top:14px;background:rgba(52,229,163,.04);border:1px solid rgba(52,229,163,.25);border-radius:12px;padding:14px 16px}
+.smap .t{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--mint);text-transform:uppercase;margin-bottom:10px}
+.smaprow{display:grid;grid-template-columns:74px 110px 1fr;gap:8px;font-size:12.5px;padding:5px 0;border-bottom:1px dashed rgba(36,49,64,.6)}
+.smaprow:last-child{border-bottom:none}
+.smaprow .ts{font-family:var(--mono);color:var(--gold);font-size:11px}
+.smaprow .bn{font-family:var(--mono);color:var(--mint);font-size:11px;text-transform:uppercase}
+.smaprow .ln{color:#cdd8e1}
+.smaprow .ln i{color:var(--muted);font-size:11.5px}
+.platgrid{margin-top:14px;display:grid;gap:8px}
+.platrowx{display:grid;grid-template-columns:92px 1fr;gap:10px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:13px}
+.platrowx b{font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:2px}
+.platrowx.tt b{color:var(--p1)}.platrowx.ig b{color:var(--p5)}.platrowx.yt b{color:var(--p6)}.platrowx.sh b{color:var(--gold)}
+.hooks{margin-top:14px;display:grid;gap:8px}
+.hookline{background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.25);border-radius:10px;padding:10px 14px;font-size:13px}
+.hookline b{color:var(--gold);font-family:var(--mono);font-size:10.5px;text-transform:uppercase;margin-right:8px}
+.gal{margin-top:16px}
+.gal .t{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
+.galgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.galgrid video,.galgrid img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#000}
+.galcap{font-family:var(--mono);font-size:9.5px;color:var(--muted);margin-top:4px;word-break:break-all}
+details.script{margin-top:16px;background:var(--panel2);border:1px solid var(--line);border-radius:12px}
+details.script summary{cursor:pointer;padding:12px 16px;font-family:var(--mono);font-size:12px;color:var(--gold)}
+details.script .sc{padding:4px 20px 20px;font-size:14px;color:#cdd8e1;white-space:pre-wrap;line-height:1.7}
+details.fold{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-top:14px}
+details.fold>summary{cursor:pointer;padding:16px 20px;font-family:var(--disp);font-size:14px;font-weight:600}
+details.fold .fin{padding:2px 20px 20px;border-top:1px solid var(--line)}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.stat{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat h4{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+.stat .n{font-family:var(--disp);font-size:26px;font-weight:700;color:var(--mint)}
+.stat p{font-size:12.5px;color:var(--muted);margin-top:6px}
+.stat b{color:var(--text)}
+ul.clean{list-style:none;display:grid;gap:8px;font-size:13.5px;color:#cdd8e1;margin-top:10px}
+ul.clean li{padding-left:16px;position:relative}
+ul.clean li::before{content:"›";position:absolute;left:0;color:var(--mint)}
+.bridge{margin-top:38px;background:linear-gradient(160deg,rgba(52,229,163,.08),rgba(245,196,81,.05));border:1px solid rgba(52,229,163,.3);border-radius:16px;padding:22px 26px}
+.bridge h3{font-family:var(--disp);font-size:16px;margin-bottom:6px}
+.bridge p{font-size:14px;color:#cdd8e1}
+.bridge b{color:var(--mint)}
+.warnrow{margin-top:16px;background:rgba(255,122,89,.1);border:1px solid rgba(255,122,89,.35);border-radius:12px;padding:13px 17px;font-size:13.5px;color:#ffd9cd}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+.tbl th{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+.tbl td{padding:8px;border-bottom:1px dashed rgba(36,49,64,.6);color:#cdd8e1;vertical-align:top}
+.mint{color:var(--mint)}.gold{color:var(--gold)}.redx{color:var(--p6)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header class="top">
-    <div class="brand">
-      <div class="mark">TG</div>
-      <div>
-        <h1>Weekly Content Engine</h1>
-        <p>THINKINGENWEALTH · GENTHINKERS</p>
-      </div>
-    </div>
-    <div class="weekchip">
-      <div class="lbl">This Week</div>
-      <div class="rng">Jul 20 – 26, 2026</div>
-      <div class="sub">The $3.3T selloff week · Fed-eve · 3 posts + Sunday podcast · built Sun Jul 19</div>
-    </div>
-  </header>
+<header class="top">
+<div class="brand"><div class="mark">TG</div><div><h1>TGW Weekly Content Engine</h1><p>THE HUB · EVERYTHING FOR THE WEEK LIVES HERE</p></div></div>
+<div class="weekchip"><div class="lbl">Week of</div><div class="rng">Jul 27 – Aug 2, 2026</div><div class="sub">FED WEEK · 3 posts + Sunday podcast · built Jul 26</div></div>
+</header>
 
-  <nav class="jump">
-    <a href="#glance">▸ At a glance</a>
-    <a href="#plan">▸ 7-day plan</a>
-    <a href="#numbers">▸ Last week's numbers</a>
-    <a href="#audience">▸ Audience &amp; best times</a>
-    <a href="#bank">▸ Reel bank</a>
-    <a href="#podcast">▸ Podcast</a>
-    <a href="#pegs">▸ Live pegs</a>
-  </nav>
+<nav class="jumpnav">
+<a href="#anchor">Anchor</a><a href="#glance">At a glance</a><a href="#plan">7-day plan</a><a href="#numbers">Last week's numbers</a><a href="#podcast">Podcast</a><a href="#pegs">News pegs</a><a href="#why">Why this lineup</a><a href="#audience">Audience</a><a href="#bank">Reel bank</a>
+</nav>
 
-  <div style="margin:14px 0;padding:14px 16px;background:var(--panel);border:1px solid rgba(185,139,255,.5);border-radius:12px">
-    <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--p4);text-transform:uppercase;margin-bottom:8px">★ Sora structural adjustment #3 · built Sun Jul 19</div>
-    <div style="font-size:13px;line-height:1.7;color:var(--text)">
-      <b style="color:var(--gold)">What last week's watch-through said:</b> the CPI reveal held <b style="color:var(--mint)">52.1% avg viewed</b> (week's best) vs 30.4% for the options lesson — reveals retain, lessons don't, AGAIN. But the react shipped a day+ LATE and did 181/164 views instead of the 505/663 an on-time reveal earns. <b style="color:var(--gold)">This week's adjustment:</b> put the concrete receipt-number IN Beat 1 itself — say <b>"$3.3 trillion"</b> in the first two seconds, don't just promise a reveal — and treat SHIP-DAY as part of the format: a late react is a different (weaker) post.<br>
-      <b style="color:var(--gold)">The other two deciders:</b> ⚠ the <b>YouTube strike warning is in week 3</b> — clear/appeal it MONDAY before anything uploads. And IG now CONFIRMS the collab beat missed its <b style="color:var(--p6)">5th straight planned week</b> (the Sat slot got an unplanned options Pt 2 reel instead) — Saturday is a must, with bank reel #16 as the drop-dead 6pm standby.
-    </div>
-  </div>
+<div class="warnrow">⚠ <b>YouTube Community Guidelines strike warning — WEEK 4.</b> Resolve in Studio → Channel violations before Tuesday's upload. · ⛔ No recording Mondays (standing rule) — Tuesday is the studio day. · 🗓 <b>New standing rule:</b> Sunday's block is <b>PODCAST FINAL + PUBLISH</b> — the finished episode ships Sunday, every week.</div>
 
-  <details class="fold" id="numbers"><summary class="fsum">Last week's numbers <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pulled Jul 19 · Jul 12 – 18</span></summary>
-  <div class="nums">
-    <div class="hd"><h3>How the platforms did + what to lean into</h3><span>YouTube + TikTok + Instagram (IG pulled after Sunday's Meta outage cleared)</span></div>
-    <div class="statgrid">
-      <div class="platbox yt">
-        <div class="pl">▶ YouTube · 7-day</div>
-        <div class="metric"><span class="k">Views</span><span class="v">335 <span class="down">−41%</span></span></div>
-        <div class="metric"><span class="k">Watch time</span><span class="v">4.0 h <span class="down">−52%</span></span></div>
-        <div class="metric"><span class="k">Subs</span><span class="v">418 total · +1</span></div>
-        <div class="metric"><span class="k">Top video</span><span class="v" style="color:var(--mint)">CPI reveal · 181 (52.1%)</span></div>
-        <div class="metric"><span class="k">Options Short</span><span class="v">99 (30.4%)</span></div>
-      </div>
-      <div class="platbox tt">
-        <div class="pl">♪ TikTok · 7-day</div>
-        <div class="metric"><span class="k">Video views</span><span class="v">2.0K <span class="down">−7.8%</span></span></div>
-        <div class="metric"><span class="k">Likes / shares</span><span class="v">50 <span class="down">−39%</span> / 3 <span class="down">−75%</span></span></div>
-        <div class="metric"><span class="k">Search traffic</span><span class="v" style="color:var(--mint)">77.4% (new record)</span></div>
-        <div class="metric"><span class="k">Top fresh</span><span class="v">CPI react · 164</span></div>
-        <div class="metric"><span class="k">Search asks</span><span class="v">candles · OBV/MACD</span></div>
-      </div>
-      <div class="platbox ig">
-        <div class="pl">◎ Instagram · 7-day <span style="color:var(--muted);text-transform:none">(pulled after the outage cleared)</span></div>
-        <div class="metric"><span class="k">Followers</span><span class="v">7,523 <span class="up">+9</span></span></div>
-        <div class="metric"><span class="k">Options Pt 2 (Sat)</span><span class="v" style="color:var(--mint)">466 · 78.8% non-foll.</span></div>
-        <div class="metric"><span class="k">CPI react (Thu, late)</span><span class="v">198 · 2 follows</span></div>
-        <div class="metric"><span class="k">30-day</span><span class="v">18.2K views · 88.2% non-foll.</span></div>
-        <div class="metric"><span class="k">Collab beat</span><span class="v" style="color:var(--p6)">5 wks · 0 ships (CONFIRMED)</span></div>
-      </div>
-    </div>
-    <div class="leadin">
-      <b>The read → same lesson, third week running: the reveal retained, the shipping failed it.</b> "Why did prices actually FALL" held 52.1% viewed — the best retention on the channel — but posted Wed/Thu instead of CPI-day Tuesday and did 181 YT / 164 TT / 198 IG instead of on-time-reveal numbers. IG confirms it: the Saturday slot got an UNPLANNED "option chain Pt 2" reel (466, 78.8% non-followers — decent, but it's not the ~100× format) while the EYL collab missed its <b>5th straight planned week</b>. TikTok Search hit a record <b>77.4%</b> and the queries are literally our brief ("what do green candlesticks mean," "OBV MACD") — that IS Thursday's evergreen. This week: <b>ship the $3.3T react ON Tuesday · give Search the candlestick piece Thu · ship the EYL collab Sat (#16 standby at 6pm) · clear the YT strike Monday (week 3).</b>
-    </div>
-  </div>
-  </details>
-
-  <details class="fold"><summary class="fsum">How the engine runs</summary>
-  <div class="loop">
-    <div class="loopcard"><div class="n">01 · 3 + 1 cadence</div><h3>Quality over volume</h3><p>3 short-form posts (Tue news-react · Thu chart evergreen · Sat collab) + the Sunday podcast anchor. <b>The podcast is the week's ONLY long-form</b> — Tue/Thu/Sat are ~60–90s cuts, and every YT Short funnels to Sunday's episode. Mon/Wed/Fri are PREP/ENGAGE days.</p></div>
-    <div class="loopcard"><div class="n">02 · Record ahead</div><h3>Tuesday is the studio day <span style="color:var(--muted);font-size:11px">(Wolf can't record Mondays)</span></h3><p>One Tue session records all 3: the react (AM, off Friday's confirmed numbers — ships same day) + Thu evergreen + Sat collab (both evergreen-safe). Wed is the backup slot. Monday = prep/engage only. Sunday's podcast records with the week's actuals filled in.</p></div>
-    <div class="loopcard"><div class="n">03 · Windows by data</div><h3>Spikes peak, evergreen off-peak</h3><p>TikTok band 2–7pm ET (most-active hour drifted to 7–8pm this week — lean late) · IG ~3pm · YT long-form AM. News-reacts take the peak; the Search evergreen posts off-peak and compounds anyway.</p></div>
-  </div>
-  </details>
-
-  <div class="bridge" style="margin-top:0">
-    <span class="k">◆ This week's live pegs — the headline</span>
-    <p><b>The AI trade just broke, and this week referees it:</b> the chip index (SOX) entered an official <b>bear market Friday — −20.2%</b> from its Jun 22 record after a +105% run, with <b>~$3.3 trillion</b> in global chip value erased, triggered by Moonshot's free open-source <b>Kimi K3</b> model + the AI-capex ROI question. Now the verdict: <b>Alphabet + Tesla report TONIGHT (Wed Jul 22) after close</b> (Google Cloud consensus $22.8B, +67% — the cleanest "does AI pay?" receipt) and <b>Intel Thu</b>. Meanwhile it's <b>Fed-eve</b>: FOMC decides <b>Wed Jul 29, 2pm ET</b> — June CPI's −0.4% drop collapsed hike odds to ~15%, but oil pushing toward $90 (Brent at its highest since mid-June — Iran ceasefire collapsed) pulled them back up; re-check odds Sunday. Light data week: LEI Mon · jobless claims Thu 8:30 · flash PMIs + new home sales Fri. <span style="color:var(--muted)">Sources: Bloomberg · Yahoo Finance · CNBC · BLS · CME FedWatch · Zacks · Kiplinger — verified Jul 19 · re-verified Jul 22 AM (chip bounce + oil folded in); re-check the tape before recording.</span></p>
-  </div>
-
-  <h2 class="sec">The anchor pair <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">Wed reach-spike + Sun podcast anchor</span></h2>
-  <div class="anchor">
-    <span class="tag">▶ Reach-spike flagship · records + drops WED Jul 22 (moved from Tue — session missed; Wed is the standing backup) · P6 · NEWS/REACT · WOLF</span>
-    <h3>The $3.3 Trillion Selloff — What Your 401(k) Does Next</h3>
-    <p class="why">The chip bear market is the concrete event of the summer — exactly the all-time reach lane (shutdown 2.2M · "Buy the dip?" 27.3K · Korean crash · Microsoft). The viewer is the subject: a third of every index-fund dollar rides tech. Countdown to the payoff: the sell-at-$8,000 trap vs the boring path — and Wednesday 4pm as the cliffhanger. <b>No print to wait on — numbers are Friday's confirmed closes, so it ships ON TIME Tuesday.</b></p>
-    <div class="when">▶ <b>FORMAT: SHORT-FORM ONLY — one ~90s react, cut 3 ways (TikTok · IG Reel · YT Short). No long-form today; the week's ONLY long-form is Sunday's podcast, and today's YT Short ends by pointing to it ("full breakdown Sunday").</b><br>▶ <b>Record Tue AM (~9–11) → YT Short by noon · TikTok 3–7pm (lean late — most-active hour was 7–8pm) · IG ~3pm.</b> No Monday recording (Wolf's schedule) — the numbers are Friday's confirmed closes, so a Tue-AM record still ships on time. Comment-trigger: CHIPS. Contingency: a shock Alphabet/Tesla print Wed night authorizes the 4th drop Thu AM.</div>
-  </div>
-  <div class="anchor" style="margin-top:14px">
-    <span class="tag" style="color:var(--p1);background:rgba(52,229,163,.1);border-color:rgba(52,229,163,.25)">🎙 Sunday anchor · records + drops SUN Jul 26 · PODCAST · WOLF + D WAUGH</span>
-    <h3>The $3.3 Trillion Week — And The Fed Decides Wednesday</h3>
-    <p class="why">Fed-eve special: the week chips broke (Seg 1), the earnings verdict with the actuals filled in (Seg 2), the Tuesday decision + the $66/mo pass-through math (Seg 3), and the playbook that survives every headline (Seg 4). Through-line: was this the AI top — or the discount your future self wishes you'd bought? Full rundown below + <a href="scripts/podcast-rundown.md" target="_blank" style="color:var(--mint)">scripts/podcast-rundown.md</a>.</p>
-    <div class="when">● <b>Records Sun AM with the week's ACTUALS filled into all three dashboards</b> · publish early-PM so it indexes · teaser (POD Ken Burns clip) into the evening window. Next week is a double spike: FOMC Wed 2pm + June PCE Fri 8:30.</div>
-  </div>
-
-  <details class="fold" id="podcast"><summary class="fsum">This week's podcast <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">segment rundown + screen-shares</span></summary>
-  <div class="anchor" style="padding-bottom:18px">
-    <span class="tag">🎙 The anchor long-form · Sun Jul 26 · Wolf leads Seg 1–2 · D Waugh leads Seg 3–4 · ~13–15 min</span>
-    <h3 style="font-size:21px">The $3.3 Trillion Week — And The Fed Decides Wednesday</h3>
-    <p style="font-size:12px;color:var(--muted)">B-option title: "Chips Crashed, Inflation Fell — What Wednesday's Fed Call Does To Your Bills" · Through-line: was this the AI top or the discount — and what does Tuesday do to your bills either way?</p>
-    <p class="why"><b style="color:var(--gold)">Screen-shares:</b> <a href="screenshare/chip-selloff-dashboard.html" target="_blank" style="color:var(--mint)">chip-selloff-dashboard.html</a> (cold open + Seg 1) · <a href="screenshare/earnings-verdict-dashboard.html" target="_blank" style="color:var(--mint)">earnings-verdict-dashboard.html</a> (Seg 2 — FILL-LIVE boxes for Alphabet/Tesla/Intel actuals) · <a href="screenshare/fed-decision-dashboard.html" target="_blank" style="color:var(--mint)">fed-decision-dashboard.html</a> (Seg 3 — odds strip + the 25bp pass-through table). <b style="color:var(--gold)">Fill every FILL-LIVE box with the week's actuals before recording.</b></p>
-    <details class="script" style="position:relative;z-index:1"><summary>Full segment rundown — speakable edition + screen-share cues</summary><div class="scriptbody">
-      <p style="margin:8px 0 0;font-size:12px;color:var(--muted)"><b style="color:var(--gold)">Full word-for-word version lives in <code>scripts/podcast-rundown.md</code></b> — cold open, every transition, planted clip lines, and outro are verbatim there; segment bodies are full spoken sentences with every term explained (SOX = the chip-stock scoreboard · bear market = 20% below the peak · earnings = the report card · FOMC = the Fed's rate-setting meeting · APR = the price tag on borrowing).</p>
-      <span class="lbl">Cold open · 0:00–0:45</span>
-      <ul><li>Hook (35–54 cut): "$3.3 trillion left the market in three weeks... and on Tuesday the Fed decides whether every borrowed dollar in your life gets more expensive. If you've got a 401(k), a credit card, or a mortgage quote open in another tab — this week happened TO you."</li><li>🎬 <b>Planted clip lines (verbatim):</b> "A third of your index fund is riding the AI trade — whether you picked it or not." · "Selling at $8,000 costs you 5.7 years. Doing nothing costs you nothing." · "One Fed vote Tuesday is $66 a month on a $400K mortgage — $23,803 over the loan." · "Even after a 20 percent crash, the chip index is still up 63 percent since March — which headline you act on decides everything."</li><li>🖥️ chip-selloff-dashboard.html open on the $3.3T panel.</li></ul>
-      <h5>Segment 1 — The week the AI trade broke (0:45–4:00) · Wolf</h5>
-      <ul><li>SOX peaked Jun 22 → −20.2% in 3 weeks = official bear market · ~$3.3T global chip value erased · worst week since Mar 2025.</li><li>Two triggers: Moonshot's FREE open-source Kimi K3 claiming near-parity + the capex ROI question ("when does the profit land?").</li><li>Perspective: +105% Mar→Jun first — $10K from March is still $16,359. ✏️ circle peak → −20% line.</li><li><b>Re-anchor:</b> "Your 401(k) doesn't care about drama — it cares about earnings. And the report cards came in — segment two."</li></ul>
-      <h5>Segment 2 — The earnings verdict (4:00–7:30) · Wolf</h5>
-      <ul><li>Consensus going in: GOOGL $2.88 / Cloud $22.8B +67% (THE "does AI pay?" line) · TSLA ~$0.52 / ~$26.0B · INTC ~$0.06–0.10 / $14.4B, −21% tape going in. [FILL: actuals + moves.]</li><li>Netflix, the warning shot: EPS beat, revenue hair-miss, weak guide → −10%. "Priced for perfect."</li><li>🖥️ earnings-verdict-dashboard.html — fill every gold box before recording.</li><li><b>Re-anchor:</b> "That's whether your investments pay. Whether your debts cost more gets decided in one room on Tuesday — D Waugh."</li></ul>
-      <h5>Segment 3 — Fed-eve: the Tuesday decision (7:30–11:00) · D Waugh</h5>
-      <ul><li>FOMC Tue–Wed, decision Wed Jul 29 2pm ET. Funds 3.50–3.75%, 5 holds. CPI −0.4% m/m (biggest drop since 2020) → hike odds ~40%→~15% → crept back 30s% as oil passed $80. [FILL Sunday-AM FedWatch.]</li><li>🖥️ fed-decision-dashboard.html — the pass-through: 25bp on $400K = <b>+$66/mo, +$23,803</b> · $5K card @21% = $87.50/mo already · ~76% odds of ZERO 2026 cuts.</li><li><b>Re-anchor:</b> "None of this is a scoreboard — it's your borrowing costs. Last segment: what we do."</li></ul>
-      <h5>Segment 4 — The playbook (11:00–13:30) · D Waugh + Wolf</h5>
-      <ul><li>The sort (Saturday's EYL react, restated): match (+50%) → kill 20%+ APR (guaranteed +21%) → automate past the match — red weeks buy 25% more shares per $100.</li><li>Panic-sell tile once more: $8K needs +25%, ~5.7 years in 4% cash. Concentration honesty: know that ~1/3 is tech.</li><li>Tease: FOMC decision Wed 2pm (same-day react) + June PCE Fri 8:30 — two spikes next week.</li></ul>
-      <h5>Outro (13:30–end)</h5>
-      <ul><li>3 takeaways: repriced ≠ dead, earnings referee it · Tuesday = $66/mo on $400K — know your APR first · match → high-APR → automate survives every week.</li><li class="cta-line">Bridge: "We're tracking the Fed decision live all week in the Discord — link in bio." Then, last and clean: "It's Wolf, I'm outta here." / "It's D Waugh, I'm outta here."</li></ul>
-      <div class="cap-box">Resources (verified Jul 19 — re-verify at record): SOX −20.2% / +105% / $3.3T (Bloomberg, Yahoo) · Kimi K3 (Jul 17) · CPI −0.4%/3.5%/core 2.6% (BLS Jul 14) · FedWatch odds [FILL] · zero-cut odds ~76% (Polymarket) · GOOGL/TSLA/INTC consensus (Zacks/Yahoo/moomoo) · NFLX actuals · all worked math computed this run. Assets: broll/PODCAST/ (captioned NYSE teaser + 4 clean inserts + 2 photos) + greenscreen/PODCAST/ (week-map + pass-through tiles).</div>
-    </div></details>
-  </div>
-  </details>
-
-  <h2 class="sec" id="glance">This week at a glance <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">pillar × peg × who's watching · why this lineup</span></h2>
-  <div class="refcard">
-    <p style="font-size:13px;color:#cdd8e1;margin-bottom:14px">Every posting day crosses the 3 streams: a <b style="color:var(--mint)">proven pillar</b>, a <b style="color:var(--gold)">timely peg</b>, and the <b style="color:var(--p5)">audience</b>. TikTok skews 25–34 (M69 — female share jumped to 31% this week), YouTube 35–54 (M~95) — same anchor, <b>two age cuts</b>. Reach-spikes take the peak (TikTok 3–7pm, drifting late · IG ~3pm); the Search evergreen posts off-peak and compounds (Search = a record 77.4% of TikTok traffic). Thursday's topic came straight from our own Search queries — demand pre-proven.</p>
-    <div class="pat"><span class="v" style="width:64px;color:var(--muted)">MON</span><span class="f">PREP ONLY (no recording Mondays — Wolf's schedule) — ⚠ clear the YT strike (week 3) FIRST · stage Tuesday's studio session: scripts printed, EYL reel screen-recorded, tiles + b-roll queued<small>👥 Community poll #1 · comments hour · LEI 10am (note for podcast only)</small></span></div>
-    <div class="pat"><span class="v" style="width:64px;color:var(--muted)">TUE</span><span class="f">MISSED — the studio session didn’t happen; everything slides to Wednesday, the standing backup slot<small>👥 nothing shipped · no penalty — the react gets a better peg on Wed</small></span></div>
-    <div class="pat"><span class="v" style="width:64px;color:var(--p6)">WED</span><span class="f">★ POST 1 + STUDIO DAY (backup slot) — record the $3.3T react AM, ship before the close ("TONIGHT decides") · then Thu evergreen + Sat collab same session · 4pm: watch the prints, fill the dashboard<small>👥 TikTok/IG 25–34: "your first $10K" cut · YT 35–54: "your 401(k)" cut · comment-trigger CHIPS · shock print → 4th drop Thu AM</small></span></div>
-    <div class="pat"><span class="v" style="width:64px;color:var(--p1)">THU</span><span class="f">★ POST 2 — P1 candlestick evergreen (recorded Wed, posts AM off-peak) — refreshes the 96K all-time #1 vein<small>👥 Our own Search asked ("green vs red candlesticks," "OBV MACD") · Intel reports 4pm · claims 8:30am</small></span></div>
-    <div class="pat"><span class="v" style="width:64px;color:var(--muted)">FRI</span><span class="f">PREP — fill dashboards with the week's actuals · flash PMIs 9:45 + new home sales 10am · podcast prep<small>👥 Community BTS post · Saturday is the must-ship, protect it</small></span></div>
-    <div class="pat"><span class="v" style="width:64px;color:var(--p5)">SAT</span><span class="f">★ POST 3 — COLLAB: EYL "debt first = mistake" react (IG-first, ready since Jul 13) — 5+ weeks overdue, MUST-SHIP<small>👥 Male 25–44 wealth-builders · IG lead 12–3pm · weekend hard DM CTA + comment MATH · standby: bank reel #16</small></span></div>
-    <div class="pat"><span class="v" style="width:64px;color:var(--p3)">SUN</span><span class="f">🎙 PODCAST — record + drop the Fed-eve anchor + teaser clip · loop resets<small>👥 Next week: FOMC decision Wed Jul 29 2pm (same-day react) + June PCE Fri Jul 31 = a double spike</small></span></div>
-  </div>
-
-  <h2 class="sec" id="plan">The 7-day plan <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">click any day — the full brief, story map, tiles + script live inside</span></h2>
-  <div class="ladder">
-
-    <!-- MON -->
-    <div class="day">
-      <div class="dayhead">
-        <div class="dow" style="opacity:.75">MON<small>JUL 20 · PREP</small></div>
-        <span class="pill" style="background:rgba(154,168,180,.12);color:var(--muted)">PREP / RECORD</span>
-        <span class="hook">Prep only (no Monday recording) — clear the YT strike (week 3) ⚠ · stage everything so Tuesday's one session records all 3</span>
-        <span class="fmt">Prep · no record · no post</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ The day's jobs (in order)</div>
-          <div class="playrow"><span class="pk pill">1 · Strike</span><span><b>Clear/appeal the YouTube Community Guidelines strike warning</b> (Studio → Channel violations) — it's WEEK 3 and every upload this week rides on it. Do this before anything else.</span></div>
-          <div class="playrow"><span class="pk peg">2 · Stage</span><span><b>No recording today (Wolf can't record Mondays).</b> Instead, make Tuesday's session frictionless: print/queue all 3 scripts (Tue react · Thu evergreen · Sat collab), load the b-roll + tiles into the edit template, and set the green screen so Tuesday is lights-on-and-go.</span></div>
-          <div class="playrow"><span class="pk who">3 · Collab</span><span><b>Lock Saturday.</b> IG confirmed the collab missed week 5 (the slot got an unplanned options Pt 2 reel — 466 views, fine, but not the ~100× format). Today's prep: screen-record the EYL reel + cue their strongest 5 seconds so D Waugh's react records first thing in Tuesday's session — Saturday should be a publish button, not a production day.</span></div>
-          <div class="playrow"><span class="pk post">4 · Engage</span><span>Community poll #1: "$3.3 trillion left the market in 3 weeks. What did you do? 🟢 bought more · ⚪ nothing · 🔴 sold · 👀 what selloff?" · comments hour · Discord thread: "earnings week — what we're watching Wed 4pm."</span></div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- TUE -->
-    <div class="day">
-      <div class="dayhead">
-        <div class="dow" style="opacity:.75">TUE<small>JUL 21 · MISSED</small></div>
-        <span class="pill" style="background:rgba(154,168,180,.12);color:var(--muted)">SESSION MISSED → WED</span>
-        <span class="hook">Studio day didn’t happen — the full session (react + Thu evergreen + Sat collab) slides to Wednesday, the standing backup slot</span>
-        <span class="fmt">No record · no post</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ What happened + what it changes</div>
-          <div class="playrow"><span class="pk pill">Missed</span><span><b>Tuesday’s recording session didn’t happen.</b> Per the standing rule (Tue studio day, Wed backup) the whole session slides 24 hours — nothing is dropped, and the podcast is unaffected.</span></div>
-          <div class="playrow"><span class="pk peg">Silver lining</span><span>The react now ships ON earnings day: "Wednesday night decides" becomes <b>"TONIGHT decides"</b> — a tighter loop than the original plan. Chips also bounced Mon–Tue, and the updated script uses that as the setup for tonight’s verdict.</span></div>
-          <div class="playrow"><span class="pk post">Carry-over</span><span>Everything staged Monday (printed scripts, b-roll, tiles, the EYL screen-record) carries straight into Wednesday’s session — lights-on-and-go still applies.</span></div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- WED -->
-    <div class="day key">
-      <div class="dayhead">
-        <div class="dow">WED<small>JUL 22 · SHIP DAY · GOOGL+TSLA 4PM</small></div>
-        <span class="pill" style="background:rgba(255,122,89,.12);color:var(--p6)">★ P6 · React</span>
-        <span class="hook">$3.3 trillion left the market — a third of your index fund was in the trade. TONIGHT decides what's next.</span>
-        <span class="fmt">Greenscreen react · records Wed AM (backup studio day — Tue session missed)</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ The play — everything for today</div>
-          <div class="playrow"><span class="pk pill">Pillar</span><span>P6 concrete market-event reaction — the all-time reach lane (shutdown 2.2M · "Buy the dip?" 27.3K · Korean crash · Microsoft $80B — every all-time winner is this shape).</span></div>
-          <div class="playrow"><span class="pk peg">Peg</span><span><b>The chip bear market confirmed Fri:</b> SOX −20.2% from the Jun 22 record after +105%, ~$3.3T erased, Kimi K3 + capex-ROI doubt as triggers, Netflix −10% the same day — and <b>Alphabet+Tesla TONIGHT 4pm</b> as the built-in cliffhanger. <b>New since Fri:</b> chips bounced hard Mon–Tue into the print (Micron +12%, AMD +8%, SK Hynix +14% Tue · Nvidia up on its 9.3% Nebius stake · Nasdaq +1.3%) — tonight referees whether the bounce was right.</span></div>
-          <div class="playrow"><span class="pk who">Who</span><span>25–44 US men, discovery-first (95.6% new viewers). Anyone with a 401(k) or index fund is IN this story — that's the subject, not the market.</span></div>
-          <div class="playrow"><span class="pk angle">Angle</span><span>TikTok/IG 25–34: <b>"your first $10K and the $8,000 trap"</b> · YouTube 35–54: <b>"your 401(k)'s worst 3 weeks of 2026 — and the retire-on-time discipline."</b> One recording, two cuts.</span></div>
-          <div class="playrow"><span class="pk post">Post</span><span><b>Record AM first, then YT Short ASAP (by early afternoon)</b> — it still indexes into the earnings-night search wave · TikTok <b>3–7pm</b> (most-active hour drifted to 7–8pm — lean late) · IG Reel <b>~3pm</b> if IG is back (else TikTok/YT carry the day and IG posts when restored).</span></div>
-        </div>
-        <div class="smap">
-          <span class="k">◆ Story map — 5-beat spine (Sora) · receipt-number IN the cold open · payoff lands ON the tile</span>
-          <div class="smaprow"><span class="t">0:00</span><span class="b">Cold open</span><span class="d">"$3.3 TRILLION just left the market — including some of YOUR money." — <i>TUE Ken Burns intro (hook box)</i> · loop OPENS: what does your account do next</span></div>
-          <div class="smaprow"><span class="t">0:04</span><span class="b">Stakes</span><span class="d">"a third of your index fund is tech — you're in this trade by default" — <i>intro tile lower rows</i></span></div>
-          <div class="smaprow"><span class="t">0:09</span><span class="b">Pt 3</span><span class="d"><span class="ptb">PT 1</span>what broke: +105% run → −20.2% in 3 weeks · Kimi K3 free model + "when's the profit?" — <i>TUE_S1 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:26</span><span class="b">Pt 2</span><span class="d"><span class="ptb">PT 2</span>the panic trap: $10K→$8K, +25% to get even, ~5.7 yrs in cash · still +63.6% from March — <i>TUE_S2 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:40</span><span class="b">Re-hook</span><span class="d">"and TONIGHT, this whole story gets its verdict—" — <i>back to intro clip</i> · BIG loop re-opens</span></div>
-          <div class="smaprow"><span class="t">0:44</span><span class="b">Pt 1</span><span class="d"><span class="ptb">PT 3</span>TONIGHT 4pm: Alphabet (Cloud $22.8B +67% = THE receipt) + Tesla · tomorrow Intel — <i>TUE_S3 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:53</span><span class="b">Payoff</span><span class="d"><b>panic path vs boring path ON SCREEN: $8K/5.7yrs vs +25% more shares</b> — <i>TUE_S3 payoff rows</i> · loop closes</span></div>
-          <div class="smaprow"><span class="t">0:58</span><span class="b">Close</span><span class="d">"you'll know if it's a crash or a discount" → comment <b>CHIPS</b> + Discord → <b>"It's Wolf, I'm outta here."</b></span></div>
-        </div>
-        <div class="drops">Drops today</div>
-        <div class="platrow"><span class="plat tt">TikTok react</span><span class="plat ig">IG Reel (if restored)</span><span class="plat short">YT Short</span><span class="plat comm">Community poll follow-up</span></div>
-        <div class="drops">On each platform — what to post</div>
-        <div class="perplat">
-          <div class="pp"><span class="ppl tt">TikTok</span><span>The $3.3T <b>react</b> (25–34 cut: the $8,000 trap on your first $10K) · <b>3–7pm, lean late</b> · comment-trigger <b>CHIPS</b> → earnings-week cheat sheet.</span></div>
-          <div class="pp"><span class="ppl ig">Instagram</span><span><b>Reel — same cut</b> · <b>~3pm</b> · caption leads outcome + number ("a third of your index fund was in this trade") — no lesson-frames. If IG is still erroring, post when restored and log the delay.</span></div>
-          <div class="pp"><span class="ppl yt">YouTube</span><span><b>Short</b> — 35–54 cut: "your 401(k)'s worst 3 weeks of 2026; selling at $8,000 costs 5.7 years" → "full breakdown Sunday on the channel." ⚠ only after the strike is cleared.</span></div>
-          <div class="pp"><span class="ppl comm">Community</span><span>Poll follow-up: "Google's cloud number lands Wednesday. What's your call — AI pays, or priced for perfect?"</span></div>
-        </div>
-        <div class="win">⏱ <b>Windows (ET):</b> YT Short <b>by noon</b> · TikTok <b>3–7pm</b> · IG <b>~3pm</b>. All numbers are Friday's confirmed closes — verified Jul 19, re-verify the tape at record time (a big Monday move updates the spoken line, not the structure).</div>
-        <div class="win" style="border-color:rgba(245,196,81,.4)">✅ <b>Shock contingency (the authorized 4th drop):</b> if Alphabet/Tesla move &gt;±8% after Wednesday's close — or Intel shocks Thursday — cut a same-day follow-up react: "the AI trade just got its verdict," dashboard on screen. Otherwise 3 posts stand. Never predict — react.</div>
-        <div class="hooks">
-          <span class="k">▶ Green-screen hooks · intro box + Pt headers baked into the tiles</span>
-          <div class="cold">Cold-open: "Your 401(k) Felt That"</div>
-          <div class="sus">Sustained caption: <b>"The $3.3 Trillion Selloff — What Your 401(k) Does Next"</b></div>
-          <div class="gsgrid">
-            <a class="gsthumb" href="broll/TUE/captioned/TUE_V6_market-display-animation.mp4" target="_blank"><video src="broll/TUE/captioned/TUE_V6_market-display-animation.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">INTRO</span><span class="cap">Hook box · market wall</span></a>
-            <a class="gsthumb" href="broll/TUE/captioned/TUE_V2_monitoring-stock-market.mp4" target="_blank"><video src="broll/TUE/captioned/TUE_V2_monitoring-stock-market.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 1</span><span class="cap">What broke</span></a>
-            <a class="gsthumb" href="broll/TUE/captioned/TUE_V3_man-watching-stocks-phone.mp4" target="_blank"><video src="broll/TUE/captioned/TUE_V3_man-watching-stocks-phone.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 2</span><span class="cap">The $8,000 trap</span></a>
-            <a class="gsthumb" href="broll/TUE/captioned/TUE_V1_businessman-pointing-screen.mp4" target="_blank"><video src="broll/TUE/captioned/TUE_V1_businessman-pointing-screen.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 3</span><span class="cap">Wednesday's verdict</span></a>
-            <a class="gsthumb" href="broll/TUE/TUE_V4_checking-chart-phone.mp4" target="_blank"><video src="broll/TUE/TUE_V4_checking-chart-phone.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Your-app receipt</span></a>
-            <a class="gsthumb" href="broll/TUE/TUE_V7_code-on-screen.mp4" target="_blank"><video src="broll/TUE/TUE_V7_code-on-screen.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Kimi K3 beat</span></a>
-            <a class="gsthumb" href="greenscreen/TUE/TUE_S3_pt3_payoff-verdict.png" target="_blank"><img src="greenscreen/TUE/TUE_S3_pt3_payoff-verdict.png" alt="payoff tile"><span class="cap">Payoff tile · numbers</span></a>
-            <a class="gsthumb" href="broll/TUE/TUE_P1_bearish-chart.jpg" target="_blank"><img src="broll/TUE/TUE_P1_bearish-chart.jpg" alt="bearish chart"><span class="cap">Photo · the cliff</span></a>
-          </div>
-          <div class="gsnote">Full set in <b>broll/TUE/</b> (7 Pexels clips + 3 photos; captioned four in <b>captioned/</b>, raws beside — never delete) + data tiles in <b>greenscreen/TUE/</b>. Cut order: <a href="greenscreen/greenscreen-and-hooks.md" target="_blank" style="color:var(--mint)">greenscreen-and-hooks.md</a>. Beat 4 lands ON the payoff tile.</div>
-        </div>
-        <details class="script"><summary>FULL SCRIPT — word-for-word · ~95s · say it as written</summary><div class="scriptbody">
-          <span class="lbl">How to read this</span><p style="margin:2px 0 0;font-size:12px;color:var(--muted)">Plain text = say it word-for-word. <i>[Brackets]</i> = production cue. Every term explained in the script — a total beginner can follow. Full text also in <code>scripts/scripts.md</code>.</p>
-          <h5>BEAT 1 · COLD OPEN <i style="color:var(--muted);font-weight:400">[Ken Burns intro, hook box — start mid-motion]</i></h5>
-          <p>Three point three TRILLION dollars just left the stock market in three weeks. And I need you to understand — that includes some of YOUR money.</p>
-          <h5>BEAT 2 · STAKES <i style="color:var(--muted);font-weight:400">[intro tile, lower rows]</i></h5>
-          <p>If you have a 401(k) — that's the retirement account your job sets up — or any index fund, which is just a basket that buys a tiny slice of hundreds of companies at once, then roughly a THIRD of every dollar in there is riding on tech. You didn't pick that. It's just how the basket is built now. So when people say "the chip stocks are crashing," that's not Wall Street's problem — that's your account statement in August. There are 3 numbers that decide what happens next, I'm counting them down, and the last one is the difference between losing $2,000 and losing nothing. Stay for that one.</p>
-          <h5>Number 3 — what actually broke <i style="color:var(--muted);font-weight:400">[PT 1 tile]</i></h5>
-          <p>The chip index — it's called the SOX, basically a scoreboard of the 30 biggest computer-chip companies, the ones building all the AI hardware — ran up ONE HUNDRED AND FIVE percent from March to late June. Then in three weeks it dropped 20 percent. That 20-percent line matters because that's the official definition of a "bear market" — Wall Street's phrase for "this isn't a dip anymore."</p>
-          <p>Two things hit at once. First, a Chinese startup called Moonshot released a free, open AI model — Kimi K3 — that they claim performs near the best American models. Free is a scary word when trillions have been spent assuming this stuff stays expensive. And second — but really THEREFORE — investors finally asked the question they'd been skipping: all these hundreds of billions going into AI data centers... when exactly does the profit show up?</p>
-          <p>Here's the receipt you can check yourself: open your investing app, pull up any chip stock or the S&amp;P 500, and tap the 3-month chart. That cliff on the right side — that's what $3.3 trillion leaving looks like. <i style="color:var(--gold)">But before you touch the sell button—</i></p>
-          <h5>Number 2 — the trap that turns a drawdown into a loss <i style="color:var(--muted);font-weight:400">[PT 2 tile]</i></h5>
-          <p>Here's the math nobody does while they're panicking. Say you've got $10,000 in there and it drops 20 percent. You're at $8,000. On paper. It only becomes REAL when you sell. Because if you sell at $8,000, you now need a 25 percent gain just to get back to where you were — and if that money sits in a savings account earning 4 percent, getting back to $10,000 takes almost SIX YEARS. The person who did nothing? They're back at even whenever the market is. The person who sold the bottom bought themselves a half-decade detour.</p>
-          <p>And one more number for perspective: even after this 20 percent drop, that chip index is still up 63 percent from March. If you'd put in $10,000 in March, you'd still have about $16,300. The headline says crash. The 6-month chart says a monster year giving some back. Both are true — which one you act on decides everything. <i style="color:var(--gold)">Therefore the real question isn't "should I sell" — it's what happens TONIGHT.</i></p>
-          <h5>MID-VIDEO RE-HOOK <i style="color:var(--muted);font-weight:400">[back to intro clip]</i></h5>
-          <p>Because tonight — in about three hours — this entire story gets its verdict.</p>
-          <h5>Number 1 — tonight, 4pm, the verdict <i style="color:var(--muted);font-weight:400">[PT 3 tile]</i></h5>
-          <p>TONIGHT, right after the market closes, Alphabet — that's Google — and Tesla both report earnings. Tomorrow, Intel. And here's the setup: after three brutal red weeks, chip stocks just ran up two straight green days — Micron up twelve percent in a single session — because the market is betting tonight's report goes well. Somebody is wrong by tomorrow morning. Earnings are just a company's report card: what they made, what they spent. And this week, one line on Google's report card matters more than all the others: their cloud business — the part that sells AI computing power — is expected to grow 67 percent, to about $22.8 billion in three months. If that number shows up, the "AI has no payoff" story gets a lot weaker. If it misses — this selloff was the warm-up.</p>
-          <p>You don't need to trade ANY of this. You need to not get shaken out of a plan by three red weeks — and if you're putting in money every paycheck, understand: the same $100 that bought one share at the top buys 25 percent MORE shares down here. Automatic investing is literally the only strategy that gets BETTER when the market gets worse.</p>
-          <h5>BEAT 4 · PAYOFF <i style="color:var(--muted);font-weight:400">[hold PT 3 tile — numbers ON SCREEN]</i></h5>
-          <p>So here's the tile to screenshot. Panic path: sell at $8,000, need +25%, roughly 5.7 years in cash to claw back. Boring path: keep the automatic buys on, own 25% more shares per dollar down here, and let tonight's report card — not your fear — tell you what the AI trade is actually worth.</p>
-          <h5>BEAT 5 · CLOSE + CTA + SIGN-OFF (fixed order)</h5><ul><li>"Tonight, when everyone's screaming about Google and Tesla — you'll know whether you're looking at a crash or a discount."</li><li class="cta-line">"Comment <b>CHIPS</b> and I'll send you the earnings-week cheat sheet — we're tracking all three reports live in the Discord, link in bio."</li><li><b>"It's Wolf, I'm outta here."</b></li></ul>
-          <div class="cap-box">Caption: $3.3 trillion left the market in 3 weeks — and about a third of your index fund was in the trade. TONIGHT decides what happens next. Comment CHIPS for the earnings-week cheat sheet. Educational content only — not financial advice. #stockmarket #ai #nvidia #401k #investing #fintok</div>
-        </div></details>
-
-        <div class="play">
-          <div class="ph">▸ Tonight — after the post ships (the old Wednesday engage plan, unchanged)</div>
-          <div class="playrow"><span class="pk pill">Studio</span><span><b>Same session, before the close:</b> after the react is in the can, record the <b>Thu candlestick evergreen</b> and the <b>Sat EYL collab</b> back-to-back — the full Tuesday session, one day late. Saturday stays a publish button.</span></div>
-          <div class="playrow"><span class="pk peg">Monitor</span><span><b>4pm ET: Alphabet</b> (the line: Cloud $22.8B cons., +67% — and any capex-guidance change) + <b>Tesla</b> ($0.52 / ~$26.0B cons. · options imply ~±7.6%). Grab the after-hours moves + one quote each for Sunday’s Seg 2.</span></div>
-          <div class="playrow"><span class="pk who">Engage</span><span>Reply to every CHIPS comment (the trigger queue). Community quick tip: "Earnings-night rule: the number that matters isn’t EPS — it’s the one line the story depends on. Tonight that’s Google Cloud growth."</span></div>
-          <div class="playrow"><span class="pk post">Prep</span><span>Fill <code>earnings-verdict-dashboard.html</code> gold boxes as prints land · note the "priced for perfect" tape reaction for D Waugh’s Seg 3 handoff.</span></div>
-        </div>
-        <div class="ctarow">
-          <span class="cta">Comment-trigger · "Comment <b>CHIPS</b> for the earnings-week cheat sheet."</span>
-          <div class="status"><button class="tog">Posted</button></div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- THU -->
-    <div class="day key">
-      <div class="dayhead">
-        <div class="dow">THU<small>JUL 23 · CLAIMS 8:30 + INTC 4PM</small></div>
-        <span class="pill" style="background:rgba(52,229,163,.12);color:var(--p1)">★ P1 · Trade evergreen</span>
-        <span class="hook">Green vs red candles — the 4 numbers in every bar. Our own Search traffic typed the brief.</span>
-        <span class="fmt">Greenscreen · recorded Wed · posts AM</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ The play — everything for today</div>
-          <div class="playrow"><span class="pk pill">Pillar</span><span>P1 chart education — the search-durable money-maker. The Jan-2025 candlesticks post is STILL the #1 weekly performer 18 months later (280 this week / 96K all-time), and Search hit a record <b>77.4%</b> of TikTok traffic.</span></div>
-          <div class="playrow"><span class="pk peg">Peg</span><span><b>Demand-pegged by our own Search queries this week:</b> "What do green candlesticks mean and the red candlesticks" · "Obv macd." The audience literally typed the brief — this is the fresh cut of the 96K vein, with the chip-selloff chart as the live worked example. (Intel 4pm + claims 8:30am are today's news backdrop; the react lane stays Tuesday's.)</span></div>
-          <div class="playrow"><span class="pk who">Who</span><span>TikTok 25–34 (38.5%) + 35–44 (26%) · Search-first viewers who arrive months from now — zero news references that will date it except the (labeled) July-2026 chart example.</span></div>
-          <div class="playrow"><span class="pk angle">Angle</span><span>TikTok/IG: <b>"read a chart in 60s so a red week never scares your first $200 out of the market"</b> · YT Short: <b>"the 3-question pre-buy discipline"</b> (35–54 cut).</span></div>
-          <div class="playrow"><span class="pk post">Post</span><span><b>Posts ~10–11am, deliberately off-peak</b> — Search finds it regardless; the evening band stays clear for reach content. Soft CTA (weekday).</span></div>
-        </div>
-        <div class="smap">
-          <span class="k">◆ Story map — 5-beat spine (Sora)</span>
-          <div class="smaprow"><span class="t">0:00</span><span class="b">Cold open</span><span class="d">"This one candle is 4 numbers. Most beginners read zero." — <i>THU Ken Burns intro</i> · loop OPENS: the 60-second read</span></div>
-          <div class="smaprow"><span class="t">0:05</span><span class="b">Stakes</span><span class="d">"a red week just scared thousands out at the bottom — 60 seconds fixes that for good"</span></div>
-          <div class="smaprow"><span class="t">0:10</span><span class="b">Pt 3</span><span class="d"><span class="ptb">PT 1</span>the candle's 4 numbers: open/close/high/low, body vs wick — <i>THU_S1 anatomy tile</i></span></div>
-          <div class="smaprow"><span class="t">0:28</span><span class="b">Pt 2</span><span class="d"><span class="ptb">PT 2</span>the story: +105% staircase → tall candles → 3 red weeks — <i>THU_S2 story tile</i></span></div>
-          <div class="smaprow"><span class="t">0:42</span><span class="b">Re-hook</span><span class="d">"but a candle without volume is a rumor—" · BIG loop re-opens</span></div>
-          <div class="smaprow"><span class="t">0:45</span><span class="b">Pt 1</span><span class="d"><span class="ptb">PT 3</span>volume + the translators our Search asked for: OBV (running tally) · MACD (fast vs slow average) — <i>THU_S3 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:55</span><span class="b">Payoff</span><span class="d"><b>the 3-question pre-buy checklist ON SCREEN</b> — trend · wicks · volume · loop closes</span></div>
-          <div class="smaprow"><span class="t">1:00</span><span class="b">Close</span><span class="d">"next red week, you'll read it instead of fearing it" → Discord → <b>"It's Wolf, I'm outta here."</b></span></div>
-        </div>
-        <div class="drops">Drops today</div>
-        <div class="platrow"><span class="plat tt">TikTok</span><span class="plat ig">IG Reel</span><span class="plat short">YT Short</span></div>
-        <div class="drops">On each platform — what to post</div>
-        <div class="perplat">
-          <div class="pp"><span class="ppl tt">TikTok</span><span>The candlestick <b>evergreen</b> (25–34 first-$200 cut) · <b>~10–11am off-peak</b> · soft CTA, save-bait caption ("save this before your next red week").</span></div>
-          <div class="pp"><span class="ppl ig">Instagram</span><span><b>Reel — same cut</b> · late-AM · the anatomy tile is the cover-frame candidate.</span></div>
-          <div class="pp"><span class="ppl yt">YouTube</span><span><b>Short</b> — 35–54 cut: the 3-question pre-buy discipline that protects a retirement account → channel.</span></div>
-        </div>
-        <div class="win">⏱ <b>Windows (ET):</b> everything ~10–11am. No tickers, no recommendations — chart mechanics on the (labeled) July 2026 index example. If the Wed-night contingency fired, the 4th-drop react posts first (peak) and this evergreen still posts AM as planned.</div>
-        <div class="hooks">
-          <span class="k">▶ Green-screen hooks</span>
-          <div class="cold">Cold-open: "Red Candles Aren't Random"</div>
-          <div class="sus">Sustained caption: <b>"Green Vs Red Candles — The 4 Numbers In Every Bar"</b></div>
-          <div class="gsgrid">
-            <a class="gsthumb" href="broll/THU/captioned/THU_V4_tablet-candles-closeup.mp4" target="_blank"><video src="broll/THU/captioned/THU_V4_tablet-candles-closeup.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">INTRO</span><span class="cap">Hook box · candles</span></a>
-            <a class="gsthumb" href="broll/THU/captioned/THU_V3_tablet-candles-hand.mp4" target="_blank"><video src="broll/THU/captioned/THU_V3_tablet-candles-hand.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 1</span><span class="cap">The 4 numbers</span></a>
-            <a class="gsthumb" href="broll/THU/captioned/THU_V5_stylus-circling-candles.mp4" target="_blank"><video src="broll/THU/captioned/THU_V5_stylus-circling-candles.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 2</span><span class="cap">The story they tell</span></a>
-            <a class="gsthumb" href="broll/THU/captioned/THU_V6_stylus-pointing-candles.mp4" target="_blank"><video src="broll/THU/captioned/THU_V6_stylus-pointing-candles.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 3</span><span class="cap">Volume + translators</span></a>
-            <a class="gsthumb" href="broll/THU/THU_V1_desk-charts-monitor.mp4" target="_blank"><video src="broll/THU/THU_V1_desk-charts-monitor.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Stakes · desk</span></a>
-            <a class="gsthumb" href="broll/THU/THU_V2_trading-desk-screens.mp4" target="_blank"><video src="broll/THU/THU_V2_trading-desk-screens.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Spare · screens</span></a>
-            <a class="gsthumb" href="greenscreen/THU/THU_S1_pt1_anatomy.png" target="_blank"><img src="greenscreen/THU/THU_S1_pt1_anatomy.png" alt="anatomy tile"><span class="cap">Anatomy tile · o/c/h/l</span></a>
-            <a class="gsthumb" href="greenscreen/THU/THU_S3_pt3_checklist.png" target="_blank"><img src="greenscreen/THU/THU_S3_pt3_checklist.png" alt="checklist tile"><span class="cap">Payoff tile · checklist</span></a>
-          </div>
-          <div class="gsnote">Full set in <b>broll/THU/</b> (6 Pexels clips + 3 photos; captioned four in <b>captioned/</b>) + tiles in <b>greenscreen/THU/</b>. Cut order: <a href="greenscreen/greenscreen-and-hooks.md" target="_blank" style="color:var(--mint)">greenscreen-and-hooks.md</a>. Live receipt on camera: open the broker app's 1M chart and point at the longest wick; the anatomy + checklist tiles land Pt 1 and Beat 4.</div>
-        </div>
-        <details class="script"><summary>FULL SCRIPT — word-for-word · ~100s · no tickers, no recs</summary><div class="scriptbody">
-          <h5>BEAT 1 · COLD OPEN <i style="color:var(--muted);font-weight:400">[Ken Burns intro]</i></h5>
-          <p>This one candle on the chart is telling you four numbers. Most beginners read zero of them — and then let a red week make their decisions for them.</p>
-          <h5>BEAT 2 · STAKES</h5>
-          <p>The market just had its ugliest three weeks of the year, and thousands of people sold at the bottom of it because the chart LOOKED scary. Sixty seconds from now you'll read a chart instead of feeling it — and that's the difference between your first $200 surviving the market and your first $200 leaving with your confidence. Three things, counting down — and the third one is the tool the pros check that beginners have never even opened.</p>
-          <h5>Number 3 — what one candle actually says <i style="color:var(--muted);font-weight:400">[PT 1 anatomy tile]</i></h5>
-          <p>Every candle is one slice of time — on a daily chart, one candle is one day. The thick part — the body — shows two numbers: the price when that day STARTED, called the open, and the price when it ENDED, the close. Green just means it closed higher than it opened. Red means it closed lower. That's it. That's the whole secret.</p>
-          <p>The thin lines poking out — the wicks — are the other two numbers: the highest and lowest price hit during the day. So one green candle with a long top wick literally reads as a sentence: "buyers pushed it way up... and sellers slapped it back down before the close." That's not decoration. That's a fight, and the wick shows you who won.</p>
-          <p>Receipt: open your investing app right now, tap any stock, switch the chart to "1M" — one month — and find the longest wick on the page. You just found the day the fight was hardest. <i style="color:var(--gold)">But one candle is a word, not a sentence—</i></p>
-          <h5>Number 2 — the story candles tell together <i style="color:var(--muted);font-weight:400">[PT 2 story tile]</i></h5>
-          <p>Zoom out on this month's chip-stock index — the one all over the news. From March to June: staircase of green bodies, small wicks. Calm, steady buying. Late June: the candles get TALLER — bigger bodies, longer wicks. Then three weeks of heavy red bodies. Tall candles mean big disagreement — and big disagreement after a 105 percent run is the chart's way of saying "the easy part is over."</p>
-          <p>Here's what that reading is FOR: not predicting — the chart can't tell you tomorrow. It tells you what already changed, so headlines don't get to surprise you. Anyone who looked at those candles in early July saw the temperature rising before the "bear market" headline ever printed. <i style="color:var(--gold)">Therefore — the last tool, the one that separates a real move from a fake one.</i></p>
-          <h5>MID-VIDEO RE-HOOK</h5>
-          <p>Because a candle without volume is just a rumor.</p>
-          <h5>Number 1 — volume, and the two translators <i style="color:var(--muted);font-weight:400">[PT 3 tile]</i></h5>
-          <p>Volume is the bar at the bottom of the chart — how many shares actually traded. A big red candle on TINY volume? Few people even participated; weak signal. Big red candle on HUGE volume? The crowd really did change its mind.</p>
-          <p>And the two tools people keep searching us for, in plain English. OBV — on-balance volume — is just a running tally: it adds the day's volume when the candle's green, subtracts it when it's red. If price is flat but OBV is climbing, buyers are quietly loading up. MACD is two moving averages — a fast one and a slow one — and all it measures is whether the CURRENT mood is stronger or weaker than the recent trend. When the fast line crosses under the slow one, momentum is fading. Neither one is a crystal ball. Both are translators — they turn a thousand candles into one sentence.</p>
-          <h5>BEAT 4 · PAYOFF <i style="color:var(--muted);font-weight:400">[hold checklist tile — ON SCREEN]</i></h5>
-          <p>So here's the 60-second read before you ever buy — screenshot this. One: what's the TREND — is the staircase going up or down? Two: what are the WICKS saying — calm agreement or a fight? Three: does VOLUME confirm it — did the crowd actually show up? Three questions. If you can't answer all three, you're not investing yet — you're guessing.</p>
-          <h5>BEAT 5 · CLOSE + CTA + SIGN-OFF (fixed order)</h5><ul><li>"Next red week — and there will be one — you'll read it instead of fearing it."</li><li class="cta-line">"We break down one real chart every week in the Discord — link in bio."</li><li><b>"It's Wolf, I'm outta here."</b></li></ul>
-          <div class="cap-box">Caption: Green vs red candles = 4 numbers, 60 seconds to learn. Save this before your next red week. Educational content only — not financial advice. #candlesticks #stockmarket #investingforbeginners #charts #fintok</div>
-        </div></details>
-        <div class="ctarow">
-          <span class="cta">Soft CTA · "One real chart broken down every week — link in bio."</span>
-          <div class="status"><button class="tog">Posted</button></div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- FRI -->
-    <div class="day">
-      <div class="dayhead">
-        <div class="dow" style="opacity:.75">FRI<small>JUL 24 · PMIs + NEW HOMES</small></div>
-        <span class="pill" style="background:rgba(154,168,180,.12);color:var(--muted)">PREP / ENGAGE</span>
-        <span class="hook">No planned post — fill the dashboards with the week's actuals · protect Saturday</span>
-        <span class="fmt">Prep · no post</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ The day's jobs</div>
-          <div class="playrow"><span class="pk pill">Data</span><span><b>9:45am flash PMIs · 10am June new home sales</b> — one line each for Sunday's Seg 3/4 (is the consumer/housing softening into the Fed meeting?). Note Thursday's jobless claims too.</span></div>
-          <div class="playrow"><span class="pk peg">Dashboards</span><span>Finish <code>earnings-verdict-dashboard.html</code> (Alphabet/Tesla/Intel actuals + moves) and note where FedWatch odds sit after earnings week. Sunday fills the final numbers at record time.</span></div>
-          <div class="playrow"><span class="pk who">Engage</span><span>Community BTS post: Tuesday's studio-day photo — "we script the math before the hook. Receipts first." · reply queue.</span></div>
-          <div class="playrow"><span class="pk post">Protect</span><span><b>Saturday is the must-ship.</b> Confirm the EYL screen-recording + D Waugh's slot. If anything's broken, stage bank reel #16 (tiles in <code>weeks/Jul-6-12/greenscreen/SAT/</code>) tonight — not Saturday morning.</span></div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- SAT -->
-    <div class="day key">
-      <div class="dayhead">
-        <div class="dow">SAT<small>JUL 25 · MUST-SHIP</small></div>
-        <span class="pill" style="background:rgba(255,143,177,.12);color:var(--p5)">★ COLLAB · React · IG-FIRST</span>
-        <span class="hook">EYL said paying off debt first is a mistake — half right, and the half matters. 5+ weeks overdue.</span>
-        <span class="fmt">Screen-rec react · recorded Tue</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ The play — everything for today</div>
-          <div class="playrow"><span class="pk pill">Pillar</span><span>P4/P5 collab/guest-reaction — <b>IG's #1 format by ~100×</b> (25K/20K pinned vs ~300 explainers) and the audit's biggest standing miss: 5+ planned weeks, 0 verified ships.</span></div>
-          <div class="playrow"><span class="pk peg">Peg</span><span>EYL's contestable claim ("paying off debt before investing could be one of your most expensive mistakes") — evergreen debate-bait, and it hands Sunday's Seg 4 its playbook. Caption box carries THEIR CLAIM verbatim (the EYL borrow), not the topic.</span></div>
-          <div class="playrow"><span class="pk who">Who</span><span>Male 25–44 wealth-builders — and debate-bait comments broaden reach (TikTok female share jumped to 31% this week; the couples/money-argument angle travels).</span></div>
-          <div class="playrow"><span class="pk angle">Angle</span><span>IG/TikTok 25–34: <b>"the $1,050/yr mistake"</b> · YT Short 35–54: <b>"the 3-step sort that settles the oldest argument in money."</b></span></div>
-          <div class="playrow"><span class="pk post">Post</span><span><b>IG leads 12–3pm</b> (if restored — else TikTok leads and IG follows) · TikTok stitch/duet mid-PM · weekend hard CTA allowed: DM <b>GEN</b> + comment <b>MATH</b>.</span></div>
-        </div>
-        <div class="smap">
-          <span class="k">◆ Story map — 5-beat spine (Sora)</span>
-          <div class="smaprow"><span class="t">0:00</span><span class="b">Cold open</span><span class="d">EYL freeze-frame: "one of the biggest finance channels just said paying off debt first is a MISTAKE" · loop OPENS: are they right?</span></div>
-          <div class="smaprow"><span class="t">0:04</span><span class="b">Stakes</span><span class="d">"get this order wrong → $1,050 a year" — <i>SAT Ken Burns (hook box)</i></span></div>
-          <div class="smaprow"><span class="t">0:08</span><span class="b">Pt 1</span><span class="d"><span class="ptb">PT 1</span>steelman — play their strongest 5s: the match is an instant +50% — <i>SAT_S1 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:25</span><span class="b">Pt 2</span><span class="d"><span class="ptb">PT 2</span>the flip: your APR line · 21% = $87.50/mo · minimums ≈ $33K — <i>SAT_S2 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:40</span><span class="b">Re-hook</span><span class="d">"so who's right? Both — in this exact order—" — <i>back to EYL freeze</i> · BIG loop re-opens</span></div>
-          <div class="smaprow"><span class="t">0:44</span><span class="b">Pt 3</span><span class="d"><span class="ptb">PT 3</span>THE SORT: match → kill 20%+ APR → automate — <i>SAT_S3 tile</i></span></div>
-          <div class="smaprow"><span class="t">0:52</span><span class="b">Payoff</span><span class="d"><b>the 3-step sort ON SCREEN with the numbers</b> · loop closes</span></div>
-          <div class="smaprow"><span class="t">0:58</span><span class="b">Close</span><span class="d">back to EYL freeze → comment <b>MATH</b> / DM <b>GEN</b> → <b>"It's D Waugh, I'm outta here."</b></span></div>
-        </div>
-        <div class="drops">Drops today</div>
-        <div class="platrow"><span class="plat ig">IG Reel (LEAD)</span><span class="plat tt">TikTok stitch</span><span class="plat short">YT Short</span></div>
-        <div class="drops">On each platform — what to post</div>
-        <div class="perplat">
-          <div class="pp"><span class="ppl ig">Instagram</span><span><b>THE LEAD:</b> green-screen react over the EYL screen-rec, their claim in the caption box · <b>12–3pm</b> · comment <b>MATH</b> + weekend DM <b>GEN</b>. If IG is still erroring, TikTok leads and the IG copy posts the moment access returns — logged either way.</span></div>
-          <div class="pp"><span class="ppl tt">TikTok</span><span><b>Stitch/duet</b> version, same cut · mid-PM · comment-trigger <b>MATH</b>.</span></div>
-          <div class="pp"><span class="ppl yt">YouTube</span><span><b>Short</b> — 35–54 cut: the sort as "the argument you and your partner can stop having" → channel.</span></div>
-        </div>
-        <div class="win">⏱ <b>Windows (ET):</b> IG 12–3pm lead · TikTok mid-PM · hard CTAs allowed (weekend). ⚠ <b>Standby rule (6th-week clause):</b> if the collab can't ship by 6pm, post bank reel <b>#16</b> in this slot (tiles ready in <code>weeks/Jul-6-12/greenscreen/SAT/</code>) — something ships Saturday either way.</div>
-        <div class="hooks">
-          <span class="k">▶ Green-screen hooks · caption box carries the EYL claim verbatim</span>
-          <div class="cold">Cold-open: "EYL Said WHAT?!"</div>
-          <div class="sus">Sustained caption: <b>"EYL: Paying Off Debt First = Mistake? Half Right."</b></div>
-          <div class="gsgrid">
-            <a class="gsthumb" href="broll/SAT/captioned/SAT_V1_counting-banknotes.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V1_counting-banknotes.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">INTRO</span><span class="cap">Hook box · cash</span></a>
-            <a class="gsthumb" href="broll/SAT/captioned/SAT_V4_counting-cash-notebook.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V4_counting-cash-notebook.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 1</span><span class="cap">Where they're right</span></a>
-            <a class="gsthumb" href="broll/SAT/captioned/SAT_V5_looking-at-credit-card.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V5_looking-at-credit-card.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 2</span><span class="cap">The 21% APR flip</span></a>
-            <a class="gsthumb" href="broll/SAT/captioned/SAT_V3_phone-calculator-cash.mp4" target="_blank"><video src="broll/SAT/captioned/SAT_V3_phone-calculator-cash.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">PT 3</span><span class="cap">The sort</span></a>
-            <a class="gsthumb" href="broll/SAT/SAT_V2_bills-documents-desk.mp4" target="_blank"><video src="broll/SAT/SAT_V2_bills-documents-desk.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Stakes · bills</span></a>
-            <a class="gsthumb" href="broll/SAT/SAT_V6_paying-bill-card.mp4" target="_blank"><video src="broll/SAT/SAT_V6_paying-bill-card.mp4" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video><span class="vbadge">CLEAN</span><span class="cap">Spare · card</span></a>
-            <a class="gsthumb" href="greenscreen/SAT/SAT_S3_pt3_the-sort.png" target="_blank"><img src="greenscreen/SAT/SAT_S3_pt3_the-sort.png" alt="sort tile"><span class="cap">Payoff tile · the sort</span></a>
-            <a class="gsthumb" href="broll/SAT/SAT_P2_holding-credit-card.jpg" target="_blank"><img src="broll/SAT/SAT_P2_holding-credit-card.jpg" alt="credit card"><span class="cap">Photo · the statement</span></a>
-          </div>
-          <div class="gsnote">Full set in <b>broll/SAT/</b> (6 Pexels clips + 3 photos; captioned four in <b>captioned/</b>) + tiles in <b>greenscreen/SAT/</b> + the screen-rec instruction in <a href="greenscreen/greenscreen-and-hooks.md" target="_blank" style="color:var(--mint)">greenscreen-and-hooks.md</a>. React over their clip — never re-upload it standalone. Beat 4 lands on the sort tile.</div>
-        </div>
-        <details class="script"><summary>FULL SCRIPT — word-for-word · ~90s</summary><div class="scriptbody">
-          <h5>BEAT 1 · COLD OPEN <i style="color:var(--muted);font-weight:400">[open ON the EYL freeze-frame, their caption visible]</i></h5>
-          <p>One of the biggest finance platforms in the country just told millions of people that paying off your debt before investing could be one of your most expensive mistakes. And the wild part? They're half right.</p>
-          <h5>BEAT 2 · STAKES <i style="color:var(--muted);font-weight:400">[hook-box clip]</i></h5>
-          <p>Getting this ORDER wrong — invest first or pay debt first — is quietly costing some of you a thousand dollars a year. Getting it right is the closest thing to free money that exists in personal finance. So let's actually settle it — with the math, not the vibes.</p>
-          <h5>Pt 1 — where EYL is right <i style="color:var(--muted);font-weight:400">[play their strongest ~5s, then PT 1 tile]</i></h5>
-          <p>Here's their best case, and it's a real one. If your job offers a 401(k) match — say they add 50 cents for every dollar you put in — that is an instant 50 percent return the moment it hits. No debt on earth charges you 50 percent. So yes: if you're skipping YEARS of employer match to slow-pay a car loan at 6 percent, EYL is right — that mistake compounds against you for decades. Time in the market is the one thing you can't buy back later. <i style="color:var(--gold)">But — and this is the whole video — they said DEBT like it's one thing. It's not.</i></p>
-          <h5>Pt 2 — the number that flips the answer <i style="color:var(--muted);font-weight:400">[PT 2 tile]</i></h5>
-          <p>Pull out your credit card statement — the real one — and find the line that says APR. That's the annual percentage rate: the price tag on borrowing, what the card charges you per year for carrying a balance. The average card right now sits around 21 percent. Carry $5,000 and you're paying about $87.50 a MONTH — $1,050 a year — in pure interest, before you've touched what you owe. Now flip it: paying that card off is a GUARANTEED 21 percent return. The stock market's long-run average is around 10 — and it's not guaranteed. Nothing legal pays you a locked-in 21. And if you only make minimum payments on that $5,000? On a typical 2-percent minimum, the math runs to roughly THIRTY-THREE THOUSAND dollars paid over decades. That's what "invest first, card later" actually costs at 21 percent.</p>
-          <h5>MID-VIDEO RE-HOOK <i style="color:var(--muted);font-weight:400">[back to EYL freeze]</i></h5>
-          <p>So who's right — EYL or your uncle who says "debt-free first, always"? Both. In this exact order.</p>
-          <h5>Pt 3 — the sort <i style="color:var(--muted);font-weight:400">[PT 3 tile]</i></h5>
-          <p>One: grab every dollar of employer match — that 50 percent beats everything. Two: kill anything charging 8 to 10 percent or more — that 21 percent card is bleeding you faster than any index fund can heal you. Three: THEN automate investing past the match. That's it. That's the whole debate, sorted by one number: the APR on your statement versus the return you can actually expect.</p>
-          <h5>BEAT 4 · PAYOFF <i style="color:var(--muted);font-weight:400">[hold the sort tile]</i></h5>
-          <p>Match first — it's 50 percent. High-APR debt second — killing 21 percent is a guaranteed win. Automate third. Screenshot it, tape it to your fridge, settle the argument at Thanksgiving.</p>
-          <h5>BEAT 5 · CLOSE + CTA + SIGN-OFF (fixed order)</h5><ul><li>"So EYL — half right, and the half matters. Respect for starting the conversation."</li><li class="cta-line">"Comment <b>MATH</b> and I'll send the full sort with the numbers — or DM me <b>GEN</b> and I'll send you the Discord where we run this on real statements every week."</li><li><b>"It's D Waugh, I'm outta here."</b></li></ul>
-          <div class="cap-box">Caption (IG): EYL says paying off debt first is a mistake. The real answer is a 3-step sort — and it starts with one number on your statement. Comment MATH for the breakdown. Educational content only — not financial advice. #credit #investing #debtfree #eyl #moneytok #personalfinance</div>
-        </div></details>
-        <div class="ctarow">
-          <span class="cta">Comment-trigger · "Comment <b>MATH</b>" + weekend hard CTA · "DM <b>GEN</b> for the Discord."</span>
-          <div class="status"><button class="tog">Posted</button></div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- SUN -->
-    <div class="day">
-      <div class="dayhead">
-        <div class="dow">SUN<small>JUL 26 · FED-EVE</small></div>
-        <span class="pill" style="background:rgba(185,139,255,.12);color:var(--p4)">🎙 Podcast + Record</span>
-        <span class="hook">"The $3.3 Trillion Week — And The Fed Decides Wednesday" drops + the loop resets</span>
-        <span class="fmt">Long-form + teaser</span>
-        <span class="chev">▶</span>
-      </div>
-      <div class="daybody"><div class="daybody-in">
-        <div class="play">
-          <div class="ph">▸ The day's jobs</div>
-          <div class="playrow"><span class="pk pill">Fill</span><span>AM: fill every FILL-LIVE box — earnings actuals + Sunday-morning FedWatch odds — into all three dashboards <b>before recording</b>.</span></div>
-          <div class="playrow"><span class="pk peg">Record</span><span>Record the episode (rundown in the podcast fold above + <code>scripts/podcast-rundown.md</code>): 4 planted clip lines verbatim, through-line opened cold and closed in Seg 4.</span></div>
-          <div class="playrow"><span class="pk who">Publish</span><span>Publish early-PM so it indexes · teaser = <code>broll/PODCAST/captioned/POD_V1_nyse-flag-building.mp4</code> (hook box baked) into the evening window · episode inserts: 4 clean Wall-Street clips + 2 photos in <code>broll/PODCAST/</code> + the 2 data tiles · hard CTA allowed (weekend).</span></div>
-          <div class="playrow"><span class="pk post">Reset</span><span>Next week is a DOUBLE spike: <b>FOMC decision Wed Jul 29, 2pm ET</b> (same-day react — the year's biggest scheduled peg) + <b>June PCE Fri Jul 31, 8:30am</b>. Cut this episode's clips tonight; they seed Mon/Tue.</span></div>
-        </div>
-        <div class="drops">Drops today</div>
-        <div class="platrow"><span class="plat yt">▶ YT long-form</span><span class="plat tt">Teaser clip</span><span class="plat ig">IG teaser</span></div>
-        <div class="win">⏱ <b>Windows (ET):</b> episode AM/early-PM · teaser into the evening band · hard CTA (weekend). Educational content only — not financial advice.</div>
-      </div></div>
-    </div>
-
-  </div>
-
-  <h2 class="sec" id="pegs">Live news pegs — the week's map <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">verified Jul 19 · re-verified Jul 22 AM — chip bounce, oil ~$90, earnings TONIGHT folded in</span></h2>
-  <div class="pegs">
-    <div class="pegcard">
-      <h4><span class="dot" style="background:var(--p6)"></span>The chip bear market</h4>
-      <ul>
-        <li><b>SOX −20.2%</b> from the Jun 22 record (bear market confirmed Fri Jul 17) after a <b>+105%</b> Mar–Jun run · worst week since Mar 2025.</li>
-        <li><b>~$3.3T</b> global chip value erased since Jun 22.</li>
-        <li>Triggers: Moonshot's free open-source <b>Kimi K3</b> (Jul 17) + AI-capex ROI doubts · Netflix <b>−10%</b> the same day on a revenue hair-miss.</li> <li><b>Rebound watch (new, Jul 22):</b> two green days into the print — Tue: Micron <b>+12%</b>, AMD <b>+8%</b>, SK Hynix <b>+14%</b>, Nasdaq <b>+1.3%</b>; Nvidia up on its <b>9.3% Nebius stake</b>. The bounce is a BET on tonight's reports — it raises the stakes, it doesn't settle them.</li>
-      </ul>
-    </div>
-    <div class="pegcard">
-      <h4><span class="dot" style="background:var(--p2)"></span>Earnings, same lane</h4>
-      <ul>
-        <li><b>TONIGHT (Wed Jul 22) after close — Alphabet</b> (cons $2.88 EPS · <b>Cloud $22.8B, +67%</b> = the "does AI pay?" receipt) + <b>Tesla</b> (~$0.52 / ~$26.0B · record ~480K Q2 deliveries already in · options imply ~±7.6%).</li>
-        <li><b>Thu Jul 23 after close — Intel</b> (~$0.06–0.10 / $14.4B · tape −21% in 7 days · HSBC $200 vs BofA "bubble").</li>
-        <li>Netflix already reported: EPS beat, rev $12.56B vs $12.6B, weak Q3 guide → −10%. "Priced for perfect."</li>
-      </ul>
-    </div>
-    <div class="pegcard">
-      <h4><span class="dot" style="background:var(--gold)"></span>Fed-eve + the calendar</h4>
-      <ul>
-        <li><b>FOMC Jul 28–29 · decision Wed 2pm ET.</b> Funds 3.50–3.75% (5 holds). June CPI −0.4% m/m → 3.5% y/y (core 2.6%) collapsed hike odds ~40%→~15%; oil back over <b>$80–82</b> (ceasefire collapsed, US strikes) pulled them into the 30s. Cuts ≈ 0 (~76% odds of none in 2026).</li>
-        <li>This week's data (ET): Mon LEI 10am · Thu jobless claims 8:30am · Fri flash PMIs 9:45am + June new home sales 10am.</li>
-        <li>Next week: FOMC Wed + <b>June PCE Fri Jul 31, 8:30am</b> — the double spike.</li>
-      </ul>
-    </div>
-  </div>
-
-  <details class="fold" id="audience"><summary class="fsum">Your audience — best times + who's watching <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">refreshed Jul 19</span></summary>
-  <div class="statgrid" style="margin-bottom:14px">
-    <div class="platbox tt">
-      <div class="pl">♪ TikTok — best times + who</div>
-      <div class="metric"><span class="k">Band</span><span class="v">2–7pm ET, drifting late</span></div>
-      <div class="metric"><span class="k">Most active (this wk)</span><span class="v">Thu Jul 16 · 7–8pm</span></div>
-      <div class="metric"><span class="k">Gender</span><span class="v">M 69% / F 31% ↑</span></div>
-      <div class="metric"><span class="k">Age core</span><span class="v">25–34 = 38.5% · 35–44 = 26%</span></div>
-      <div class="metric"><span class="k">US</span><span class="v">91.7%</span></div>
-    </div>
-    <div class="platbox ig">
-      <div class="pl">◎ Instagram — best times + who</div>
-      <div class="metric"><span class="k">Peak (confirmed)</span><span class="v">3pm ET · strong 12–6</span></div>
-      <div class="metric"><span class="k">Followers</span><span class="v">7,523 (+9)</span></div>
-      <div class="metric"><span class="k">30-day</span><span class="v">18.2K views · 12.5K reached</span></div>
-      <div class="metric"><span class="k">Discovery</span><span class="v">88.2% non-followers · Reels 98.8%</span></div>
-      <div class="metric"><span class="k">Age/gender</span><span class="v" style="color:var(--p6)">MOBILE-ONLY gap stands</span></div>
-    </div>
-    <div class="platbox yt">
-      <div class="pl">▶ YouTube — best times + who</div>
-      <div class="metric"><span class="k">When online</span><span class="v" style="color:var(--p6)">still not enough data</span></div>
-      <div class="metric"><span class="k">Default</span><span class="v">long-form AM · Shorts PM</span></div>
-      <div class="metric"><span class="k">Age/gender (this wk)</span><span class="v">not enough data · prior: M95 · 35–54 core</span></div>
-      <div class="metric"><span class="k">New viewers</span><span class="v">95.6% · mobile 83.2%</span></div>
-      <div class="metric"><span class="k">US</span><span class="v">80.3% · monthly aud. 2.2K</span></div>
-    </div>
-  </div>
-  <div class="refcard">
-    <h4>Content gaps by demographic — ideas we're under-serving</h4>
-    <div class="pat"><span class="v" style="width:150px;color:var(--p6)">YouTube 35–54 core</span><span class="f">Go deeper than beginner<small>401(k) match &amp; true-up, backdoor Roth, RSUs/ESPP, catch-up after 50, estate basics — the retirement-date angle over-performs.</small></span></div>
-    <div class="pat"><span class="v" style="width:150px;color:var(--p1)">TikTok 25–34 core</span><span class="f">First-milestone money<small>First brokerage, buy-vs-rent, student loans — and chart literacy (this week's Search queries: candlesticks, OBV/MACD; also "best cards 2026," "treasury bonds 2026" = a future bonds-explainer gap).</small></span></div>
-    <div class="pat"><span class="v" style="width:150px;color:var(--gold)">Female share ↑ 31%</span><span class="f">TikTok's female share jumped 25→31% this week<small>Couples-and-money + debate-bait formats travel across gender — Saturday's EYL react is aimed at exactly this.</small></span></div>
-    <div class="pat"><span class="v" style="width:150px;color:var(--p2)">80–92% US</span><span class="f">Lean US-specific<small>Roth/401(k)/FICO/US brokerages. Working-age only — almost no under-18.</small></span></div>
-    <div class="pat"><span class="v" style="width:150px;color:var(--p4)">95.6% new viewers</span><span class="f">Discovery-first, then convert<small>Strong cold hooks + a concrete follow reason (comment-triggers CHIPS, MATH keep working).</small></span></div>
-  </div>
-  </details>
-
-  <details class="fold" id="bank"><summary class="fsum">Evergreen Reel Bank <span style="font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.06em;text-transform:none;margin-left:4px">this week: none pulled — full slate · #16 on Sat standby</span></summary>
-  <div class="refcard" style="margin-bottom:14px">
-    <h4>This week's pull</h4>
-    <p style="font-size:13px;color:#cdd8e1"><b style="color:var(--mint)">None pulled — full slate.</b> $3.3T react (Tue) + candlestick evergreen (Thu) + EYL collab (Sat) + Fed-eve podcast (Sun) fills every slot under the 3+1 cadence. <b style="color:var(--gold)">Standby:</b> reel <b>#16</b> ("What people think investing is vs what it is" — TIER 1, tiles ready in <code>weeks/Jul-6-12/greenscreen/SAT/</code>) posts in the Saturday slot ONLY if the collab misses a 6th week. Rotation log updated in <code>TGW Evergreen Reel Bank.md</code>. Last pull: #24 (wk Jul 6–12) — no repeat before ~Sep 7.</p>
-  </div>
-  <div class="pegs">
-    <div class="pegcard">
-      <h4><span class="dot" style="background:var(--p5)"></span>TIER 1 — IG-priority</h4>
-      <ul>
-        <li><b>Founder/story (P5):</b> 7 Behind TGW · 8 Real work day · 9 Why I started · 13 Discord turnaround · <b>16 Think vs reality (STANDBY)</b> · 17 Before vs after · 29 When it got real</li>
-        <li><b>Debate/comment-trigger:</b> 10 Investing myth · 14 Worst FYP advice · 18 Before-you-invest checklist · 22 Unpopular opinion · 32 Why it's not growing · 34 Comment for resource</li>
-      </ul>
-    </div>
-    <div class="pegcard">
-      <h4><span class="dot" style="background:var(--p2)"></span>TIER 2 — solid filler</h4>
-      <ul>
-        <li><b>Money systems:</b> 1 Small win · 4 Pay yourself first · 15 From $0 · 21 Where to start · 25 Emergency fund · 26 5-min move · 30 Volatile-market don'ts · 31 Instead of timing</li>
-        <li><b>Process/mindset:</b> 2 Costliest lesson · 5 Start scared · 6 Wish I knew · 11 Beginners get wrong · 12 My process · 23 Beginner vs pro · 28 Why people quit · 20 What I'm building · 35 DM me (weekend)</li>
-      </ul>
-    </div>
-    <div class="pegcard">
-      <h4><span class="dot" style="background:var(--p1)"></span>TIER 3 + demographic adds</h4>
-      <ul>
-        <li><b>TikTok-Search filler:</b> 3 Morning routine · 19 Free tools · 27 Why DCA wins · 33 Automate in 30s</li>
-        <li><b>YT 35–54 adds:</b> 36 401(k) match · 37 Backdoor Roth · 38 RSUs/ESPP · 39 Catch-up 50+ · 40 Generational 101</li>
-        <li><b>TikTok 25–34 adds:</b> 41 First paycheck · 42 First brokerage · 43 Buy vs rent · 44 Student loans · 45 Negotiation · 46 Custodial/529 · 47 Couples &amp; money</li>
-      </ul>
-    </div>
-  </div>
-  <p style="font-size:12px;color:var(--muted);margin-top:10px">Full bank with on-screen text + CTAs: <a href="TGW%20Evergreen%20Reel%20Bank.md" target="_blank" style="color:var(--mint)">TGW Evergreen Reel Bank.md</a> (ships with this site). #24 needs its live APR re-verified whenever it posts. Note 30 ("What NOT to do in a volatile market") pairs naturally with any selloff week — held in reserve since Tue's react covers the same ground deeper.</p>
-  </details>
-
-  <div class="bridge">
-    <span class="k">◆ The bridge message — say it every week</span>
-    <p>Top posts pull people in with <b>markets, credit, and "how I did X."</b> The Discord pitch is investing. Connect them: <b>"Fix your credit → get approved for funding → open a brokerage → then put that capital to work."</b> One ladder, not two products. (This week it's literal: Sat's APR sort → Tue's don't-panic math → Thu's first chart lesson.)</p>
-  </div>
-
-  <footer>
-    <b>TGW Weekly Content Engine · Jul 20 – 26</b> · the $3.3-trillion, Fed-eve week<br>
-    3 + 1 cadence: $3.3T selloff react Tue · candlestick evergreen Thu · EYL collab react Sat (MUST-SHIP, #16 standby) · "The $3.3 Trillion Week" podcast Sun · Mon/Wed/Fri = prep &amp; engage<br>
-    <span style="color:var(--muted)">Every published asset carries "educational content only — not financial advice." No trade recs, no price predictions. Earnings actuals + Fed odds get FILLED before the podcast records.</span>
-  </footer>
-
+<h2 class="sec" id="anchor">The Anchor — Sunday podcast (records &amp; publishes Sun Aug 2)</h2>
+<div class="anchor">
+<span class="tag">P6 · FED WEEK SPECIAL</span>
+<h3>"The Week The Fed Blinked (Or Didn't) — $4 Gas, The Rate Verdict, And Your 2027"</h3>
+<p class="why">Fed decides Wed 2pm (~80% hold priced, hike risk live with core PCE at 3.4% and Brent near $97) · June PCE + Q2 GDP Thu 8:30am · MSFT/META Wed + AAPL/AMZN Thu earnings. Through-line: is money cheaper or more expensive for your family in 2027? The episode EARNS the hook with the receipts — segment bodies stay measured and sourced.</p>
+<div class="when">🎙 Records <b>Sunday AM</b> → edit → <b>FINAL VERSION PUBLISHES SUNDAY</b> · rundown + screen-share dashboard below · age-split: podcast = the 35–54 family/retirement cut; the week's reels carry the 25–34 first-milestone cuts</div>
 </div>
-<script>
-  document.querySelectorAll('.dayhead').forEach(function(h){
-    h.addEventListener('click',function(e){
-      if(e.target.classList.contains('tog'))return;
-      h.parentElement.classList.toggle('open');
-    });
-  });
-  document.querySelectorAll('.tog').forEach(function(b){
-    b.addEventListener('click',function(e){e.stopPropagation();b.classList.toggle('on');});
-  });
-</script>
+
+<h2 class="sec" id="glance">This week at a glance</h2>
+<div class="glance">
+<div class="gl"><div class="d">Mon 27</div><div class="t">PREP · strike check · stage assets · engage</div></div>
+<div class="gl post"><div class="d">Tue 28</div><div class="t">📹 STUDIO DAY + POST: $4-gas Fed-eve react</div></div>
+<div class="gl"><div class="d">Wed 29</div><div class="t">FOMC 2pm · engage · 4th drop ONLY if surprise</div></div>
+<div class="gl post"><div class="d">Thu 30</div><div class="t">POST: 2-lines chart evergreen (PCE+GDP 8:30a)</div></div>
+<div class="gl"><div class="d">Fri 31</div><div class="t">PREP · clip-cutting · community</div></div>
+<div class="gl post"><div class="d">Sat 1</div><div class="t">POST: Caleb Hammer collab react (IG-first 3pm)</div></div>
+<div class="gl pod"><div class="d">Sun 2</div><div class="t">🎙 PODCAST FINAL + PUBLISH</div></div>
+</div>
+
+<h2 class="sec" id="plan">The 7-day plan — click any day for everything</h2>
+<div class="ladder">
+
+<!-- MON -->
+<div class="day">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">MON<small>Jul 27</small></div>
+<span class="pill" style="background:rgba(138,155,168,.15);color:var(--muted)">PREP</span>
+<div class="hook">Prep + engage — no recording (standing rule)</div>
+<div class="fmt">No post</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+<ul class="clean">
+<li><b>Strike/admin check:</b> YouTube Studio → Channel violations — the warning is in week 4; deal with it BEFORE Tuesday's upload.</li>
+<li>Stage Tuesday's session: print/load all three scripts (<code>scripts/scripts.md</code>), queue the b-roll galleries below, charge everything.</li>
+<li>Community: reply to every comment on the two EYL reacts (the vein is hot — 12 net comments on TikTok last week, first positive week in a month); drop the Seg-2 podcast teaser clip from last week's episode.</li>
+<li>IG gap fix: last week's $3.3T react never went up on IG — post it today as a catch-up story/reel if it still reads fresh (pre-FOMC it does).</li>
+</ul>
+</div></div>
+</div>
+
+<!-- TUE -->
+<div class="day key">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">TUE<small>Jul 28</small></div>
+<span class="pill" style="background:rgba(255,122,89,.15);color:var(--p6)">P6 · REACT</span>
+<div class="hook">Gas just crossed $4 — $360/yr out of your family's pocket, and tomorrow it corners the Fed</div>
+<div class="fmt">Greenscreen</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+
+<div class="playcard"><div class="t">The play</div>
+<div class="playrow"><b>Pillar</b><div>P6 NEWS/REACT — concrete consumer event (the audit's every all-time winner is concrete; the pump is the most concrete number in America)</div></div>
+<div class="playrow"><b>Peg</b><div>AAA $4.09 (first $4+ since 2022, +15¢/wk) · Brent $77→$97 on Hormuz strikes · FOMC decides TOMORROW 2pm</div></div>
+<div class="playrow"><b>Who</b><div>US working-age drivers; TikTok/IG 25–34 core (paycheck-cycle stakes), YT 35–54 (family budget + car loan)</div></div>
+<div class="playrow"><b>Angle</b><div>TikTok/IG cut: "your fill-up + your first car loan" · YouTube cut: "your family's $360 + what the Fed does to your refi" (same recording, two intros)</div></div>
+<div class="playrow"><b>Post</b><div>📹 Records Tue AM (studio day). TikTok <b>2–3pm ET</b> (this week's confirmed spike) · IG <b>3pm</b> · YT Short <b>AM</b> (indexes early). Comment-trigger CTA (news day): "comment PUMP for the 3-move sheet"</div></div>
+</div>
+
+<div class="smap"><div class="t">Story map — Sora pass (adjustment #4: Beat 5 re-uses Beat 1's literal words)</div>
+<div class="smaprow"><span class="ts">0:00–0:02</span><span class="bn">Cold open</span><span class="ln">"$360 a year — that's what the pump just took" <i>· cut: captioned TUE_V2 night station · loop OPENS</i></span></div>
+<div class="smaprow"><span class="ts">0:02–0:08</span><span class="bn">Stakes</span><span class="ln">"if you drive to work, this is YOUR line item" <i>· cut: TUE_V4 driving · cost attached to viewer</i></span></div>
+<div class="smaprow"><span class="ts">0:08–0:35</span><span class="bn">Rising Pt 1</span><span class="ln">oil chain: Hormuz → $97 Brent → 2–4wk lag <i>· cuts: TUE_V6 tanker (PT 1 header) → TUE_V5 truck · small loop closes</i></span></div>
+<div class="smaprow"><span class="ts">0:35–0:55</span><span class="bn">Rising Pt 2</span><span class="ln">the Fed corner: 3.4% core PCE + $4 gas → tomorrow 2pm <i>· cut: TUE_V1 (PT 2 header) · escalation: national stakes</i></span></div>
+<div class="smaprow"><span class="ts">0:55–1:15</span><span class="bn">Payoff</span><span class="ln">the $360 defense — $30/mo → $36,599 at 7%/30yr ON the tile <i>· cut: TUE_T1 payoff tile (PT 3) · BIG loop closes</i></span></div>
+<div class="smaprow"><span class="ts">1:15–1:25</span><span class="bn">Loop-close</span><span class="ln">"that's how you take the $360 back" — literal Beat-1 number <i>· cut: TUE_V8 sunset · Discord bridge → sign-off LAST</i></span></div>
+</div>
+
+<div class="platgrid">
+<div class="platrowx tt"><b>TikTok</b><div>Full 1:25 react, 25–34 cut ("your fill-up, your first car loan") · 2–3pm ET · caption sells the $360 + tomorrow's 2pm decision · comment-trigger "PUMP"</div></div>
+<div class="platrowx ig"><b>IG Reel</b><div>Same cut, native upload · 3pm ET peak · bottom-strip kicker experiment ("THE FED SEES IT TOO") — watch retention vs TikTok's plain version</div></div>
+<div class="platrowx yt"><b>YT Short</b><div>35–54 intro swap: "your family's $360 — and tomorrow's Fed call decides your refi" · AM post · "full breakdown Sunday on the podcast" outro</div></div>
+</div>
+
+<div class="hooks">
+<div class="hookline"><b>Cold open ≤5w</b>$4 Gas Costs You $360</div>
+<div class="hookline"><b>Sustained ≤12w</b>Gas Hit $4.09 — 3 Ways It Reaches Your Money Tomorrow</div>
+</div>
+
+<div class="gal"><div class="t">Backgrounds — captioned set + spares (Wolf picks final cuts)</div>
+<div class="galgrid">
+<div><video src="broll/TUE/captioned/TUE_V2_gas-station-night.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">INTRO · hook box</div></div>
+<div><video src="broll/TUE/captioned/TUE_V6_oil-tanker-ship.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">PT 1 · Follow The Oil</div></div>
+<div><video src="broll/TUE/captioned/TUE_V1_gas-station-daylight.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">PT 2 · The Fed's Corner</div></div>
+<div><img src="broll/TUE/captioned/TUE_T1_payoff_360-defense.jpg" alt="payoff tile"><div class="galcap">PT 3 · payoff data tile</div></div>
+<div><video src="broll/TUE/spares/TUE_V4_driving-city.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">spare · stakes beat</div></div>
+<div><video src="broll/TUE/spares/TUE_V8_gas-station-sunset.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">spare · loop-close</div></div>
+<div><img src="broll/TUE/photos/TUE_P1_pump-sunset.jpg" alt="pump"><div class="galcap">photo spare / thumb</div></div>
+</div></div>
+
+<details class="script"><summary>▸ Full word-for-word script (read cold, riff welcome)</summary><div class="sc">Three hundred and sixty dollars a year. That's what the gas pump just started taking from your household — and most people haven't even noticed yet.
+
+*[Cut to driving shot]*
+
+Here's the receipt. AAA's national average hit four dollars and nine cents a gallon this week — up fifteen cents in one week, up thirty cents in three. First time we've been over four bucks since 2022. If your household runs two cars, that thirty-cent jump alone is about thirty dollars a month — three hundred sixty a year. Check it yourself: your gas app or the AAA site shows your state's average today.
+
+But the pump is just the last domino. Let me show you the chain — because it ends at YOUR car loan tomorrow at 2pm.
+
+*[PT 1 · Follow The Oil — tanker clip]*
+
+First domino: oil. A barrel of Brent crude — that's the world's benchmark price for oil, basically the sticker price every refinery works off — was seventy-seven dollars three weeks ago. Friday it closed near ninety-seven. That's a twenty-six percent jump. Why? Drone and missile attacks around the Strait of Hormuz — a strip of water off Iran that about a fifth of the world's oil sails through. When tankers get hit there, traders price in the risk before a single barrel goes missing. Oil up, gas follows about two to four weeks later — which is exactly the lag we just lived through.
+
+Therefore domino two is already falling —
+
+*[PT 2 · The Fed's Corner — station daylight]*
+
+— and it lands on the Federal Reserve tomorrow. The Fed is the country's central bank; its one big lever is interest rates, and it decides tomorrow, Wednesday, at 2pm Eastern. Here's the corner they're in: their favorite inflation gauge — core PCE, think of it as the receipt check on everything Americans buy, minus food and energy — is running at 3.4 percent. Their target is 2. Now $4 gas is pushing the headline number the WRONG way. Markets put roughly 80 percent odds on the Fed holding rates where they are, at about three and a half to three and three-quarters percent — but a surprise hike is genuinely on the table for the first time in years. And a hold at these levels still means your card APR — the price tag on borrowing — stays parked above 22 percent, and car loans stay expensive. That's how a strait in Iran reaches your monthly payment.
+
+But here's the part you actually control —
+
+*[PT 3 · Take The $360 Back — payoff tile ON screen]*
+
+— the three-sixty defense. Three moves, ten minutes. One: stop buying premium if your car doesn't require it — check the fuel door, not the vibes; that's twenty to forty cents a gallon back instantly. Two: every big gas app and most grocery chains run fuel-points programs — five to ten cents a gallon, stacked on a flat-rate cash-back card, and a two-car household claws back ten to fifteen dollars a month. Three — and this is the one that compounds — if you free up that thirty dollars a month and put it into a boring index fund instead, at the market's long-run average of about seven percent that's not three hundred sixty dollars a year. Run it for thirty years and it's about thirty-six thousand six hundred dollars. The pump takes $360; the market gives you thirty-six grand back. Same thirty bucks.
+
+*[Sunset station. Slow down.]*
+
+So when you see the Fed's decision tomorrow at 2pm, you'll know exactly why it happened and what it means at the pump. We're tracking the whole Fed week live in the Discord — link in bio.
+
+That's how you take the three hundred and sixty back. It's Wolf, I'm outta here.</div></details>
+</div></div>
+</div>
+
+<!-- WED -->
+<div class="day">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">WED<small>Jul 29</small></div>
+<span class="pill" style="background:rgba(138,155,168,.15);color:var(--muted)">FOMC · PREP</span>
+<div class="hook">Fed decision 2pm + Warsh presser 2:30 · MSFT/META after close — engage day; 4th drop ONLY on a surprise</div>
+<div class="fmt">Conditional</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+<ul class="clean">
+<li><b>2:00pm:</b> decision drops. <b>~80% priced for a HOLD at 3.50–3.75%.</b> If HOLD: no post — feed the decision into Thursday's community post and Sunday's podcast (fill the dashboard's FILL-LIVE fields now).</li>
+<li><b>If the Fed HIKES (the surprise):</b> that's a major-peg 4th drop. Record a same-day react off the FILL-LIVE frame below — cold open "They Actually Raised Rates," reuse Tuesday's station backgrounds, ship inside the 2–7pm band.</li>
+<li>MSFT + META report after close — capture the AI-spend quotes for the podcast dashboard (panel 3).</li>
+<li>Community: poll — "Did the Fed get it right?" + reply sweep on Tuesday's react.</li>
+</ul>
+<div class="gal"><div class="t">Release-day frame (blanks + verify banner)</div>
+<div class="galgrid">
+<div><img src="greenscreen/WED/WED_T1_FILLLIVE_fomc.jpg" alt="FOMC fill-live frame"><div class="galcap">FILL LIVE · verify before posting</div></div>
+</div></div>
+</div></div>
+</div>
+
+<!-- THU -->
+<div class="day key">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">THU<small>Jul 30</small></div>
+<span class="pill" style="background:rgba(52,229,163,.15);color:var(--p1)">P1 · TRADE</span>
+<div class="hook">Everyone panicked about the selloff — these 2 lines say whether your retirement decade actually moved</div>
+<div class="fmt">Chart / GS</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+
+<div class="playcard"><div class="t">The play</div>
+<div class="playrow"><b>Pillar</b><div>P1 TRADE — the weekly chart-read evergreen (95K–125K search-durable vein; never skipped)</div></div>
+<div class="playrow"><b>Peg</b><div>Our OWN TikTok Search query this week: "how to read advanced stock chart" + SPY live sitting below its 50-day / above its 200-day after the Alphabet/Tesla selloff — the lesson IS the live chart</div></div>
+<div class="playrow"><b>Who</b><div>TikTok Search traffic (50% of views) — chart-education searchers, male 25–44; YT 35–54 gets the retirement-decade frame</div></div>
+<div class="playrow"><b>Angle</b><div>TikTok/IG: "read the chart before you panic-sell your first portfolio" · YT: "which decade you retire in" (same body, two intros)</div></div>
+<div class="playrow"><b>Post</b><div>Recorded Tue (same session) · ships Thu <b>OFF-peak AM</b> (evergreen compounds via Search regardless — peak windows are spent on reach-spikes) · soft CTA. NOTE: PCE + GDP drop 8:30am — any same-day story/mention uses the FILL-LIVE frame, numbers verified first.</div></div>
+</div>
+
+<div class="smap"><div class="t">Story map</div>
+<div class="smaprow"><span class="ts">0:00–0:02</span><span class="bn">Cold open</span><span class="ln">"the market fell — these 2 lines say how much it matters" <i>· captioned THU_V2 · loop OPENS: which line broke?</i></span></div>
+<div class="smaprow"><span class="ts">0:02–0:08</span><span class="bn">Stakes</span><span class="ln">"this decides if you panic-sell or keep buying" <i>· THU_V5 trader thinking</i></span></div>
+<div class="smaprow"><span class="ts">0:08–0:30</span><span class="bn">Rising Pt 1</span><span class="ln">what a moving average IS (rolling report card) <i>· THU_V3 stylus (PT 1) · small loop closes</i></span></div>
+<div class="smaprow"><span class="ts">0:30–0:52</span><span class="bn">Rising Pt 2</span><span class="ln">50 vs 200, LIVE SPY numbers · tease "one cross ends bull markets" <i>· THU_V6 (PT 2) · big loop held</i></span></div>
+<div class="smaprow"><span class="ts">0:52–1:15</span><span class="bn">Payoff</span><span class="ln">death cross / golden cross + the +46-pt gap ON the tile <i>· THU_T1 tile (PT 3) · loop closes</i></span></div>
+<div class="smaprow"><span class="ts">1:15–1:25</span><span class="bn">Loop-close</span><span class="ln">"next selloff, check the two lines before the panic" — literal Beat-1 image <i>· THU_V8 · Discord bridge → sign-off</i></span></div>
+</div>
+
+<div class="platgrid">
+<div class="platrowx tt"><b>TikTok</b><div>Full 1:25, search-optimized caption (the query verbatim: "how to read advanced stock chart") · AM post · soft CTA link-in-bio</div></div>
+<div class="platrowx ig"><b>IG Reel</b><div>Same cut, AM — IG explainer tier is low-ceiling, this one's for Search/completeness; the week's IG bet is Saturday</div></div>
+<div class="platrowx yt"><b>YT Short</b><div>"Which decade you retire in" intro (35–54) · "full chart walk on Sunday's podcast" outro · AM</div></div>
+</div>
+
+<div class="hooks">
+<div class="hookline"><b>Cold open ≤5w</b>2 Lines Beat The Panic</div>
+<div class="hookline"><b>Sustained ≤12w</b>SPY Broke Its 50-Day Line — Here's What That Actually Means</div>
+</div>
+
+<div class="gal"><div class="t">Backgrounds — captioned set + spares</div>
+<div class="galgrid">
+<div><video src="broll/THU/captioned/THU_V2_tablet-candles-ma-line.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">INTRO · hook box</div></div>
+<div><video src="broll/THU/captioned/THU_V3_stylus-tablet-ma.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">PT 1 · What The Line Is</div></div>
+<div><video src="broll/THU/captioned/THU_V6_tablet-chart-hand.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">PT 2 · The 50 And The 200</div></div>
+<div><img src="broll/THU/captioned/THU_T1_payoff_spy-lines.jpg" alt="payoff tile"><div class="galcap">PT 3 · payoff data tile</div></div>
+<div><video src="broll/THU/spares/THU_V7_tablet-down-arrows.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">spare · down-turn beat</div></div>
+<div><video src="broll/THU/spares/THU_V8_stylus-touch-candles.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">spare · loop-close</div></div>
+<div><img src="broll/THU/photos/THU_P1_bearish-chart.jpg" alt="bearish chart"><div class="galcap">photo spare / thumb</div></div>
+<div><img src="greenscreen/THU/THU_T2_FILLLIVE_pce-gdp.jpg" alt="PCE GDP fill live"><div class="galcap">FILL LIVE · PCE/GDP 8:30am</div></div>
+</div></div>
+
+<details class="script"><summary>▸ Full word-for-word script</summary><div class="sc">The market just fell — and these two lines tell you whether it actually matters. Most people watching last week's selloff have never checked either one.
+
+*[Trader at desk]*
+
+And that's the difference between panic-selling at the bottom and knowing what you're looking at. Sixty seconds, you'll read charts like the pros do.
+
+*[PT 1 · What The Line Is — stylus tracing]*
+
+That smooth line running through the candles is a moving average. Plain English: take the closing price from each of the last 50 days, average them, and draw a dot. Do that every day and connect the dots — that's the 50-day moving average. It's the market's rolling report card — one bad day barely moves it, which is exactly the point. The candles are the market's mood; the line is its habit.
+
+But one line alone tells you nothing — the signal comes from using two —
+
+*[PT 2 · The 50 And The 200]*
+
+— the 50-day and the 200-day. The 50 is the market's short-term trend; the 200 is the long-term one. Here's the live read, real numbers from Friday's close: SPY — the ETF that tracks the S&P 500, basically a basket of the 500 biggest US companies — closed at 738.93. Its 50-day average is about 745. So price is sitting roughly one percent BELOW the 50-day line — that's the "selloff" everyone felt. But the 200-day average is about 698.50 — and price is almost six percent ABOVE it. Short-term wobble, long-term uptrend still intact. You can check this yourself in about ten seconds: open any chart app, tap indicators, add SMA 50 and SMA 200. That's it — same two lines the pros put on first.
+
+Therefore the only question left is the one that actually ends bull markets —
+
+*[PT 3 · The Cross — payoff tile]*
+
+— what happens when the lines cross. When the 50-day falls UNDER the 200-day, traders call it a death cross — the short-term habit has gotten worse than the long-term one. When it climbs back above, that's a golden cross. Right now SPY's 50-day sits about 46 points ABOVE its 200-day — nowhere near a cross. So the two-line read on last week's "crash": price dipped under a rising 50-day, inside an intact long-term uptrend. That's a pullback reading, not a collapse reading — and now you know the difference between headlines and trend. To be clear, this is how to READ the chart, not a signal to buy or sell anything.
+
+*[Stylus on candles]*
+
+We break down one chart like this every week in the Discord — link in bio.
+
+Next selloff, check the two lines before you touch the sell button. It's Wolf, I'm outta here.</div></details>
+</div></div>
+</div>
+
+<!-- FRI -->
+<div class="day">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">FRI<small>Jul 31</small></div>
+<span class="pill" style="background:rgba(138,155,168,.15);color:var(--muted)">PREP</span>
+<div class="hook">Clip-cutting + community — stage Saturday's collab react</div>
+<div class="fmt">No post</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+<ul class="clean">
+<li>Capture AAPL + AMZN results (reported Thu after close) into the podcast dashboard panel 3.</li>
+<li>Stage Saturday's react: screen-record the Caleb Hammer clip (instructions in Saturday's card), verify the 22.15% APR is still the current Fed G.19 figure, load the payoff tile.</li>
+<li>Cut 2 podcast teasers from Tuesday/Thursday footage using the planted-line list in the rundown.</li>
+<li>Community: quick-tip post — the statement's "Minimum Payment Warning" box (primes Saturday's topic).</li>
+</ul>
+</div></div>
+</div>
+
+<!-- SAT -->
+<div class="day key">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">SAT<small>Aug 1</small></div>
+<span class="pill" style="background:rgba(255,143,177,.15);color:var(--p5)">COLLAB · IG-1ST</span>
+<div class="hook">Caleb Hammer's guest pays $92/month for NOTHING — the 19-year trap, run on our calculator</div>
+<div class="fmt">React / stitch</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+
+<div class="playcard"><div class="t">The play</div>
+<div class="playrow"><b>Pillar</b><div>COLLAB/GUEST-REACTION (IG's ~100× format) × P2 CREDIT (the cross-platform vein). Keeps last week's proven shape: creator claim on screen → run OUR calculator → verdict (that shape just hit 103.2% avg viewed)</div></div>
+<div class="playrow"><b>Peg</b><div>Panel creator this week = Caleb Hammer (rotation). A real Financial Audit money-tension moment + avg card APR at 22.15% while the Fed just held — the "rates aren't coming down for you" week makes minimum payments a live wire</div></div>
+<div class="playrow"><b>Who</b><div>IG-first (the format lives there) · male 25–44 wealth-builders · anyone carrying a balance (25–34 first-milestone cut: the first car you own outright)</div></div>
+<div class="playrow"><b>Angle</b><div>TikTok/IG: "$6,861 back = your first owned car" · YT: "19 years is a childhood — fix it before the kids' timeline" (two intros, one body)</div></div>
+<div class="playrow"><b>Post</b><div>Recorded Tue (react bench) or Fri stage · <b>IG FIRST at 3pm ET peak</b> (spend the peak on the reach-spike format) · TikTok 2–3pm · YT Short after · hard-DM CTA allowed (weekend): "DM AUDIT for the calculator"</div></div>
+</div>
+
+<div class="smap"><div class="t">Story map</div>
+<div class="smaprow"><span class="ts">0:00–0:02</span><span class="bn">Cold open</span><span class="ln">Caleb clip freeze — guest: "I just pay the minimum" <i>· creator clip top-half, quote VERBATIM in box · loop OPENS: how long does the debt live?</i></span></div>
+<div class="smaprow"><span class="ts">0:02–0:08</span><span class="bn">Stakes</span><span class="ln">"if you've ever tapped 'pay minimum,' this is your statement" <i>· captioned SAT_V1</i></span></div>
+<div class="smaprow"><span class="ts">0:08–0:30</span><span class="bn">Rising Pt 1</span><span class="ln">mechanism: minimum = interest + 1% · $92 of month one goes to the bank <i>· SAT_V6 (PT 1) · receipt: Minimum Payment Warning box</i></span></div>
+<div class="smaprow"><span class="ts">0:30–0:55</span><span class="bn">Rising Pt 2</span><span class="ln">the sentence: 231 months = 19.2 years, $8,159 interest <i>· SAT_V3 (PT 2) · tease: "the exit costs $250"</i></span></div>
+<div class="smaprow"><span class="ts">0:55–1:18</span><span class="bn">Payoff</span><span class="ln">$250 fixed → 2.2 yrs, keep $6,861 — ON the tile + tonight's autopay action <i>· SAT_T1 tile (PT 3) · loop closes</i></span></div>
+<div class="smaprow"><span class="ts">1:18–1:28</span><span class="bn">Loop-close</span><span class="ln">"19 years or 2 — same card, your call" — literal Beat-1 number <i>· SAT_V7 bills · Discord bridge → sign-off</i></span></div>
+</div>
+
+<div class="platgrid">
+<div class="platrowx ig"><b>IG FIRST</b><div>Native reel, 3pm ET peak · caption box = the guest's contestable quote verbatim (EYL caption rule) · this is the week's IG bet — the format that does ~100×</div></div>
+<div class="platrowx tt"><b>TikTok</b><div>Stitch/duet framing if the clip allows; else green-screen react · 2–3pm spike · hard-DM CTA "AUDIT" (weekend rule)</div></div>
+<div class="platrowx yt"><b>YT Short</b><div>35–54 intro: "19 years is a childhood" · after the IG/TT drops · funnels to Sunday's episode segment 4</div></div>
+</div>
+
+<div class="hooks">
+<div class="hookline"><b>Cold open ≤5w</b>$92/Month For 19 Years</div>
+<div class="hookline"><b>Sustained ≤12w</b>The Minimum-Payment Trap: $5,000 Becomes 19 Years — Here's The Exit</div>
+<div class="hookline"><b>Creator clip</b>Screen-record 10–15s of a recent Financial Audit episode where the guest admits minimum payments on a ~$5K balance; clip top-half of frame; INTRO box carries the guest's line VERBATIM (e.g. "I Just Pay The Minimum"). Credit @CalebHammer on screen + caption.</div>
+</div>
+
+<div class="gal"><div class="t">Backgrounds — captioned set + spares (creator clip is the intro layer)</div>
+<div class="galgrid">
+<div><video src="broll/SAT/captioned/SAT_V1_holding-credit-card.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">STAKES · hook box</div></div>
+<div><video src="broll/SAT/captioned/SAT_V6_money-on-keyboard.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">PT 1 · What The Minimum Is</div></div>
+<div><video src="broll/SAT/captioned/SAT_V3_couple-bank-card.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">PT 2 · The 19-Year Sentence</div></div>
+<div><img src="broll/SAT/captioned/SAT_T1_payoff_250-exit.jpg" alt="payoff tile"><div class="galcap">PT 3 · payoff data tile</div></div>
+<div><video src="broll/SAT/spares/SAT_V7_twenty-dollar-bills.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">spare · loop-close</div></div>
+<div><video src="broll/SAT/spares/SAT_V2_card-online-shopping.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">spare · flexible</div></div>
+<div><img src="broll/SAT/photos/SAT_P1_cards-on-table.jpg" alt="cards"><div class="galcap">photo spare / thumb</div></div>
+</div></div>
+
+<details class="script"><summary>▸ Full word-for-word script</summary><div class="sc">*[Caleb Hammer clip plays top-half — guest admits the minimum payment. Freeze it. Point up at the quote.]*
+
+Pause. He just said the quiet part — he pays the minimum. That five-thousand-dollar balance? It's going to live for nineteen years. Let me prove it.
+
+*[Hand holding credit card]*
+
+And if you've ever tapped "pay minimum" on your own card app, this is your statement too — so stay with me, because the exit costs less than most car payments.
+
+*[PT 1 · What The Minimum Actually Is]*
+
+First, the mechanism, because the banks count on you never looking. Your minimum payment is usually the month's interest plus just one percent of what you owe. APR is the price tag on borrowing — and the average card right now charges about 22 percent. On a five-thousand-dollar balance that's ninety-two dollars of interest in month one. So a hundred-and-forty-dollar minimum payment? Ninety-two goes to the bank, and less than fifty actually touches your debt. You're renting your own balance. The receipt is ON your statement — a box called the "Minimum Payment Warning," which by law shows how long minimums take. Go look at it after this.
+
+But how long is "long"? Therefore I ran the exact numbers —
+
+*[PT 2 · The 19-Year Sentence]*
+
+— five thousand dollars at twenty-two percent APR, paying minimums, no new spending on the card at all. It takes two hundred thirty-one months to die. That's nineteen point two YEARS. And the total interest along the way is about eight thousand one hundred fifty dollars — the bank makes more off the debt than the debt ever was. That's what Caleb's guest actually signed up for. Not a metaphor — that's the amortization math, and it's why the audit format makes people cry.
+
+But the exit is stupidly cheap compared to the sentence —
+
+*[PT 3 · The $250 Exit — payoff tile]*
+
+— here's the same five thousand at the same rate, but you fix the payment at two hundred fifty a month instead of the shrinking minimum. Paid off in 26 months — just over two years. Total interest: about thirteen hundred dollars. Same card, same rate, same debt — you keep six thousand eight hundred sixty-one dollars that the minimum-payment path hands to the bank. The action: tonight, open your card app, find autopay, and switch "minimum" to a FIXED amount — whatever you can hold, even one-fifty changes the math. And that six-thousand-eight-hundred you just kept? That's a used car, owned outright — the first car that's actually yours.
+
+*[Bills on table]*
+
+Respect to Caleb for making the trap visible — we run this calculator on real statements every week in the Discord, link in bio.
+
+Nineteen years or two — same card, your call. It's Wolf, I'm outta here.</div></details>
+</div></div>
+</div>
+
+<!-- SUN -->
+<div class="day podday">
+<div class="dayhead" onclick="this.parentElement.classList.toggle('open')">
+<div class="dow">SUN<small>Aug 2</small></div>
+<span class="pill" style="background:rgba(245,196,81,.18);color:var(--gold)">🎙 PODCAST FINAL + PUBLISH</span>
+<div class="hook">"The Week The Fed Blinked (Or Didn't)" — records AM, FINAL VERSION SHIPS TODAY (standing Sunday rule)</div>
+<div class="fmt">Long-form</div><div class="chev">▶</div>
+</div>
+<div class="daybody"><div class="daybody-in">
+
+<div class="playcard"><div class="t">The play — NEW STANDING SEGMENT: the podcast's final version publishes on this day, every week</div>
+<div class="playrow"><b>Pillar</b><div>Sunday anchor long-form (P6 concrete-event special) — the source recording all next week's clips cut from</div></div>
+<div class="playrow"><b>Peg</b><div>The completed Fed week: Wednesday's verdict + Thursday's PCE/GDP + all four Big Tech reports — the receipts are IN, the episode answers the through-line</div></div>
+<div class="playrow"><b>Who</b><div>YouTube 35–54 core (family/retirement stakes) — hooks routed accordingly at the 4 doctrine points only</div></div>
+<div class="playrow"><b>Angle</b><div>Through-line: "cheaper or more expensive for your family in 2027?" · planted clip lines carry the 25–34 cuts for the teasers</div></div>
+<div class="playrow"><b>Post</b><div>🎙 Record Sunday AM → edit → <b>PUBLISH the final version TODAY (AM–early-PM ET so it indexes)</b> · Seg-1 teaser Short ships Sun PM · refresh every FILL-LIVE field on the dashboard BEFORE recording</div></div>
+</div>
+
+<div class="smap"><div class="t">Episode arc (through-line held to Seg 4 — full rundown in the podcast fold below)</div>
+<div class="smaprow"><span class="ts">0:00–1:30</span><span class="bn">Cold open</span><span class="ln">word-for-word: $4 gas + the verdict + the one question — "cheaper or more expensive in 2027?" · loop OPENS</span></div>
+<div class="smaprow"><span class="ts">1:30–10:00</span><span class="bn">Seg 1</span><span class="ln">The Verdict (FILL LIVE) · 🖥 dashboard panel 1 · planted line: "your card is renting money at 22%"</span></div>
+<div class="smaprow"><span class="ts">10:00–18:00</span><span class="bn">Seg 2</span><span class="ln">$4 gas traced to the strait · panel 2 · planted line: "$360 you never voted on" · re-anchor re-opens loop</span></div>
+<div class="smaprow"><span class="ts">18:00–27:00</span><span class="bn">Seg 3</span><span class="ln">Big Tech receipts (FILL LIVE) + the two-lines SPY read · panel 3 · planted: "your 401k owns their homework"</span></div>
+<div class="smaprow"><span class="ts">27:00–35:00</span><span class="bn">Seg 4</span><span class="ln">the ANSWER + funding ladder + Discord Q&amp;A · panel 4 · loop CLOSES · planted: "the Fed decides the weather"</span></div>
+<div class="smaprow"><span class="ts">35:00+</span><span class="bn">Outro</span><span class="ln">word-for-word · D Waugh sign-off, then Wolf sign-off LAST</span></div>
+</div>
+
+<div class="gal"><div class="t">Episode inserts + Sun teaser backgrounds</div>
+<div class="galgrid">
+<div><video src="broll/PODCAST/captioned/POD_V1_flag-clock-tower.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">TEASER · title box</div></div>
+<div><video src="broll/PODCAST/spares/POD_V3_financial-district-street.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">insert · clean</div></div>
+<div><video src="broll/PODCAST/spares/POD_V4_skyscrapers-up.mp4" controls muted playsinline preload="metadata"></video><div class="galcap">insert · clean</div></div>
+<div><img src="broll/PODCAST/photos/POD_P1_manhattan-aerial.jpg" alt="manhattan"><div class="galcap">photo insert</div></div>
+</div></div>
+
+<div class="hooks">
+<div class="hookline"><b>Teaser cold-open</b>The Fed Just Chose</div>
+<div class="hookline"><b>Teaser sustained</b>Rates, $4 Gas, Big Tech — Your 2027 Verdict Tonight</div>
+<div class="hookline"><b>Screen-share</b>screenshare/fed-week-dashboard.html — 4 panels mapped to the 4 segments; FILL-LIVE fields editable on the page</div>
+</div>
+</div></div>
+</div>
+
+</div><!-- /ladder -->
+
+<!-- FOLDS -->
+<h2 class="sec" id="numbers">Reference — everything below folds</h2>
+
+<details class="fold" id="lastweek">
+<summary>📊 Last week's numbers (Jul 19–25) + the lean-into call</summary>
+<div class="fin">
+<div class="statgrid">
+<div class="stat"><h4>YouTube · 7-day</h4><div class="n">901 views</div><p>+169% · 10.6h (+167%) · <b>+4 subs → 422</b> · Scratch Ticket <b>799 (64.8%)</b> · EYL debt-vs-SPY react <b>55 @ 103.2% avg viewed — first fresh post over 100%</b> · ⚠ strike warning week 4</p></div>
+<div class="stat"><h4>TikTok · 7-day</h4><div class="n">2.8K views</div><p>+40.3% · likes 159 (+218%) · comments net +23 · Search 50% / For You 47.9% · top: option-chain Pt 2 <b>428</b> · scratch tickets <b>350+338</b> · candlesticks 272/96K · $3.3T react 195 (shipped Wed) · Search query: <b>"how to read advanced stock chart"</b></p></div>
+<div class="stat"><h4>Instagram</h4><div class="n">7,523</div><p>followers flat · EYL calc react <b>193</b> (78.5% non-foll.) · scratch react <b>209</b> · 30-day: 17.8K views · 88.3% non-followers · peak <b>3pm ET</b> · ⚠ Wed react never shipped on IG · age/gender still mobile-only</p></div>
+<div class="stat"><h4>The lean-into call</h4><div class="n">Feed the react vein</div><p><b>The collab streak is OVER</b> (shipped Fri, a day early) and the "creator claim → OUR calculator → verdict" shape produced the first &gt;100% avg-viewed post. This week: same shape (Caleb Hammer), concrete pump-price react Tue, search-demanded chart evergreen Thu.</p></div>
+</div>
+</div>
+</details>
+
+<details class="fold">
+<summary>⚙️ How the engine runs (cadence + rules)</summary>
+<div class="fin">
+<ul class="clean">
+<li><b>Cadence:</b> 3 short-form posts (Tue react · Thu chart evergreen · Sat collab) + the Sunday podcast anchor. Non-posting days are labeled PREP/ENGAGE. A 4th drop only on a major peg (this week: a surprise Fed HIKE).</li>
+<li><b>Recording:</b> never Monday (Wolf's rule). Tuesday = studio day (react AM + Thu evergreen + Sat collab bench); Wednesday backup. Sunday podcast unaffected.</li>
+<li><b>NEW (this run):</b> Sunday's block is <b>PODCAST FINAL + PUBLISH</b> — the finished episode ships Sunday, on the board, every week.</li>
+<li><b>Hook doctrine:</b> life outcome + specific number, viewer-subject test on every hook, banned clichés out. <b>Sora pass:</b> 5-beat spine, but/therefore only, countdown, mid-video re-hook, payoff last, loop-close re-uses Beat 1's literal words (adjustment #4).</li>
+<li><b>CTAs:</b> soft weekdays · comment-trigger on news days ("PUMP" Tue) · hard DM weekends only ("AUDIT" Sat).</li>
+<li>Education, not advice — every asset carries the disclaimer; no trade recs, no price predictions.</li>
+</ul>
+</div>
+</details>
+
+<details class="fold" id="podcast">
+<summary>🎙 This week's podcast — full rundown (final version publishes Sunday)</summary>
+<div class="fin">
+<p style="font-size:13.5px;color:#cdd8e1;margin-top:12px"><b class="gold">Through-line (opened cold, answered in Seg 4):</b> "After this week — the Fed's verdict, $4 gas, and Big Tech's earnings — is money getting cheaper or more expensive for your family in 2027?"</p>
+<table class="tbl">
+<tr><th>Time</th><th>Segment</th><th>Points + cues</th></tr>
+<tr><td>0:00–1:30</td><td><b>Cold open</b> (word-for-word)</td><td>$4 gas · the verdict · the question · "stay to the end — it decides your car loan, card rate, and any refi this year"</td></tr>
+<tr><td>1:30–10:00</td><td><b>Seg 1 · The Verdict</b></td><td>FILL LIVE: hold/hike + Warsh quote · core PCE 3.4 vs target 2.0 (✏️ circle the gap) · 🖥 dashboard panel 1 · 🎬 planted: "your card is renting money at 22 percent" · re-anchor → "the pump writes your budget — next"</td></tr>
+<tr><td>10:00–18:00</td><td><b>Seg 2 · $4 Gas</b></td><td>AAA $4.09 · Brent $77→$97 (Hormuz) · rockets-and-feathers lag · $360/household math · EIA ~$3.80 Q3 IF quiet · 🖥 panel 2 · 🎬 "a strait in Iran added $360 you never voted on"</td></tr>
+<tr><td>18:00–27:00</td><td><b>Seg 3 · Big Tech receipts</b></td><td>FILL LIVE: MSFT/META (Wed) + AAPL/AMZN (Thu) verdicts + AI-capex quotes · SPY two-lines read (✏️ draw the lines) · 🖥 panel 3 · 🎬 "your 401k owns their homework"</td></tr>
+<tr><td>27:00–35:00</td><td><b>Seg 4 · Your 2027</b></td><td>Answer the through-line from the filled receipts · funding ladder IN FULL · Sat reel's $6,861 example · Discord Q&amp;A ×3 · 🖥 panel 4 · 🎬 "the Fed decides the weather — your credit score decides your house"</td></tr>
+<tr><td>35:00+</td><td><b>Outro</b> (word-for-word)</td><td>recap 3 moves (fixed payment · two lines · $30 pump-back) · Discord · D Waugh sign-off → Wolf sign-off LAST</td></tr>
+</table>
+<p style="font-size:13px;color:var(--muted);margin-top:12px">Sources to re-verify Sunday AM: FOMC statement + presser · BEA June PCE + Q2 GDP · AAA average · Brent close · Fed G.19 22.15% APR · 4 earnings releases · SPY MA recompute. Full rundown: <code>scripts/podcast-rundown.md</code> · dashboard: <a href="screenshare/fed-week-dashboard.html" style="color:var(--mint)">screenshare/fed-week-dashboard.html</a></p>
+</div>
+</details>
+
+<details class="fold" id="pegs">
+<summary>📰 Live news pegs — verified Jul 26 (re-verify before each recording)</summary>
+<div class="fin">
+<div class="statgrid">
+<div class="stat"><h4>Wed Jul 29 · 2:00pm ET</h4><div class="n">FOMC decision</div><p>Going in: 3.50–3.75%, ~80% hold priced, <b>hike risk live</b> (some desks call 4.00%). No dot plot — statement + Warsh presser (2:30) carry the signal.</p></div>
+<div class="stat"><h4>Thu Jul 30 · 8:30am ET</h4><div class="n">PCE + GDP</div><p>June Personal Income &amp; Outlays (May: headline 4.1% / core 3.4% — highest since Oct '23) + Q2 GDP advance (Q1: +2.1%). Last inflation read before September's meeting.</p></div>
+<div class="stat"><h4>Wed–Thu after close</h4><div class="n">Big Tech</div><p>MSFT + META (Wed) · AAPL + AMZN (Thu). After Alphabet/Tesla sank last week on AI-capex fear — these four ARE the market's verdict.</p></div>
+<div class="stat"><h4>The consumer story</h4><div class="n">$4.09 gas</div><p>AAA national avg Jul 23, +15¢/wk, first $4+ since 2022 · Brent ~$97 (+26% in 2 wks) on Strait-of-Hormuz strikes · EIA Q3 outlook ~$3.80 IF it calms. No jobs report this week (next NFP ~Aug 7).</p></div>
+</div>
+</div>
+</details>
+
+<details class="fold" id="why">
+<summary>🧭 Why this week's lineup (pillar × peg × audience)</summary>
+<div class="fin">
+<table class="tbl">
+<tr><th>Day</th><th>Proven pillar (what wins)</th><th>Timely peg (what's now)</th><th>Audience (who's watching)</th></tr>
+<tr><td><b>Tue</b></td><td>P6 concrete react — every all-time reach winner is a concrete event</td><td>$4.09 gas + Fed-eve — the most concrete number in America, 18 hours before the decision</td><td>All-platform; peak window spent here (reach-spike) · comment-trigger CTA</td></tr>
+<tr><td><b>Thu</b></td><td>P1 chart evergreen — the 95K–125K search-durable vein, never skipped</td><td>Our own Search query this week asked for it verbatim; SPY's 50/200 story is live after the selloff</td><td>TikTok Search (50% of traffic), male 25–44 · off-peak, compounds regardless</td></tr>
+<tr><td><b>Sat</b></td><td>Collab/guest-react — IG's ~100× format; the shape just hit 103.2% avg viewed</td><td>Caleb Hammer (panel rotation) + 22.15% APR in the week the Fed didn't help borrowers</td><td>IG-first at 3pm peak · male 25–44 wealth-builders · hard-DM weekend CTA</td></tr>
+<tr><td><b>Sun</b></td><td>Anchor long-form — the week's clip source</td><td>The completed Fed week: verdict + PCE/GDP + 4 earnings reports IN hand</td><td>YT 35–54 family/retirement cut · publishes SAME DAY (new standing rule)</td></tr>
+</table>
+<p style="font-size:13px;color:var(--muted);margin-top:10px">Age-split on the flagship: Tue's react records ONE body with TWO intros — TikTok/IG 25–34 ("your fill-up, your first car loan") and YT 35–54 ("your family's $360, your refi"). Data-explainer check: PCE/GDP day gets NO standalone explainer — release-day numbers ride the FILL-LIVE frame and the podcast (audit rule: abstract data only when pegged concrete).</p>
+</div>
+</details>
+
+<details class="fold" id="audience">
+<summary>👥 Your audience — best times + who's watching (refreshed Jul 26)</summary>
+<div class="fin">
+<div class="statgrid">
+<div class="stat"><h4>Best posting windows (ET)</h4><div class="n">TT 2–3p · IG 3p · YT AM</div><p><b>TikTok:</b> most-active Jul 23, 2–3pm — the hour oscillates inside 12–7pm; spend it on reach-spikes. <b>IG:</b> peak 3pm (1,881 active), strong 9a–6p. <b>YT:</b> "when viewers online" still no data — long-form AM (indexing), Shorts into the evening band.</p></div>
+<div class="stat"><h4>TikTok demographics</h4><div class="n">M82 · 25-34 41%</div><p>Male 82% / Female 17% · 25–34 = 40.9%, 35–44 = 26.1%, 45–54 = 9.1% · US 94.7%. Viewers-also-watched: Carterpcs, Credit Karma, tradepulse.edge — tech/finance-tool adjacents.</p></div>
+<div class="stat"><h4>YouTube demographics</h4><div class="n">M100 · 35-54 61%</div><p>Male 100% (7-day) · 35–44 = 39.3% top · 45–54 = 21.6% · 55–64 = 7.2% · US 78.7% · mobile 77.8% / TV 15.7% · 98.3% of watch time non-subscribed → discovery channel; route family/retirement stakes here.</p></div>
+<div class="stat"><h4>Instagram</h4><div class="n">88% non-followers</div><p>7,523 followers · 30-day reach 12,238 · Reels = 99.3% of interactions · peak 3pm ET · ⚠ age/gender/location still MOBILE-ONLY — pull from the app when possible (gap stands).</p></div>
+<div class="stat"><h4>Content gaps by demographic</h4><div class="n">Ideas feed</div><p>YT 35–54 → 401(k) match/true-up, backdoor Roth, RSUs (bank #36–40). TikTok 25–34 → first brokerage, buy-vs-rent, student loans (#41–45). Parents/female reach → custodial/529, couples-and-money (#46–47). Bonds explainer gap still open ("best treasury bonds to buy 2026" query, 2 wks running).</p></div>
+</div>
+</div>
+</details>
+
+<details class="fold" id="bank">
+<summary>🎬 Evergreen Reel Bank — this week's pull + the tiers</summary>
+<div class="fin">
+<p style="font-size:13.5px;color:#cdd8e1;margin-top:12px"><b class="mint">This week's pull: NONE — full slate.</b> Tue react + Thu evergreen + Sat collab + Sun podcast leaves no open evergreen slot under the 3+1 cadence. Standby: the collab SHIPPED last week (streak over), so reel #16's drop-dead clause stands down — it stays staged as a general backup. #30 (volatile-market) stays held for the next true selloff week. A surprise-hike 4th drop would be a fresh react, not a bank pull. Full bank ships with this site: <a href="TGW%20Evergreen%20Reel%20Bank.md" style="color:var(--mint)">TGW Evergreen Reel Bank.md</a></p>
+<table class="tbl">
+<tr><th>Tier</th><th>Reels (# · title · on-screen · CTA)</th></tr>
+<tr><td><b class="mint">TIER 1 · IG-priority</b></td><td>7 Behind TGW · 8 Real work day · 9 Why I started · 13 Discord transformation · 16 Think vs reality (staged) · 17 Before vs after · 29 When it got real (all soft) — debate/save-bait: 10 Investing myth · 14 Bad money advice · 18 Before you invest · 22 Unpopular opinion · 32 Why it's not growing · 34 Comment [WORD] (comment-trigger)</td></tr>
+<tr><td><b class="gold">TIER 2 · filler</b></td><td>1 Small wins · 2 Costliest lesson · 4 Pay yourself first · 5 Start scared · 6 Wish I knew · 11 Beginners get wrong · 12 My process · 15 From $0 · 20 What I'm building · 21 Where to start · 23 Beginner vs pro · 25 Emergency fund · 26 5-min move · 28 Why people quit · 30 Volatile market (HELD) · 31 Do this instead · 35 DM me (hard, wknd)</td></tr>
+<tr><td><b>TIER 3 · TT-Search</b></td><td>3 Morning routine · 19 Free tools · 27 Why DCA wins · 33 Automate it</td></tr>
+<tr><td><b>Demo adds 36–47</b></td><td>YT 35–54: 36 401(k) match · 37 Backdoor Roth · 38 RSUs · 39 Catch-up 50+ · 40 Generational 101 — TT 25–34: 41 First paycheck · 42 First brokerage · 43 Buy vs rent · 44 Student loans · 45 Negotiation — Parents/female reach: 46 Custodial/529 · 47 Couples &amp; money</td></tr>
+</table>
+</div>
+</details>
+
+<div class="bridge">
+<h3>The bridge — one ladder, not four products</h3>
+<p><b>Fix the credit</b> (Sat: the $250 exit) → <b>get approved for funding</b> → <b>open a brokerage</b> (Thu: read the chart before you fund it) → <b>put capital to work</b> (Tue: the $30/mo that becomes $36K). The Fed sets the weather; the ladder is your house. Say it on every multi-product touch.</p>
+</div>
+
+<footer style="margin-top:40px;font-family:var(--mono);font-size:11px;color:var(--muted)">
+TGW Weekly Content Engine · week of Jul 27 – Aug 2, 2026 · built Jul 26 · educational content only — not financial advice · scripts: scripts/scripts.md · rundown: scripts/podcast-rundown.md · hooks: greenscreen/greenscreen-and-hooks.md
+</footer>
+</div>
 </body>
 </html>

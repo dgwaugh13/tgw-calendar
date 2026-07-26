@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGW · Fed Week Dashboard · Jul 27 – Aug 2, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59;
+--disp:'Space Grotesk',sans-serif;--body:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:var(--body);padding:40px;background-image:radial-gradient(1000px 500px at 80% -10%,rgba(52,229,163,.07),transparent 60%)}
+h1{font-family:var(--disp);font-size:34px;letter-spacing:-.02em}
+.sub{font-family:var(--mono);color:var(--muted);font-size:14px;margin-top:6px}
+.tabs{display:flex;gap:10px;margin:28px 0}
+.tab{font-family:var(--mono);font-size:14px;padding:10px 20px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
+.tab.on{background:var(--mint);color:#04120c;border-color:var(--mint);font-weight:600}
+.panel{display:none}.panel.on{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.big{font-family:var(--disp);font-size:44px;font-weight:700}
+.big.mint{color:var(--mint)}.big.gold{color:var(--gold)}.big.red{color:var(--red)}
+.note{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.5}
+.fill{background:var(--panel2);border:1px dashed var(--gold);border-radius:10px;padding:10px 14px;margin-top:10px}
+.fill input{background:transparent;border:none;outline:none;color:var(--gold);font-family:var(--disp);font-size:26px;font-weight:700;width:100%}
+.fill label{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.bar{height:14px;background:var(--panel2);border-radius:7px;overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;border-radius:7px}
+.warn{background:rgba(255,122,89,.12);border:1px solid rgba(255,122,89,.4);color:#ffd9cd;border-radius:12px;padding:14px 18px;font-size:14px;margin:22px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left}
+th{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+td.num{font-family:var(--mono)}
+.mint{color:var(--mint)}.gold{color:var(--gold)}.red{color:var(--red)}
+footer{margin-top:34px;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<h1>TGW · Fed Week — <span style="color:var(--gold)">Cheaper Or More Expensive In <span style="color:var(--mint)">2027</span>?</span></h1>
+<div class="sub">Episode dashboard · recorded &amp; published Sun Aug 2, 2026 · sources verified Jul 26 — refresh FILL-LIVE fields before recording</div>
+<div class="warn">⚠ Gold dashed boxes are FILL-LIVE — type the real numbers after Wed 2pm (FOMC) and Thu 8:30am (PCE/GDP) releases. Educational content only — not financial advice.</div>
+<div class="tabs">
+<div class="tab on" data-p="p1">1 · Fed Corner</div>
+<div class="tab" data-p="p2">2 · Oil &amp; Pump</div>
+<div class="tab" data-p="p3">3 · Earnings Week</div>
+<div class="tab" data-p="p4">4 · Your Household</div>
+</div>
+
+<div class="panel on" id="p1">
+<div class="grid">
+<div class="card"><h3>Fed funds target (going in)</h3><div class="big">3.50–3.75%</div><div class="note">Held since June. No dot plot at this meeting — the signal is the statement + Warsh's presser.</div>
+<div class="fill"><label>Decision Wed Jul 29, 2pm ET</label><input placeholder="HOLD / HIKE to __.__–__.__%"></div></div>
+<div class="card"><h3>Core PCE (Fed's gauge) — May</h3><div class="big red">3.4%</div><div class="note">Highest since Oct 2023 · target is 2.0% · headline PCE 4.1%. June prints Thu 8:30am.</div>
+<div class="fill"><label>Core PCE, June (Thu)</label><input placeholder="_._%"></div></div>
+<div class="card"><h3>The gap the Fed stares at</h3>
+<div class="note" style="margin-top:0">Core PCE 3.4% vs target 2.0%</div>
+<div class="bar"><i style="width:100%;background:var(--red)"></i></div><div class="note">3.4% — where prices are running</div>
+<div class="bar"><i style="width:59%;background:var(--mint)"></i></div><div class="note">2.0% — where they're supposed to be. Real fed funds ≈ +0.2% — barely restrictive.</div></div>
+<div class="card"><h3>Market odds going in</h3><div class="big gold">~80% hold</div><div class="note">CME-implied. A hike would be the first since 2023 — and the surprise scenario that moves everything on this page.</div>
+<div class="fill"><label>One Warsh line (presser)</label><input placeholder="&quot;...&quot;"></div></div>
+</div>
+</div>
+
+<div class="panel" id="p2">
+<div class="grid">
+<div class="card"><h3>AAA national average gas</h3><div class="big red">$4.09</div><div class="note">Jul 23 · +15¢ in one week · first $4+ average since 2022. <span class="gold">Refresh Sunday AM.</span></div></div>
+<div class="card"><h3>Brent crude, 2 weeks</h3><div class="big gold">$77 → $97</div><div class="note">+26% since Jul 10 — drone/missile attacks around the Strait of Hormuz (~1/5 of world oil transits it).</div></div>
+<div class="card"><h3>The pipeline lag</h3><div class="note" style="margin-top:0;font-size:15px">Crude → wholesale → your corner station takes <b class="gold">2–4 weeks</b>. Prices rocket up, feather down. EIA's Q3 outlook: ~$3.80/gal average IF the strait quiets.</div></div>
+<div class="card"><h3>2-car household math</h3>
+<table><tr><th>Line</th><th>Number</th></tr>
+<tr><td>Jump, 3 weeks</td><td class="num red">$3.79 → $4.09 (+30¢)</td></tr>
+<tr><td>~100 gal/month</td><td class="num red">+$30 /month</td></tr>
+<tr><td>Over a year</td><td class="num red">+$360</td></tr>
+<tr><td>Per 15-gal fill-up</td><td class="num">+$4.50</td></tr></table></div>
+</div>
+</div>
+
+<div class="panel" id="p3">
+<div class="grid">
+<div class="card"><h3>Last week's setup</h3><div class="note" style="margin-top:0;font-size:15px">Alphabet + Tesla fell on their reports (Tesla's worst intraday in a year) · Nasdaq: first back-to-back weekly loss since March · the question: does the AI capex ever pay back?</div></div>
+<div class="card"><h3>Wed Jul 29 after close</h3><div class="big">MSFT · META</div>
+<div class="fill"><label>MSFT verdict</label><input placeholder="beat/miss + AI-spend quote"></div>
+<div class="fill"><label>META verdict</label><input placeholder="beat/miss + AI-spend quote"></div></div>
+<div class="card"><h3>Thu Jul 30 after close</h3><div class="big">AAPL · AMZN</div>
+<div class="fill"><label>AAPL verdict</label><input placeholder="beat/miss"></div>
+<div class="fill"><label>AMZN verdict</label><input placeholder="beat/miss + AWS capex"></div></div>
+<div class="card"><h3>SPY — the two lines (Fri Jul 24)</h3>
+<table><tr><th>Line</th><th>Level</th><th>Read</th></tr>
+<tr><td>Close</td><td class="num">738.93</td><td></td></tr>
+<tr><td>50-day avg</td><td class="num">≈745</td><td class="red">0.8% below</td></tr>
+<tr><td>200-day avg</td><td class="num">≈698.5</td><td class="mint">5.8% above</td></tr>
+<tr><td>50 vs 200 gap</td><td class="num mint">+46 pts</td><td class="mint">no death cross</td></tr></table>
+<div class="note">Pullback reading, not collapse reading. Recompute Sunday.</div></div>
+</div>
+</div>
+
+<div class="panel" id="p4">
+<div class="grid">
+<div class="card"><h3>Borrowing (the expensive side)</h3>
+<table><tr><th>Item</th><th>Now</th></tr>
+<tr><td>Avg card APR (Fed G.19, assessed interest)</td><td class="num red">≈22.15%</td></tr>
+<tr><td>$5,000 balance, minimums only</td><td class="num red">19.2 yrs · $8,159 interest</td></tr>
+<tr><td>Same card, fixed $250/mo</td><td class="num mint">2.2 yrs · $1,298</td></tr>
+<tr><td>You keep</td><td class="num mint">$6,861</td></tr></table></div>
+<div class="card"><h3>Saving / investing (the fair side)</h3>
+<table><tr><th>Item</th><th>Now</th></tr>
+<tr><td>HYSAs still paying</td><td class="num mint">~4%</td></tr>
+<tr><td>$30/mo (the pump money) @7%, 30y</td><td class="num mint">$36,599</td></tr>
+<tr><td>Long-term trend (SPY vs 200-day)</td><td class="num mint">intact</td></tr></table></div>
+<div class="card"><h3>The through-line answer</h3>
+<div class="fill"><label>Cheaper or more expensive in 2027? (fill after Wed/Thu)</label><input placeholder="the one-sentence verdict"></div>
+<div class="note">Pre-recording read: more expensive for borrowers, flat-to-better for savers — unless Warsh surprised.</div></div>
+<div class="card"><h3>The funding ladder (say it in full)</h3>
+<div class="note" style="margin-top:0;font-size:16px;line-height:1.7">Fix the credit → get approved for funding → open the brokerage → put capital to work.<br><span class="gold">The Fed sets the weather. Your credit score decides your house.</span></div></div>
+</div>
+</div>
+
+<footer>ThinkinGenWealth · sources: Federal Reserve, BEA, AAA, EIA, CME FedWatch, company releases · educational content only — not financial advice</footer>
+<script>
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
+t.classList.add('on');document.getElementById(t.dataset.p).classList.add('on');}));
+</script>
+</body>
+</html>
