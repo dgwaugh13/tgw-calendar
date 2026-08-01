@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TGW · Fed Week Dashboard · Jul 27 – Aug 2, 2026</title>
+<title>TGW · Fed Week Dashboard · FINAL · Sun Aug 2, 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59;
@@ -11,34 +11,40 @@
 body{background:var(--ink);color:var(--text);font-family:var(--body);padding:40px;background-image:radial-gradient(1000px 500px at 80% -10%,rgba(52,229,163,.07),transparent 60%)}
 h1{font-family:var(--disp);font-size:34px;letter-spacing:-.02em}
 .sub{font-family:var(--mono);color:var(--muted);font-size:14px;margin-top:6px}
-.tabs{display:flex;gap:10px;margin:28px 0}
+.tabs{display:flex;gap:10px;margin:28px 0;flex-wrap:wrap}
 .tab{font-family:var(--mono);font-size:14px;padding:10px 20px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
 .tab.on{background:var(--mint);color:#04120c;border-color:var(--mint);font-weight:600}
 .panel{display:none}.panel.on{display:block}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card.wide{grid-column:1/-1}
 .card h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-.big{font-family:var(--disp);font-size:44px;font-weight:700}
+.big{font-family:var(--disp);font-size:44px;font-weight:700;line-height:1.05}
 .big.mint{color:var(--mint)}.big.gold{color:var(--gold)}.big.red{color:var(--red)}
 .note{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.5}
-.fill{background:var(--panel2);border:1px dashed var(--gold);border-radius:10px;padding:10px 14px;margin-top:10px}
-.fill input{background:transparent;border:none;outline:none;color:var(--gold);font-family:var(--disp);font-size:26px;font-weight:700;width:100%}
-.fill label{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
 .bar{height:14px;background:var(--panel2);border-radius:7px;overflow:hidden;margin-top:10px}
 .bar i{display:block;height:100%;border-radius:7px}
-.warn{background:rgba(255,122,89,.12);border:1px solid rgba(255,122,89,.4);color:#ffd9cd;border-radius:12px;padding:14px 18px;font-size:14px;margin:22px 0}
+.ok{background:rgba(52,229,163,.10);border:1px solid rgba(52,229,163,.38);color:#bff3de;border-radius:12px;padding:14px 18px;font-size:14px;margin:22px 0}
+.warn{background:rgba(245,196,81,.10);border:1px solid rgba(245,196,81,.38);color:#f6e3b6;border-radius:12px;padding:14px 18px;font-size:14px;margin:22px 0}
 table{width:100%;border-collapse:collapse;font-size:15px}
 td,th{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left}
 th{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
 td.num{font-family:var(--mono)}
 .mint{color:var(--mint)}.gold{color:var(--gold)}.red{color:var(--red)}
-footer{margin-top:34px;font-size:13px;color:var(--muted)}
+.payoff{background:linear-gradient(140deg,#131A22,#16232c);border:1px solid var(--mint);border-radius:18px;padding:34px;text-align:center}
+.payoff .kick{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.payoff .num{font-family:var(--disp);font-size:92px;font-weight:700;color:var(--mint);line-height:1;margin:12px 0}
+.payoff .cap{font-size:16px;color:#cdd8e1;max-width:640px;margin:0 auto;line-height:1.6}
+.seg{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(245,196,81,.4);border-radius:20px;padding:4px 12px;margin-bottom:14px}
+.q{font-size:15px;color:#cdd8e1;font-style:italic;line-height:1.6}
+footer{margin-top:34px;font-size:13px;color:var(--muted);line-height:1.7}
+.draw{font-size:13.5px;color:var(--gold);margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
 </style>
 </head>
 <body>
 <h1>TGW · Fed Week — <span style="color:var(--gold)">Cheaper Or More Expensive In <span style="color:var(--mint)">2027</span>?</span></h1>
-<div class="sub">Episode dashboard · recorded &amp; published Sun Aug 2, 2026 · sources verified Jul 26 — refresh FILL-LIVE fields before recording</div>
-<div class="warn">⚠ Gold dashed boxes are FILL-LIVE — type the real numbers after Wed 2pm (FOMC) and Thu 8:30am (PCE/GDP) releases. Educational content only — not financial advice.</div>
+<div class="sub">Episode dashboard · records &amp; publishes Sun Aug 2, 2026 · <span style="color:var(--mint)">FINAL — every number verified Sat Aug 1</span></div>
+<div class="ok">✅ <b>ZERO BLANK FIELDS.</b> All FILL-LIVE placeholders are closed with settled data. Only two numbers still move daily — <b>AAA gas</b> and <b>Brent</b> (Panel 2). Glance at both Sunday AM; everything else is final. Educational content only — not financial advice.</div>
 <div class="tabs">
 <div class="tab on" data-p="p1">1 · Fed Corner</div>
 <div class="tab" data-p="p2">2 · Oil &amp; Pump</div>
@@ -46,81 +52,181 @@ footer{margin-top:34px;font-size:13px;color:var(--muted)}
 <div class="tab" data-p="p4">4 · Your Household</div>
 </div>
 
+<!-- ══════════ PANEL 1 ══════════ -->
 <div class="panel on" id="p1">
+<div class="seg">Segment 1 · 1:30–10:30 · The Verdict That Wasn't</div>
 <div class="grid">
-<div class="card"><h3>Fed funds target (going in)</h3><div class="big">3.50–3.75%</div><div class="note">Held since June. No dot plot at this meeting — the signal is the statement + Warsh's presser.</div>
-<div class="fill"><label>Decision Wed Jul 29, 2pm ET</label><input placeholder="HOLD / HIKE to __.__–__.__%"></div></div>
-<div class="card"><h3>Core PCE (Fed's gauge) — May</h3><div class="big red">3.4%</div><div class="note">Highest since Oct 2023 · target is 2.0% · headline PCE 4.1%. June prints Thu 8:30am.</div>
-<div class="fill"><label>Core PCE, June (Thu)</label><input placeholder="_._%"></div></div>
+
+<div class="card"><h3>FOMC decision · Wed Jul 29, 2pm ET</h3><div class="big">HELD<br><span style="font-size:32px">3.50–3.75%</span></div>
+<div class="note">Unchanged since June. No dot plot at this meeting — the signal was the statement plus Warsh's presser. Markets had priced ~80% hold going in.</div></div>
+
+<div class="card"><h3>The vote nobody covered</h3><div class="big red">9 – 3</div>
+<div class="note"><b class="gold">All three dissents wanted a HIKE.</b> Hammack, Kashkari and Logan each "preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting." Not a Fed getting ready to cut.</div></div>
+
+<div class="card"><h3>Core PCE — June (released Thu Jul 30)</h3><div class="big red">3.3%</div>
+<div class="note">Down from 3.4% in May · +0.1% m/m · headline PCE 3.7% y/y, −0.1% m/m. Cooling, still 1.3 pts above target. <span class="gold">Q2 GDP advance: 1.5%</span> — slower than expected.</div></div>
+
 <div class="card"><h3>The gap the Fed stares at</h3>
-<div class="note" style="margin-top:0">Core PCE 3.4% vs target 2.0%</div>
-<div class="bar"><i style="width:100%;background:var(--red)"></i></div><div class="note">3.4% — where prices are running</div>
-<div class="bar"><i style="width:59%;background:var(--mint)"></i></div><div class="note">2.0% — where they're supposed to be. Real fed funds ≈ +0.2% — barely restrictive.</div></div>
-<div class="card"><h3>Market odds going in</h3><div class="big gold">~80% hold</div><div class="note">CME-implied. A hike would be the first since 2023 — and the surprise scenario that moves everything on this page.</div>
-<div class="fill"><label>One Warsh line (presser)</label><input placeholder="&quot;...&quot;"></div></div>
-</div>
-</div>
+<div class="note" style="margin-top:0">Core PCE 3.3% vs the 2.0% target</div>
+<div class="bar"><i style="width:100%;background:var(--red)"></i></div><div class="note">3.3% — where prices are actually running</div>
+<div class="bar"><i style="width:61%;background:var(--mint)"></i></div><div class="note">2.0% — where they're supposed to be</div>
+<div class="note"><b class="gold">Real fed funds: 3.625% − 3.3% = +0.33%</b> — barely restrictive. That third of a percent is the entire dissent.</div></div>
 
-<div class="panel" id="p2">
-<div class="grid">
-<div class="card"><h3>AAA national average gas</h3><div class="big red">$4.09</div><div class="note">Jul 23 · +15¢ in one week · first $4+ average since 2022. <span class="gold">Refresh Sunday AM.</span></div></div>
-<div class="card"><h3>Brent crude, 2 weeks</h3><div class="big gold">$77 → $97</div><div class="note">+26% since Jul 10 — drone/missile attacks around the Strait of Hormuz (~1/5 of world oil transits it).</div></div>
-<div class="card"><h3>The pipeline lag</h3><div class="note" style="margin-top:0;font-size:15px">Crude → wholesale → your corner station takes <b class="gold">2–4 weeks</b>. Prices rocket up, feather down. EIA's Q3 outlook: ~$3.80/gal average IF the strait quiets.</div></div>
-<div class="card"><h3>2-car household math</h3>
-<table><tr><th>Line</th><th>Number</th></tr>
-<tr><td>Jump, 3 weeks</td><td class="num red">$3.79 → $4.09 (+30¢)</td></tr>
-<tr><td>~100 gal/month</td><td class="num red">+$30 /month</td></tr>
-<tr><td>Over a year</td><td class="num red">+$360</td></tr>
-<tr><td>Per 15-gal fill-up</td><td class="num">+$4.50</td></tr></table></div>
-</div>
-</div>
+<div class="card wide"><h3>Warsh at the press conference — verbatim</h3>
+<p class="q">"This is a period of watchful thinking, not watchful waiting."</p>
+<p class="q" style="margin-top:10px">"The Fed has one inflation target." — no soft target above 2%; five years of elevated prices "has taken a toll on consumers and businesses."</p>
+<p class="q" style="margin-top:10px">"The markets have done quite a bit." — on rising Treasury yields tightening conditions <i>for</i> the Fed. <span class="gold">This line is the whole Segment 4 payoff.</span></p>
+<div class="note">Statement language: inflation "remains elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, <b>including energy</b>." Jobs: "gains have kept pace with the workforce."</div></div>
 
-<div class="panel" id="p3">
-<div class="grid">
-<div class="card"><h3>Last week's setup</h3><div class="note" style="margin-top:0;font-size:15px">Alphabet + Tesla fell on their reports (Tesla's worst intraday in a year) · Nasdaq: first back-to-back weekly loss since March · the question: does the AI capex ever pay back?</div></div>
-<div class="card"><h3>Wed Jul 29 after close</h3><div class="big">MSFT · META</div>
-<div class="fill"><label>MSFT verdict</label><input placeholder="beat/miss + AI-spend quote"></div>
-<div class="fill"><label>META verdict</label><input placeholder="beat/miss + AI-spend quote"></div></div>
-<div class="card"><h3>Thu Jul 30 after close</h3><div class="big">AAPL · AMZN</div>
-<div class="fill"><label>AAPL verdict</label><input placeholder="beat/miss"></div>
-<div class="fill"><label>AMZN verdict</label><input placeholder="beat/miss + AWS capex"></div></div>
-<div class="card"><h3>SPY — the two lines (Fri Jul 24)</h3>
-<table><tr><th>Line</th><th>Level</th><th>Read</th></tr>
-<tr><td>Close</td><td class="num">738.93</td><td></td></tr>
-<tr><td>50-day avg</td><td class="num">≈745</td><td class="red">0.8% below</td></tr>
-<tr><td>200-day avg</td><td class="num">≈698.5</td><td class="mint">5.8% above</td></tr>
-<tr><td>50 vs 200 gap</td><td class="num mint">+46 pts</td><td class="mint">no death cross</td></tr></table>
-<div class="note">Pullback reading, not collapse reading. Recompute Sunday.</div></div>
-</div>
-</div>
+<div class="card"><h3>Market reaction, Fed day</h3>
+<table><tr><th>Index</th><th>Wed Jul 29</th></tr>
+<tr><td>SPY (S&amp;P 500)</td><td class="num red">740.86 → 729.46 · −1.54%</td></tr>
+<tr><td>QQQ (Nasdaq 100)</td><td class="num red">675.49 → 661.73 · −2.04%</td></tr></table>
+<div class="note">A hold was priced. The dissents were not.</div></div>
 
-<div class="panel" id="p4">
-<div class="grid">
-<div class="card"><h3>Borrowing (the expensive side)</h3>
+<div class="card"><h3>What it means for your card</h3>
 <table><tr><th>Item</th><th>Now</th></tr>
-<tr><td>Avg card APR (Fed G.19, assessed interest)</td><td class="num red">≈22.15%</td></tr>
+<tr><td>Avg card APR — accounts assessed interest (Fed G.19)</td><td class="num red">22.15%</td></tr>
+<tr><td>Avg card APR — all accounts</td><td class="num">20.94%</td></tr>
 <tr><td>$5,000 balance, minimums only</td><td class="num red">19.2 yrs · $8,159 interest</td></tr>
 <tr><td>Same card, fixed $250/mo</td><td class="num mint">2.2 yrs · $1,298</td></tr>
-<tr><td>You keep</td><td class="num mint">$6,861</td></tr></table></div>
-<div class="card"><h3>Saving / investing (the fair side)</h3>
-<table><tr><th>Item</th><th>Now</th></tr>
-<tr><td>HYSAs still paying</td><td class="num mint">~4%</td></tr>
-<tr><td>$30/mo (the pump money) @7%, 30y</td><td class="num mint">$36,599</td></tr>
-<tr><td>Long-term trend (SPY vs 200-day)</td><td class="num mint">intact</td></tr></table></div>
-<div class="card"><h3>The through-line answer</h3>
-<div class="fill"><label>Cheaper or more expensive in 2027? (fill after Wed/Thu)</label><input placeholder="the one-sentence verdict"></div>
-<div class="note">Pre-recording read: more expensive for borrowers, flat-to-better for savers — unless Warsh surprised.</div></div>
-<div class="card"><h3>The bridge — two lanes (say the guardrail)</h3>
-<div class="note" style="margin-top:0;font-size:16px;line-height:1.7"><b>Lane 1 · Credit &amp; business:</b> fix the score → borrow cheaper → business funding.<br><b>Lane 2 · Investing:</b> earned income only, through the brokerage.<br><span class="red">Never margin. Never borrowed money in the market.</span><br><span class="gold">The Fed sets the weather. Your credit score decides your house.</span></div></div>
-</div>
+<tr><td><b>You keep</b></td><td class="num mint"><b>$6,861</b></td></tr></table>
+<div class="draw">✏️ DRAW: circle 3.3 vs 2.0 on the gap bars, then circle the 9–3. Two circles, nothing else.</div></div>
+
+</div></div>
+
+<!-- ══════════ PANEL 2 ══════════ -->
+<div class="panel" id="p2">
+<div class="seg">Segment 2 · 10:30–18:30 · Four-Dollar Gas, Traced To Its Source</div>
+<div class="warn">🔄 These two tiles move daily — glance at gasprices.aaa.com and a Brent quote Sunday AM before you roll. Values below are as of Sat Aug 1.</div>
+<div class="grid">
+
+<div class="card"><h3>AAA national average · regular</h3><div class="big red">$4.091</div>
+<div class="note">Week ago $4.060 (+3.1¢) · month ago $3.860 (+23.1¢) · <b class="gold">year ago $3.137 (+95.4¢, +30.4%)</b></div></div>
+
+<div class="card"><h3>Brent crude · Fri Jul 31 close</h3><div class="big gold">$90.24</div>
+<div class="note"><b>+26% over July.</b> But ~7% BELOW the ~$97 peak of Jul 24 — and gas still rose 3¢ this week. That divergence IS the segment.</div></div>
+
+<div class="card"><h3>Strait of Hormuz</h3><div class="big">~1 in 5</div>
+<div class="note">barrels of the world's oil transit a 2-mile-wide lane. Vessel traffic has collapsed to <b class="red">~30–35% of pre-conflict levels</b>. Tankers reroute the long way — slower transit means less supply arriving on time.</div></div>
+
+<div class="card"><h3>The pipeline lag — "rockets and feathers"</h3>
+<div class="note" style="margin-top:0;font-size:15px;line-height:1.7">Crude → refinery → terminal → your corner station takes <b class="gold">2–4 weeks</b>. The sign today is pricing oil from three weeks ago. Prices rocket up on the way in and feather down on the way out — the station raises fast and lowers slow.</div></div>
+
+<div class="card wide"><h3>2-car household math · ~100 gallons/month</h3>
+<table><tr><th>Comparison</th><th>Per gallon</th><th>Per month</th><th>Per year</th><th>Per 15-gal fill</th></tr>
+<tr><td>vs one year ago ($3.137)</td><td class="num red">+95.4¢</td><td class="num red">+$95.40</td><td class="num red"><b>+$1,145</b></td><td class="num red">+$14.31</td></tr>
+<tr><td>vs one month ago ($3.860)</td><td class="num red">+23.1¢</td><td class="num red">+$23.10</td><td class="num red">+$277</td><td class="num red">+$3.47</td></tr>
+<tr><td>1-car household, vs a year ago (~50 gal)</td><td class="num">+95.4¢</td><td class="num red">+$47.70</td><td class="num red">+$572</td><td class="num">+$14.31</td></tr></table>
+<div class="note"><b class="gold">RECEIPT for the viewer:</b> bank app → search transactions for your gas station → set range to July 2026, note the total → set it to July 2025 → compare. That's <i>their</i> number, not the national average.</div>
+<div class="draw">✏️ DRAW: drag from $97 (Jul 24) down to $90.24 (Jul 31), then point at $4.091 going UP anyway. One gesture teaches the entire lag.</div></div>
+
+</div></div>
+
+<!-- ══════════ PANEL 3 ══════════ -->
+<div class="panel" id="p3">
+<div class="seg">Segment 3 · 18:30–27:00 · Big Tech's Split Verdict</div>
+<div class="grid">
+
+<div class="card wide"><h3>The reaction days — actual closes, no rounding</h3>
+<table><tr><th>Company</th><th>Reported</th><th>Next session</th><th>Close → Close</th><th>Move</th></tr>
+<tr><td><b>Microsoft</b></td><td>Wed Jul 29 PM</td><td>Thu Jul 30</td><td class="num">390.54 → 451.10</td><td class="num mint"><b>+15.5%</b></td></tr>
+<tr><td><b>Meta</b></td><td>Wed Jul 29 PM</td><td>Thu Jul 30</td><td class="num">585.61 → 539.03</td><td class="num red"><b>−8.0%</b></td></tr>
+<tr><td><b>Amazon</b></td><td>Thu Jul 30 PM</td><td>Fri Jul 31</td><td class="num">235.50 → 271.58</td><td class="num mint"><b>+15.3%</b></td></tr>
+<tr><td><b>Apple</b></td><td>Thu Jul 30 PM</td><td>Fri Jul 31</td><td class="num">333.43 → 308.91</td><td class="num red"><b>−7.4%</b></td></tr>
+<tr><td>Alphabet (sympathy)</td><td>Jul 22</td><td>Fri Jul 31</td><td class="num">333.66 → 356.13</td><td class="num mint">+6.7%</td></tr></table></div>
+
+<div class="card"><h3>Why the split — the metered-revenue test</h3>
+<div class="note" style="margin-top:0;font-size:15px;line-height:1.7"><b class="mint">REWARDED</b> — could point AI spend at a meter someone else pays:<br>· Microsoft: Azure <b>+43% y/y</b>, crossed $100B trailing<br>· Amazon: AWS <b>+36.7% y/y</b> — fastest in 18 quarters<br><br><b class="red">PUNISHED</b> — no external meter:<br>· Meta: capex guide raised to <b>$130–145B</b>, AI benefit framed as "internal efficiency"<br>· Apple: minimal owned AI infrastructure, next-quarter guide 9–11% vs ~12% wanted</div></div>
+
+<div class="card"><h3>The spend, for scale</h3>
+<table><tr><th>Company</th><th>AI capex</th></tr>
+<tr><td>Microsoft, quarter</td><td class="num">~$41B (+70% y/y)</td></tr>
+<tr><td>Meta, FY2026 guide</td><td class="num">$130–145B</td></tr>
+<tr><td>Alphabet, FY2026 guide</td><td class="num">$195–205B</td></tr></table>
+<div class="note">Both ends of the reaction spectrum are spending enormously. The market wasn't voting on the spending — it was voting on whether it could see the meter running.</div></div>
+
+<div class="card wide"><h3 style="color:var(--mint)">★ The receipt that protects the viewer — diversification, on a day they can look up</h3>
+<table><tr><th>Day</th><th>The blowup</th><th>The runner</th><th>What SPY did</th></tr>
+<tr><td><b>Thu Jul 30</b></td><td class="num red">META −8.0%</td><td class="num mint">MSFT +15.5%</td><td class="num mint"><b>729.46 → 741.69 · +1.68%</b></td></tr>
+<tr><td><b>Fri Jul 31</b></td><td class="num red">AAPL −7.4%</td><td class="num mint">AMZN +15.3%</td><td class="num mint"><b>741.69 → 747.03 · +0.72%</b></td></tr></table>
+<div class="note">Two of the largest companies on earth fell 7–8% and the S&amp;P fund closed <b class="mint">UP both days</b>. <b>RECEIPT:</b> brokerage app → your S&amp;P/total-market fund → 1-week chart. Then Apple's, same range. One has a cliff. Theirs doesn't.</div></div>
+
+<div class="card"><h3>SPY — the two lines (Fri Jul 31)</h3>
+<table><tr><th>Line</th><th>Level</th><th>Read</th></tr>
+<tr><td>Close</td><td class="num">747.03</td><td></td></tr>
+<tr><td>50-day avg</td><td class="num">744.99</td><td class="mint">+0.27% above</td></tr>
+<tr><td>200-day avg</td><td class="num">700.39</td><td class="mint">+6.66% above</td></tr>
+<tr><td>50 minus 200</td><td class="num mint">+44.6 pts</td><td class="mint">no death cross</td></tr></table>
+<div class="note"><b class="gold">This week's chart story:</b> last Sunday price was 0.8% BELOW the 50-day. It took that line back. Week: SPY +1.10%, QQQ +0.55%.</div>
+<div class="draw">✏️ DRAW: the 50-day flat, and the price crossing back above it. That crossing is the story.</div></div>
+
+</div></div>
+
+<!-- ══════════ PANEL 4 ══════════ -->
+<div class="panel" id="p4">
+<div class="seg">Segment 4 · 27:00–35:30 · The Answer</div>
+
+<div class="payoff">
+<div class="kick">The number that actually sets your 2027</div>
+<div class="num">6.66%</div>
+<div class="cap">The 30-year fixed mortgage rate this week — highest since last August. <b style="color:var(--gold)">The Fed held. The bond market hiked anyway.</b> Mortgages price off the 10-year Treasury (4.75% Fri), not off fed funds. Warsh said it out loud: "the markets have done quite a bit."</div>
 </div>
 
-<footer>ThinkinGenWealth · sources: Federal Reserve, BEA, AAA, EIA, CME FedWatch, company releases · educational content only — not financial advice</footer>
+<div class="grid" style="margin-top:22px">
+
+<div class="card"><h3>Where money is actually priced</h3>
+<table><tr><th>Rate</th><th>Fri Jul 31</th></tr>
+<tr><td>Fed funds target</td><td class="num">3.50–3.75%</td></tr>
+<tr><td>2-year Treasury</td><td class="num">4.28%</td></tr>
+<tr><td><b>10-year Treasury</b></td><td class="num gold"><b>4.75%</b></td></tr>
+<tr><td><b>30-year fixed mortgage</b></td><td class="num red"><b>6.66%</b></td></tr>
+<tr><td>Avg card APR (assessed interest)</td><td class="num red">22.15%</td></tr>
+<tr><td>Top high-yield savings</td><td class="num mint">~4.15%</td></tr>
+<tr><td>National average savings rate</td><td class="num red">0.38%</td></tr></table></div>
+
+<div class="card"><h3>What 6.66% costs · $400,000, 30-yr fixed</h3>
+<table><tr><th>Rate</th><th>Monthly</th><th>Total interest</th></tr>
+<tr><td class="red"><b>6.66% (now)</b></td><td class="num red"><b>$2,570.51</b></td><td class="num red">$525,383</td></tr>
+<tr><td>6.00%</td><td class="num">$2,398.20</td><td class="num">$463,353</td></tr>
+<tr><td>5.50%</td><td class="num mint">$2,271.16</td><td class="num mint">$417,616</td></tr></table>
+<div class="note"><b class="gold">6.66% vs 6.00% = +$172.31/month = +$2,068/year = +$62,030 over the loan.</b> Every 0.25% on a $400k loan ≈ $65.86/month, forever.</div></div>
+
+<div class="card"><h3>The 18-point spread nobody names</h3>
+<table><tr><th>Same $5,000</th><th>Per year</th></tr>
+<tr><td>In a 4.15% high-yield savings</td><td class="num mint">earns $207.50</td></tr>
+<tr><td>Sitting on a 22.15% card</td><td class="num red">costs $1,107.50</td></tr>
+<tr><td><b>Net swing</b></td><td class="num gold"><b>$900 / year</b></td></tr></table>
+<div class="note">18 percentage points. Bigger than anything the Fed was going to do to you Wednesday.</div></div>
+
+<div class="card"><h3>The through-line answer</h3>
+<div class="note" style="margin-top:0;font-size:16px;line-height:1.75"><b class="red">More expensive if you BORROW.</b> Cards 22.15%, 10-yr 4.75%, mortgages 6.66% — and three Fed officials just voted to raise, so the fall surprise skews UP.<br><br><b class="mint">Flat-to-better if you SAVE + INVEST.</b> HYSAs ~4.15% vs a 0.38% national average; the index reclaimed its 50-day and sits 6.66% over the 200-day.</div></div>
+
+<div class="card"><h3>The three moves — no prediction required</h3>
+<div class="note" style="margin-top:0;font-size:15px;line-height:1.8"><b class="gold">1 · The fixed payment.</b> $250 fixed instead of the minimum → 2.2 yrs not 19.2, keep <b class="mint">$6,861</b>. Card app → Payments → Autopay → Fixed → 250 → 2 days after payday.<br><b class="gold">2 · The gas gap.</b> July fuel total vs last July (~$95/mo for 2 cars). Decide which 50/30/20 line gives it up — don't let it eat the 20.<br><b class="gold">3 · The parked cash.</b> 0.38% → ~4.15%. Twenty minutes. The only guaranteed return on the list.</div></div>
+
+<div class="card"><h3>The bridge — two lanes (say the guardrail)</h3>
+<div class="note" style="margin-top:0;font-size:16px;line-height:1.75"><b>Lane 1 · Credit &amp; business:</b> fix the score → borrow cheaper → business funding when you need capital.<br><b>Lane 2 · Investing:</b> earned income only, through the brokerage, on a schedule.<br><span class="red">Never margin. Never borrowed money in the market. Credit money does not become investment capital.</span><br><span class="gold">The Fed sets the weather. Your credit score decides your house.</span></div></div>
+
+<div class="card wide"><h3>What's next — the docket that moves that 10-year</h3>
+<table><tr><th>When</th><th>What</th><th>Why it matters</th></tr>
+<tr><td class="num">Mon Aug 3, 10:00a</td><td>ISM Manufacturing</td><td>factory activity</td></tr>
+<tr><td class="num">Tue Aug 4, 10:00a</td><td>JOLTS job openings</td><td>labor slack</td></tr>
+<tr><td class="num">Wed Aug 5</td><td>ADP (8:15a) · ISM Services (10:00a)</td><td>jobs preview</td></tr>
+<tr><td class="num">Thu Aug 6, 8:30a</td><td>Jobless claims</td><td>forecast 193K</td></tr>
+<tr><td class="num gold"><b>Fri Aug 7, 8:30a</b></td><td><b>Employment Situation (jobs report)</b></td><td class="gold">unemployment forecast 4.2% — the print that moves the 10-year</td></tr>
+<tr><td class="num gold"><b>Wed Aug 12, 8:30a</b></td><td><b>CPI</b></td><td class="gold">forecast 3.4% headline</td></tr>
+<tr><td class="num">Wed Sep 16, 2:00p</td><td>Next FOMC</td><td>three dissenters get another vote</td></tr></table></div>
+
+</div></div>
+
+<footer>ThinkinGenWealth · <b>All figures verified Sat Aug 1, 2026.</b> Sources: Federal Reserve (FOMC statement Jul 29, G.19 consumer credit), BEA (PCE + Q2 GDP advance, Jul 30), AAA gasprices.aaa.com, Trading Economics (Brent), Advisor Perspectives (Treasury yields + mortgage survey, Jul 31), NerdWallet (HYSA), company earnings releases and calls, exchange closing prices. SPY moving averages computed from daily closes.<br>Educational content only — not financial advice. No specific trade recommendations, no price predictions.</footer>
 <script>
 document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
 document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
 document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
-t.classList.add('on');document.getElementById(t.dataset.p).classList.add('on');}));
+t.classList.add('on');document.getElementById(t.dataset.p).classList.add('on');
+window.scrollTo({top:0,behavior:'smooth'});}));
 </script>
 </body>
 </html>
