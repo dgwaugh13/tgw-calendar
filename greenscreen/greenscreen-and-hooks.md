@@ -47,7 +47,7 @@
 
 ---
 
-## ⚡ FRIDAY, AUG 7 — P6 · NEWS / REACT (jobs day — the allowed 4th drop)
+## ⚡ FRIDAY, AUG 7 — P6 · NEWS / REACT (jobs day — **CONDITIONAL** 4th drop)
 **Cold-open text (≤5 words):** `8:30 This Morning`
 **Sustained caption (≤12 words):** `One Number Just Moved Your Rate, Your Raise And Your Rent`
 
@@ -60,7 +60,9 @@
 | 5 | `FRI/FRI_04_pt3-payoff.png` | 0:50–1:15 — wages 3.5% − core 3.3% = 0.2% | **PAYOFF · Pt 3** |
 | 6 | ⛔ `FRI/FRI_05_FILL-LIVE.png` | **REPLACE BEFORE POSTING** | FILL-LIVE frame |
 
-**⛔ FILL-LIVE PROTOCOL — this is the one asset that must not ship as-is.**
+**🚦 CONDITIONAL SLOT (Wolf's call, Aug 3).** This post only ships if the 8:30am print genuinely surprises — payrolls off consensus by ±40K, unemployment 4.4%+/4.1%−, May+June revisions past −100K, or the 10-year moving ~10bp. Otherwise it doesn't go out and the data becomes podcast Segment 4 fuel. Assets stay built either way. **Tue / Thu / Sat are the committed three.**
+
+**⛔ IF IT SHIPS — FILL-LIVE PROTOCOL. This is the one asset that must not ship as-is.**
 `FRI_05_FILL-LIVE.png` carries blanks and a red **VERIFY BEFORE POSTING** banner **by design**. Friday 8:30–9:15am ET: pull payrolls, unemployment rate, average hourly earnings y/y, and the May/June revisions from `bls.gov/news.release/empsit.nr0.htm`, rebuild the tile with the real figures, remove the banner, and **ship by 10:00am ET.** Three separate weeks in Performance Intelligence show a late reveal loses 60–75% of its reach.
 
 ---
