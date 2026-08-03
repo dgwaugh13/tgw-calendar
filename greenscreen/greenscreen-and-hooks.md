@@ -73,7 +73,7 @@
 | 2 | `SAT/SAT_kenburns.mp4` | 0:03–0:12 — this is your first place | STAKES |
 | 3 | `SAT/SAT_02_pt1-cost-of-waiting.png` | 0:12–0:30 — $14/mo for a whole year of waiting | RISING · Pt 1 |
 | 4 | `SAT/SAT_03_pt2-refinance.png` | 0:30–0:50 — rate is rentable, price is permanent | RISING · Pt 2 |
-| 5 | `SAT/SAT_04_pt3-verdict.png` | 0:54–1:22 — 25× · $14 vs $358 | **PAYOFF · Pt 3** |
+| 5 | `SAT/SAT_04_pt3-verdict.png` | 0:54–1:22 — 25×+ · $14 vs $358 | **PAYOFF · Pt 3** |
 
 **📌 SAT_01 has a deliberate placeholder.** The sub-line reads `[ CREATOR CLAIM GOES HERE, VERBATIM ]`. On record day, screenshot the chosen clip and overlay the creator's **actual words**, credited — that's the EYL pattern Sora logged (§6): the caption box carries the *contestable claim*, never the topic.
 **⚠ Never attribute a claim to a real creator that they did not make.** If no suitable clip is found, use the unattributed framing *"The take going around right now:"* instead.
@@ -105,7 +105,7 @@
 | TUE | ✅ your first house | ✅ $358/mo · $128,926 | ✅ first home | ✅ tier calculator on screen |
 | THU | ✅ how *you* buy | ✅ 2 lines · 744.99 / 700.39 | ✅ buying on a plan, not scared | ✅ live chart, real touches |
 | FRI | ✅ your rate/raise/rent | ✅ 8:30 · +36,000 · 0.2% | ✅ your actual raise | ✅ pay-stub subtraction |
-| SAT | ✅ your first place | ✅ $14 vs $358 · 25× | ✅ first home | ✅ both sides priced |
+| SAT | ✅ your first place | ✅ $14 vs $358 · 25×+ | ✅ first home | ✅ both sides priced |
 | SUN | ✅ your family's house | ✅ $128,926 | ✅ career-stage / family (35–54 cut) | ✅ full segment of math |
 
 **Banned and avoided:** no "quit your 9-5", no price predictions, no "before it's too late", no emotional hook without a number, no borrow-to-invest framing anywhere.
