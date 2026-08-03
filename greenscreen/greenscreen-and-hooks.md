@@ -1,7 +1,9 @@
 # Green-screen backgrounds + hook text — Week of Aug 3–9, 2026
 **Anchor: "The Fed held. Your mortgage went up anyway."**
 
-> **⚠ PIPELINE NOTE FOR THIS RUN:** Claude in Chrome was **not connected**, so **Pexels b-roll could not be downloaded** and **Atlas Berry could not be reviewed** this week. Every background below is a **generated TGW data tile** (Pillow, 1080×1920, locked caption-box spec) plus a Ken Burns clip built from the cold-open tile. The tiles carry OUR numbers — which is their standing job per CLAUDE.md step 7 — but the mood/subject footage layer is missing. **If Wolf wants real footage under these beats, reconnect the Chrome extension and re-run step 7, or drop in Pexels clips manually behind the same captions.**
+> **✅ PIPELINE NOTE — real Pexels footage this run (Aug 3, 2026).** Claude in Chrome was reconnected, so **29 real b-roll clips + 8 photos** were sourced from Pexels (free licence, no attribution) across 5 sets and **20 clips were caption-boxed** to the intro + Pt-header scheme. Raw originals are kept beside the captioned versions in `broll/<DAY>/` and are never deleted. The **generated data tiles in `greenscreen/<DAY>/` are retained** — they carry OUR numbers, which is their standing job, and they're the right background for any beat where the math is on screen. Pexels covers mood and subject; tiles cover math.
+>
+> **Atlas Berry review, Aug 3, 2026** (313K followers; bio now *"On culture, tech, and power"*). Format unchanged — green-screen reaction, subject-relevant background, Title-Case box. **Two patterns borrowed and applied below:** (1) the caption box is now **claim + sharpener**, two sentences split by a period or em dash, with a concrete number in the claim (*"YC Filled an NBA Arena with 6,000 Founders. WrestleMania Style"*); (2) **the comment-trigger moves to the FIRST line of the caption**, with a real sourced body underneath — the caption is the article, not a tagline.
 
 **The locked box spec (unchanged):** dark navy `#131A22` panel · `#243140` border · gold `#F5C451` Title-Case text · key number in mint `#34E5A3` · upper-third centered · Poppins Bold · "educational content only — not financial advice" on every asset.
 
@@ -64,8 +66,9 @@
 ---
 
 ## 🤝 SATURDAY, AUG 8 — P5 · COLLAB / GUEST-REACTION (IG-FIRST)
-**Cold-open text (≤5 words):** `"Wait For Rates To Drop"`
-**Sustained caption (≤12 words):** `I Ran The Numbers On "Wait For Rates" — It's Not Close`
+**Cold-open text (≤5 words):** `"Spending Up To Your Approval"`
+**Sustained caption (≤12 words):** `He's Right — But Who Sets Your Approval? It's Worth $358/mo`
+**Caption line 1 (Atlas Berry pattern):** `Comment TIER and I'll send you the credit-tier calculator.`
 
 | # | File | Lands on | Beat |
 |---|---|---|---|
@@ -75,9 +78,12 @@
 | 4 | `SAT/SAT_03_pt2-refinance.png` | 0:30–0:50 — rate is rentable, price is permanent | RISING · Pt 2 |
 | 5 | `SAT/SAT_04_pt3-verdict.png` | 0:54–1:22 — 25×+ · $14 vs $358 | **PAYOFF · Pt 3** |
 
-**📌 SAT_01 has a deliberate placeholder.** The sub-line reads `[ CREATOR CLAIM GOES HERE, VERBATIM ]`. On record day, screenshot the chosen clip and overlay the creator's **actual words**, credited — that's the EYL pattern Sora logged (§6): the caption box carries the *contestable claim*, never the topic.
-**⚠ Never attribute a claim to a real creator that they did not make.** If no suitable clip is found, use the unattributed framing *"The take going around right now:"* instead.
-**This week's panel creator:** **Aristotle Investments** (first-person "how I actually did it" receipts), rotating in after EYL (Jul 20/24) and Caleb Hammer (Jul 27–Aug 2).
+**✅ THE CLAIM IS REAL AND ALREADY LIVE — no placeholder.** Earn Your Leisure posted this on **Aug 3, 2026** featuring **@mgthemortgageguy**:
+> *"The biggest home buying mistake is spending up to your approval instead of your budget."*
+> — [@earnyourleisure reel DblFZ-Buztj](https://www.instagram.com/earnyourleisure/reel/DblFZ-Buztj/)
+
+On record day, screenshot the reel and put the claim on screen **verbatim, with the credit visible**. Do not paraphrase it. The angle is **agree, then supply the missing mechanism** — he's right, but nobody explains that the approval ceiling is DTI × your rate, and your rate is set by your credit tier ($358/month).
+**This is the EYL vein our own data says wins:** the last two EYL-pegged reacts were the channel's #1 YouTube post (799, 64.8%) and its first >100% avg-viewed post (103.2%). The panel-creator rotation returns to a different creator next week.
 
 ---
 
@@ -111,3 +117,67 @@
 **Banned and avoided:** no "quit your 9-5", no price predictions, no "before it's too late", no emotional hook without a number, no borrow-to-invest framing anywhere.
 
 *Educational content only — not financial advice. All figures computed and verified during the Aug 3, 2026 run.*
+
+---
+
+## 📦 B-roll inventory — real Pexels footage (downloaded Aug 3, 2026)
+Raw originals live in `broll/<DAY>/`; caption-boxed versions in `broll/<DAY>/captioned/`. **Never delete the raws.**
+
+### TUE — 6 clips + 2 photos (4 captioned)
+| Asset | Caption baked in |
+|---|---|
+| `broll/TUE/captioned/TUE_V1_couple-key-in-hands_CAP-intro.mp4` | Full TGW hook box (cold open) |
+| `broll/TUE/captioned/TUE_V2_person-opening-door_CAP-pt1.mp4` | Mint `PT 1` kicker + gold step title |
+| `broll/TUE/captioned/TUE_V3_woman-holding-key_CAP-pt2.mp4` | Mint `PT 2` kicker + gold step title |
+| `broll/TUE/captioned/TUE_V4_person-holding-keys_CAP-pt3.mp4` | Mint `PT 3` kicker + gold step title (payoff) |
+| `broll/TUE/TUE_V5_man-holding-key.mp4` | — clean spare |
+| `broll/TUE/TUE_V6_realtor-holding-key.mp4` | — clean spare |
+| `broll/TUE/TUE_P1_mortgage-house-money-6289039.jpg` | — clean spare (photo) |
+| `broll/TUE/TUE_P2_mortgage-house-money-6289100.jpg` | — clean spare (photo) |
+
+### THU — 6 clips + 2 photos (4 captioned)
+| Asset | Caption baked in |
+|---|---|
+| `broll/THU/captioned/THU_V1_monitor-and-laptop-charts_CAP-intro.mp4` | Full TGW hook box (cold open) |
+| `broll/THU/captioned/THU_V2_stylus-tablet-candlesticks_CAP-pt1.mp4` | Mint `PT 1` kicker + gold step title |
+| `broll/THU/captioned/THU_V3_graphs-magnifying-glass_CAP-pt2.mp4` | Mint `PT 2` kicker + gold step title |
+| `broll/THU/captioned/THU_V4_notes-in-front-of-computer_CAP-pt3.mp4` | Mint `PT 3` kicker + gold step title (payoff) |
+| `broll/THU/THU_V5_monitoring-stock-market.mp4` | — clean spare |
+| `broll/THU/THU_V6_stylus-tablet-candlesticks-2.mp4` | — clean spare |
+| `broll/THU/THU_P1_finance-desk-7937320.jpg` | — clean spare (photo) |
+| `broll/THU/THU_P2_finance-desk-8293654.jpg` | — clean spare (photo) |
+
+### FRI — 6 clips + 2 photos (4 captioned)
+| Asset | Caption baked in |
+|---|---|
+| `broll/FRI/captioned/FRI_V1_man-conducting-interview_CAP-intro.mp4` | Full TGW hook box (cold open) |
+| `broll/FRI/captioned/FRI_V2_man-in-job-interview_CAP-pt1.mp4` | Mint `PT 1` kicker + gold step title |
+| `broll/FRI/captioned/FRI_V3_applicant-answering_CAP-pt2.mp4` | Mint `PT 2` kicker + gold step title |
+| `broll/FRI/captioned/FRI_V4_interviewer-asking_CAP-pt3.mp4` | Mint `PT 3` kicker + gold step title (payoff) |
+| `broll/FRI/FRI_V5_applicant-answering-2.mp4` | — clean spare |
+| `broll/FRI/FRI_V6_man-talking-to-interviewer.mp4` | — clean spare |
+| `broll/FRI/FRI_P1_paperwork-money-7578989.jpg` | — clean spare (photo) |
+| `broll/FRI/FRI_P2_paperwork-money-7579049.jpg` | — clean spare (photo) |
+
+### SAT — 6 clips + 2 photos (4 captioned)
+| Asset | Caption baked in |
+|---|---|
+| `broll/SAT/captioned/SAT_V1_couple-beside-sold-sign_CAP-intro.mp4` | Full TGW hook box (cold open) |
+| `broll/SAT/captioned/SAT_V2_realtor-couple-agreement_CAP-pt1.mp4` | Mint `PT 1` kicker + gold step title |
+| `broll/SAT/captioned/SAT_V3_realtor-explaining-contract_CAP-pt2.mp4` | Mint `PT 2` kicker + gold step title |
+| `broll/SAT/captioned/SAT_V4_couple-planning-new-home_CAP-pt3.mp4` | Mint `PT 3` kicker + gold step title (payoff) |
+| `broll/SAT/SAT_V5_couple-meeting-agent.mp4` | — clean spare |
+| `broll/SAT/SAT_V6_man-signing-contract.mp4` | — clean spare |
+| `broll/SAT/SAT_P1_home-finance-7578878.jpg` | — clean spare (photo) |
+| `broll/SAT/SAT_P2_home-finance-7578931.jpg` | — clean spare (photo) |
+
+### PODCAST — 5 clips + 0 photos (4 captioned)
+| Asset | Caption baked in |
+|---|---|
+| `broll/PODCAST/captioned/PODCAST_V1_person-at-microphone_CAP-intro.mp4` | Full TGW hook box (cold open) |
+| `broll/PODCAST/captioned/PODCAST_V2_man-talking-in-mic_CAP-pt1.mp4` | `SEG 1` header |
+| `broll/PODCAST/captioned/PODCAST_V3_man-doing-podcast_CAP-pt2.mp4` | `SEG 2` header |
+| `broll/PODCAST/captioned/PODCAST_V4_writing-in-notebook_CAP-pt3.mp4` | `SEG 3` header (payoff) |
+| `broll/PODCAST/PODCAST_V5_host-recording.mp4` | — clean spare |
+
+**Data tiles retained** in `greenscreen/<DAY>/` for every beat where OUR numbers go on screen — including `FRI/FRI_05_FILL-LIVE.png`, which must be rebuilt with the real figures on Friday morning before the post ships.
