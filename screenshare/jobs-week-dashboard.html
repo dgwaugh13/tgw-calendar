@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGW · Jobs Week Dashboard · Aug 3–9, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--red:#FF7A59;--text:#E8EEF2;--muted:#8A9BA8;
+--disp:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(1100px 560px at 85% -10%,rgba(52,229,163,.07),transparent 62%)}
+.wrap{max-width:1240px;margin:0 auto;padding:28px 26px 70px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}
+h1{font-family:var(--disp);font-size:26px;font-weight:700}
+.sub{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin-top:5px}
+.badge{font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid rgba(245,196,81,.35);background:rgba(245,196,81,.09);padding:7px 13px;border-radius:99px}
+.panel{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.panel h2{font-family:var(--disp);font-size:19px;font-weight:600;display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+.pnum{font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:#04120c;background:var(--mint);padding:4px 9px;border-radius:6px;text-transform:uppercase}
+.seg{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:13px;margin-top:18px}
+.kpi{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:17px 19px}
+.kpi .k{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+.kpi .v{font-family:var(--disp);font-size:33px;font-weight:700;color:var(--mint);margin-top:7px;line-height:1.05}
+.kpi .v.gold{color:var(--gold)}.kpi .v.red{color:var(--red)}.kpi .v.fill{color:var(--muted);font-size:23px}
+.kpi .n{font-size:12px;color:var(--muted);margin-top:7px}
+.note{margin-top:17px;font-size:14px;color:#cdd8e1;border-left:2px solid var(--mint);padding-left:14px}
+.note b{color:var(--mint)}
+.draw{margin-top:13px;font-family:var(--mono);font-size:11.5px;color:var(--gold);background:rgba(245,196,81,.07);border:1px dashed rgba(245,196,81,.35);border-radius:9px;padding:10px 14px}
+table{width:100%;border-collapse:collapse;margin-top:17px;font-size:14px}
+th{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+td{padding:11px 10px;border-bottom:1px dashed rgba(36,49,64,.65);color:#cdd8e1}
+td.big{font-family:var(--disp);font-size:19px;font-weight:600;color:var(--text)}
+.mint{color:var(--mint)}.gold{color:var(--gold)}.red{color:var(--red)}.mut{color:var(--muted)}
+.ladder{display:grid;gap:10px;margin-top:18px}
+.rung{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.rung .lbl{font-size:14px}.rung .lbl small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.rung .val{font-family:var(--disp);font-size:25px;font-weight:700}
+.rung.a .val{color:var(--muted)}.rung.b .val{color:var(--gold)}.rung.c .val{color:var(--red)}
+.payoff{margin-top:22px;background:linear-gradient(155deg,rgba(52,229,163,.13),rgba(245,196,81,.07));border:1px solid rgba(52,229,163,.42);border-radius:16px;padding:28px}
+.payoff .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;color:var(--mint);text-transform:uppercase}
+.payoff .big{font-family:var(--disp);font-size:60px;font-weight:700;margin-top:11px;line-height:1.02}
+.payoff .big .a{color:var(--muted)}.payoff .big .b{color:var(--mint)}
+.payoff p{font-size:15px;color:#cdd8e1;margin-top:13px;max-width:74ch}
+.fill{background:rgba(255,122,89,.1);border:1px dashed rgba(255,122,89,.45);border-radius:9px;padding:10px 14px;margin-top:15px;font-family:var(--mono);font-size:11.5px;color:#ffd9cd}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>Jobs Week — Screen-Share Dashboard</h1>
+    <div class="sub">TGW Podcast · Sunday Aug 9, 2026 · 4 panels → 4 segments</div>
+  </div>
+  <div class="badge">Educational only — not financial advice</div>
+</header>
+
+<!-- PANEL 1 -->
+<div class="panel">
+  <h2><span class="pnum">Panel 1</span> What The Fed Actually Did <span class="seg">· Segment 1 (1:30–9:00)</span></h2>
+  <div class="grid">
+    <div class="kpi"><div class="k">Fed funds target</div><div class="v gold">3.50–3.75%</div><div class="n">HELD on Wed Jul 29, 2026</div></div>
+    <div class="kpi"><div class="k">The vote</div><div class="v red">9–3</div><div class="n">Hammack · Kashkari · Logan dissented — all wanted a <b>hike</b></div></div>
+    <div class="kpi"><div class="k">Dow, same day</div><div class="v red">−1,153</div><div class="n">points, Jul 29</div></div>
+    <div class="kpi"><div class="k">30-yr Treasury yield</div><div class="v red">19-yr high</div><div class="n">above 5.2% — highest since July 2007</div></div>
+  </div>
+  <div class="note"><b>The picture:</b> the Fed's rate went flat and the 30-year yield went up on the same day. Stocks down <i>and</i> long-term borrowing costs up is the market saying "you are not done with inflation." Chair Warsh has removed forward guidance — so markets now price the Fed off <b>data</b>, not words. That's why Friday's jobs print hits harder than it used to.</div>
+  <div class="draw">✏️ DRAW: circle the Jul 29 divergence — fed funds flat, 30-yr yield spiking. That single picture is the whole episode.</div>
+</div>
+
+<!-- PANEL 2 -->
+<div class="panel">
+  <h2><span class="pnum">Panel 2</span> Why Your Mortgage Ignored The Fed <span class="seg">· Segment 2 (9:00–17:00)</span></h2>
+  <div class="ladder">
+    <div class="rung a"><div class="lbl">Fed funds rate <small>Overnight money between banks. The rate the Fed actually sets.</small></div><div class="val">3.50–3.75%</div></div>
+    <div class="rung b"><div class="lbl">30-year Treasury yield <small>What the U.S. government pays to borrow for 30 years. <b>This</b> is what mortgages track.</small></div><div class="val">~5.2%</div></div>
+    <div class="rung c"><div class="lbl">30-year fixed mortgage <small>Freddie Mac survey, week of Jul 30, 2026. Prior week 6.58% · a year ago 6.72%.</small></div><div class="val">6.66%</div></div>
+  </div>
+  <div class="note"><b>The analogy:</b> the Fed sets the price of a one-night hotel room. Your mortgage is a thirty-year lease. Tonight's room rate tells you almost nothing about a thirty-year lease. — The lender's spread over the 30-yr Treasury is about <b>1.4 percentage points</b>, which is roughly normal. The mortgage didn't rise because lenders got greedy; it rose because the bond it's priced off rose.</div>
+  <div class="note"><b>Honest caveat (say it):</b> a year ago the same survey read <b>6.72%</b>. Rates are a touch <i>lower</i> than last summer. This is a plateau, not a crisis — and a plateau is exactly when the thing you control starts to matter more than the thing you don't.</div>
+  <div class="draw">✏️ DRAW: bracket the 1.4pp spread between the 30-yr Treasury and the mortgage rate.</div>
+</div>
+
+<!-- PANEL 3 -->
+<div class="panel">
+  <h2><span class="pnum">Panel 3</span> The $128,926 Nobody Mentions <span class="seg">· Segment 3 (17:00–26:00) · D Waugh leads</span></h2>
+  <table>
+    <tr><th>$350,000 loan · 30-year fixed</th><th>Rate</th><th>Monthly (P&amp;I)</th><th>Total interest</th></tr>
+    <tr><td class="big">760+ credit tier</td><td class="mint">6.66%</td><td class="big mint">$2,249.19</td><td>$459,710</td></tr>
+    <tr><td class="big">620–639 credit tier</td><td class="red">~8.16%</td><td class="big red">$2,607.32</td><td>$588,636</td></tr>
+    <tr><td class="big gold">The gap</td><td class="mut">~1.5pp</td><td class="big gold">$358.13/mo</td><td class="gold">$128,926 over the loan</td></tr>
+  </table>
+  <div class="note"><b>The true cost first:</b> at 6.66% on $350,000 you pay <b>$809,710</b> over 30 years — meaning <b>$459,710 in interest alone.</b> The interest is more than the house. $1.31 of interest per $1 borrowed. Early payments are almost entirely interest — that's amortization, and it's why nobody advertises the total.</div>
+  <div class="note"><b>The comparison that lands the episode:</b> waiting a full year for the <i>market</i> to improve saved about <b class="mut">$14/month</b> (6.72% → 6.66%). Fixing your <i>credit tier</i> is worth <b>$358/month</b>. That's <b>25×</b> — and only one of them is on a report you can pull for free tonight.</div>
+  <div class="draw">✏️ DRAW: underline $128,926. Then run both tiers live in rate-ladder-dashboard.html.</div>
+</div>
+
+<!-- PANEL 4 -->
+<div class="panel">
+  <h2><span class="pnum">Panel 4</span> Friday's Jobs Report + The Answer <span class="seg">· Segment 4 (26:00–36:00)</span></h2>
+  <div class="fill">⛔ FILL LIVE — Employment Situation (July) released Fri Aug 7, 8:30am ET · bls.gov/news.release/empsit.nr0.htm · verify before recording</div>
+  <div class="grid">
+    <div class="kpi"><div class="k">Nonfarm payrolls, July</div><div class="v fill">[ FILL LIVE ]</div><div class="n">consensus ≈ +87,500</div></div>
+    <div class="kpi"><div class="k">Unemployment rate</div><div class="v fill">[ FILL LIVE ]</div><div class="n">consensus 4.3% · was 4.2%</div></div>
+    <div class="kpi"><div class="k">Avg hourly earnings y/y</div><div class="v fill">[ FILL LIVE ]</div><div class="n">June: +3.5% at $37.64/hr</div></div>
+    <div class="kpi"><div class="k">Revisions, May &amp; June</div><div class="v fill">[ FILL LIVE ]</div><div class="n">the most-skipped paragraph</div></div>
+  </div>
+  <div class="note"><b>Locked context — the run rate is the story, not the month.</b> The twelve months before this print averaged <b>+36,000 jobs/month</b>. June alone was <b>+57,000</b>. And the June report revised <b>April down 31,000</b> and <b>May down 43,000</b> — <b>74,000 jobs reported and then taken back.</b></div>
+  <div class="note"><b>Two surveys, one page.</b> The <i>establishment</i> survey asks employers "how many people were on your payroll?" → payrolls. The <i>household</i> survey asks people about themselves → the unemployment rate. Two groups, two questions — that's why they can disagree.</div>
+  <div class="note"><b>The real raise:</b> wages +3.5% against core inflation ~3.3% = a real raise of <b>0.2 percentage points</b>. <b>RECEIPT:</b> your own pay stub — gross hourly now vs. the same month last year, minus 3.3. Negative means a pay cut with extra steps.</div>
+
+  <div class="payoff">
+    <div class="t">Payoff tile — the answer to the through-line</div>
+    <div class="big"><span class="a">$14</span> <span class="a" style="font-size:34px">vs</span> <span class="b">$358</span></div>
+    <p>Waiting a year on the market vs. fixing your credit tier — per month, same $350,000 loan. The Fed was never the lever, and Friday's jobs number moves your mortgage before it moves your paycheck. The only number in this episode you can move this month is the one on your credit report.</p>
+  </div>
+  <div class="draw">🎬 PLANTED CLIP LINE #4: "The Fed decides the weather. Your credit report decides your house. Only one of those is yours."</div>
+</div>
+
+<footer>
+  Sources — FOMC statement 7/29/26 · Freddie Mac PMMS 7/30/26 (6.66%) · U.S. Treasury 30-yr yield (highest since Jul 2007) · BLS Employment Situation, June 2026 (July release Fri Aug 7, 8:30am ET) · Federal Reserve G.19 Q2 2026 (22.15% APR on accounts assessed interest) · FDIC national average savings 0.38% (7/20/26) · myFICO tier spread ~1.5pp. All worked numbers computed and verified during the Aug 3, 2026 run. <b>Educational content only — not financial advice.</b>
+</footer>
+
+</div>
+</body>
+</html>

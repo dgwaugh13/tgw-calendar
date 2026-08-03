@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGW · Rate Ladder + Credit-Tier Calculator · Aug 3–9, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--red:#FF7A59;--text:#E8EEF2;--muted:#8A9BA8;
+--disp:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(1100px 560px at 85% -10%,rgba(52,229,163,.07),transparent 62%)}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 26px 70px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}
+h1{font-family:var(--disp);font-size:26px;font-weight:700}
+.sub{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin-top:5px}
+.badge{font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid rgba(245,196,81,.35);background:rgba(245,196,81,.09);padding:7px 13px;border-radius:99px}
+.panel{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.panel h2{font-family:var(--disp);font-size:19px;font-weight:600;display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:#04120c;background:var(--mint);padding:4px 9px;border-radius:6px;text-transform:uppercase}
+.tag.g{background:var(--gold)}
+.ladder{display:grid;gap:10px;margin-top:18px}
+.rung{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:15px 19px}
+.rung .lbl{font-size:14.5px}.rung .lbl small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.rung .val{font-family:var(--disp);font-size:26px;font-weight:700}
+.rung.a{border-left:3px solid var(--muted)}.rung.a .val{color:var(--muted)}
+.rung.b{border-left:3px solid var(--gold)}.rung.b .val{color:var(--gold)}
+.rung.c{border-left:3px solid var(--red)}.rung.c .val{color:var(--red)}
+.note{margin-top:17px;font-size:14px;color:#cdd8e1;border-left:2px solid var(--mint);padding-left:14px}
+.note b{color:var(--mint)}
+.calc{margin-top:20px;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:22px}
+.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.fld label{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px}
+.fld input{width:100%;background:var(--ink);border:1px solid var(--line);border-radius:9px;padding:11px 13px;color:var(--text);font-family:var(--disp);font-size:19px;font-weight:600}
+.fld input:focus{outline:none;border-color:var(--mint)}
+.out{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:13px;margin-top:20px}
+.oc{background:var(--ink);border:1px solid var(--line);border-radius:12px;padding:17px 19px}
+.oc .k{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+.oc .v{font-family:var(--disp);font-size:31px;font-weight:700;margin-top:7px;line-height:1.05}
+.oc.good{border-color:rgba(52,229,163,.45)}.oc.good .v{color:var(--mint)}
+.oc.bad{border-color:rgba(255,122,89,.45)}.oc.bad .v{color:var(--red)}
+.oc.gap{border-color:rgba(245,196,81,.55);background:rgba(245,196,81,.06)}.oc.gap .v{color:var(--gold)}
+.oc .n{font-size:12px;color:var(--muted);margin-top:7px}
+.big{margin-top:22px;background:linear-gradient(155deg,rgba(52,229,163,.13),rgba(245,196,81,.07));border:1px solid rgba(52,229,163,.42);border-radius:16px;padding:26px;text-align:center}
+.big .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;color:var(--mint);text-transform:uppercase}
+.big .n{font-family:var(--disp);font-size:58px;font-weight:700;color:var(--gold);margin-top:9px;line-height:1.02}
+.big p{font-size:14.5px;color:#cdd8e1;margin-top:11px}
+.steps{list-style:none;display:grid;gap:10px;margin-top:16px;font-size:14px;color:#cdd8e1;counter-reset:s}
+.steps li{padding-left:34px;position:relative;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:23px;height:23px;border-radius:7px;background:rgba(52,229,163,.14);border:1px solid rgba(52,229,163,.4);color:var(--mint);display:grid;place-items:center;font-family:var(--mono);font-size:11px}
+.steps b{color:var(--mint)}
+.guard{margin-top:24px;background:rgba(91,155,255,.07);border:1px solid rgba(91,155,255,.32);border-radius:14px;padding:20px 24px}
+.guard .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:#5B9BFF;text-transform:uppercase}
+.guard p{font-size:14.5px;color:#cdd8e1;margin-top:9px}
+.guard b{color:#8FBBFF}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>Rate Ladder + Credit-Tier Calculator</h1>
+    <div class="sub">TUE react · SAT collab · Podcast Segment 3 · week of Aug 3–9, 2026</div>
+  </div>
+  <div class="badge">Educational only — not financial advice</div>
+</header>
+
+<div class="panel">
+  <h2><span class="tag">The ladder</span> Three rates, and only one of them is the Fed's</h2>
+  <div class="ladder">
+    <div class="rung a"><div class="lbl">Fed funds rate <small>Overnight money between banks — the only rate the Fed actually sets. <b>HELD Jul 29, 2026 on a 9–3 vote</b> (Hammack, Kashkari, Logan wanted a hike).</small></div><div class="val">3.50–3.75%</div></div>
+    <div class="rung b"><div class="lbl">30-year Treasury yield <small>What the U.S. government pays to borrow for 30 years. <b>Highest level since July 2007 — 19 years.</b> This is what mortgages track.</small></div><div class="val">~5.2%</div></div>
+    <div class="rung c"><div class="lbl">30-year fixed mortgage <small>Freddie Mac survey, week of Jul 30, 2026. Prior week <b>6.58%</b> · one year ago <b>6.72%</b>.</small></div><div class="val">6.66%</div></div>
+  </div>
+  <div class="note"><b>The mechanism:</b> the Fed prices overnight money; your mortgage is a 30-year loan priced off the long bond, plus a lender spread of about <b>1.4 percentage points</b>. The Fed held and the mortgage rose anyway — because the bond rose. <b>The Fed sets the price of a one-night hotel room. Your mortgage is a thirty-year lease.</b></div>
+  <div class="note"><b>Check it yourself:</b> open any mortgage-rate page at 8:29am and again at 8:35am on <b>jobs day (Fri Aug 7)</b> and <b>CPI day (Wed Aug 12)</b>. It moves then. It barely moves on Fed day.</div>
+</div>
+
+<div class="panel">
+  <h2><span class="tag g">Run it live</span> Same house. Same day. Two credit tiers.</h2>
+  <div class="calc">
+    <div class="inputs">
+      <div class="fld"><label>Loan amount ($)</label><input id="amt" type="number" value="350000" step="10000"></div>
+      <div class="fld"><label>Top tier rate — 760+ (%)</label><input id="r1" type="number" value="6.66" step="0.01"></div>
+      <div class="fld"><label>Lower tier rate — 620–639 (%)</label><input id="r2" type="number" value="8.16" step="0.01"></div>
+      <div class="fld"><label>Term (years)</label><input id="yrs" type="number" value="30" step="1"></div>
+    </div>
+    <div class="out">
+      <div class="oc good"><div class="k">760+ tier · monthly</div><div class="v" id="m1">—</div><div class="n" id="i1">—</div></div>
+      <div class="oc bad"><div class="k">620–639 tier · monthly</div><div class="v" id="m2">—</div><div class="n" id="i2">—</div></div>
+      <div class="oc gap"><div class="k">The gap · per month</div><div class="v" id="gap">—</div><div class="n" id="gapyr">—</div></div>
+    </div>
+    <div class="big">
+      <div class="t">What the credit tier is worth over the life of the loan</div>
+      <div class="n" id="life">—</div>
+      <p id="ctx">Same house, same lender, same day — the only variable is the number on your credit report.</p>
+    </div>
+  </div>
+  <div class="note"><b>For comparison:</b> waiting a full year for the <i>market</i> to improve took you from 6.72% to 6.66% — about <b>$14/month</b> on this loan. The credit tier is worth roughly <b>25×</b> that, and it's the one you control this month.</div>
+</div>
+
+<div class="panel">
+  <h2><span class="tag">The action</span> What to actually do — literal steps</h2>
+  <ol class="steps">
+    <li>Go to <b>annualcreditreport.com</b> — the free federal one. Not an app, no card. Pull all three bureaus.</li>
+    <li>Look at two things only: <b>payment history</b> and <b>utilization</b> (how much of your limit you're using). Together they're roughly two-thirds of the score.</li>
+    <li>Get utilization <b>under 30%</b> — under 10% if you can — <b>before</b> you apply for anything.</li>
+    <li>Pay the card down <b>before the statement closes</b>, not before the due date. The statement balance is what gets reported to the bureaus. This is the single fastest legitimate move.</li>
+    <li>Dispute anything that isn't yours, <b>in writing</b>, and give it one full billing cycle.</li>
+  </ol>
+  <div class="guard">
+    <div class="t">The guardrail — read verbatim, never edit</div>
+    <p>Two lanes, one house. <b>Lane one — credit and business:</b> fix the score, borrow cheaper, unlock business funding when you actually need capital. <b>Lane two — investing:</b> earned income only, through the brokerage, on a schedule. <b>Never margin. Never borrowed money in the market.</b> Credit money does not become investment capital. Ever.</p>
+  </div>
+</div>
+
+<footer>
+  Sources — Freddie Mac PMMS 7/30/26 (6.66%; prior week 6.58%; year ago 6.72%) · FOMC statement 7/29/26 (held 3.50–3.75%, 9–3) · U.S. Treasury 30-yr yield, highest since July 2007 · myFICO mortgage rate spread by credit tier (~1.5pp, 620–639 vs 760+). Payments shown are principal &amp; interest only — taxes, insurance and PMI are not included. <b>Educational content only — not financial advice.</b>
+</footer>
+
+</div>
+<script>
+function pmt(P,apr,yrs){var r=apr/100/12,n=yrs*12;if(r===0)return P/n;return P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);}
+function usd(x,d){return '$'+x.toLocaleString('en-US',{minimumFractionDigits:d===undefined?2:d,maximumFractionDigits:d===undefined?2:d});}
+function run(){
+  var P=+document.getElementById('amt').value||0,
+      a=+document.getElementById('r1').value||0,
+      b=+document.getElementById('r2').value||0,
+      y=+document.getElementById('yrs').value||30;
+  var p1=pmt(P,a,y),p2=pmt(P,b,y),g=p2-p1,n=y*12;
+  document.getElementById('m1').textContent=usd(p1);
+  document.getElementById('m2').textContent=usd(p2);
+  document.getElementById('gap').textContent=usd(g);
+  document.getElementById('i1').textContent='total interest '+usd(p1*n-P,0);
+  document.getElementById('i2').textContent='total interest '+usd(p2*n-P,0);
+  document.getElementById('gapyr').textContent=usd(g*12,0)+' per year';
+  document.getElementById('life').textContent=usd(g*n,0);
+  document.getElementById('ctx').textContent='On a '+usd(P,0)+' loan over '+y+' years, the gap between the two tiers is '+usd(g)+' every month — '+usd(g*n,0)+' over the life of the loan. Same house, same lender, same day.';
+}
+['amt','r1','r2','yrs'].forEach(function(id){document.getElementById(id).addEventListener('input',run);});
+run();
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGW &middot; Chart Levels Dashboard &middot; Aug 3&ndash;9, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--red:#FF7A59;--blue:#5B9BFF;--text:#E8EEF2;--muted:#8A9BA8;
+--disp:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(1100px 560px at 85% -10%,rgba(52,229,163,.07),transparent 62%)}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 26px 70px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}
+h1{font-family:var(--disp);font-size:26px;font-weight:700}
+.sub{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin-top:5px}
+.badge{font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid rgba(245,196,81,.35);background:rgba(245,196,81,.09);padding:7px 13px;border-radius:99px}
+.panel{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.panel h2{font-family:var(--disp);font-size:19px;font-weight:600;display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:#04120c;background:var(--mint);padding:4px 9px;border-radius:6px;text-transform:uppercase}
+.chartbox{margin-top:18px;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#0B0F14}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-top:18px}
+.kpi{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:17px 19px}
+.kpi .k{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+.kpi .v{font-family:var(--disp);font-size:30px;font-weight:700;margin-top:7px;line-height:1.05;color:var(--text)}
+.kpi.r .v{color:var(--red)}.kpi.s .v{color:var(--mint)}.kpi.g .v{color:var(--gold)}.kpi.b .v{color:var(--blue)}
+.kpi .n{font-size:12px;color:var(--muted);margin-top:7px}
+.note{margin-top:17px;font-size:14px;color:#cdd8e1;border-left:2px solid var(--mint);padding-left:14px}
+.note b{color:var(--mint)}
+.draw{margin-top:13px;font-family:var(--mono);font-size:11.5px;color:var(--gold);background:rgba(245,196,81,.07);border:1px dashed rgba(245,196,81,.35);border-radius:9px;padding:10px 14px}
+.steps{list-style:none;display:grid;gap:10px;margin-top:16px;font-size:14px;color:#cdd8e1;counter-reset:s}
+.steps li{padding-left:34px;position:relative;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:23px;height:23px;border-radius:7px;background:rgba(52,229,163,.14);border:1px solid rgba(52,229,163,.4);color:var(--mint);display:grid;place-items:center;font-family:var(--mono);font-size:11px}
+.steps b{color:var(--mint)}
+table{width:100%;border-collapse:collapse;margin-top:17px;font-size:14px}
+th{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px dashed rgba(36,49,64,.65);color:#cdd8e1}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style></head><body><div class="wrap">
+<header><div><h1>Chart Levels &mdash; Support &amp; Resistance</h1>
+<div class="sub">THU evergreen (P1 &middot; TRADE) &middot; week of Aug 3&ndash;9, 2026 &middot; S&amp;P 500 ETF, weekly candles</div></div>
+<div class="badge">Educational only &mdash; not financial advice</div></header>
+
+<div class="panel">
+<h2><span class="tag">The live chart</span> Two lines, drawn on this week&rsquo;s actual data</h2>
+<div class="chartbox"><svg viewBox="0 0 1080 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto"><rect width="1080" height="420" fill="#0B0F14"/><rect x="64" y="65.6" width="866" height="26.0" fill="#FF7A59" opacity="0.13"/><rect x="64" y="260.3" width="866" height="36.4" fill="#34E5A3" opacity="0.13"/><line x1="64" y1="65.6" x2="930" y2="65.6" stroke="#FF7A59" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/><line x1="64" y1="91.6" x2="930" y2="91.6" stroke="#FF7A59" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/><text x="940" y="95.6" fill="#FF7A59" font-family="JetBrains Mono,monospace" font-size="12" font-weight="600">RESISTANCE  756–760</text><line x1="64" y1="260.3" x2="930" y2="260.3" stroke="#34E5A3" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/><text x="940" y="264.3" fill="#34E5A3" font-family="JetBrains Mono,monospace" font-size="12" font-weight="600">SUPPORT  716–723</text><line x1="64" y1="296.7" x2="930" y2="296.7" stroke="#34E5A3" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/><line x1="64" y1="145.8" x2="930" y2="145.8" stroke="#F5C451" stroke-width="2"/><text x="940" y="149.8" fill="#F5C451" font-family="JetBrains Mono,monospace" font-size="12" font-weight="600">50-DAY  744.99</text><line x1="64" y1="378.0" x2="930" y2="378.0" stroke="#5B9BFF" stroke-width="2"/><text x="940" y="382.0" fill="#5B9BFF" font-family="JetBrains Mono,monospace" font-size="12" font-weight="600">200-DAY  700.39</text><line x1="64.0" y1="250.5" x2="64.0" y2="336.4" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="53.0" y="272.5" width="22" height="38.9" fill="#34E5A3" opacity="0.92" rx="2"/><text x="64.0" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Apr 27</text><line x1="130.6" y1="181.8" x2="130.6" y2="302.0" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="119.6" y="184.2" width="22" height="91.4" fill="#34E5A3" opacity="0.92" rx="2"/><text x="130.6" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">May 4</text><line x1="197.2" y1="122.2" x2="197.2" y2="214.3" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="186.2" y="176.1" width="22" height="14.2" fill="#34E5A3" opacity="0.92" rx="2"/><text x="197.2" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">May 11</text><line x1="263.8" y1="125.2" x2="263.8" y2="215.9" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="252.8" y="142.4" width="22" height="30.2" fill="#34E5A3" opacity="0.92" rx="2"/><text x="263.8" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">May 18</text><line x1="330.5" y1="77.6" x2="330.5" y2="129.0" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="319.5" y="86.0" width="22" height="33.7" fill="#34E5A3" opacity="0.92" rx="2"/><text x="330.5" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">May 25</text><line x1="397.1" y1="65.6" x2="397.1" y2="195.0" stroke="#FF7A59" stroke-width="1.6" opacity="0.9"/><rect x="386.1" y="91.8" width="22" height="92.7" fill="#FF7A59" opacity="0.92" rx="2"/><text x="397.1" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jun 1</text><line x1="463.7" y1="135.8" x2="463.7" y2="262.4" stroke="#FF7A59" stroke-width="1.6" opacity="0.9"/><rect x="452.7" y="154.3" width="22" height="8.4" fill="#FF7A59" opacity="0.92" rx="2"/><text x="463.7" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jun 8</text><line x1="530.3" y1="84.9" x2="530.3" y2="175.8" stroke="#FF7A59" stroke-width="1.6" opacity="0.9"/><rect x="519.3" y="110.1" width="22" height="26.6" fill="#FF7A59" opacity="0.92" rx="2"/><text x="530.3" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jun 15</text><line x1="596.9" y1="118.8" x2="596.9" y2="293.7" stroke="#FF7A59" stroke-width="1.6" opacity="0.9"/><rect x="585.9" y="131.7" width="22" height="97.4" fill="#FF7A59" opacity="0.92" rx="2"/><text x="596.9" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jun 22</text><line x1="663.5" y1="112.9" x2="663.5" y2="212.9" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="652.5" y="146.9" width="22" height="42.9" fill="#34E5A3" opacity="0.92" rx="2"/><text x="663.5" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jun 29</text><line x1="730.2" y1="91.5" x2="730.2" y2="174.3" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="719.2" y="93.9" width="22" height="32.3" fill="#34E5A3" opacity="0.92" rx="2"/><text x="730.2" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jul 6</text><line x1="796.8" y1="90.7" x2="796.8" y2="167.6" stroke="#FF7A59" stroke-width="1.6" opacity="0.9"/><rect x="785.8" y="106.8" width="22" height="47.8" fill="#FF7A59" opacity="0.92" rx="2"/><text x="796.8" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jul 13</text><line x1="863.4" y1="119.6" x2="863.4" y2="196.7" stroke="#FF7A59" stroke-width="1.6" opacity="0.9"/><rect x="852.4" y="135.0" width="22" height="42.3" fill="#FF7A59" opacity="0.92" rx="2"/><text x="863.4" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jul 20</text><line x1="930.0" y1="119.7" x2="930.0" y2="187.4" stroke="#34E5A3" stroke-width="1.6" opacity="0.9"/><rect x="919.0" y="135.2" width="22" height="36.6" fill="#34E5A3" opacity="0.92" rx="2"/><text x="930.0" y="406" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">Jul 27</text><text x="52" y="384.0" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="end">700</text><text x="52" y="305.9" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="end">715</text><text x="52" y="227.8" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="end">730</text><text x="52" y="149.7" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="end">745</text><text x="52" y="71.6" fill="#8A9BA8" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="end">760</text><circle cx="930.0" cy="135.2" r="5" fill="#E8EEF2" stroke="#0B0F14" stroke-width="2"/></svg></div>
+<div class="grid">
+<div class="kpi"><div class="k">Last close &middot; Jul 31, 2026</div><div class="v">747.03</div><div class="n">the white dot on the chart</div></div>
+<div class="kpi r"><div class="k">Resistance zone</div><div class="v">756&ndash;760</div><div class="n">5 touches May&ndash;Jul: 758.08 &middot; 760.40 &middot; 756.68 &middot; 755.42 &middot; 755.58</div></div>
+<div class="kpi s"><div class="k">Support zone</div><div class="v">716&ndash;723</div><div class="n">2 touches in June: 722.59 &middot; 716.58</div></div>
+<div class="kpi g"><div class="k">50-day moving average</div><div class="v">744.99</div><div class="n">price is <b>+0.27%</b> above &mdash; resting right on it</div></div>
+<div class="kpi b"><div class="k">200-day moving average</div><div class="v">700.39</div><div class="n">price is <b>+6.66%</b> above &middot; 50 above 200, no death cross</div></div>
+</div>
+<div class="note"><b>What the setup says, plainly:</b> the long-term trend is intact &mdash; the 50-day sits above the 200-day, which is the alignment people call a golden cross. <b>But</b> price is only a quarter of a percent above the 50-day line, which means it is sitting right on top of short-term support. That is a <i>decision point</i>, not a signal. The lines do not predict; they give you a place to decide before you are emotional.</div>
+<div class="draw">&#9998; DRAW LIVE: the two dashed zones first (support then resistance), then the gold 50-day, then the blue 200-day. Circle the five resistance touches one at a time &mdash; that is what makes a level a level.</div>
+</div>
+
+<div class="panel">
+<h2><span class="tag">Do it yourself</span> 30 seconds on your own phone</h2>
+<ol class="steps">
+<li>Open any free charting app you already have and pull up a ticker you own or watch.</li>
+<li>Set the time range to <b>1Y</b>. Not 1D &mdash; one day is noise, and you cannot see a level in noise.</li>
+<li>Find the horizontal prices where the chart <b>turned around more than once</b>. Flat spots that stopped a fall are <b>support</b>; flat spots that stopped a rise are <b>resistance</b>.</li>
+<li>Draw them <b>horizontal</b>, never diagonal &mdash; diagonal lines can be made to say anything you want.</li>
+<li>Use <b>closing prices</b>, not the wicks. The wick is just the most extreme price somebody panicked at for a second; the close is where the market actually agreed.</li>
+<li>Write both levels down <b>before</b> the market opens, and write what you will do in each case. Decide it while you are calm.</li>
+</ol>
+<table>
+<tr><th>Number of touches</th><th>What it means</th></tr>
+<tr><td><b>1 touch</b></td><td>A coincidence. Not a level.</td></tr>
+<tr><td><b>2 touches</b></td><td>A level.</td></tr>
+<tr><td><b>3+ touches</b></td><td>A level other people are watching too &mdash; which is what makes it work.</td></tr>
+</table>
+<div class="note"><b>Why this is the whole point:</b> most people who lose money in year one do not lose it picking wrong &mdash; they lose it <i>reacting</i>. Red day, stomach drops, sell. The two lines exist so the scared version of you on a red morning has to argue with the calm version of you from Thursday.</div>
+</div>
+
+<footer>Sources &mdash; SPY weekly OHLC bars, Apr 27 &ndash; Jul 31, 2026; official close Jul 31, 2026 = 747.03; 50-day and 200-day simple moving averages computed from daily closes during the Aug 3, 2026 run. The S&amp;P 500 ETF is used purely as the market benchmark for teaching chart structure &mdash; this is not a recommendation to buy or sell any security. <b>Educational content only &mdash; not financial advice.</b></footer>
+</div></body></html>
