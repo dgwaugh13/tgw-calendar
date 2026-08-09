@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGW Market Sundays · S1E1 · Screen-Share Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--red:#FF7A59;--text:#E8EEF2;--muted:#8A9BA8;
+--disp:'Space Grotesk',sans-serif;--body:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:var(--body);min-height:100vh;padding:28px 24px 60px;background-image:radial-gradient(1000px 500px at 80% -10%,rgba(52,229,163,.07),transparent 60%)}
+.wrap{max-width:1180px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:46px;height:46px;border-radius:11px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:var(--disp);font-weight:700;color:#04120c;font-size:18px}
+.brand h1{font-family:var(--disp);font-size:22px}
+.brand p{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.12em}
+.score{display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--gold);border-radius:14px;padding:10px 18px}
+.score .side{text-align:center;cursor:pointer;user-select:none}
+.score .side .n{font-family:var(--disp);font-size:34px;font-weight:700;color:var(--gold)}
+.score .side .l{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted)}
+.score .vs{font-family:var(--mono);color:var(--muted);font-size:12px}
+.score .hint{font-family:var(--mono);font-size:9px;color:var(--muted);max-width:90px}
+nav{display:flex;gap:8px;margin:18px 0;flex-wrap:wrap}
+nav button{font-family:var(--mono);font-size:12px;letter-spacing:.06em;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
+nav button.on{color:#04120c;background:var(--mint);border-color:var(--mint);font-weight:700}
+.panel{display:none}
+.panel.on{display:block}
+h2{font-family:var(--disp);font-size:19px;margin:6px 0 4px}
+.sub{font-size:13px;color:var(--muted);margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.reveal{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;cursor:pointer;position:relative;min-height:180px;display:flex;flex-direction:column;justify-content:center}
+.reveal .q{font-family:var(--disp);font-size:17px;font-weight:600;line-height:1.35}
+.reveal .line{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.reveal .tap{position:absolute;bottom:12px;right:16px;font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em}
+.reveal .ans{display:none}
+.reveal.open{border-color:var(--mint);background:linear-gradient(160deg,#14251d,#101820)}
+.reveal.open .q,.reveal.open .tap{display:none}
+.reveal.open .ans{display:block}
+.ans .big{font-family:var(--disp);font-size:52px;font-weight:700;color:var(--mint);line-height:1}
+.ans .big.gold{color:var(--gold)}
+.ans .big.red{color:var(--red)}
+.ans .ctx{font-size:13px;color:#cdd8e1;margin-top:10px;line-height:1.5}
+.ans .src{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;letter-spacing:.06em}
+.tape{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:14px}
+.t{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.t h4{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.t .n{font-family:var(--disp);font-size:26px;font-weight:700;color:var(--mint);margin-top:6px}
+.t .n.gold{color:var(--gold)}
+.t p{font-size:12px;color:var(--muted);margin-top:4px}
+.seesaw{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;margin-top:14px;text-align:center}
+.seesaw .row{display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap;font-family:var(--disp);font-size:20px;font-weight:600}
+.seesaw .down{color:var(--red)}
+.seesaw .up{color:var(--mint)}
+.seesaw .mech{font-size:13px;color:var(--muted);margin-top:12px;max-width:64ch;margin-left:auto;margin-right:auto}
+.vote{margin-top:16px;background:rgba(245,196,81,.07);border:1px solid rgba(245,196,81,.35);border-radius:14px;padding:16px 20px;text-align:center}
+.vote .q{font-family:var(--disp);font-size:18px;font-weight:700}
+.vote .opts{font-family:var(--mono);font-size:14px;color:var(--gold);margin-top:6px;letter-spacing:.1em}
+.vote p{font-size:12px;color:var(--muted);margin-top:6px}
+table{width:100%;border-collapse:collapse;margin-top:14px;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);background:var(--panel2)}
+td{padding:14px;border-bottom:1px dashed rgba(36,49,64,.7);font-size:14px;vertical-align:middle}
+td .ln{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:.1em}
+td .est{font-family:var(--mono);font-size:12px;color:var(--muted)}
+td[contenteditable]{background:rgba(245,196,81,.06);border-left:2px solid var(--gold);font-family:var(--disp);font-weight:700;color:var(--gold);min-width:90px;outline:none}
+td[contenteditable]:empty::before{content:"tap · type";font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400}
+.payoff{margin-top:18px}
+.payoff .reveal{min-height:230px;border-color:rgba(245,196,81,.5)}
+.payoff .ans .big{font-size:64px}
+.foot{margin-top:26px;font-size:11.5px;color:var(--muted);font-family:var(--mono);line-height:1.7}
+.kbd{font-family:var(--mono);font-size:10px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand"><div class="mark">TG</div><div><h1>TGW MARKET SUNDAYS</h1><p>SEASON 1 · EPISODE 1 · AUG 9, 2026 · WHO'S LYING?</p></div></div>
+  <div class="score">
+    <div class="side" onclick="bump(this)"><div class="n">0</div><div class="l">WOLF</div></div>
+    <div class="vs">VS</div>
+    <div class="side" onclick="bump(this)"><div class="n">0</div><div class="l">D WAUGH</div></div>
+    <div class="hint">click a score to +1 · shift-click −1</div>
+  </div>
+</header>
+
+<nav>
+  <button class="on" onclick="go(0,this)">1 · CALL THE PRINT — THE WEEK</button>
+  <button onclick="go(1,this)">2 · THE LEDGER — REAL OR SUGAR?</button>
+  <button onclick="go(2,this)">3 · THE LEDGER — NOW OR WAIT?</button>
+  <button onclick="go(3,this)">4 · NEXT WEEK'S BOARD + PAYOFF</button>
+</nav>
+
+<!-- PANEL 1 -->
+<section class="panel on">
+  <h2>🎯 Call the Print — Round 1: the week that just happened</h2>
+  <p class="sub">Cards UP before each reveal. Click a card to flip it. Closest guess takes the point.</p>
+  <div class="grid">
+    <div class="reveal" onclick="this.classList.toggle('open')">
+      <div class="line">Print #1 · Jobs</div>
+      <div class="q">How many jobs did the U.S. economy add in July?<br><span style="color:var(--muted);font-size:13px">Economists' forecast: about +80,000</span></div>
+      <div class="ans"><div class="big red">−23,000</div>
+      <div class="ctx">Wrong sign, not a miss. And May + June were revised DOWN a combined <b>103,000</b> (−66K / −37K).</div>
+      <div class="src">BLS EMPLOYMENT SITUATION · FRI AUG 7, 8:30AM ET</div></div>
+      <div class="tap">TAP TO REVEAL</div>
+    </div>
+    <div class="reveal" onclick="this.classList.toggle('open')">
+      <div class="line">Print #2 · Unemployment</div>
+      <div class="q">Jobs shrank — so what did the unemployment rate do?<br><span style="color:var(--muted);font-size:13px">Forecast: 4.2%</span></div>
+      <div class="ans"><div class="big gold">4.1%</div>
+      <div class="ctx">It went DOWN — because participation fell to <b>61.4%</b> (−0.7pp since January). People left the line; nobody got hired faster.</div>
+      <div class="src">BLS · HOUSEHOLD SURVEY</div></div>
+      <div class="tap">TAP TO REVEAL</div>
+    </div>
+    <div class="reveal" onclick="this.classList.toggle('open')">
+      <div class="line">Print #3 · The Fed</div>
+      <div class="q">September rate-HIKE odds were 55% on Thursday. Where did Friday leave them?</div>
+      <div class="ans"><div class="big">43.9%</div>
+      <div class="ctx">Hold is the new favorite at <b>56.1%</b>. The 10-yr Treasury fell to <b>4.64%</b>; the 30-yr mortgage dipped to ~<b>6.63%</b>.</div>
+      <div class="src">CME FEDWATCH · FRI AUG 7</div></div>
+      <div class="tap">TAP TO REVEAL</div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL 2 -->
+<section class="panel">
+  <h2>⚖️ The Ledger — Round 1: bad news made stocks go UP. Real rally or sugar high?</h2>
+  <p class="sub">90 seconds each · 30-second rebuttal · no interrupting. The comments vote the winner.</p>
+  <div class="seesaw">
+    <div class="row"><span class="down">JOBS −23,000 ▼</span><span style="color:var(--muted)">→ hike odds die →</span><span class="down">10-YR YIELD 4.64% ▼</span><span style="color:var(--muted)">→ future profits worth more →</span><span class="up">STOCKS ▲ RECORD</span></div>
+    <div class="mech">The seesaw: weak jobs killed the September hike case, long-term yields fell, and stocks repriced up. Same mechanism works in reverse — that's the debate.</div>
+  </div>
+  <div class="tape">
+    <div class="t"><h4>S&amp;P 500 · Fri close</h4><div class="n">7,757.64</div><p>All-time record · +3.5% on the week</p></div>
+    <div class="t"><h4>Nasdaq</h4><div class="n">26,690.62</div><p>+5% — best week since April</p></div>
+    <div class="t"><h4>Dow</h4><div class="n">54,036.93</div><p>+0.3% Friday</p></div>
+    <div class="t"><h4>Q2 earnings</h4><div class="n gold">85%+</div><p>of S&amp;P 500 companies beat estimates</p></div>
+  </div>
+  <div class="vote"><div class="q">Is this rally REAL — or a SUGAR high?</div><div class="opts">COMMENT: “REAL” or “SUGAR”</div><p>Counted and posted on the scoreboard next Sunday.</p></div>
+</section>
+
+<!-- PANEL 3 -->
+<section class="panel">
+  <h2>⚖️ The Ledger — Round 2: all-time highs — buy NOW or WAIT for the dip?</h2>
+  <p class="sub">Gut vs. data. The tile settles it. (Education, not advice — nobody's telling you to buy anything.)</p>
+  <div class="reveal" onclick="this.classList.toggle('open')" style="min-height:210px">
+    <div class="line">The owned number · J.P. Morgan, S&amp;P 500, 1988–2020</div>
+    <div class="q">Average 1-year return if you invested on a RANDOM day: +11.7%.<br>What was it if you ONLY invested on days the market closed at an ALL-TIME HIGH?</div>
+    <div class="ans"><div class="big">+14.6%</div>
+    <div class="ctx">The “scary” entry beat the random one. 3-year: <b>+50.4% vs +39.1%</b> · 5-year: <b>+78.9% vs +71.4%</b>. And per RBC (1,250+ ATHs since 1950): down 10%+ a year later only <b>9%</b> of the time.</div>
+    <div class="src">J.P. MORGAN 1988–2020 · RBC SINCE 1950</div></div>
+    <div class="tap">TAP TO REVEAL</div>
+  </div>
+  <div class="tape">
+    <div class="t"><h4>The resolution</h4><div class="n gold">DCA</div><p>Same amount, every payday, on a schedule — some buys land at highs, some at dips, and you never have to guess which.</p></div>
+    <div class="t"><h4>The guardrail</h4><div class="n gold">2 LANES</div><p>Credit money never becomes investment capital. Earned income only. Never margin.</p></div>
+  </div>
+  <div class="vote"><div class="q">All-time highs: buy NOW or WAIT?</div><div class="opts">COMMENT: “NOW” or “WAIT”</div><p>On the board next week.</p></div>
+</section>
+
+<!-- PANEL 4 -->
+<section class="panel">
+  <h2>🎯 Call the Print — Round 2: next week, locked on camera</h2>
+  <p class="sub">Cards up → type each call into the gold boxes → screenshot this board. It opens next Sunday's episode. A game with a scoreboard — not advice.</p>
+  <table>
+    <tr><th>Line</th><th>The number</th><th>Wolf's call</th><th>D Waugh's call</th></tr>
+    <tr><td><span class="ln">LINE 1 · WED 8:30AM</span><br>CPI, July — over/under <b>3.5%</b> y/y <span class="est">(June: 3.5%)</span></td><td class="est">BLS · Aug 12</td><td contenteditable></td><td contenteditable></td></tr>
+    <tr><td><span class="ln">LINE 2 · WED PM</span><br>Cisco EPS — beat/miss <b>$1.13</b></td><td class="est">consensus est.</td><td contenteditable></td><td contenteditable></td></tr>
+    <tr><td><span class="ln">LINE 3 · TUE PM</span><br>Cava EPS — beat/miss <b>$0.18</b></td><td class="est">consensus est.</td><td contenteditable></td><td contenteditable></td></tr>
+    <tr><td><span class="ln">LINE 4 · FRI CLOSE</span><br>SPY — over/under <b>773.20</b></td><td class="est">Fri 8/7 close</td><td contenteditable></td><td contenteditable></td></tr>
+    <tr><td><span class="ln">LINE 5 · VIBE CHECK</span><br>Does “recession” trend this week — yes/no?</td><td class="est">tiebreaker</td><td contenteditable></td><td contenteditable></td></tr>
+  </table>
+  <div class="payoff">
+    <div class="reveal" onclick="this.classList.toggle('open')">
+      <div class="line">THE PAYOFF · who's lying?</div>
+      <div class="q">Wages grew 3.2% this year. Prices grew 3.5%. So what was the average American's REAL raise?</div>
+      <div class="ans"><div class="big red">−0.3%</div>
+      <div class="ctx">3.2 − 3.5 = <b>−0.3%</b>. On a $52,000 salary that's ≈ <b>$156 of buying power gone</b> — while the market set records. Nobody's lying: the market is right about companies, the jobs report is right about workers. The question is which side of the gap you're on.</div>
+      <div class="src">BLS AHE +3.2% Y/Y ($37.62/HR) · BLS CPI +3.5% Y/Y</div></div>
+      <div class="tap">TAP TO REVEAL — HOLD FOR THE END</div>
+    </div>
+  </div>
+</section>
+
+<div class="foot">
+TGW MARKET SUNDAYS S1E1 · verified Sun Aug 9, 2026 AM · sources: BLS Employment Situation 8/7 · BLS CPI (June) · CME FedWatch via press 8/7 · J.P. Morgan 1988–2020 · RBC · Friday closes 8/7 · analyst consensus (Cisco, Cava)<br>
+EDUCATIONAL CONTENT ONLY — NOT FINANCIAL ADVICE. GUESS CARDS ARE A SCOREBOARD GAME, NOT RECOMMENDATIONS. NEVER MARGIN.
+<span class="kbd"><br>keys: 1–4 switch panels</span>
+</div>
+
+</div>
+<script>
+function go(i,btn){document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('on',j===i));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b===btn||b===document.querySelectorAll('nav button')[i]));}
+function bump(el){const n=el.querySelector('.n');let v=parseInt(n.textContent||'0');n.textContent=(event.shiftKey?Math.max(0,v-1):v+1);}
+document.addEventListener('keydown',e=>{const i='1234'.indexOf(e.key);if(i>-1)go(i,document.querySelectorAll('nav button')[i]);});
+</script>
+</body>
+</html>
