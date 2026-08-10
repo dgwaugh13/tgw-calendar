@@ -39,18 +39,20 @@ Text-layer rules: cold-open ≤5 words · sustained caption ≤~12 words · Titl
 - **Sustained caption:** `The 10-Year And 2-Year Decide Your Loan — $227/Mo`
 - **Screen-share moment:** at Pt 1, screen-record typing US10Y/US02Y into a free chart app (mirrors the artifact).
 
-## SAT Aug 15 — Denial myth-bust collab react (D Waugh) · ⚠ IG-FIRST
+## SAT Aug 15 — Denial-letter collab react (D Waugh) · ⚠ IG-FIRST
 | Asset | Use | Beat |
 |---|---|---|
-| `SAT/SAT_V1_myth-card.png` + `.mp4` | React target background (myth card + red X) | Cold open |
+| `SAT/SAT_V0_investfest-peg.png` + `.mp4` | **COLD OPEN (0:00–0:02)** — the verified Invest Fest 31,300 peg | Cold open |
+| `SAT/SAT_V1_myth-card.png` + `.mp4` | React target background (myth card + red X) | Stakes / turn |
 | `SAT/SAT_P1_denial-zero.png` | Pt 1 header | Denial = 0 points |
 | `SAT/SAT_P2_inquiry-five.png` | Pt 2 header | Inquiry ≈ 5 points + re-hook |
 | `SAT/SAT_P3_letter-cheatcode.png` | Pt 3 / PAYOFF | The adverse-action letter |
 
-- **STITCH INSTRUCTION:** if a specific creator clip making the "denied wrecks your score" claim is found before Saturday, screenshot/stitch it as the opening 2–3s (claim on screen, EYL-style verbatim-claim caption) and drop the myth-card still to second position. Otherwise the myth card IS the react target.
-- **Cold-open text:** `Denied? 0 Points Lost`
+- **PEG (verified Aug 10):** Invest Fest 2026, Atlanta Aug 7–9 — **31,300 tickets, an all-time record** (Earn Your Leisure's own announcement; Rashad Bilal confirmed the wrap Aug 9). EYL now appears in TikTok's "creators your viewers also watched" (370K) — our audience is inside that ecosystem.
+- **STITCH INSTRUCTION:** optional — swap an Invest Fest crowd still over the 0:00–0:02 cold open in place of the generated peg tile. And if a specific creator clip making the "denied wrecks your score" claim surfaces before Saturday, stitch it in place of the myth card (claim on screen, EYL-style verbatim-claim caption).
+- **Cold-open text:** `31,300 Paid. Nobody Read It.`
 - **Sustained caption:** `The Denial Costs 0 Points — The Application Costs ~5`
-- **IG-FIRST HARD GATE:** IG-native cut live FIRST, same day, then TikTok/YT — else the slot logs as MISSED.
+- **IG-FIRST HARD GATE:** IG-native cut live FIRST, same day, then TikTok/YT — else the slot logs as MISSED. **⚠ This gate broke in its first week** (Aug 4 TikTok → Aug 5 IG → 153 views vs 1,776 the week before).
 
 ## SUN Aug 16 — Podcast
 | Asset | Use |
