@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TGW · Podcast Master Dashboard · Sun Aug 16, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--red:#FF7A59;--blue:#5B9BFF;--text:#E8EEF2;--muted:#8A9BA8;
+--disp:'Space Grotesk',sans-serif;--body:'Inter',sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:var(--body);padding:36px;background-image:radial-gradient(1000px 500px at 20% -10%,rgba(245,196,81,.07),transparent 60%),radial-gradient(900px 500px at 90% 110%,rgba(52,229,163,.05),transparent 60%)}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-family:var(--disp);font-size:32px;letter-spacing:-.02em}
+h1 b{color:var(--gold)}
+.sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin:6px 0 18px;letter-spacing:.08em}
+.jump{position:sticky;top:0;z-index:50;background:rgba(11,15,20,.92);backdrop-filter:blur(8px);display:flex;flex-wrap:wrap;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:10px}
+.jump a{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-decoration:none;color:var(--muted);border:1px solid var(--line);background:rgba(255,255,255,.03);padding:7px 14px;border-radius:99px;transition:all .15s}
+.jump a:hover{color:var(--mint);border-color:var(--mint)}
+.jump a b{color:var(--gold);font-weight:600}
+.seg{margin-top:44px;scroll-margin-top:70px}
+.seghead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:18px}
+.seghead .n{font-family:var(--mono);font-size:12px;color:var(--ink);background:var(--gold);border-radius:8px;padding:4px 10px;font-weight:600;letter-spacing:.06em}
+.seghead h2{font-family:var(--disp);font-size:22px;letter-spacing:-.01em}
+.seghead .t{font-family:var(--mono);font-size:12px;color:var(--muted);margin-left:auto}
+h3.mini{font-family:var(--disp);font-size:15px;color:var(--gold);margin:24px 0 10px}
+.mint{color:var(--mint)}.gold{color:var(--gold)}.red{color:var(--red)}.blue{color:var(--blue)}
+.duel{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;margin-bottom:14px}
+.side{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;text-align:center}
+.side .k{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.side .v{font-family:var(--disp);font-size:54px;font-weight:700;margin:8px 0;line-height:1}
+.side .n{font-size:13px;color:var(--muted)}
+.vs{font-family:var(--disp);font-size:22px;color:var(--muted);text-align:center}
+.verdict{background:linear-gradient(120deg,rgba(245,196,81,.1),rgba(52,229,163,.07));border:1px solid rgba(245,196,81,.35);border-radius:16px;padding:20px;text-align:center;font-family:var(--disp);font-size:20px;line-height:1.5}
+.verdict b{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
+.card .k{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.card .v{font-family:var(--disp);font-size:42px;font-weight:700;margin:8px 0;line-height:1}
+.card .n{font-size:13px;color:var(--muted);line-height:1.5}
+.decel{display:grid;grid-template-columns:repeat(3,1fr) 90px;gap:10px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.step .m{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em}
+.step .p{font-family:var(--disp);font-size:32px;font-weight:700;margin-top:4px}
+.arrow{display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-size:14px;color:var(--red);text-align:center;line-height:1.3}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:12px 16px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+td{font-family:var(--mono);font-size:14.5px;padding:12px 16px;text-align:right;border-bottom:1px solid rgba(36,49,64,.5)}
+tr:last-child td{border-bottom:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.build{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:14px 20px;border-bottom:1px solid rgba(36,49,64,.55);align-items:center}
+.row:last-child{border-bottom:none}
+.row .lbl{font-size:14.5px}
+.row .lbl small{display:block;color:var(--muted);font-size:11.5px;margin-top:2px;font-family:var(--mono)}
+.row .num{font-family:var(--mono);font-size:19px;white-space:nowrap}
+.row.total{background:linear-gradient(120deg,rgba(245,196,81,.12),rgba(255,122,89,.08));border-top:1px solid rgba(245,196,81,.35)}
+.row.total .num{font-family:var(--disp);font-size:28px;font-weight:700;color:var(--red)}
+.say{background:rgba(52,229,163,.07);border:1px solid rgba(52,229,163,.3);border-radius:16px;padding:20px;font-size:16px;line-height:1.6;margin-top:16px}
+.say b{color:var(--mint)}
+.warn{background:rgba(255,122,89,.07);border:1px solid rgba(255,122,89,.3);border-radius:16px;padding:18px;font-size:14.5px;line-height:1.6;margin-top:14px}
+.warn b{color:var(--red)}
+.anat{display:grid;grid-template-columns:280px 1fr;gap:22px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+.candle{position:relative;height:320px}
+.wickline{position:absolute;left:50%;width:3px;background:var(--mint);transform:translateX(-50%)}
+.bodybox{position:absolute;left:50%;width:72px;transform:translateX(-50%);background:rgba(52,229,163,.28);border:2px solid var(--mint);border-radius:3px}
+.tag{position:absolute;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;white-space:nowrap}
+.tag.r{left:calc(50% + 48px)}
+.tag.l{right:calc(50% + 48px);text-align:right}
+.tick{position:absolute;left:calc(50% - 42px);width:84px;height:1px;background:rgba(138,155,168,.4)}
+.legend .row{padding:11px 0;border-bottom:1px solid rgba(36,49,64,.55)}
+.legend .row:last-child{border-bottom:none}
+.clock{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cl{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.cl.hot{border-color:rgba(245,196,81,.45)}
+.cl .d{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em}
+.cl .e{font-family:var(--disp);font-size:15px;font-weight:600;margin-top:6px;line-height:1.35}
+.cl .p{font-family:var(--mono);font-size:12px;color:var(--mint);margin-top:5px}
+foot{display:block;margin-top:44px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+@media(max-width:900px){.cards,.two,.clock{grid-template-columns:1fr}.duel{grid-template-columns:1fr}.vs{padding:8px 0}.anat{grid-template-columns:1fr}.decel{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="wrap">
+
+<h1>Sentiment hit 51. Stocks hit a record. — <b>the whole episode, one board</b></h1>
+<div class="sub">TGW PODCAST · SUNDAY AUG 16, 2026 · ALL FIGURES PULLED &amp; VERIFIED LIVE THIS MORNING · SCROLL FOLLOWS THE RUNDOWN, COLD OPEN → SEGMENT 5</div>
+
+<nav class="jump">
+  <a href="#open"><b>OPEN</b> · 51 vs record</a>
+  <a href="#s1"><b>SEG 1</b> · The consumer</a>
+  <a href="#s2"><b>SEG 2</b> · 16.7M shares</a>
+  <a href="#s3"><b>SEG 3</b> · Fed &amp; mortgage</a>
+  <a href="#s4"><b>SEG 4</b> · The red day</a>
+  <a href="#s5"><b>SEG 5</b> · The verdict</a>
+</nav>
+
+<!-- ============ COLD OPEN ============ -->
+<section class="seg" id="open">
+  <div class="seghead"><span class="n">COLD OPEN</span><h2>Two numbers, opposite answers</h2><span class="t">0:00–1:30</span></div>
+  <div class="duel">
+    <div class="side"><div class="k">How people FEEL · UMich, prelim Aug</div><div class="v red">51</div><div class="n">about −8% in a month · ends a 2-month rising streak</div></div>
+    <div class="vs">VS</div>
+    <div class="side"><div class="k">What owners are WORTH · SPY, Thu Aug 13</div><div class="v mint">$777.88</div><div class="n">all-time record close · $776.34 Friday</div></div>
+  </div>
+  <div class="verdict">Both are true. They measure different things — <b>and neither one is your number.</b> (We answer which one is in Segment 5.)</div>
+</section>
+
+<!-- ============ SEGMENT 1 ============ -->
+<section class="seg" id="s1">
+  <div class="seghead"><span class="n">SEG 1</span><h2>The Consumer Cracked</h2><span class="t">1:30–10:00</span></div>
+
+  <h3 class="mini">Retail sales, year over year — the momentum is what broke</h3>
+  <div class="decel">
+    <div class="step"><div class="m">MAY</div><div class="p mint">+7.3%</div></div>
+    <div class="step"><div class="m">JUNE</div><div class="p gold">+6.7%</div></div>
+    <div class="step"><div class="m">JULY</div><div class="p red">+5.0%</div></div>
+    <div class="arrow">−2.3pp<br>in two<br>months</div>
+  </div>
+
+  <h3 class="mini">July 2026 advance retail sales · released Fri Aug 14</h3>
+  <table>
+    <tr><th>Measure</th><th>Print</th></tr>
+    <tr><td>Headline, month over month</td><td class="red">−0.6% &nbsp;(bigger drop than expected)</td></tr>
+    <tr><td>Total retail + food services</td><td>$763.6 billion</td></tr>
+    <tr><td>Online sales — biggest faller</td><td class="red">−2.2%</td></tr>
+    <tr><td>Car dealerships</td><td class="red">−2.0%</td></tr>
+    <tr><td>Restaurants &amp; bars</td><td class="mint">+0.5%</td></tr>
+    <tr><td>Health &amp; personal care</td><td class="mint">+0.7%</td></tr>
+  </table>
+  <div class="say">Read it plainly: people <b>didn't stop spending — they dropped the big optional stuff and kept the small stuff.</b> A discretionary pullback, not a collapse. ✏️ Draw: underline 7.3 → 6.7 → 5.0, circle the −2.2%.</div>
+</section>
+
+<!-- ============ SEGMENT 2 ============ -->
+<section class="seg" id="s2">
+  <div class="seghead"><span class="n">SEG 2</span><h2>16.7 Million Shares Nobody Voted On</h2><span class="t">10:00–20:00</span></div>
+
+  <div class="cards">
+    <div class="card"><div class="k">Forced index-fund buying</div><div class="v gold">16.7M</div><div class="n">shares · J.P. Morgan estimate</div></div>
+    <div class="card"><div class="k">One-session move</div><div class="v mint">+12.63%</div><div class="n">$158.12 Thu → $178.09 Fri</div></div>
+    <div class="card"><div class="k">Volume vs 30-day average</div><div class="v gold">3.26×</div><div class="n">21,500,412 vs 6,592,243</div></div>
+  </div>
+
+  <h3 class="mini">The build — what $333 million of "no choice" looks like</h3>
+  <div class="build">
+    <div class="row"><div class="lbl">Shares index funds must buy<small>J.P. MORGAN ESTIMATE</small></div><div class="num gold">16,700,000</div></div>
+    <div class="row"><div class="lbl">× Friday's close (Aug 14)<small>AFTER THE ANNOUNCEMENT</small></div><div class="num">$178.09</div></div>
+    <div class="row"><div class="lbl">= What that buying costs<small>THE BILL AS IT STANDS</small></div><div class="num gold">$2,974,103,000</div></div>
+    <div class="row"><div class="lbl">Same 16.7M shares × Thursday's close<small>$158.12 — ONE DAY EARLIER, BEFORE THE NEWS</small></div><div class="num mint">$2,640,604,000</div></div>
+    <div class="row total"><div class="lbl">The difference nobody voted on<small>CREATED BEFORE A SINGLE FUND COULD ACT</small></div><div class="num">$333,499,000</div></div>
+  </div>
+
+  <h3 class="mini">What happened, in order</h3>
+  <table>
+    <tr><th>When</th><th>Event</th><th>RDDT close</th></tr>
+    <tr><td>Thu Aug 13, after the close</td><td style="text-align:right">S&amp;P DJI announces: RDDT replaces AvalonBay (being acquired by Equity Residential)</td><td>$158.12</td></tr>
+    <tr><td>Fri Aug 14</td><td style="text-align:right">Everyone <em>free</em> to move, moves</td><td class="mint">$178.09 &nbsp;(+12.63%)</td></tr>
+    <tr><td>Tue Aug 18, pre-open</td><td style="text-align:right">Inclusion effective — funds <em>must</em> hold it</td><td>—</td></tr>
+  </table>
+
+  <div class="warn"><b>Say this part out loud:</b> the $333M is not a scandal and not a reason to avoid index funds. It's the price of the rule — the same rule that stops your fund panic-selling, chasing your feed, and charging you a manager's fee. A small visible cost for protection from a large invisible one.</div>
+  <div class="say"><b>The receipt — three taps in your own account:</b> open your fund → "Holdings" or "Portfolio" → every S&amp;P 500 fund publishes its full list. Reddit will be on yours. 🎬 Planted clip line lands here.</div>
+</section>
+
+<!-- ============ SEGMENT 3 ============ -->
+<section class="seg" id="s3">
+  <div class="seghead"><span class="n">SEG 3</span><h2>Wednesday's Minutes &amp; Your Mortgage</h2><span class="t">20:00–29:00</span></div>
+
+  <div class="two">
+    <table>
+      <tr><th>Inflation · July CPI (rel. Aug 12)</th><th></th></tr>
+      <tr><td>Headline m/m</td><td>+0.1%</td></tr>
+      <tr><td>Headline YoY</td><td class="gold">3.4% &nbsp;(from 3.5%)</td></tr>
+      <tr><td>Core m/m</td><td>+0.2%</td></tr>
+      <tr><td>Core YoY</td><td class="mint">2.5%</td></tr>
+      <tr><td>Energy YoY</td><td class="red">+14.7%</td></tr>
+    </table>
+    <table>
+      <tr><th>Rates &amp; borrowing</th><th></th></tr>
+      <tr><td>10-year Treasury (Fri Aug 14)</td><td class="gold">4.68–4.70%</td></tr>
+      <tr><td>Freddie Mac 30-yr fixed (Aug 13)</td><td>6.67% &nbsp;(prior 6.69%)</td></tr>
+      <tr><td>30-yr, one year ago</td><td>6.58%</td></tr>
+      <tr><td>Freddie Mac 15-yr fixed</td><td>5.96%</td></tr>
+      <tr><td>Fed funds target</td><td>3.50–3.75%</td></tr>
+    </table>
+  </div>
+
+  <h3 class="mini">The meeting the minutes describe · July 28–29</h3>
+  <table>
+    <tr><th>Fact</th><th>Detail</th></tr>
+    <tr><td>Decision</td><td>HELD at 3.50–3.75%</td></tr>
+    <tr><td>Vote</td><td class="gold">9–3</td></tr>
+    <tr><td>The three dissenters</td><td class="red">Hammack, Kashkari, Logan — all for a HIKE</td></tr>
+    <tr><td>Forward guidance</td><td>Removed · Chair Warsh's 2nd meeting</td></tr>
+    <tr><td><b>Minutes publish</b></td><td class="gold"><b>Wed Aug 19, 2:00pm ET</b></td></tr>
+    <tr><td>Jackson Hole (Warsh's first keynote)</td><td>Aug 27–29</td></tr>
+    <tr><td>Next FOMC decision</td><td>Sep 15–16</td></tr>
+  </table>
+  <div class="say"><b>The chain to say out loud:</b> the 10-year Treasury sets the 30-year mortgage within days, not months. Inflation cooled slightly (3.5 → 3.4) while the consumer weakened — those point in <b>opposite directions</b> for the Fed, which is exactly why these minutes matter more than usual. 🎬 Planted clip line #3 lands here.</div>
+</section>
+
+<!-- ============ SEGMENT 4 ============ -->
+<section class="seg" id="s4">
+  <div class="seghead"><span class="n">SEG 4</span><h2>What a Bad Day Actually Costs</h2><span class="t">29:00–37:00</span></div>
+
+  <div class="cards">
+    <div class="card"><div class="k">Worst S&amp;P 500 day, last 3 months</div><div class="v red">−2.58%</div><div class="n">Jun 5, 2026 · SPY $757.09 → $737.55</div></div>
+    <div class="card"><div class="k">On $1,000, that day cost</div><div class="v red">$25.81</div><div class="n">"almost gone," measured</div></div>
+    <div class="card"><div class="k">Closed back above the pre-drop level</div><div class="v mint">39</div><div class="n">trading days later — Aug 3 · not a promise, just what that day did</div></div>
+  </div>
+
+  <h3 class="mini">The Red Day Sheet — the same day at four account sizes</h3>
+  <table>
+    <tr><th>If you held…</th><th>…that day cost</th></tr>
+    <tr><td>$500</td><td class="red">−$12.90</td></tr>
+    <tr><td>$1,000</td><td class="red">−$25.81</td></tr>
+    <tr><td>$2,500</td><td class="red">−$64.52</td></tr>
+    <tr><td>$5,000</td><td class="red">−$129.05</td></tr>
+  </table>
+
+  <div class="say"><b>Nothing left the account.</b> A price drop is <b>unrealized</b> — the share count is identical, only the quote changed. A loss becomes real only when <em>you</em> sell. Receipt: open "Holdings," watch the dollars move and the share count not move.</div>
+  <div class="warn"><b>The missing piece isn't courage — it's an emergency fund.</b> Cash you can reach without selling is what stops a red day and a broken transmission landing in the same week. Order of operations: cushion first, then invest what you <b>earn</b> — never borrowed money, never money you need in 90 days. 🎬 Planted clip line #4 lands here.</div>
+</section>
+
+<!-- ============ SEGMENT 5 ============ -->
+<section class="seg" id="s5">
+  <div class="seghead"><span class="n">SEG 5</span><h2>So Which Number Do You Plan Around?</h2><span class="t">37:00–42:00</span></div>
+
+  <div class="verdict"><b>Neither.</b> Sentiment measures how people feel this month; the record measures what owners are worth today. <b>Your number is your own:</b> months of expenses in cash, and years until you need the invested money. Everything above is the weather — those two are the roof.</div>
+
+  <h3 class="mini">The built-in verdict — four companies see the receipts before Washington does</h3>
+  <div class="clock">
+    <div class="cl hot"><div class="d">TUE AUG 18</div><div class="e">Home Depot Q2</div><div class="p">$338.79 Fri close</div></div>
+    <div class="cl hot"><div class="d">WED AUG 19</div><div class="e">Target Q2 · Lowe's Q2</div><div class="p">TGT $154.52</div></div>
+    <div class="cl hot"><div class="d">THU AUG 20</div><div class="e">Walmart Q2</div><div class="p">$115.27</div></div>
+    <div class="cl"><div class="d">NEXT SUNDAY</div><div class="e">We read their answers on air</div><div class="p">Aug 23 episode</div></div>
+  </div>
+  <div class="say">If retail sales at <b>−0.6%</b> is real, their guidance will say so. That's the verdict beat — and next Sunday's episode. Close the loop: <b>"the market is a scoreboard for owners"</b> — the fix isn't timing the scoreboard, it's slowly, boringly becoming an owner with money you earned.</div>
+</section>
+
+<foot>
+Sources — all verified live Sun Aug 16, 2026: US Census Bureau advance retail sales, July 2026 (rel. Aug 14) · University of Michigan consumer sentiment, prelim Aug 2026 · BLS CPI, July 2026 (rel. Aug 12) · S&amp;P Dow Jones Indices announcement, Aug 13, 2026 · J.P. Morgan estimate (~16.7M shares) · RDDT + SPY daily bars pulled live Aug 16 (RDDT 30-day avg volume 6,592,243; market cap $34.24B) · FOMC statement + vote, Jul 28–29, 2026 · Freddie Mac PMMS, Aug 13, 2026 · US Treasury market close, Aug 14, 2026 · retail earnings calendar (HD · TGT · LOW · WMT).<br>
+<b style="color:var(--mint)">Educational content only — not financial advice.</b> No trade recommendations, no price predictions. Invest only money you earn — never borrowed money, never margin.
+</foot>
+
+</div></body></html>
