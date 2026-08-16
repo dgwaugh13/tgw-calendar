@@ -6,6 +6,8 @@
 - **Cold-open text** — ≤5 words, on screen for the first 1–2 seconds.
 - **Sustained caption** — ≤~12 words, the box that rides the whole b-roll set.
 
+> ⚠️ **THE NUMBER GUARDRAIL APPLIES TO BOTH VARIANTS.** A question-form box is still a hook, so it still has to carry the owned number. If a question variant can't hold its number, ship the declarative one instead — the number is non-negotiable, the question form is a preference.
+
 **★ NEW THIS WEEK — the Atlas Berry "claim + question" box (adopted Aug 16, 2026).** His live post ran *"The 1st SpaceX 13F Just Dropped — So Who Owns The Company?"* — a claim with a **question** as the sharpener, rather than a declarative. A question is aimed at a person; a headline is aimed at nobody. **Every sustained caption below now offers a question variant.** Wolf picks per post; the question form is the default on the news days.
 
 > ⚠️ **B-roll note for this run.** Pexels sourcing goes through Claude in Chrome, and the browser session this run was spent on the analytics pull (YouTube, TikTok, IG per-post insights, Atlas Berry, EYL) — so this week ships the **generated TGW data tiles + Ken Burns clips** rather than a Pexels set. Every beat that carries our own numbers is covered, which is what the tiles are for. **If Wolf wants live footage under the intro beats, the Pexels search terms are listed per post below** and drop straight into the existing folder structure.
@@ -16,7 +18,7 @@
 
 **Cold-open text (≤5 words):** **"You Bought Reddit This Morning"**
 **Sustained caption — declarative:** *Your Index Fund Must Buy* **16.7 Million** *Shares. You Get No Vote.*
-**Sustained caption — question variant (Atlas Berry form, DEFAULT):** *Your Fund Bought Reddit Today — So Who Actually Decided That?*
+**Sustained caption — question variant (Atlas Berry form, DEFAULT):** *Your Fund Bought 16.7 Million Shares Of Reddit — Who Decided That?*
 
 ### Ordered cut list
 
@@ -81,7 +83,7 @@
 
 **Cold-open text (≤5 words):** **"He's Not Wrong About That"**
 **Sustained caption — declarative:** *The Worst Day In 3 Months Cost* **$25.81** *On $1,000.*
-**Sustained caption — question variant:** *"It's Almost Gone In Minutes" — So What Did It Actually Cost?*
+**Sustained caption — question variant:** *It Felt Like It Vanished — So Why Was It Only $25.81?*
 
 ### Ordered cut list
 
@@ -133,10 +135,10 @@ Screenshot the comment. **Blur or crop the username and profile picture** — we
 
 | Post | Life outcome? | Specific number? | Viewer is the subject? | Earned by the math? |
 |---|---|---|---|---|
-| TUE | ✅ what you already own without knowing | ✅ 16.7 million | ✅ "you bought", "your fund" | ✅ $2.97B / $2.64B / $333M built on screen |
+| TUE | ✅ what you already own without knowing | ✅ 16.7 million — **in BOTH the declarative and question variants** | ✅ "you bought", "your fund" | ✅ $2.97B / $2.64B / $333M built on screen |
 | WED | ✅ what it costs your borrowing | ⚠️ FILL LIVE | ✅ "your rates" | ⚠️ compute before recording |
 | THU | ✅ not buying the top | ✅ 2.68× | ✅ "that line you scrolled past" | ✅ four verified prices |
-| SAT | ✅ whether you can start at all | ✅ $25.81 | ✅ "what you've been thinking" | ✅ real worst day, real recovery |
+| SAT | ✅ whether you can start at all | ✅ $25.81 — **in BOTH variants** | ✅ "it felt like" / "what you've been thinking" | ✅ real worst day, real recovery |
 | SUN | ✅ which decade you retire in | ✅ 51 | ✅ "your life" | ✅ full segment build |
 
 **Banned and checked for:** no "quit your 9-5", no price predictions, no urgency-to-act, no emotional hook without a number, no borrow-to-invest framing anywhere. Every asset carries "educational content only — not financial advice."
