@@ -1,64 +1,142 @@
-# Greenscreen backgrounds + hook text — Week of Aug 10–16, 2026
+# Green-screen backgrounds + hook text — Week of Aug 17–23, 2026
 
-**⚠ Pipeline note:** Pexels b-roll requires Claude in Chrome, which was NOT connected this run — so this week ships on **generated TGW-theme tiles + Ken Burns clips only** (the standing fallback: "tiles cover math"). All stills are 1080×1920 PNG (Poppins Bold, locked box spec: navy `#131A22` panel, `#243140` border, gold Title-Case, mint numbers, upper-third). Clips are ~8s 1080×1920 mp4, yuv420p, +faststart. If Wolf wants real footage, pull Pexels manually per CLAUDE.md step 7 flow and slot them between the tiles.
+**The locked caption box (never deviate):** dark navy panel `#131A22`, thin border `#243140`, **gold `#F5C451` Title-Case** hook text, the key number in **mint `#34E5A3`**, upper-third centred, Poppins Bold. Baked into every generated background at generation time; matched manually in Meta Edits for moving captions.
 
-Text-layer rules: cold-open ≤5 words · sustained caption ≤~12 words · Title Case · number first · no hype.
+**Two text layers per post:**
+- **Cold-open text** — ≤5 words, on screen for the first 1–2 seconds.
+- **Sustained caption** — ≤~12 words, the box that rides the whole b-roll set.
+
+**★ NEW THIS WEEK — the Atlas Berry "claim + question" box (adopted Aug 16, 2026).** His live post ran *"The 1st SpaceX 13F Just Dropped — So Who Owns The Company?"* — a claim with a **question** as the sharpener, rather than a declarative. A question is aimed at a person; a headline is aimed at nobody. **Every sustained caption below now offers a question variant.** Wolf picks per post; the question form is the default on the news days.
+
+> ⚠️ **B-roll note for this run.** Pexels sourcing goes through Claude in Chrome, and the browser session this run was spent on the analytics pull (YouTube, TikTok, IG per-post insights, Atlas Berry, EYL) — so this week ships the **generated TGW data tiles + Ken Burns clips** rather than a Pexels set. Every beat that carries our own numbers is covered, which is what the tiles are for. **If Wolf wants live footage under the intro beats, the Pexels search terms are listed per post below** and drop straight into the existing folder structure.
 
 ---
 
-## TUE Aug 11 — Real-raise react (Wolf)
-| Asset | Use | Beat |
-|---|---|---|
-| `TUE/TUE_V1_real-raise-intro.png` + `.mp4` | INTRO background (0:00–0:08) | Cold open + stakes |
-| `TUE/TUE_P1_wage-number.png` | Pt 1 header | The wage number (+3.2%) |
-| `TUE/TUE_P2_price-number.png` | Pt 2 header | The price number (+3.5%) + re-hook |
-| `TUE/TUE_P3_real-raise-math.png` | Pt 3 / PAYOFF | −$150/yr on the tile |
+## TUESDAY, AUG 18 — Reddit joins the S&P 500 (P6 flagship)
 
-- **Cold-open text (≤5 words):** `Your Raise Just Lost`
-- **Sustained caption (≤12 words):** `Wages +3.2% · Prices +3.5% — Your Raise Loses $150/Yr`
-- **Cut order:** intro clip → P1 on the "first number" line → P2 on the "but a raise only matters…" turn → P3 lands exactly on "let's do the math" → intro re-cut for the loop-close.
+**Cold-open text (≤5 words):** **"You Bought Reddit This Morning"**
+**Sustained caption — declarative:** *Your Index Fund Must Buy* **16.7 Million** *Shares. You Get No Vote.*
+**Sustained caption — question variant (Atlas Berry form, DEFAULT):** *Your Fund Bought Reddit Today — So Who Actually Decided That?*
 
-## WED Aug 12 — CPI day · CONDITIONAL (Wolf)
-| Asset | Use |
-|---|---|
-| `WED/WED_FILL-LIVE_cpi-frame.png` | FILL-LIVE frame — blanks + verify banner. **Do not post with blanks.** |
+### Ordered cut list
 
-- **Cold-open text:** `CPI Just Printed: __%` (type the live number)
-- **Sustained caption:** `Prices +__% vs Wages +3.2% — The Verdict Is In`
-- Ships ONLY if triggered (see scripts.md). Record after 8:30am ET; verify on bls.gov.
+| # | Asset | Lands on | Caption state |
+|---|---|---|---|
+| 1 | `TUE/TUE_V1_333-million-kenburns.mp4` | **INTRO / cold open (0:00–0:02)** — hold on the $333M reveal, then cut away before the payoff | **Full TGW hook box** |
+| 2 | `TUE/TUE_T1_index-rulebook.png` | **Pt 1 (0:10–0:26)** — "what your fund actually promised" | PT 1 header |
+| 3 | `TUE/TUE_T2_forced-buying.png` | **Pt 2 (0:26–0:44)** — "16.7 million shares, no choice" | PT 2 header |
+| 4 | `TUE/TUE_T3_333-million.png` | **Pt 3 / PAYOFF (0:52–1:12)** — the $333M build | PT 3 header |
+| 5 | `TUE/TUE_T4_artifact.png` | **Close (1:12+)** — the RULES comment-trigger | Clean |
 
-## THU Aug 13 — Yield-curve chart evergreen (Wolf)
-| Asset | Use | Beat |
-|---|---|---|
-| `THU/THU_V1_two-lines-intro.png` + `.mp4` | INTRO background | Cold open |
-| `THU/THU_P1_read-the-lines.png` | Pt 1 header | 10Y 4.64 / 2Y 4.19 receipt |
-| `THU/THU_P2_what-prices-what.png` | Pt 2 header | Borrow=10Y · Save=2Y + re-hook |
-| `THU/THU_P3_payoff-math.png` | Pt 3 / PAYOFF | $227/mo · $81,708 |
+**Live screen to pull up on camera (do this, it's the receipt beat):** your own brokerage app → the S&P 500 fund → **Holdings**. Show the list scrolling. This is the single most persuasive two seconds in the video.
 
-- **Cold-open text:** `2 Lines Price Everything`
-- **Sustained caption:** `The 10-Year And 2-Year Decide Your Loan — $227/Mo`
-- **Screen-share moment:** at Pt 1, screen-record typing US10Y/US02Y into a free chart app (mirrors the artifact).
+**If sourcing Pexels footage for the intro:** `stock exchange trading floor`, `server room data center`, `phone banking app close up`, `office crowd rush hour`, `warehouse conveyor belt`. Portrait orientation, 6–8 clips + 3–4 photos, into `broll/TUE/`.
 
-## SAT Aug 15 — Denial-letter collab react (D Waugh) · ⚠ IG-FIRST
-| Asset | Use | Beat |
-|---|---|---|
-| `SAT/SAT_V0_investfest-peg.png` + `.mp4` | **COLD OPEN (0:00–0:02)** — the verified Invest Fest 31,300 peg | Cold open |
-| `SAT/SAT_V1_myth-card.png` + `.mp4` | React target background (myth card + red X) | Stakes / turn |
-| `SAT/SAT_P1_denial-zero.png` | Pt 1 header | Denial = 0 points |
-| `SAT/SAT_P2_inquiry-five.png` | Pt 2 header | Inquiry ≈ 5 points + re-hook |
-| `SAT/SAT_P3_letter-cheatcode.png` | Pt 3 / PAYOFF | The adverse-action letter |
+---
 
-- **PEG (verified Aug 10):** Invest Fest 2026, Atlanta Aug 7–9 — **31,300 tickets, an all-time record** (Earn Your Leisure's own announcement; Rashad Bilal confirmed the wrap Aug 9). EYL now appears in TikTok's "creators your viewers also watched" (370K) — our audience is inside that ecosystem.
-- **STITCH INSTRUCTION:** optional — swap an Invest Fest crowd still over the 0:00–0:02 cold open in place of the generated peg tile. And if a specific creator clip making the "denied wrecks your score" claim surfaces before Saturday, stitch it in place of the myth card (claim on screen, EYL-style verbatim-claim caption).
-- **Cold-open text:** `31,300 Paid. Nobody Read It.`
-- **Sustained caption:** `The Denial Costs 0 Points — The Application Costs ~5`
-- **IG-FIRST HARD GATE:** IG-native cut live FIRST, same day, then TikTok/YT — else the slot logs as MISSED. **⚠ This gate broke in its first week** (Aug 4 TikTok → Aug 5 IG → 153 views vs 1,776 the week before).
+## WEDNESDAY, AUG 19 — FOMC minutes ⚠ CONDITIONAL 4th DROP
 
-## SUN Aug 16 — Podcast
-| Asset | Use |
-|---|---|
-| `PODCAST/POD_title.png` | Episode title card / teaser still |
-| `screenshare/*.html` (3 dashboards) | Screen-share segments 1–4 |
+> **Do not post unless a ship trigger fires.** See `scripts/scripts.md` → Wednesday.
 
-- **Teaser cold-open text:** `Minus 23,000. Record Highs.`
-- **Sustained caption:** `Jobs Fell 23,000 — The Market Hit A Record. Why?`
+**Cold-open text (≤5 words):** **"Three Of Them Voted Hike"**
+**Sustained caption — declarative:** *The Fed's Own Notes Just Named* **______** *— Here's The Cost.* ⟵ FILL LIVE
+**Sustained caption — question variant:** *3 Of Them Voted To Raise Your Rates — How Close Was It?*
+
+### Ordered cut list
+
+| # | Asset | Lands on | Caption state |
+|---|---|---|---|
+| 1 | `WED/WED_V1_fill-live-kenburns.mp4` | **INTERNAL PREP ONLY** — the verify-before-posting frame | ⛔ Red verify banner |
+| 2 | `WED/WED_T1_FILL-LIVE-frame.png` | **INTERNAL** — the ship-trigger checklist + blanks | ⛔ Red verify banner |
+| 3 | `WED/WED_T2_context.png` | **Pt 1** — the 9–3 vote context (safe to post as-is) | PT 1 header |
+
+> 🔴 **Assets 1 and 2 must NEVER go out with blanks visible.** They are the recording checklist. If the day ships, rebuild the payoff tile with the live numbers before posting.
+
+---
+
+## THURSDAY, AUG 20 — The long upper wick (P1 chart evergreen)
+
+**Cold-open text (≤5 words):** **"That Line Above The Candle"**
+**Sustained caption — declarative:** *This Wick Was* **2.68×** *The Body. Here's What That Means.*
+**Sustained caption — question variant:** *The Wick Was 2.68× The Body — So Who Lost That Fight?*
+
+### Ordered cut list
+
+| # | Asset | Lands on | Caption state |
+|---|---|---|---|
+| 1 | `THU/THU_V1_wick-268x-kenburns.mp4` | **INTRO / cold open (0:00–0:02)** | **Full TGW hook box** |
+| 2 | `THU/THU_T1_candle-parts.png` | **Pt 1 (0:10–0:28)** — body vs wick anatomy | PT 1 header |
+| 3 | `THU/THU_T2_268x.png` | **Pt 2 (0:28–0:48)** — the 2.68× read on Friday's candle | PT 2 header |
+| 4 | `THU/THU_T3_volume.png` | **Pt 3 / PAYOFF (0:56–1:18)** — volume is the tell | PT 3 header |
+| 5 | `THU/THU_T4_artifact.png` | **Close (1:18+)** — the WICK comment-trigger | Clean |
+
+**Live screen to pull up on camera:** **RDDT daily chart, Friday Aug 14, 2026.** Zoom to the single candle. Then tap to show the volume bar underneath. The whole lesson is one candle — do not switch tickers.
+**Screen-share companion:** `screenshare/wick-anatomy-dashboard.html` has the drawn candle with all four prices labelled if the live chart is awkward on camera.
+
+**If sourcing Pexels footage:** `candlestick chart screen`, `trader monitors close up`, `hand drawing on whiteboard`, `phone stock app scrolling`. Into `broll/THU/`.
+
+---
+
+## SATURDAY, AUG 22 — "It's too risky" collab react ⚠ IG-FIRST HARD GATE
+
+**Cold-open text (≤5 words):** **"He's Not Wrong About That"**
+**Sustained caption — declarative:** *The Worst Day In 3 Months Cost* **$25.81** *On $1,000.*
+**Sustained caption — question variant:** *"It's Almost Gone In Minutes" — So What Did It Actually Cost?*
+
+### Ordered cut list
+
+| # | Asset | Lands on | Caption state |
+|---|---|---|---|
+| 1 | **SCREENSHOT — build this before recording** | **INTRO / cold open (0:00–0:02)** | **Full TGW hook box over the screenshot** |
+| 2 | `SAT/SAT_T1_unrealized.png` | **Pt 1 (0:12–0:30)** — nothing left your account | PT 1 header |
+| 3 | `SAT/SAT_V1_red-day-2581-kenburns.mp4` | **Pt 2 (0:30–0:50)** — the $25.81 reveal | PT 2 header |
+| 4 | `SAT/SAT_T2_2581.png` | **Pt 2 hold** — the static version for the number beat | PT 2 header |
+| 5 | `SAT/SAT_T3_emergency-fund.png` | **Pt 3 / PAYOFF (0:58–1:20)** — cash you can reach | PT 3 header |
+| 6 | `SAT/SAT_T4_artifact.png` | **Close (1:20+)** — the RED comment-trigger | Clean |
+
+### 📸 SCREENSHOT INSTRUCTION — asset 1 (do this first)
+
+Open Instagram → **@earnyourleisure** → the **Aug 15, 2026** Market Mondays reel with Rashad Bilal ("Leading By Example Is More Powerful Than Words", comment-trigger "MARKET"). Scroll the comments to:
+
+> **"Taking my paycheck and buy stocks after few minutes it almost gone that's too risky"**
+
+Screenshot the comment. **Blur or crop the username and profile picture** — we are agreeing with him, not dogpiling him. Crop to the comment text only, place it upper-third over a plain dark background, and lay the TGW hook box above it.
+
+**Framing rule, repeated because it matters:** agreement plus the missing mechanism. No dunking, no "he's wrong," no handle on screen. He said something true about how it feels; we add the part nobody told him.
+
+**If sourcing Pexels footage:** `person at kitchen table worried`, `phone screen red stock chart`, `savings jar coins`, `young man thinking window`. Into `broll/SAT/`.
+
+---
+
+## SUNDAY, AUG 16 (TODAY) + AUG 23 — Podcast
+
+**Cold-open text (≤5 words):** **"Two Numbers. Opposite Answers."**
+**Sustained caption — declarative:** *Sentiment Hit* **51.** *Stocks Hit A Record. Which One Retires You?*
+**Sustained caption — question variant:** *Sentiment 51, Market At A Record — So Which One Is Lying?*
+
+### Ordered cut list (episode inserts + teaser)
+
+| # | Asset | Lands on | Caption state |
+|---|---|---|---|
+| 1 | `PODCAST/POD_V1_51-vs-record-kenburns.mp4` | **Cold open + the Sunday teaser clip** | **Full TGW hook box** |
+| 2 | `PODCAST/POD_T1_51-vs-record.png` | **Cold open still / thumbnail base** | Full hook box |
+| 3 | `PODCAST/POD_T2_decel.png` | **Segment 1 insert** — 7.3 to 6.7 to 5.0 | Segment header |
+| 4 | `PODCAST/POD_T3_verdict.png` | **Segment 5 insert** — the retail-earnings docket | Segment header |
+| 5 | `TUE/TUE_T2_forced-buying.png` | **Segment 2 insert** — reuse, it's the same story | Clean |
+| 6 | `SAT/SAT_T2_2581.png` | **Segment 4 insert** — reuse | Clean |
+
+**Screen-share dashboards, in order:** `consumer-vs-market-dashboard.html` (Seg 1) → `reddit-index-dashboard.html` (Seg 2) → `consumer-vs-market-dashboard.html`, rates panel (Seg 3) → `wick-anatomy-dashboard.html`, red-day panel (Seg 4) → `consumer-vs-market-dashboard.html`, earnings docket (Seg 5).
+
+---
+
+## Hook-doctrine check — every hook on this sheet
+
+| Post | Life outcome? | Specific number? | Viewer is the subject? | Earned by the math? |
+|---|---|---|---|---|
+| TUE | ✅ what you already own without knowing | ✅ 16.7 million | ✅ "you bought", "your fund" | ✅ $2.97B / $2.64B / $333M built on screen |
+| WED | ✅ what it costs your borrowing | ⚠️ FILL LIVE | ✅ "your rates" | ⚠️ compute before recording |
+| THU | ✅ not buying the top | ✅ 2.68× | ✅ "that line you scrolled past" | ✅ four verified prices |
+| SAT | ✅ whether you can start at all | ✅ $25.81 | ✅ "what you've been thinking" | ✅ real worst day, real recovery |
+| SUN | ✅ which decade you retire in | ✅ 51 | ✅ "your life" | ✅ full segment build |
+
+**Banned and checked for:** no "quit your 9-5", no price predictions, no urgency-to-act, no emotional hook without a number, no borrow-to-invest framing anywhere. Every asset carries "educational content only — not financial advice."
