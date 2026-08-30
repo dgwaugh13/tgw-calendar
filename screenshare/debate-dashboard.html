@@ -11,7 +11,6 @@ html,body{height:100%}
 body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;overflow:hidden;
   background-image:radial-gradient(1100px 550px at 82% -8%,rgba(52,229,163,.07),transparent 60%)}
 .stage{height:100vh;display:flex;flex-direction:column}
-/* top bar */
 .bar{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line)}
 .mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:'Space Grotesk';font-weight:700;color:#04120c;font-size:15px}
 .bar .t{font-family:'Space Grotesk';font-weight:600;font-size:15px;letter-spacing:-.01em}
@@ -19,7 +18,6 @@ body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;over
 .score{margin-left:auto;display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}
 .score .w{color:var(--mint)} .score .d{color:var(--blue)}
 .score b{font-size:15px;color:var(--text)}
-/* screens */
 .screens{flex:1;position:relative}
 .screen{position:absolute;inset:0;display:none;flex-direction:column;padding:26px 64px 90px;max-width:1280px;margin:0 auto;width:100%;overflow-y:auto}
 .screen.on{display:flex}
@@ -28,14 +26,12 @@ body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;over
 .kick{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 .q{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;line-height:1.12;font-size:clamp(24px,3.4vw,46px);margin:12px 0 6px;max-width:28ch}
 .q .n{color:var(--mint)}
-/* cover */
-.cover .q{max-width:20ch}
+.cover .q{max-width:22ch}
 .through{margin-top:14px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.3);border-radius:14px;padding:18px 22px;font-size:clamp(15px,1.6vw,20px);line-height:1.5;max-width:74ch}
 .through b{color:var(--gold)}
 .coverfoot{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
 .chipx{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:7px 14px;background:rgba(255,255,255,.02)}
 .chipx b{color:var(--mint)}
-/* sides */
 .sides{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
 .side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .side.wolf{border-left:3px solid var(--mint)} .side.dw{border-left:3px solid var(--blue)}
@@ -43,7 +39,6 @@ body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;over
 .side.wolf .who{color:var(--mint)} .side.dw .who{color:var(--blue)}
 .side p{font-size:clamp(13px,1.35vw,16.5px);color:#cdd8e1;line-height:1.5}
 .side p b{color:var(--text)}
-/* receipt reveal */
 .receipt{margin-top:14px;position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(245,196,81,.35);min-height:150px;cursor:pointer;background:var(--panel)}
 .receipt .hidden-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:14px;background:repeating-linear-gradient(-45deg,#151d27,#151d27 14px,#121924 14px,#121924 28px);transition:opacity .35s}
 .receipt .hidden-face .lock{font-size:26px}
@@ -60,13 +55,11 @@ body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;over
 .lands.wolf{color:var(--mint);border:1px solid rgba(52,229,163,.4);background:rgba(52,229,163,.08)}
 .lands.dw{color:var(--blue);border:1px solid rgba(91,155,255,.4);background:rgba(91,155,255,.08)}
 .lands.both{color:var(--gold);border:1px solid rgba(245,196,81,.4);background:rgba(245,196,81,.08)}
-/* landing cue */
 .landing{margin-top:14px;display:flex;gap:14px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
 .landing .ic{font-size:18px;margin-top:1px}
 .landing .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .landing p{font-size:clamp(13px,1.3vw,15.5px);color:#cdd8e1;line-height:1.5}
 .landing p b{color:var(--text)}
-/* bottom nav */
 .nav{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:18px;padding:14px 28px;border-top:1px solid var(--line);background:rgba(11,15,20,.92);backdrop-filter:blur(6px)}
 .btn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 16px;cursor:pointer}
 .btn:hover{border-color:var(--mint);color:var(--mint)}
@@ -94,123 +87,101 @@ body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;over
 
     <!-- COVER -->
     <section class="screen cover on">
-      <div class="kick">Episode 3 · The Debate Standard · 5 topics</div>
-      <h1 class="q">A $96B Beat, A Coin-Flip Fed — And Your <span class="n">$3.09</span></h1>
-      <div class="through"><b>The through-line:</b> "A coin flip now decides what you pay to borrow. So who's actually holding your money's steering wheel — <b>the podium, the print, or you?</b>"</div>
+      <div class="kick">Episode 3 · The Debate Standard · check the receipts</div>
+      <h1 class="q">Congress Lost. Day Traders Lose. The Fed Says <span class="n">You're Fine.</span></h1>
+      <div class="through"><b>The through-line:</b> "Congress, the gurus, and the Fed all say 'trust me with your money.' Tonight we check all three receipts — <b>who actually earns it?</b>"</div>
       <div class="coverfoot">
-        <span class="chipx">Cold open: settle last week's bet — <b>Wolf takes the round</b> ($96.2B · +8.7% Thu) · D keeps the −4.45% Friday asterisk</span>
-        <span class="chipx">New bet staked in Topic 4 → Comment <b>FLIP</b></span>
+        <span class="chipx">Cold open · 60s settle: <b>Wolf takes the Nvidia round</b> ($96.2B · +8.7% Thu · net +$3.09 per $1,000) — company retired from topics, no reruns</span>
+        <span class="chipx">New bet staked in Topic 3 → Comment <b>FLIP</b></span>
       </div>
     </section>
 
-    <!-- TOPIC 1 -->
+    <!-- TOPIC 1 · CONGRESS -->
     <section class="screen">
-      <div class="kick">Topic 1 · 1:45–11:00 · The Nvidia Verdict</div>
-      <h1 class="q">The biggest bet in index history reported. What did <span class="n">your $1,000</span> actually feel?</h1>
+      <div class="kick">Topic 1 · 2:15–13:00 · They Wrote The Rules. They Still Lost.</div>
+      <h1 class="q">They write the rules and STILL lose to a 3-cent fund — <span class="n">so why are they allowed to trade at all?</span></h1>
       <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · investor/trader chair</div><p>The weight was <b>EARNED, not assigned</b> — $96.2B (+106% YoY), data centers 92.5¢ of every dollar, guided ~$108B ≈ $1.17B a day. Cash flows won the argument overnight: <b>+8.7% Thursday.</b></p></div>
-        <div class="side dw"><div class="who">D Waugh · credit/economics chair</div><p>Earned or not, <b>7.28% of the index in one name is a bet with extra steps</b> — and the after-hours dip plus Friday's −4.45% giveback says the market agrees it's priced tight. You should at least know you're making it.</p></div>
+        <div class="side dw"><div class="who">D Waugh · credit/economics chair · "BAN IT"</div><p>"A teacher can't trade her own pension fund ahead of the news. The people who write the laws can." The edge doesn't have to be exercised well to be corrosive — <b>the conflict IS the harm.</b> The president's own June file: 1,000+ trades, published <b>53 days late</b> (OGE).</p></div>
+        <div class="side wolf"><div class="who">Wolf · investor/trader chair · "A BAN IS A BUMPER STICKER"</div><p>Bans get loopholed through spouses and blind trusts with peepholes. <b>Force them into the same boring index fund as you + same-day disclosure</b> — that ends the game without the theater. And note: most of them LOSE — where's the edge?</p></div>
       </div>
       <div class="receipt" data-reveal>
         <div class="face">
-          <div class="hero">+$3.09</div>
+          <div class="hero">100/311</div>
           <div class="meta">
-            <div class="m1">Net move per $1,000 of an S&P 500 fund from the biggest earnings week ever — <b>+$6.33 Thu, −$3.24 Fri</b> at the 7.28% weight (~$155 on a $50K 401(k)).</div>
-            <div class="m2">Nvidia 8-K Aug 26 · CNBC/WaPo moves · Slickcharts weight · computed in bash this run</div>
+            <div class="m1">Only 100 of 311 congressional portfolios beat the S&P's 16.8% in 2025 — <b>68% LOST to a fund that costs 3¢/yr per $100.</b> $5,000 in it on Jan 2 = $5,840 by New Year's — beating 211 members by doing nothing.</div>
+            <div class="m2">Unusual Whales 2025 returns · OGE filing Aug 22 · index math verified this run</div>
           </div>
           <span class="lands dw">D lands it</span>
         </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click to reveal (planted line 1 fires here)</div></div></div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click / R to reveal (planted lines 1 + 2 fire in this segment)</div></div></div>
       </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · D</div><p>"Open the app → your fund → <b>holdings</b> → read the first line. You're not selling anything — you're just no longer surprised. Know the bet you already own. <b>Education, not advice.</b>"</p></div></div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · D</div><p>"Don't copy-trade Congress — you just heard the batting average. The boring fund beat 211 of them by doing <b>nothing</b>. Your edge was never information — it's <b>deposits, automatic, earned money only.</b> Education, not advice."</p></div></div>
     </section>
 
-    <!-- TOPIC 2 -->
+    <!-- TOPIC 2 · DAY TRADING -->
     <section class="screen">
-      <div class="kick">Topic 2 · 11:00–20:00 · Warsh At The Podium</div>
-      <h1 class="q">Can <span class="n">one speech</span> change what you pay to borrow?</h1>
+      <div class="kick">Topic 2 · 13:00–24:00 · The Dream They're Selling</div>
+      <h1 class="q">Getting rich day trading — <span class="n">real path, or a casino with better marketing?</span></h1>
       <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · investor/trader chair</div><p><b>The podium IS the policy now.</b> No announcement, no vote — just a doctrine: "full employment," inflation "concerning," conditions "not restrictive," and <b>PCE named as HIS gauge.</b> The market repriced September in an afternoon.</p></div>
-        <div class="side dw"><div class="who">D Waugh · credit/economics chair</div><p><b>The data outranks the podium.</b> And "not restrictive"? The average card APR is ~22% and rent's at a record — <b>not restricted for WHO?</b> (planted line 2). Friday's jobs print will move him more than his own speech did.</p></div>
-      </div>
-      <div class="receipt" data-reveal>
-        <div class="face">
-          <div class="hero">35→59%</div>
-          <div class="meta">
-            <div class="m1">Sept-16 hike odds, one session (CME FedWatch, Fri Aug 28). If it lands: <b>$350K/30-yr at 6.66% = $2,249.19 → 6.91% = $2,307.44 (+$58.25/mo)</b> — vs the credit-tier gap of <b>$358.13/mo</b>. The tier is worth 6× the hike.</div>
-            <div class="m2">CME via CNBC/Benzinga · Freddie Mac PMMS Aug 27 · payments computed in bash</div>
-          </div>
-          <span class="lands wolf">Wolf lands it</span>
-        </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click to reveal (planted line 3 fires here)</div></div></div>
-      </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"You don't control the podium — you control the tier. APR line read, utilization under 30, errors disputed. <b>Fix the file, not the Fed.</b> Education, not advice."</p></div></div>
-    </section>
-
-    <!-- TOPIC 3 -->
-    <section class="screen">
-      <div class="kick">Topic 3 · 20:00–28:00 · The Gauge He Named</div>
-      <h1 class="q">July PCE printed hot — is the <span class="n">cooling story</span> dead?</h1>
-      <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · investor/trader chair</div><p><b>A tenth of a percent is rounding noise.</b> Core came in ON forecast at 3.3%; the trend since spring is sideways, not re-accelerating. Don't hand the podium a panic it didn't earn.</p></div>
-        <div class="side dw"><div class="who">D Waugh · credit/economics chair</div><p><b>Sideways at 3.3% IS the problem</b> — it's been stuck since June, services (rent, dining, insurance) are doing the pushing, and the man who decides just told us this exact number is his tripwire.</p></div>
+        <div class="side wolf"><div class="who">Wolf · the trader chair · "REAL — BUT IT'S A SLEEVE, NOT A SALARY"</div><p>Trading is real work with a real learning curve. My own book on camera: <b>70% boring buy-and-hold, 20% swings/LEAPs, 10% crypto</b> — $86,616 over ten years deliberately allowed to go to zero, and the zero-test says the 70% still lands near $345K if every trade dies.</p></div>
+        <div class="side dw"><div class="who">D Waugh · credit/economics chair · "THE CASINO IS MORE HONEST"</div><p>The industry <b>sells the 1.1% and bills the 97%</b> — laptop-on-the-beach marketing, winning-screenshot economy, $997 courses. "If the secret worked, they'd trade it, not teach it." It inverts the pyramid: the 20% sleeve sold as the whole house, to people with no house yet.</p></div>
       </div>
       <div class="receipt hot" data-reveal>
         <div class="face">
-          <div class="hero">3.7%</div>
+          <div class="hero">97%</div>
           <div class="meta">
-            <div class="m1">July PCE YoY — <b>hot by 0.1pp</b>; core 3.3% in line, stuck at June's pace; +0.2% m/m. Target is 2% — and Warsh named this gauge 48 hours after it printed.</div>
-            <div class="m2">BEA release, Wed Aug 26</div>
+            <div class="m1">Of 19,646 people who started day trading, <b>1,551 stuck with it 300+ days — and 97% of them LOST money.</b> Only 1.1% out-earned minimum wage; 0.5% beat a bank teller's starting salary.</div>
+            <div class="m2">Chague, De-Losso &amp; Giovannetti, "Day Trading for a Living?" (SSRN 3423101) — re-verified this run</div>
+          </div>
+          <span class="lands wolf">WOLF lands it — the trader reads the stat (this is the clip)</span>
+        </div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — the twist</div><div class="sub">click / R — planted line 3: "the casino is honest about its odds. The gurus aren't."</div></div></div>
+      </div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"If you trade — trade like it can lose, because statistically it will. <b>Cap the sleeve</b> at a number you can watch go to zero without missing rent. <b>Earned money only. Never margin.</b> The first dollar goes to the boring 70 before the exciting 20 exists. Education, not advice."</p></div></div>
+    </section>
+
+    <!-- TOPIC 3 · NOT RESTRICTED FOR WHO -->
+    <section class="screen">
+      <div class="kick">Topic 3 · 24:00–36:00 · Not Restricted For WHO? · ⚖️ the new bet</div>
+      <h1 class="q">The Fed chair says your money's "not restrictive." Your card says 22%. <span class="n">Who's lying?</span></h1>
+      <div class="sides">
+        <div class="side wolf"><div class="who">Wolf · "HE'S TEXTBOOK-RIGHT"</div><p>Unemployment ~4.1%, records on the tape, credit flowing — "restrictive" is a thermometer for the ECONOMY, and a chair aims at averages. And if he pretends inflation's fine and it re-heats, <b>the people D defends pay the most, longest.</b> A hawk now may be the renter's friend in two years.</p></div>
+        <div class="side dw"><div class="who">D Waugh · "IT'S TWO ECONOMIES"</div><p>Asset owners refinance; wage earners revolve. A 3.2% raise against <b>PCE at 3.7%</b> (his own named gauge, hot on Wednesday) is a pay cut with extra steps. Odds went <b>35→59%</b> off one speech. "He's chair of the economy that owns things."</p></div>
+      </div>
+      <div class="receipt hot" data-reveal>
+        <div class="face">
+          <div class="hero">22.15%</div>
+          <div class="meta">
+            <div class="m1">Average APR on credit-card accounts actually being charged interest (Federal Reserve, Q2 2026) — while conditions are, quote, <b>"not restrictive."</b> ⚖️ Then stake the bet: <b>Team Wolf</b> — Friday's jobs print &lt; +50K, odds fall under 50 · <b>Team D</b> — near the +90K consensus, hike stays live. <b>Comment FLIP.</b></div>
+            <div class="m2">Fed G.19-derived, Q2 2026 · CME FedWatch · BLS Fri Sep 4 8:30am — one of us eats it next Sunday</div>
           </div>
           <span class="lands dw">D lands it</span>
         </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click to reveal — "the cooling story stopped breathing on its own"</div></div></div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt + the new staked bet</div><div class="sub">click / R — planted line 4: "not restricted for WHO?"</div></div></div>
       </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · D</div><p>"Pull your last pay stub, compute your own raise %, and put it next to <b>3.7</b>. Under it? Not a budgeting failure — <b>information</b>: the raise conversation, the side income, or the expense you cut. Education, not advice."</p></div></div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"Your restriction number isn't the fed funds rate — it's the <b>APR line on your own statement.</b> A hike ≈ $58/mo on a $350K mortgage; your credit tier ≈ $358. <b>Fix the file, not the Fed.</b> Education, not advice."</p></div></div>
     </section>
 
-    <!-- TOPIC 4 -->
+    <!-- TOPIC 4 · VERDICT -->
     <section class="screen">
-      <div class="kick">Topic 4 · 28:00–37:00 · Seventeen Days, One Number</div>
-      <h1 class="q">Hold, hike, or blink — and <span class="n">who wins the new bet?</span></h1>
+      <div class="kick">Topic 4 · 36:00–43:00 · The Verdict</div>
+      <h1 class="q">None of the microphones earned it. <span class="n">So whose hands are on the wheel?</span></h1>
       <div class="sides">
-        <div class="side wolf"><div class="who">Team Wolf · the stake</div><p>"Friday's number prints <b>UNDER fifty thousand</b> — minus-23 was a trend, not a typo — and hike odds drop back under 50."</p></div>
-        <div class="side dw"><div class="who">Team D · the stake</div><p>"The print lands <b>within shouting distance of consensus</b>, the hike stays live, and the podium wins September. One of us eats it next Sunday."</p></div>
-      </div>
-      <div class="receipt" data-reveal>
-        <div class="face">
-          <div class="hero">~+90K</div>
-          <div class="meta">
-            <div class="m1">August jobs consensus — <b>Fri Sep 4, 8:30am ET</b>, the last heavyweight input before the Sep 15–16 FOMC. July printed <b>−23,000</b>; June was revised to barely +20K. (Planted line 4 fires here.)</div>
-            <div class="m2">BLS · Capital Economics consensus · Newsquawk calendar — verified Aug 30</div>
-          </div>
-          <span class="lands both">Split · odds, never predictions</span>
-        </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt + the new staked bet</div><div class="sub">click to reveal → then: "Comment FLIP — Team Wolf or Team D"</div></div></div>
-      </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"Don't trade the jobs number. Circle Friday 8:30 for one reason — it's the last big input before the Fed prices your borrowing. Cushion funded, high-APR shrinking, deposits automatic — <b>that plan survives either outcome.</b> Education, not advice."</p></div></div>
-    </section>
-
-    <!-- TOPIC 5 -->
-    <section class="screen">
-      <div class="kick">Topic 5 · 37:00–43:00 · The Verdict</div>
-      <h1 class="q">Whose hands are on <span class="n">your money's</span> steering wheel?</h1>
-      <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · closes it</div><p>"The podium moved the odds. The print will move the podium. <b>Neither ever touched the two numbers that decide your decade.</b> The weather changes — the roof is yours."</p></div>
-        <div class="side dw"><div class="who">D Waugh · closes it</div><p>"Warsh can't hike your deposit. The jobs report can't revise your emergency fund. The biggest earnings night in history moved your $1,000 <b>three bucks</b> — your own transfer moves it more every Friday."</p></div>
+        <div class="side wolf"><div class="who">Wolf · closes it</div><p>"The rule-makers? <b>68% lost to autopilot.</b> The dream-sellers? <b>97% of their students lose.</b> The referee? He grades the average — and you don't live in the average. Nobody with a microphone earned the wheel tonight."</p></div>
+        <div class="side dw"><div class="who">D Waugh · closes it</div><p>"Which leaves the only person who was ever actually driving. <b>Congress can't trade your deposit. A guru can't course-sell your cushion. Warsh can't hike either one.</b>"</p></div>
       </div>
       <div class="receipt" data-reveal>
         <div class="face">
           <div class="hero" style="font-size:clamp(28px,3.6vw,46px)">Your two numbers</div>
           <div class="meta">
-            <div class="m1"><b>Weekly deposit · months of cushion.</b> Neither was on the Fed's dashboard this week — both are on yours.</div>
+            <div class="m1"><b>Weekly deposit · months of cushion.</b> Check the receipts — then trust the two numbers that only answer to you.</div>
             <div class="m2">Outro: 3 takeaways → Discord bridge → "It's Wolf, I'm outta here." · "It's D Waugh, I'm outta here."</div>
           </div>
           <span class="lands both">Both land it</span>
         </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The resolution — reveal on the loop-close</div><div class="sub">click to reveal</div></div></div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The resolution — reveal on the loop-close</div><div class="sub">click / R to reveal</div></div></div>
       </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">Outro cue · word-for-word in the rundown</div><p>Takeaways: <b>1</b> know your fund's first line · <b>2</b> $58.25 hike vs $358.13 tier — fix the file · <b>3</b> Friday 8:30, comment <b>FLIP</b>, pick your team. Bridge line one beat before the sign-offs — sign-offs last, clean.</p></div></div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">Outro cue · word-for-word in the rundown</div><p>Takeaways: <b>1</b> the boring fund beat 211 of Congress by doing nothing — deposits, not information · <b>2</b> cap the sleeve, earned money only, never margin · <b>3</b> Friday 8:30, comment <b>FLIP</b>, pick your team. Bridge line one beat before the sign-offs — sign-offs last, clean.</p></div></div>
     </section>
   </div>
 
