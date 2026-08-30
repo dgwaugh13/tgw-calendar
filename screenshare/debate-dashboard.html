@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TGW · Debate Board · Aug 30, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59;--blue:#5B9BFF}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;overflow:hidden;
+  background-image:radial-gradient(1100px 550px at 82% -8%,rgba(52,229,163,.07),transparent 60%)}
+.stage{height:100vh;display:flex;flex-direction:column}
+/* top bar */
+.bar{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line)}
+.mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:'Space Grotesk';font-weight:700;color:#04120c;font-size:15px}
+.bar .t{font-family:'Space Grotesk';font-weight:600;font-size:15px;letter-spacing:-.01em}
+.bar .s{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+.score{margin-left:auto;display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}
+.score .w{color:var(--mint)} .score .d{color:var(--blue)}
+.score b{font-size:15px;color:var(--text)}
+/* screens */
+.screens{flex:1;position:relative}
+.screen{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;padding:30px 64px 90px;max-width:1280px;margin:0 auto;width:100%}
+.screen.on{display:flex}
+.kick{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.q{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;line-height:1.12;font-size:clamp(28px,4.2vw,52px);margin:16px 0 8px;max-width:24ch}
+.q .n{color:var(--mint)}
+/* cover */
+.cover .q{max-width:20ch}
+.through{margin-top:14px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.3);border-radius:14px;padding:18px 22px;font-size:clamp(15px,1.6vw,20px);line-height:1.5;max-width:74ch}
+.through b{color:var(--gold)}
+.coverfoot{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.chipx{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:7px 14px;background:rgba(255,255,255,.02)}
+.chipx b{color:var(--mint)}
+/* sides */
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.side.wolf{border-left:3px solid var(--mint)} .side.dw{border-left:3px solid var(--blue)}
+.side .who{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+.side.wolf .who{color:var(--mint)} .side.dw .who{color:var(--blue)}
+.side p{font-size:clamp(13px,1.35vw,16.5px);color:#cdd8e1;line-height:1.5}
+.side p b{color:var(--text)}
+/* receipt reveal */
+.receipt{margin-top:14px;position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(245,196,81,.35);min-height:150px;cursor:pointer;background:var(--panel)}
+.receipt .hidden-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:14px;background:repeating-linear-gradient(-45deg,#151d27,#151d27 14px,#121924 14px,#121924 28px);transition:opacity .35s}
+.receipt .hidden-face .lock{font-size:26px}
+.receipt .hidden-face .lbl{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.receipt .hidden-face .sub{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--muted);margin-top:5px}
+.receipt .face{padding:20px 26px;display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.receipt .hero{font-family:'Space Grotesk';font-weight:700;font-size:clamp(40px,5.5vw,72px);letter-spacing:-.02em;color:var(--mint);line-height:1}
+.receipt.hot .hero{color:var(--red)}
+.receipt .meta{flex:1;min-width:240px}
+.receipt .meta .m1{font-size:clamp(13px,1.4vw,17px);color:var(--text);font-weight:600;line-height:1.45}
+.receipt .meta .m2{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-top:6px;letter-spacing:.04em}
+.receipt.revealed .hidden-face{opacity:0;pointer-events:none}
+.lands{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:99px;flex-shrink:0}
+.lands.wolf{color:var(--mint);border:1px solid rgba(52,229,163,.4);background:rgba(52,229,163,.08)}
+.lands.dw{color:var(--blue);border:1px solid rgba(91,155,255,.4);background:rgba(91,155,255,.08)}
+.lands.both{color:var(--gold);border:1px solid rgba(245,196,81,.4);background:rgba(245,196,81,.08)}
+/* landing cue */
+.landing{margin-top:14px;display:flex;gap:14px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.landing .ic{font-size:18px;margin-top:1px}
+.landing .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.landing p{font-size:clamp(13px,1.3vw,15.5px);color:#cdd8e1;line-height:1.5}
+.landing p b{color:var(--text)}
+/* bottom nav */
+.nav{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:18px;padding:14px 28px;border-top:1px solid var(--line);background:rgba(11,15,20,.92);backdrop-filter:blur(6px)}
+.btn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 16px;cursor:pointer}
+.btn:hover{border-color:var(--mint);color:var(--mint)}
+.dots{display:flex;gap:8px;margin:0 auto}
+.dot{width:34px;height:6px;border-radius:99px;background:var(--line);cursor:pointer;transition:background .2s}
+.dot.on{background:var(--mint)}
+.dot.done{background:#2a6b52}
+.navhint{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em}
+.disc{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted);letter-spacing:.05em}
+@media(max-width:820px){.sides{grid-template-columns:1fr}.screen{padding:20px 22px 100px}}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="bar">
+    <div class="mark">TG</div>
+    <div>
+      <div class="t">Wealth Talk · The Debate Board</div>
+      <div class="s">Sun Aug 30, 2026 · all numbers verified live this morning</div>
+    </div>
+    <div class="score"><span class="w">TEAM WOLF</span><b id="sc">1 – 1</b><span class="d">TEAM D</span></div>
+  </div>
+
+  <div class="screens" id="screens">
+
+    <!-- COVER -->
+    <section class="screen cover on">
+      <div class="kick">Episode 3 · The Debate Standard · 5 topics</div>
+      <h1 class="q">A $96B Beat, A Coin-Flip Fed — And Your <span class="n">$3.09</span></h1>
+      <div class="through"><b>The through-line:</b> "A coin flip now decides what you pay to borrow. So who's actually holding your money's steering wheel — <b>the podium, the print, or you?</b>"</div>
+      <div class="coverfoot">
+        <span class="chipx">Cold open: settle last week's bet — <b>Wolf takes the round</b> ($96.2B · +8.7% Thu) · D keeps the −4.45% Friday asterisk</span>
+        <span class="chipx">New bet staked in Topic 4 → Comment <b>FLIP</b></span>
+      </div>
+    </section>
+
+    <!-- TOPIC 1 -->
+    <section class="screen">
+      <div class="kick">Topic 1 · 1:45–11:00 · The Nvidia Verdict</div>
+      <h1 class="q">The biggest bet in index history reported. What did <span class="n">your $1,000</span> actually feel?</h1>
+      <div class="sides">
+        <div class="side wolf"><div class="who">Wolf · investor/trader chair</div><p>The weight was <b>EARNED, not assigned</b> — $96.2B (+106% YoY), data centers 92.5¢ of every dollar, guided ~$108B ≈ $1.17B a day. Cash flows won the argument overnight: <b>+8.7% Thursday.</b></p></div>
+        <div class="side dw"><div class="who">D Waugh · credit/economics chair</div><p>Earned or not, <b>7.28% of the index in one name is a bet with extra steps</b> — and the after-hours dip plus Friday's −4.45% giveback says the market agrees it's priced tight. You should at least know you're making it.</p></div>
+      </div>
+      <div class="receipt" data-reveal>
+        <div class="face">
+          <div class="hero">+$3.09</div>
+          <div class="meta">
+            <div class="m1">Net move per $1,000 of an S&P 500 fund from the biggest earnings week ever — <b>+$6.33 Thu, −$3.24 Fri</b> at the 7.28% weight (~$155 on a $50K 401(k)).</div>
+            <div class="m2">Nvidia 8-K Aug 26 · CNBC/WaPo moves · Slickcharts weight · computed in bash this run</div>
+          </div>
+          <span class="lands dw">D lands it</span>
+        </div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click to reveal (planted line 1 fires here)</div></div></div>
+      </div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · D</div><p>"Open the app → your fund → <b>holdings</b> → read the first line. You're not selling anything — you're just no longer surprised. Know the bet you already own. <b>Education, not advice.</b>"</p></div></div>
+    </section>
+
+    <!-- TOPIC 2 -->
+    <section class="screen">
+      <div class="kick">Topic 2 · 11:00–20:00 · Warsh At The Podium</div>
+      <h1 class="q">Can <span class="n">one speech</span> change what you pay to borrow?</h1>
+      <div class="sides">
+        <div class="side wolf"><div class="who">Wolf · investor/trader chair</div><p><b>The podium IS the policy now.</b> No announcement, no vote — just a doctrine: "full employment," inflation "concerning," conditions "not restrictive," and <b>PCE named as HIS gauge.</b> The market repriced September in an afternoon.</p></div>
+        <div class="side dw"><div class="who">D Waugh · credit/economics chair</div><p><b>The data outranks the podium.</b> And "not restrictive"? The average card APR is ~22% and rent's at a record — <b>not restricted for WHO?</b> (planted line 2). Friday's jobs print will move him more than his own speech did.</p></div>
+      </div>
+      <div class="receipt" data-reveal>
+        <div class="face">
+          <div class="hero">35→59%</div>
+          <div class="meta">
+            <div class="m1">Sept-16 hike odds, one session (CME FedWatch, Fri Aug 28). If it lands: <b>$350K/30-yr at 6.66% = $2,249.19 → 6.91% = $2,307.44 (+$58.25/mo)</b> — vs the credit-tier gap of <b>$358.13/mo</b>. The tier is worth 6× the hike.</div>
+            <div class="m2">CME via CNBC/Benzinga · Freddie Mac PMMS Aug 27 · payments computed in bash</div>
+          </div>
+          <span class="lands wolf">Wolf lands it</span>
+        </div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click to reveal (planted line 3 fires here)</div></div></div>
+      </div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"You don't control the podium — you control the tier. APR line read, utilization under 30, errors disputed. <b>Fix the file, not the Fed.</b> Education, not advice."</p></div></div>
+    </section>
+
+    <!-- TOPIC 3 -->
+    <section class="screen">
+      <div class="kick">Topic 3 · 20:00–28:00 · The Gauge He Named</div>
+      <h1 class="q">July PCE printed hot — is the <span class="n">cooling story</span> dead?</h1>
+      <div class="sides">
+        <div class="side wolf"><div class="who">Wolf · investor/trader chair</div><p><b>A tenth of a percent is rounding noise.</b> Core came in ON forecast at 3.3%; the trend since spring is sideways, not re-accelerating. Don't hand the podium a panic it didn't earn.</p></div>
+        <div class="side dw"><div class="who">D Waugh · credit/economics chair</div><p><b>Sideways at 3.3% IS the problem</b> — it's been stuck since June, services (rent, dining, insurance) are doing the pushing, and the man who decides just told us this exact number is his tripwire.</p></div>
+      </div>
+      <div class="receipt hot" data-reveal>
+        <div class="face">
+          <div class="hero">3.7%</div>
+          <div class="meta">
+            <div class="m1">July PCE YoY — <b>hot by 0.1pp</b>; core 3.3% in line, stuck at June's pace; +0.2% m/m. Target is 2% — and Warsh named this gauge 48 hours after it printed.</div>
+            <div class="m2">BEA release, Wed Aug 26</div>
+          </div>
+          <span class="lands dw">D lands it</span>
+        </div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click to reveal — "the cooling story stopped breathing on its own"</div></div></div>
+      </div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · D</div><p>"Pull your last pay stub, compute your own raise %, and put it next to <b>3.7</b>. Under it? Not a budgeting failure — <b>information</b>: the raise conversation, the side income, or the expense you cut. Education, not advice."</p></div></div>
+    </section>
+
+    <!-- TOPIC 4 -->
+    <section class="screen">
+      <div class="kick">Topic 4 · 28:00–37:00 · Seventeen Days, One Number</div>
+      <h1 class="q">Hold, hike, or blink — and <span class="n">who wins the new bet?</span></h1>
+      <div class="sides">
+        <div class="side wolf"><div class="who">Team Wolf · the stake</div><p>"Friday's number prints <b>UNDER fifty thousand</b> — minus-23 was a trend, not a typo — and hike odds drop back under 50."</p></div>
+        <div class="side dw"><div class="who">Team D · the stake</div><p>"The print lands <b>within shouting distance of consensus</b>, the hike stays live, and the podium wins September. One of us eats it next Sunday."</p></div>
+      </div>
+      <div class="receipt" data-reveal>
+        <div class="face">
+          <div class="hero">~+90K</div>
+          <div class="meta">
+            <div class="m1">August jobs consensus — <b>Fri Sep 4, 8:30am ET</b>, the last heavyweight input before the Sep 15–16 FOMC. July printed <b>−23,000</b>; June was revised to barely +20K. (Planted line 4 fires here.)</div>
+            <div class="m2">BLS · Capital Economics consensus · Newsquawk calendar — verified Aug 30</div>
+          </div>
+          <span class="lands both">Split · odds, never predictions</span>
+        </div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt + the new staked bet</div><div class="sub">click to reveal → then: "Comment FLIP — Team Wolf or Team D"</div></div></div>
+      </div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"Don't trade the jobs number. Circle Friday 8:30 for one reason — it's the last big input before the Fed prices your borrowing. Cushion funded, high-APR shrinking, deposits automatic — <b>that plan survives either outcome.</b> Education, not advice."</p></div></div>
+    </section>
+
+    <!-- TOPIC 5 -->
+    <section class="screen">
+      <div class="kick">Topic 5 · 37:00–43:00 · The Verdict</div>
+      <h1 class="q">Whose hands are on <span class="n">your money's</span> steering wheel?</h1>
+      <div class="sides">
+        <div class="side wolf"><div class="who">Wolf · closes it</div><p>"The podium moved the odds. The print will move the podium. <b>Neither ever touched the two numbers that decide your decade.</b> The weather changes — the roof is yours."</p></div>
+        <div class="side dw"><div class="who">D Waugh · closes it</div><p>"Warsh can't hike your deposit. The jobs report can't revise your emergency fund. The biggest earnings night in history moved your $1,000 <b>three bucks</b> — your own transfer moves it more every Friday."</p></div>
+      </div>
+      <div class="receipt" data-reveal>
+        <div class="face">
+          <div class="hero" style="font-size:clamp(28px,3.6vw,46px)">Your two numbers</div>
+          <div class="meta">
+            <div class="m1"><b>Weekly deposit · months of cushion.</b> Neither was on the Fed's dashboard this week — both are on yours.</div>
+            <div class="m2">Outro: 3 takeaways → Discord bridge → "It's Wolf, I'm outta here." · "It's D Waugh, I'm outta here."</div>
+          </div>
+          <span class="lands both">Both land it</span>
+        </div>
+        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The resolution — reveal on the loop-close</div><div class="sub">click to reveal</div></div></div>
+      </div>
+      <div class="landing"><span class="ic">🎯</span><div><div class="k">Outro cue · word-for-word in the rundown</div><p>Takeaways: <b>1</b> know your fund's first line · <b>2</b> $58.25 hike vs $358.13 tier — fix the file · <b>3</b> Friday 8:30, comment <b>FLIP</b>, pick your team. Bridge line one beat before the sign-offs — sign-offs last, clean.</p></div></div>
+    </section>
+  </div>
+
+  <div class="nav">
+    <button class="btn" id="prev">◀ Prev</button>
+    <div class="dots" id="dots"></div>
+    <button class="btn" id="next">Next ▶</button>
+    <span class="navhint">← → keys · R reveals</span>
+    <span class="disc">Educational content only — not financial advice</span>
+  </div>
+</div>
+
+<script>
+const screens=[...document.querySelectorAll('.screen')];
+const dots=document.getElementById('dots');
+let i=0;
+screens.forEach((s,idx)=>{
+  const d=document.createElement('div');d.className='dot'+(idx===0?' on':'');
+  d.addEventListener('click',()=>go(idx));dots.appendChild(d);
+});
+function go(n){
+  if(n<0||n>=screens.length)return;
+  screens[i].classList.remove('on');
+  dots.children[i].classList.remove('on');
+  if(n>i)dots.children[i].classList.add('done');
+  i=n;screens[i].classList.add('on');dots.children[i].classList.add('on');
+}
+document.getElementById('prev').addEventListener('click',()=>go(i-1));
+document.getElementById('next').addEventListener('click',()=>go(i+1));
+document.querySelectorAll('[data-reveal]').forEach(r=>r.addEventListener('click',()=>r.classList.add('revealed')));
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight')go(i+1);
+  if(e.key==='ArrowLeft')go(i-1);
+  if(e.key.toLowerCase()==='r'){const r=screens[i].querySelector('[data-reveal]');if(r)r.classList.add('revealed');}
+});
+</script>
+</body>
+</html>
