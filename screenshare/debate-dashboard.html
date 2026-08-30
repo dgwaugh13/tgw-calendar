@@ -7,216 +7,129 @@
 <style>
 :root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59;--blue:#5B9BFF}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;overflow:hidden;
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;
   background-image:radial-gradient(1100px 550px at 82% -8%,rgba(52,229,163,.07),transparent 60%)}
-.stage{height:100vh;display:flex;flex-direction:column}
-.bar{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line)}
+.bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:14px;padding:14px 28px;border-bottom:1px solid var(--line);background:rgba(11,15,20,.94);backdrop-filter:blur(8px)}
 .mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--mint),#0f9c6e);display:grid;place-items:center;font-family:'Space Grotesk';font-weight:700;color:#04120c;font-size:15px}
 .bar .t{font-family:'Space Grotesk';font-weight:600;font-size:15px;letter-spacing:-.01em}
 .bar .s{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
 .score{margin-left:auto;display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}
 .score .w{color:var(--mint)} .score .d{color:var(--blue)}
 .score b{font-size:15px;color:var(--text)}
-.screens{flex:1;position:relative}
-.screen{position:absolute;inset:0;display:none;flex-direction:column;padding:26px 64px 90px;max-width:1280px;margin:0 auto;width:100%;overflow-y:auto}
-.screen.on{display:flex}
-.screen>*:first-child{margin-top:auto}
-.screen>*:last-child{margin-bottom:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 32px 80px}
 .kick{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.q{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;line-height:1.12;font-size:clamp(24px,3.4vw,46px);margin:12px 0 6px;max-width:28ch}
-.q .n{color:var(--mint)}
-.cover .q{max-width:22ch}
-.through{margin-top:14px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.3);border-radius:14px;padding:18px 22px;font-size:clamp(15px,1.6vw,20px);line-height:1.5;max-width:74ch}
+h1{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;line-height:1.1;font-size:clamp(30px,4.4vw,54px);margin:14px 0 10px;max-width:24ch}
+h1 .n{color:var(--mint)}
+.through{margin-top:14px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.3);border-radius:14px;padding:18px 22px;font-size:clamp(15px,1.6vw,19px);line-height:1.55;max-width:80ch}
 .through b{color:var(--gold)}
-.coverfoot{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
-.chipx{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:7px 14px;background:rgba(255,255,255,.02)}
+.chips{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.chipx{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:7px 14px;background:rgba(255,255,255,.02);line-height:1.6}
 .chipx b{color:var(--mint)}
-.sides{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
-.side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.side.wolf{border-left:3px solid var(--mint)} .side.dw{border-left:3px solid var(--blue)}
-.side .who{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
-.side.wolf .who{color:var(--mint)} .side.dw .who{color:var(--blue)}
-.side p{font-size:clamp(13px,1.35vw,16.5px);color:#cdd8e1;line-height:1.5}
-.side p b{color:var(--text)}
-.receipt{margin-top:14px;position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(245,196,81,.35);min-height:150px;cursor:pointer;background:var(--panel)}
-.receipt .hidden-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:14px;background:repeating-linear-gradient(-45deg,#151d27,#151d27 14px,#121924 14px,#121924 28px);transition:opacity .35s}
-.receipt .hidden-face .lock{font-size:26px}
-.receipt .hidden-face .lbl{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.receipt .hidden-face .sub{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--muted);margin-top:5px}
-.receipt .face{padding:20px 26px;display:flex;align-items:center;gap:30px;flex-wrap:wrap}
-.receipt .hero{font-family:'Space Grotesk';font-weight:700;font-size:clamp(40px,5.5vw,72px);letter-spacing:-.02em;color:var(--mint);line-height:1}
-.receipt.hot .hero{color:var(--red)}
-.receipt .meta{flex:1;min-width:240px}
-.receipt .meta .m1{font-size:clamp(13px,1.4vw,17px);color:var(--text);font-weight:600;line-height:1.45}
-.receipt .meta .m2{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-top:6px;letter-spacing:.04em}
-.receipt.revealed .hidden-face{opacity:0;pointer-events:none}
-.lands{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:99px;flex-shrink:0}
-.lands.wolf{color:var(--mint);border:1px solid rgba(52,229,163,.4);background:rgba(52,229,163,.08)}
-.lands.dw{color:var(--blue);border:1px solid rgba(91,155,255,.4);background:rgba(91,155,255,.08)}
-.lands.both{color:var(--gold);border:1px solid rgba(245,196,81,.4);background:rgba(245,196,81,.08)}
-.landing{margin-top:14px;display:flex;gap:14px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
-.landing .ic{font-size:18px;margin-top:1px}
-.landing .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.landing p{font-size:clamp(13px,1.3vw,15.5px);color:#cdd8e1;line-height:1.5}
-.landing p b{color:var(--text)}
-.nav{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:18px;padding:14px 28px;border-top:1px solid var(--line);background:rgba(11,15,20,.92);backdrop-filter:blur(6px)}
-.btn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 16px;cursor:pointer}
-.btn:hover{border-color:var(--mint);color:var(--mint)}
-.dots{display:flex;gap:8px;margin:0 auto}
-.dot{width:34px;height:6px;border-radius:99px;background:var(--line);cursor:pointer;transition:background .2s}
-.dot.on{background:var(--mint)}
-.dot.done{background:#2a6b52}
-.navhint{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em}
-.disc{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted);letter-spacing:.05em}
-@media(max-width:820px){.sides{grid-template-columns:1fr}.screen{padding:20px 22px 100px}}
+.topic{margin-top:64px;padding-top:34px;border-top:1px solid var(--line)}
+.tkick{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+h2.tq{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;line-height:1.14;font-size:clamp(26px,3.6vw,44px);margin:12px 0 6px;max-width:28ch}
+h2.tq .n{color:var(--mint)}
+.plain{font-size:clamp(14px,1.5vw,17px);color:var(--muted);max-width:80ch;line-height:1.6;margin-top:6px}
+.plain b{color:#cdd8e1}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.stat.big{grid-column:span 2;border-color:rgba(245,196,81,.4)}
+.stat .v{font-family:'Space Grotesk';font-weight:700;font-size:clamp(26px,2.6vw,38px);letter-spacing:-.02em;color:var(--mint);line-height:1.05}
+.stat.big .v{font-size:clamp(34px,3.4vw,52px)}
+.stat.hot .v{color:var(--red)}
+.stat.goldv .v{color:var(--gold)}
+.stat .w1{font-size:clamp(13px,1.25vw,15.5px);color:#cdd8e1;line-height:1.5}
+.stat .w1 b{color:var(--text)}
+.stat .src{margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.04em}
+footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.06em;line-height:1.8}
+footer b{color:var(--mint)}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.stat.big{grid-column:span 2}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.stat.big{grid-column:span 1}}
 </style>
 </head>
 <body>
-<div class="stage">
-  <div class="bar">
-    <div class="mark">TG</div>
-    <div>
-      <div class="t">Wealth Talk · The Debate Board</div>
-      <div class="s">Sun Aug 30, 2026 · all numbers verified live this morning</div>
-    </div>
-    <div class="score"><span class="w">TEAM WOLF</span><b id="sc">1 – 1</b><span class="d">TEAM D</span></div>
+<div class="bar">
+  <div class="mark">TG</div>
+  <div>
+    <div class="t">Wealth Talk · The Debate Board</div>
+    <div class="s">Sun Aug 30, 2026 · all numbers verified live this morning · scroll to follow the show</div>
   </div>
-
-  <div class="screens" id="screens">
-
-    <!-- COVER -->
-    <section class="screen cover on">
-      <div class="kick">Episode 3 · The Debate Standard · check the receipts</div>
-      <h1 class="q">Congress Lost. Day Traders Lose. The Fed Says <span class="n">You're Fine.</span></h1>
-      <div class="through"><b>The through-line:</b> "Congress, the gurus, and the Fed all say 'trust me with your money.' Tonight we check all three receipts — <b>who actually earns it?</b>"</div>
-      <div class="coverfoot">
-        <span class="chipx">Cold open · 60s settle: <b>Wolf takes the Nvidia round</b> ($96.2B · +8.7% Thu · net +$3.09 per $1,000) — company retired from topics, no reruns</span>
-        <span class="chipx">New bet staked in Topic 3 → Comment <b>FLIP</b></span>
-      </div>
-    </section>
-
-    <!-- TOPIC 1 · CONGRESS -->
-    <section class="screen">
-      <div class="kick">Topic 1 · 2:15–13:00 · They Wrote The Rules. They Still Lost.</div>
-      <h1 class="q">They write the rules and STILL lose to a 3-cent fund — <span class="n">so why are they allowed to trade at all?</span></h1>
-      <div class="sides">
-        <div class="side dw"><div class="who">D Waugh · credit/economics chair · "BAN IT"</div><p>"A teacher can't trade her own pension fund ahead of the news. The people who write the laws can." The edge doesn't have to be exercised well to be corrosive — <b>the conflict IS the harm.</b> The president's own June file: 1,000+ trades, published <b>53 days late</b> (OGE).</p></div>
-        <div class="side wolf"><div class="who">Wolf · investor/trader chair · "A BAN IS A BUMPER STICKER"</div><p>Bans get loopholed through spouses and blind trusts with peepholes. <b>Force them into the same boring index fund as you + same-day disclosure</b> — that ends the game without the theater. And note: most of them LOSE — where's the edge?</p></div>
-      </div>
-      <div class="receipt" data-reveal>
-        <div class="face">
-          <div class="hero">100/311</div>
-          <div class="meta">
-            <div class="m1">Only 100 of 311 congressional portfolios beat the S&P's 16.8% in 2025 — <b>68% LOST to a fund that costs 3¢/yr per $100.</b> $5,000 in it on Jan 2 = $5,840 by New Year's — beating 211 members by doing nothing.</div>
-            <div class="m2">Unusual Whales 2025 returns · OGE filing Aug 22 · index math verified this run</div>
-          </div>
-          <span class="lands dw">D lands it</span>
-        </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — land it mid-debate</div><div class="sub">click / R to reveal (planted lines 1 + 2 fire in this segment)</div></div></div>
-      </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · D</div><p>"Don't copy-trade Congress — you just heard the batting average. The boring fund beat 211 of them by doing <b>nothing</b>. Your edge was never information — it's <b>deposits, automatic, earned money only.</b> Education, not advice."</p></div></div>
-    </section>
-
-    <!-- TOPIC 2 · DAY TRADING -->
-    <section class="screen">
-      <div class="kick">Topic 2 · 13:00–24:00 · The Dream They're Selling</div>
-      <h1 class="q">Getting rich day trading — <span class="n">real path, or a casino with better marketing?</span></h1>
-      <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · the trader chair · "REAL — BUT IT'S A SLEEVE, NOT A SALARY"</div><p>Trading is real work with a real learning curve. My own book on camera: <b>70% boring buy-and-hold, 20% swings/LEAPs, 10% crypto</b> — $86,616 over ten years deliberately allowed to go to zero, and the zero-test says the 70% still lands near $345K if every trade dies.</p></div>
-        <div class="side dw"><div class="who">D Waugh · credit/economics chair · "THE CASINO IS MORE HONEST"</div><p>The industry <b>sells the 1.1% and bills the 97%</b> — laptop-on-the-beach marketing, winning-screenshot economy, $997 courses. "If the secret worked, they'd trade it, not teach it." It inverts the pyramid: the 20% sleeve sold as the whole house, to people with no house yet.</p></div>
-      </div>
-      <div class="receipt hot" data-reveal>
-        <div class="face">
-          <div class="hero">97%</div>
-          <div class="meta">
-            <div class="m1">Of 19,646 people who started day trading, <b>1,551 stuck with it 300+ days — and 97% of them LOST money.</b> Only 1.1% out-earned minimum wage; 0.5% beat a bank teller's starting salary.</div>
-            <div class="m2">Chague, De-Losso &amp; Giovannetti, "Day Trading for a Living?" (SSRN 3423101) — re-verified this run</div>
-          </div>
-          <span class="lands wolf">WOLF lands it — the trader reads the stat (this is the clip)</span>
-        </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt — the twist</div><div class="sub">click / R — planted line 3: "the casino is honest about its odds. The gurus aren't."</div></div></div>
-      </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"If you trade — trade like it can lose, because statistically it will. <b>Cap the sleeve</b> at a number you can watch go to zero without missing rent. <b>Earned money only. Never margin.</b> The first dollar goes to the boring 70 before the exciting 20 exists. Education, not advice."</p></div></div>
-    </section>
-
-    <!-- TOPIC 3 · NOT RESTRICTED FOR WHO -->
-    <section class="screen">
-      <div class="kick">Topic 3 · 24:00–36:00 · Not Restricted For WHO? · ⚖️ the new bet</div>
-      <h1 class="q">The Fed chair says your money's "not restrictive." Your card says 22%. <span class="n">Who's lying?</span></h1>
-      <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · "HE'S TEXTBOOK-RIGHT"</div><p>Unemployment ~4.1%, records on the tape, credit flowing — "restrictive" is a thermometer for the ECONOMY, and a chair aims at averages. And if he pretends inflation's fine and it re-heats, <b>the people D defends pay the most, longest.</b> A hawk now may be the renter's friend in two years.</p></div>
-        <div class="side dw"><div class="who">D Waugh · "IT'S TWO ECONOMIES"</div><p>Asset owners refinance; wage earners revolve. A 3.2% raise against <b>PCE at 3.7%</b> (his own named gauge, hot on Wednesday) is a pay cut with extra steps. Odds went <b>35→59%</b> off one speech. "He's chair of the economy that owns things."</p></div>
-      </div>
-      <div class="receipt hot" data-reveal>
-        <div class="face">
-          <div class="hero">22.15%</div>
-          <div class="meta">
-            <div class="m1">Average APR on credit-card accounts actually being charged interest (Federal Reserve, Q2 2026) — while conditions are, quote, <b>"not restrictive."</b> ⚖️ Then stake the bet: <b>Team Wolf</b> — Friday's jobs print &lt; +50K, odds fall under 50 · <b>Team D</b> — near the +90K consensus, hike stays live. <b>Comment FLIP.</b></div>
-            <div class="m2">Fed G.19-derived, Q2 2026 · CME FedWatch · BLS Fri Sep 4 8:30am — one of us eats it next Sunday</div>
-          </div>
-          <span class="lands dw">D lands it</span>
-        </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The receipt + the new staked bet</div><div class="sub">click / R — planted line 4: "not restricted for WHO?"</div></div></div>
-      </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">The landing · ~30s to camera · Wolf</div><p>"Your restriction number isn't the fed funds rate — it's the <b>APR line on your own statement.</b> A hike ≈ $58/mo on a $350K mortgage; your credit tier ≈ $358. <b>Fix the file, not the Fed.</b> Education, not advice."</p></div></div>
-    </section>
-
-    <!-- TOPIC 4 · VERDICT -->
-    <section class="screen">
-      <div class="kick">Topic 4 · 36:00–43:00 · The Verdict</div>
-      <h1 class="q">None of the microphones earned it. <span class="n">So whose hands are on the wheel?</span></h1>
-      <div class="sides">
-        <div class="side wolf"><div class="who">Wolf · closes it</div><p>"The rule-makers? <b>68% lost to autopilot.</b> The dream-sellers? <b>97% of their students lose.</b> The referee? He grades the average — and you don't live in the average. Nobody with a microphone earned the wheel tonight."</p></div>
-        <div class="side dw"><div class="who">D Waugh · closes it</div><p>"Which leaves the only person who was ever actually driving. <b>Congress can't trade your deposit. A guru can't course-sell your cushion. Warsh can't hike either one.</b>"</p></div>
-      </div>
-      <div class="receipt" data-reveal>
-        <div class="face">
-          <div class="hero" style="font-size:clamp(28px,3.6vw,46px)">Your two numbers</div>
-          <div class="meta">
-            <div class="m1"><b>Weekly deposit · months of cushion.</b> Check the receipts — then trust the two numbers that only answer to you.</div>
-            <div class="m2">Outro: 3 takeaways → Discord bridge → "It's Wolf, I'm outta here." · "It's D Waugh, I'm outta here."</div>
-          </div>
-          <span class="lands both">Both land it</span>
-        </div>
-        <div class="hidden-face"><span class="lock">🔒</span><div><div class="lbl">The resolution — reveal on the loop-close</div><div class="sub">click / R to reveal</div></div></div>
-      </div>
-      <div class="landing"><span class="ic">🎯</span><div><div class="k">Outro cue · word-for-word in the rundown</div><p>Takeaways: <b>1</b> the boring fund beat 211 of Congress by doing nothing — deposits, not information · <b>2</b> cap the sleeve, earned money only, never margin · <b>3</b> Friday 8:30, comment <b>FLIP</b>, pick your team. Bridge line one beat before the sign-offs — sign-offs last, clean.</p></div></div>
-    </section>
-  </div>
-
-  <div class="nav">
-    <button class="btn" id="prev">◀ Prev</button>
-    <div class="dots" id="dots"></div>
-    <button class="btn" id="next">Next ▶</button>
-    <span class="navhint">← → keys · R reveals</span>
-    <span class="disc">Educational content only — not financial advice</span>
-  </div>
+  <div class="score"><span class="w">TEAM WOLF</span><b>1 – 1</b><span class="d">TEAM D</span></div>
 </div>
 
-<script>
-const screens=[...document.querySelectorAll('.screen')];
-const dots=document.getElementById('dots');
-let i=0;
-screens.forEach((s,idx)=>{
-  const d=document.createElement('div');d.className='dot'+(idx===0?' on':'');
-  d.addEventListener('click',()=>go(idx));dots.appendChild(d);
-});
-function go(n){
-  if(n<0||n>=screens.length)return;
-  screens[i].classList.remove('on');
-  dots.children[i].classList.remove('on');
-  if(n>i)dots.children[i].classList.add('done');
-  i=n;screens[i].classList.add('on');dots.children[i].classList.add('on');
-}
-document.getElementById('prev').addEventListener('click',()=>go(i-1));
-document.getElementById('next').addEventListener('click',()=>go(i+1));
-document.querySelectorAll('[data-reveal]').forEach(r=>r.addEventListener('click',()=>r.classList.add('revealed')));
-document.addEventListener('keydown',e=>{
-  if(e.key==='ArrowRight')go(i+1);
-  if(e.key==='ArrowLeft')go(i-1);
-  if(e.key.toLowerCase()==='r'){const r=screens[i].querySelector('[data-reveal]');if(r)r.classList.add('revealed');}
-});
-</script>
+<div class="wrap">
+
+  <div class="kick">Episode 3 · The Debate Standard · 3 arguments + a verdict · no scripts — just the data</div>
+  <h1>Congress Trades. Gurus Sell. AI Booms. <span class="n">Who's Playing You?</span></h1>
+  <div class="through"><b>The through-line:</b> "Three money stories everybody's arguing about right now — politicians trading stocks, day-trading riches, and the AI boom sitting inside your retirement account. No scripts tonight: the data's on the board, and we argue it for real. <b>Who's playing you — and who's actually on your side?</b>"</div>
+  <div class="chips">
+    <span class="chipx">Cold open · 60s bet settle: <b>Wolf takes the Nvidia round</b> ($96.2B print · +8.7% Thursday) — then the name retires, no reruns</span>
+    <span class="chipx">Bet on Friday's jobs number gets staked at the verdict → Comment <b>FLIP</b></span>
+  </div>
+
+  <!-- TOPIC 1 -->
+  <section class="topic">
+    <div class="tkick">Argument 1 · ~2:15–14:00</div>
+    <h2 class="tq">Politicians can trade stocks while they write the laws. <span class="n">Should that be banned?</span></h2>
+    <p class="plain">Plain English: members of Congress can legally buy and sell individual stocks — they just have to disclose trades within 45 days (the STOCK Act). The argument: is that a rigged game, an overblown outrage, or something in between? Data bank below — argue it out.</p>
+    <div class="grid">
+      <div class="stat big"><div class="v">100 of 311</div><div class="w1">Congressional portfolios that beat the S&P 500's 16.8% return in 2025 — meaning <b>68% of Congress LOST to the basic index fund</b> anyone can buy.</div><div class="src">Unusual Whales, 2025 congressional returns</div></div>
+      <div class="stat"><div class="v">$0.03</div><div class="w1">What that index fund costs per year, per $100 invested — the "opponent" most of Congress lost to.</div><div class="src">typical S&P 500 index fund expense ratio (0.03%)</div></div>
+      <div class="stat hot"><div class="v">53 days</div><div class="w1">How late the president's June financial file was published — 1,000+ trades, disclosed 53 days after the newest one.</div><div class="src">Office of Government Ethics, Aug 22</div></div>
+      <div class="stat"><div class="v">45 days</div><div class="w1">The STOCK Act's legal disclosure window — the law makes them <b>tell</b> you about trades, it doesn't <b>stop</b> the trades.</div><div class="src">STOCK Act (2012)</div></div>
+      <div class="stat goldv"><div class="v">$5,840</div><div class="w1">What $5,000 parked in the boring index fund on Jan 2, 2025 grew to by New Year's — <b>beating 211 members of Congress by doing nothing</b>.</div><div class="src">S&P 500 index data, dividends reinvested</div></div>
+      <div class="stat"><div class="v">Vanguard</div><div class="w1">The biggest single holding in the president's own 1,000-trade file: a slice of a plain Vanguard index fund.</div><div class="src">OGE filing, Aug 22</div></div>
+    </div>
+  </section>
+
+  <!-- TOPIC 2 -->
+  <section class="topic">
+    <div class="tkick">Argument 2 · ~14:00–25:00</div>
+    <h2 class="tq">Can a regular person really <span class="n">get rich day trading?</span></h2>
+    <p class="plain">Plain English: day trading = buying and selling within the same day, betting on hours-long price moves. It's all over the feed right now — EYL's grid is running "the master investor reveals his secret to getting rich as a day trader." The argument: real path, or a casino with better marketing? Data bank below.</p>
+    <div class="grid">
+      <div class="stat big hot"><div class="v">97%</div><div class="w1">Of the 1,551 people who kept day trading for more than 300 days, <b>97% LOST money</b> — from a study that tracked 19,646 people who tried it.</div><div class="src">Chague, De-Losso &amp; Giovannetti, "Day Trading for a Living?" (SSRN 3423101)</div></div>
+      <div class="stat"><div class="v">1.1%</div><div class="w1">Share of those persistent day traders who earned more than <b>minimum wage</b>. Only 0.5% out-earned a bank teller's starting salary.</div><div class="src">same study — re-verified this run</div></div>
+      <div class="stat"><div class="v">19,646</div><div class="w1">People in the study who started day trading. Most quit early — losing money is the main reason people stop.</div><div class="src">same study</div></div>
+      <div class="stat goldv"><div class="v">70 / 20 / 10</div><div class="w1">Wolf's actual on-camera allocation: 70% boring buy-and-hold, 20% swings/LEAPs, 10% crypto — the trading is a <b>capped sleeve, not a salary</b>.</div><div class="src">TGW "Comment CAP" post, Aug 23 — the math is public</div></div>
+      <div class="stat"><div class="v">$86,616</div><div class="w1">The 10-year total Wolf's own plan deliberately <b>allows to go to zero</b> — and the zero-test says the boring 70% still lands near $345K if every trade dies.</div><div class="src">computed &amp; published in the Cap Sheet</div></div>
+      <div class="stat"><div class="v">$997</div><div class="w1">The going rate for a guru course. The question that ends most arguments: <b>if the secret worked, would they trade it — or teach it?</b></div><div class="src">typical course pricing — the marketing economy around the 1.1%</div></div>
+    </div>
+  </section>
+
+  <!-- TOPIC 3 -->
+  <section class="topic">
+    <div class="tkick">Argument 3 · ~25:00–36:00</div>
+    <h2 class="tq">Is the AI boom a bubble — <span class="n">and is it inside your 401(k)?</span></h2>
+    <p class="plain">Plain English: companies are spending historic money building AI data centers, the biggest AI company just posted the biggest earnings in stock-market history — and because index funds weight by size, a chunk of every retirement account is riding on it. The argument: paid-for boom with receipts, or bubble with better paperwork? Data bank below.</p>
+    <div class="grid">
+      <div class="stat big"><div class="v">$96.2B</div><div class="w1">Nvidia's revenue in ONE quarter — up 106% in a year, 92.5¢ of every dollar from AI data centers. Next quarter's forecast: <b>~$108B — about $1.17 billion a day</b>.</div><div class="src">Nvidia 8-K / IR, Aug 26</div></div>
+      <div class="stat"><div class="v">7.28%</div><div class="w1">Nvidia's share of the S&P 500 — the largest single-company weight ever. <b>$72.80 of every $1,000</b> in the default index fund. Top 10 companies = 38.7% of the whole fund.</div><div class="src">Slickcharts, Aug 28</div></div>
+      <div class="stat hot"><div class="v">$15B→$125B</div><div class="w1">AI data-center loans in one year — borrowed money building the boom, per UBS. Nvidia itself lined up a <b>$500B+ loan program</b> with Apollo, BlackRock, Blackstone, Goldman &amp; KKR.</div><div class="src">UBS via Nvidia newsroom coverage, Aug 10</div></div>
+      <div class="stat hot"><div class="v">$279B</div><div class="w1">What Nvidia has already committed just to lock up memory-chip supply — while telling investors margins will DROP to 71–72% because parts got pricier.</div><div class="src">Nvidia IR, Aug 26</div></div>
+      <div class="stat"><div class="v">2,000,000</div><div class="w1">GPUs Amazon Web Services ordered from Nvidia in one announcement — the customers are still lining up.</div><div class="src">AWS announcement w/ earnings, Aug 26 (CNBC)</div></div>
+      <div class="stat goldv"><div class="v">+8.7% → −4.45%</div><div class="w1">The market's 48-hour verdict on the biggest earnings ever: a party Thursday, half given back Friday. Net effect on $1,000 of index fund: <b>about +$3.09</b>.</div><div class="src">CNBC / WaPo closes · computed this run</div></div>
+    </div>
+  </section>
+
+  <!-- VERDICT -->
+  <section class="topic">
+    <div class="tkick">The Verdict · ~36:00–43:00 · + the new bet</div>
+    <h2 class="tq">So who's playing you — <span class="n">and what do you actually control?</span></h2>
+    <p class="plain">Resolve the through-line organically, then stake the week's bet on Friday's jobs report and close on the two numbers no headline touches. Reference points below.</p>
+    <div class="grid">
+      <div class="stat"><div class="v">−23,000</div><div class="w1">July's jobs number — America <b>lost</b> jobs. June was revised down to barely +20K. August's report lands <b>Friday, Sep 4, 8:30am ET</b>; forecasters expect ~+90K.</div><div class="src">BLS · consensus via Capital Economics</div></div>
+      <div class="stat"><div class="v">56–59%</div><div class="w1">Market odds the Fed RAISES rates on Sept 16 — up from ~35% in one afternoon after the new Fed chair's first big speech Friday. A hike ≈ <b>$58/mo</b> on a $350K mortgage; a better credit tier ≈ <b>$358/mo</b>.</div><div class="src">CME FedWatch, Aug 28 · payments computed this run</div></div>
+      <div class="stat goldv"><div class="v">FLIP</div><div class="w1">The staked bet: <b>Team Wolf</b> — Friday prints under +50K · <b>Team D</b> — it lands near the +90K consensus. Viewers comment <b>FLIP</b> with a side → the free Coin-Flip Sheet. One of us eats it next Sunday.</div><div class="src">settle on air next episode</div></div>
+      <div class="stat big"><div class="v">Your two numbers</div><div class="w1"><b>Weekly deposit · months of cushion.</b> Congress can't trade them, a guru can't course-sell them, the Fed can't hike them, and a bubble can't pop them.</div><div class="src">the close — then the sign-offs, verbatim, last</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <b>ThinkinGenWealth</b> · Wealth Talk debate board · questions + data only — the argument happens live · every figure verified Aug 30, 2026<br>
+    Educational content only — not financial advice. No trade recommendations, no price predictions. Earned money only — never margin.
+  </footer>
+</div>
 </body>
 </html>
