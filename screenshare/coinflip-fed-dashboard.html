@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TGW · The Coin-Flip Fed · verified Aug 30, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0F14;--panel:#131A22;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;padding:36px}
+h1{font-family:'Space Grotesk',sans-serif;font-size:26px}
+.sub{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);margin-top:6px;letter-spacing:.08em;text-transform:uppercase}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card .t{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase}
+.big{font-family:'Space Grotesk',sans-serif;font-size:52px;font-weight:700;color:var(--mint);margin:12px 0 6px;letter-spacing:-.02em}
+.s{font-size:13px;color:var(--muted);line-height:1.55}
+table{width:100%;border-collapse:collapse;margin-top:14px;font-size:14px}
+th{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid rgba(36,49,64,.5)}
+td b{color:var(--mint)}
+.quote{margin-top:16px;background:rgba(245,196,81,.06);border:1px solid rgba(245,196,81,.3);border-radius:12px;padding:16px;font-size:15px;line-height:1.6}
+.quote i{color:var(--gold);font-style:normal;font-weight:600}
+.foot{margin-top:20px;font-size:11px;color:var(--muted)}
+</style>
+</head>
+<body>
+<h1>The Coin-Flip Fed — one speech, one session</h1>
+<div class="sub">TUE react support · Jackson Hole keynote Fri Aug 28, ~10am ET · all figures verified Aug 30</div>
+<div class="row">
+  <div class="card">
+    <div class="t">Sept 16 hike odds (CME FedWatch)</div>
+    <div class="big">35% → 59%</div>
+    <div class="s">Before the keynote vs Friday afternoon. Kalshi 48% · Polymarket 2026-hike as high as 69%. The first genuine coin-flip FOMC of the cycle.</div>
+    <div class="quote">Warsh, verbatim: economy at <i>"full employment"</i> · inflation trends <i>"concerning"</i> · financial conditions <i>"not restrictive"</i> · and he named <i>PCE</i> as the gauge he acts on. (federalreserve.gov, Aug 28)</div>
+  </div>
+  <div class="card">
+    <div class="t">What a 25bp hike does vs what your tier does — $350K, 30-yr</div>
+    <table>
+      <tr><th>Scenario</th><th>Rate</th><th>Payment/mo</th><th>Gap</th></tr>
+      <tr><td>Today (PMMS Aug 27)</td><td>6.66%</td><td>$2,249.19</td><td>—</td></tr>
+      <tr><td>After one hike</td><td>6.91%</td><td>$2,307.44</td><td><b>+$58.25/mo</b></td></tr>
+      <tr><td>620-tier, same house</td><td>8.16%</td><td>$2,607.32</td><td><b>+$358.13/mo</b></td></tr>
+    </table>
+    <div class="s" style="margin-top:12px">The tier is worth <b style="color:var(--mint)">6×</b> the hike. Computed this run — payments verified in bash. July PCE (his named gauge): 3.7% headline / 3.3% core.</div>
+  </div>
+</div>
+<div class="foot">Sources: federalreserve.gov keynote page · CME FedWatch via CNBC/Benzinga (Aug 28) · Freddie Mac PMMS (Aug 27) · BEA (Jul PCE, Aug 26). Educational content only — not financial advice.</div>
+</body>
+</html>

@@ -1,65 +1,48 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TGW · Podcast Master Dashboard · Aug 23, 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TGW · Podcast Master Dashboard · Aug 30, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59;--blue:#5B9BFF}
+:root{--ink:#0B0F14;--panel:#131A22;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--red:#FF7A59}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--ink);color:var(--text);font-family:Inter,system-ui,sans-serif;padding:36px;background-image:radial-gradient(900px 500px at 85% -10%,rgba(52,229,163,.07),transparent 60%)}
-h1{font-family:'Space Grotesk';font-size:30px;letter-spacing:-.02em}
-.sub{font-family:'JetBrains Mono';font-size:12px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative}
-.card .k{font-family:'JetBrains Mono';font-size:12px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase}
-.card h2{font-family:'Space Grotesk';font-size:19px;margin:10px 0 4px;line-height:1.25}
-.hero{font-family:'Space Grotesk';font-weight:700;font-size:64px;letter-spacing:-.03em;margin:14px 0 4px}
-.mint{color:var(--mint)}.gold{color:var(--gold)}.red{color:var(--red)}
-.card p{font-size:14px;color:var(--muted);line-height:1.5;margin-top:8px}
-.card p b{color:var(--text)}
-.full{grid-column:1/-1}
-.vs{display:flex;gap:14px;margin-top:14px}
-.chair{flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px}
-.chair .who{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.1em;text-transform:uppercase}
-.chair.w .who{color:var(--mint)}.chair.d .who{color:var(--blue)}
-.chair p{font-size:13px;margin-top:6px}
-footer{margin-top:26px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
-</style></head><body>
-<h1>Walmart Beat By A Mile And Fell <span class="red">10%</span>. Who's Lying To You?</h1>
-<div class="sub">TGW Podcast · Sun Aug 23, 2026 · The Card — one receipt per topic · educational only, not financial advice</div>
+body{background:var(--ink);color:var(--text);font-family:'Inter',sans-serif;padding:36px}
+h1{font-family:'Space Grotesk',sans-serif;font-size:26px;letter-spacing:-.02em}
+.sub{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);margin-top:6px;letter-spacing:.08em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:28px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative;overflow:hidden}
+.card .t{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase}
+.card .hero{font-family:'Space Grotesk',sans-serif;font-size:44px;font-weight:700;margin:14px 0 8px;color:var(--mint);letter-spacing:-.02em;line-height:1}
+.card .hero.red{color:var(--red)}
+.card .s{font-size:13px;color:var(--muted);line-height:1.5}
+.tape{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 22px;display:flex;gap:34px;flex-wrap:wrap}
+.tape div{font-family:'JetBrains Mono',monospace;font-size:13px}
+.tape .k{color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px}
+.tape b{color:var(--text);font-size:16px}
+.foot{margin-top:22px;font-size:11px;color:var(--muted)}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<h1>A $96B Beat, A Coin-Flip Fed — And Your $3.09</h1>
+<div class="sub">Wealth Talk · Sun Aug 30, 2026 · one hero number per topic · all figures verified live this morning</div>
 <div class="grid">
-  <div class="card">
-    <div class="k">Topic 1 · The Retail Verdict</div>
-    <h2>Every comp was positive. The biggest stock fell anyway.</h2>
-    <div class="hero red">−10%</div>
-    <p><b>Walmart, Aug 20 — after a BEAT.</b> Rev $187.9B (+5.9%) · EPS $0.81 (+19.1%) · US comps +2.6%. The trip wire: FY EPS guide $2.80–$2.87 vs Street ~$2.90.</p>
-  </div>
-  <div class="card">
-    <div class="k">Topic 2 · Government vs Bond Market</div>
-    <h2>Treasury DOUBLED its buybacks. The relief died same-day.</h2>
-    <div class="hero gold">5.184%</div>
-    <p>30-yr yield after the −10bp "relief" — <b>Dow finished −700 that session.</b> 10-yr ended the week just under 4.7%. Freddie Mac 30-yr: <b>6.65%</b> → the week moved a $350K payment <b>$4.64/mo</b>.</p>
-  </div>
-  <div class="card">
-    <div class="k">Topic 3 · Reddit's Round Trip</div>
-    <h2>The rule-followers bought the top — on schedule.</h2>
-    <div class="hero mint">+12.6% → 0</div>
-    <p>$158.12 → $178.09 on the announcement · ~$2.97B of forced index buying (JPM: 16.7M sh) · one week after inclusion the pop was <b>fully round-tripped (~$158)</b>.</p>
-  </div>
-  <div class="card">
-    <div class="k">Topic 4 · The Concentration Question</div>
-    <h2>The biggest single-company weight in S&P 500 history.</h2>
-    <div class="hero mint">7.55%</div>
-    <p><b>Nvidia passed Apple (7.05%) this week.</b> Mag 7 ≈ 32.7% of the index. $75.50 of every $1,000 · $3,775 of a $50K 401(k). Reports <b>Wed Aug 26 after close</b> — guide $91.0B ±2%, Street $91.85B.</p>
-  </div>
-  <div class="card full">
-    <div class="k">Topic 5 · The Verdict + The New Staked Bet</div>
-    <h2>⚖️ One of us eats it next Sunday — comment <span class="gold">VERDICT</span> to pick a side</h2>
-    <div class="vs">
-      <div class="chair w"><div class="who">Team Wolf</div><p>"Wednesday's number starts with a <b>9</b> — $91B+ and the machine keeps earning its weight."</p></div>
-      <div class="chair d"><div class="who">Team D</div><p>"The number can be fine and the stock still tells on itself — the reaction says <b>priced for perfect</b>."</p></div>
-    </div>
-    <p style="margin-top:12px">The landing, every topic: the market was grading itself, not you. Your two numbers — the weekly deposit and the months of cushion — were never on its dashboard.</p>
-  </div>
+  <div class="card"><div class="t">T1 · The Nvidia Verdict</div><div class="hero">+$3.09</div><div class="s">Net move per $1,000 of an S&amp;P 500 fund from the biggest earnings week ever: +$6.33 Thu (+8.7%), −$3.24 Fri (−4.45%) at the 7.28% weight.</div></div>
+  <div class="card"><div class="t">T2 · Warsh At The Podium</div><div class="hero">35→59%</div><div class="s">Sept-16 hike odds, one session (CME FedWatch, Aug 28). "Full employment" · inflation "concerning" · conditions "not restrictive."</div></div>
+  <div class="card"><div class="t">T3 · The Gauge He Named</div><div class="hero red">3.7%</div><div class="s">July PCE YoY — hot by 0.1pp; core 3.3% in line, stuck at June's pace (BEA, Aug 26). Target: 2%.</div></div>
+  <div class="card"><div class="t">T4 · One Number Left</div><div class="hero">~+90K</div><div class="s">Aug jobs consensus — Fri Sep 4, 8:30am ET. After July's −23K and June's +20K revision. The last big input before Sep 15–16.</div></div>
+  <div class="card"><div class="t">T5 · The Verdict</div><div class="hero" style="font-size:30px;line-height:1.15">Your two<br>numbers</div><div class="s">Weekly deposit · months of cushion. Neither was on the Fed's dashboard this week.</div></div>
 </div>
-<footer>Week ahead: Tue — Consumer Confidence · <b>Wed 8:30a — July PCE (June: 3.7%/3.3% core) + Q2 GDP 2nd est · Wed ~4:20p — NVDA</b> · Thu — Jackson Hole opens · <b>Fri ~10a — Warsh's first keynote</b> · Next FOMC Sep 15–16 (hold ~65%). Verified live Aug 23, 2026.</footer>
-</body></html>
+<div class="tape">
+  <div><span class="k">S&amp;P 500 (Fri)</span><b>7,711.76</b> +0.5% wk</div>
+  <div><span class="k">Nasdaq</span><b>26,402.42</b> +0.9% wk</div>
+  <div><span class="k">10-yr</span><b>4.73%</b></div>
+  <div><span class="k">2-yr</span><b>4.34%</b></div>
+  <div><span class="k">Freddie Mac 30-yr</span><b>6.66%</b> Aug 27</div>
+  <div><span class="k">NVDA weight</span><b>7.28%</b> Slickcharts</div>
+  <div><span class="k">Hike math</span><b>$58.25/mo</b> vs tier $358.13</div>
+</div>
+<div class="foot">Sources: Nvidia 8-K (Aug 26) · federalreserve.gov (Warsh keynote Aug 28) · BEA (Jul PCE) · CME FedWatch via CNBC/Benzinga · Advisor Perspectives yields snapshot · Freddie Mac PMMS · BLS/CNBC (jobs) · computed worked numbers verified in bash Aug 30, 2026. Educational content only — not financial advice.</div>
+</body>
+</html>

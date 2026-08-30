@@ -1,76 +1,35 @@
-# TGW Green-screen backgrounds + hook text — Week of Aug 24–30, 2026
-
-All generated tiles are 1080×1920 in the locked TGW box style (navy `#131A22` panel, `#243140` border, gold Title-Case hook, key number in mint `#34E5A3`, upper-third). Ken Burns clips are 8s, 1080×1920, 30fps, yuv420p, +faststart. **Pipeline note (this run):** generated data tiles + Ken Burns clips per the run spec — real numbers on screen are the story this week, so tiles carry every beat; Wolf can layer Meta Edits moving captions on top. For collab/creator material, screenshot instructions are given instead of re-rendered art (react framing).
-
-**Hook doctrine check applied to every line below:** viewer-subject, ONE number in the cold open (Sora adjustment #8), Title Case, no hype, no price predictions.
+# Green-screen backgrounds + hook text — week of Aug 31 – Sep 6, 2026
+All tiles 1080×1920, TGW locked box (navy `#131A22` / border `#243140` / gold Title-Case / mint numbers, upper-third). Clips: 8s Ken Burns, 1080×1920, yuv420p, +faststart. Meta Edits adds the moving captions on top — match the box spec manually, never improvise.
+**Sora note (#9):** every cut order below opens on the QUOTED CLAIM or the owned number — cuts land on the but/therefore turns.
 
 ---
 
-## TUESDAY AUG 25 — Nvidia 7.55% react (flagship, ships same-day)
+## TUE Sep 1 — "The Coin-Flip Fed" (Wolf · P6)
+- **Cold-open text (≤5 words):** `"Not Restrictive." — 59% Flip`
+- **Sustained caption (≤12 words):** `One Speech Made Your Rates A 59% Coin Flip — Beat It 6×`
+- **Cut order:** 0:00 `TUE_V1_coinflip-kenburns.mp4` (cold open, 1–2s) → 0:03 face-cam → 0:09 `TUE_T1_not-restrictive.png` (Pt 1) → 0:26 `TUE_T2_one-session.png` (Pt 2 — the 35→59 turn) → 0:45 face-cam lean-in (re-hook) → 0:52 `TUE_T3_hike-vs-tier.png` (payoff — $58.25 vs $358.13) → loop-close face-cam.
 
-**Cold-open text (≤5 words):** `$75.50 Of Every $1,000`
-**Sustained caption (≤12 words):** `Your Index Fund's Biggest-Ever Bet On One Company Reports Wednesday`
+## THU Sep 3 — "The Wick That Told On Nvidia" (Wolf · P1 — RECORDS TUESDAY)
+- **Cold-open text:** `This Shape Cost Billions`
+- **Sustained caption:** `The Long Upper Wick — Nvidia's Own Chart Just Taught It`
+- **Cut order:** 0:00 `THU_V1_wick-kenburns.mp4` (cold open) → 0:05 `THU_T1_candle-anatomy.png` (Pt 1 anatomy) → 0:28 `THU_T2_nvda-week.png` (Pt 2 — the live week) → 0:45 face-cam (re-hook: "what it does NOT mean") → 0:55 `THU_T3_per-1000.png` (payoff — +$6.33/−$3.24) → loop-close.
+- ⚠ Clock rule: if not live by **3pm ET Thursday**, bank reel **#42** posts instead (tiles staged in `Weeks/Jul-6-12/greenscreen/SAT/` per the bank log).
 
-| Order | Asset | Lands on beat |
-|---|---|---|
-| 1 | `TUE/TUE_T0_intro-7-55.png` (+ `TUE_V1_755-kenburns.mp4` as the moving cold-open bg) | Beat 1 cold open — the $75.50 line |
-| 2 | `TUE/TUE_T1_rule-that-picked-it.png` | Pt 1 — cap-weighting = the group-photo rule |
-| 3 | `TUE/TUE_T2_biggest-single-bet.png` | Pt 2 — $75.50 / $327 / $673 breakdown + Reddit warning |
-| 4 | `TUE/TUE_T3_wednesday-math.png` | Pt 3 payoff — the ±$7.55 math |
-| 5 | `TUE/TUE_T4_artifact-check.png` | Beat 5 — Comment CHECK artifact hand-off |
+## FRI Sep 4 — Jobs-day react (⚡ CONDITIONAL · FILL-LIVE)
+- **Cold-open text:** `August Jobs: ____K`
+- **Sustained caption:** `The Coin Flip Just Landed — Here's Your Number`
+- **Background:** `FRI_T1_jobs_FILLLIVE.png` + `FRI_V1_filllive-kenburns.mp4`. **⚠ The tile ships with blanks + a verify banner — regenerate/fill the numbers from bls.gov + CME FedWatch after 8:30am, or overlay them in Meta Edits, BEFORE posting.** If the trigger doesn't fire, don't post — it becomes podcast Segment 1 fuel.
 
-Suggested cut order: T0 (0:00–0:09) → T1 on the "rule" turn (0:09) → T2 on the "but here's the bet" turn (0:26) → hold face-cam for the mid re-hook (0:45) → T3 for the payoff (0:52) → T4 under the bridge line (1:12).
+## SAT Sep 5 — "The $900,000 Rent Comment" (D Waugh · collab · IG-FIRST)
+- **Cold-open text:** `$900,000 In Rent — True`
+- **Sustained caption:** `The Rent Comment Was Right — Your Tier Decides The Rest`
+- **SCREENSHOT INSTRUCTION (background 1, the react layer):** screen-grab EYL's **Aug 29** post ("The Higher Rent Gets, The More Owning A Home Makes Sense" — instagram.com/p/DcpAdCkuYOS) AND the **43-like comment** ("$2,500 a month × 30 years = almost $900,000…"). Show as a freeze-frame you point at — reaction framing only, our tiles carry the math.
+- **Cut order:** 0:00 comment screenshot, highlighted (cold open — read it) → 0:08 `SAT_T1_900k-true.png` (Pt 1 — the math checks, and it's really $1.43M) → 0:30 `SAT_T2_all-in-stack.png` (Pt 2 — all-in owning vs rent) → 0:50 face-cam (re-hook: "the number nobody typed") → 0:58 `SAT_T3_tier-gap.png` (payoff — $245.57/mo) → loop-close + `SAT_V1_tiergap-kenburns.mp4` as outro loop.
+- ⚠ **IG-FIRST HARD GATE:** the IG-native cut posts first, same day (~12–3pm ET), then TikTok/YT — else the slot logs MISSED.
 
----
+## SUN Sep 6 — Podcast (draft) / TODAY Aug 30 — Podcast final
+- `PODCAST_T1_the-card.png` — THE CARD (5 topics) — teaser tile + episode insert.
+- `PODCAST_T2_the-bet.png` — the Team Wolf / Team D FLIP bet — end-of-episode + community-tab image.
+- `PODCAST_V1_card-kenburns.mp4` — 8s teaser for stories/community.
 
-## WEDNESDAY AUG 26 — CONDITIONAL 4th (FILL-LIVE — verify before posting)
-
-**Cold-open text:** `$____ Billion. 13 Weeks.` *(fill revenue)*
-**Sustained caption:** `The Bet Your Fund Never Asked You About Just Got Graded`
-
-| Order | Asset | Note |
-|---|---|---|
-| 1 | `WED/WED_T1_fill-live-nvda.png` (+ `WED_V1_fill-live-kenburns.mp4`) | ⚠ FILL-LIVE banner baked in — REPLACE blanks in Meta Edits before posting |
-| 2 | `WED/WED_T2_fill-live-pce.png` | secondary PCE frame (8:30am path) |
-| 3 | `WED/WED_T3_trigger-card.png` | internal reference — does Wednesday ship at all |
-
----
-
-## THURSDAY AUG 27 — Long-upper-wick chart evergreen (⚠ 3rd attempt · #42 fires at 3pm if not live)
-
-**Cold-open text:** `The Wick Is The Losers`
-**Sustained caption:** `The 2.68x Wick That Called Reddit's Whole Round Trip`
-
-| Order | Asset | Lands on beat |
-|---|---|---|
-| 1 | `THU/THU_T0_intro-wick.png` (+ `THU_V1_wick-kenburns.mp4`) | Beat 1 — the giant candle |
-| 2 | `THU/THU_T1_candle-anatomy.png` | Pt 1 — body/wick anatomy |
-| 3 | `THU/THU_T2_the-rejection.png` | Pt 2 — the market's "no" + 5-second check |
-| 4 | `THU/THU_T3_rddt-receipt.png` | Pt 3 payoff — RDDT 2.68× receipt |
-
-Post OFF-PEAK (search-durable). Keyword block on the caption is mandatory — Search is 64.9% of traffic.
-
----
-
-## SATURDAY AUG 29 — EYL 3-accounts collab react (★ IG-FIRST — IG-native cut posts before anything else)
-
-**Cold-open text:** `3 Accounts? You Have 0`
-**Sustained caption:** `One Funded Account Beats Three Empty Ones — Here's The $37,618 Math`
-
-| Order | Asset | Note |
-|---|---|---|
-| 1 | **SCREENSHOT INSTRUCTION** — capture EYL's Aug 22 IG post (on-screen claim "YOU SHOULD HAVE AT LEAST 3 DIFFERENT INVESTING ACCOUNTS", Market Mondays clip w/ Ian Dunlap) and the @mrrankin5 comment "Which app has best interface". Use as the Beat-1/Beat-2 react background (boxed, duet-style). Do NOT re-render their content — screenshot framing keeps it clearly a react. |
-| 2 | `SAT/SAT_T1_three-containers.png` | Pt 1 — steelman: the 3 containers |
-| 3 | `SAT/SAT_T2_containers-vs-deposits.png` | Pt 2 — containers vs deposits |
-| 4 | `SAT/SAT_T3_37618-payoff.png` (+ `SAT_V1_37618-kenburns.mp4`) | Pt 3 payoff — the $37,618 tile |
-
----
-
-## SUNDAY (TODAY, AUG 23) + NEXT SUN AUG 30 — Podcast
-
-| Asset | Use |
-|---|---|
-| `PODCAST/PODCAST_T1_the-card.png` (+ `PODCAST_V1_card-kenburns.mp4`) | Episode teaser tile / community post / episode intro insert |
-| `PODCAST/PODCAST_T2_scoreboard-teaser.png` | The Team Wolf vs Team D VERDICT teaser — post after today's episode ships; doubles as next week's cliffhanger |
-
-Screen-share during the episode comes from `screenshare/` (podcast-master, retail-verdict, nvidia-weight dashboards) — one hero number per topic, no data walls.
+**Hook doctrine check:** every cold open carries a number ($900,000 / 59% / ____K / billions) and the viewer's life is the subject. No hype, no price predictions. Educational content only — not financial advice.
