@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TGW Debate Board · Ep 5 · Sun Sep 13, 2026</title>
+<title>TGW Debate Board · Ep 5 · Sun Sep 13, 2026 · FINAL</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#0B0F14;--panel:#131A22;--panel2:#1A232E;--line:#243140;--mint:#34E5A3;--gold:#F5C451;--text:#E8EEF2;--muted:#8A9BA8;--orange:#FF7A59;--blue:#5B9BFF}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--ink);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.45}
-header{position:sticky;top:0;z-index:9;background:rgba(11,15,20,.96);border-bottom:1px solid var(--line);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;backdrop-filter:blur(6px)}
+header{position:sticky;top:0;z-index:9;background:rgba(11,15,20,.96);border-bottom:1px solid var(--line);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;backdrop-filter:blur(6px);flex-wrap:wrap}
 header h1{font-family:'Space Grotesk';font-size:22px;font-weight:700;letter-spacing:-.02em}
 header h1 span{color:var(--mint)}
 .date{font-family:'JetBrains Mono';font-size:12px;color:var(--muted)}
@@ -17,23 +17,26 @@ header h1 span{color:var(--mint)}
 .through{background:linear-gradient(120deg,rgba(52,229,163,.08),rgba(245,196,81,.08));border:1px solid var(--line);border-radius:18px;padding:22px 26px;margin-bottom:14px}
 .through .k{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint)}
 .through p{font-family:'Space Grotesk';font-size:26px;font-weight:600;margin-top:8px;line-height:1.25}
-.chip{display:inline-flex;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;margin:6px 8px 26px 0}
+.chip{display:inline-flex;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;margin:6px 8px 0 0}
 .chip b{color:var(--gold)}
-section.topic{margin-top:38px;border-top:1px solid var(--line);padding-top:26px}
+.chip.new{border-color:var(--mint)}
+.nav{margin:22px 0 4px;display:flex;flex-wrap:wrap;gap:8px}
+.nav a{font-family:'JetBrains Mono';font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:var(--panel)}
+.nav a:hover{color:var(--mint);border-color:var(--mint)}
+section.topic{margin-top:38px;border-top:1px solid var(--line);padding-top:26px;scroll-margin-top:100px}
 .num{font-family:'JetBrains Mono';font-size:12px;color:var(--mint);letter-spacing:.14em;text-transform:uppercase}
 h2{font-family:'Space Grotesk';font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1.15;margin-top:8px;max-width:26ch}
 .plain{color:var(--muted);font-size:16px;margin-top:8px;max-width:80ch}
 .bank{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;min-height:150px}
 .card.wide{grid-column:span 2;background:linear-gradient(160deg,#16212c,#101820)}
-.card .v{font-family:'Space Grotesk';font-size:44px;font-weight:700;letter-spacing:-.02em;line-height:1}
-.card.wide .v{font-size:64px}
+.card .v{font-family:'Space Grotesk';font-size:42px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.card.wide .v{font-size:62px}
 .card .v.gold{color:var(--gold)}.card .v.mint{color:var(--mint)}.card .v.orange{color:var(--orange)}.card .v.blue{color:var(--blue)}
+.card .v.sm{font-size:32px}
 .card .m{font-size:15px;margin-top:10px;color:var(--text)}
 .card .s{font-family:'JetBrains Mono';font-size:11px;color:var(--muted);margin-top:10px}
-.fill{border:2px dashed var(--orange)}
-.fill .v{color:var(--orange)}
-.close{margin-top:44px;border-top:1px solid var(--line);padding-top:26px}
+.close{margin-top:44px;border-top:1px solid var(--line);padding-top:26px;scroll-margin-top:100px}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
 .col{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}
 .col h3{font-family:'Space Grotesk';font-size:22px}
@@ -43,90 +46,103 @@ h2{font-family:'Space Grotesk';font-size:34px;font-weight:700;letter-spacing:-.0
 .bet{margin-top:20px;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:18px 22px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
 .bet .k{font-family:'JetBrains Mono';font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
 .bet .v{font-family:'Space Grotesk';font-size:26px;font-weight:700;margin-top:4px}
-footer{margin-top:50px;text-align:center;font-family:'JetBrains Mono';font-size:11px;color:var(--muted)}
-@media(max-width:900px){.bank{grid-template-columns:1fr 1fr}.card.wide{grid-column:span 2}.cols,.bet{grid-template-columns:1fr}}
+footer{margin-top:50px;text-align:center;font-family:'JetBrains Mono';font-size:11px;color:var(--muted);line-height:1.8}
+@media(max-width:900px){.bank{grid-template-columns:1fr 1fr}.card.wide{grid-column:span 2}.cols,.bet{grid-template-columns:1fr}h2{font-size:26px}}
 </style></head><body>
 <header>
-  <div><h1>TGW <span>DEBATE BOARD</span> · Ep 5</h1><div class="date">SUN SEP 13, 2026 · one page · questions + data only · no scripted sides</div></div>
+  <div><h1>TGW <span>DEBATE BOARD</span> · Ep 5</h1><div class="date">SUN SEP 13, 2026 · FINAL · one page · questions + data only · no scripted sides</div></div>
   <div class="score"><span class="w">TEAM WOLF <b>1</b></span><span>–</span><span class="d"><b>2</b> TEAM D</span></div>
 </header>
 <div class="wrap">
   <div class="through"><div class="k">The through-line — opens cold, resolves in Topic 4</div>
-    <p>The economy just posted its best jobs month in a year — 162,000. So why does everything in your life cost more this week than last? And who gets to decide what you pay for it?</p></div>
-  <span class="chip">⚖ Cold-open settle: <b>FLIP bet</b> — Wolf said &lt;50K · D said near consensus · Aug printed <b>+162,000</b> (July revised to +21K) → Team D takes the round</span>
-  <span class="chip">📅 FOMC decision <b>Wed Sep 16, 2pm ET</b> — tonight's HIKE bet settles next Sunday</span>
+    <p>The economy just posted its best jobs month in a year — 162,000. So why did everything in your life get more expensive again this week? And who gets to decide what you pay for it?</p></div>
+  <span class="chip">⚖ Cold-open settle: <b>FLIP bet</b> — Wolf said &lt;50K · D said near consensus · August printed <b>+162,000</b> (July revised −23K → +21K) → Team D takes the round</span>
+  <span class="chip">📅 FOMC decision <b>Wed Sep 16, 2:00pm ET</b> (presser 2:30, dot plot) — tonight's HIKE bet settles next Sunday</span>
+  <span class="chip new">✅ All 3 FILL-LIVE blanks filled this morning: phone <b>$1,999</b> · PPI <b>+5.4% YoY</b> · CPI <b>3.4% / core 2.4%</b></span>
+
+  <div class="nav">
+    <a href="#t1">① Degree &amp; AI jobs</a><a href="#t2">② Diesel breaks $6</a><a href="#t3">③ Financing a phone</a><a href="#t4">④ The Fed &amp; the calendar</a><a href="#close">★ Our Top 3 Stocks</a>
+  </div>
 
   <section class="topic" id="t1">
     <div class="num">Topic 1 · 2:15–13:00</div>
     <h2>AI took the office jobs and left the bar jobs. Is a $100,000 degree still worth it?</h2>
-    <p class="plain">Plain English: America added a lot of jobs in August — but most were at bars, restaurants and schools, while computer-and-media jobs disappeared. If AI is eating the jobs a degree was supposed to buy, is college still the best $100,000 a 20-year-old can spend?</p>
+    <p class="plain">Plain English: America added a lot of jobs in August — but most of them were at bars, restaurants and schools, while computer-and-media jobs disappeared. If AI is eating the jobs a degree was supposed to buy, is college still the best $100,000 a 20-year-old can spend?</p>
     <div class="bank">
-      <div class="card wide"><div class="v mint">+162,000</div><div class="m">Jobs added in August — vs ~55,000 expected. Unemployment held at 4.1%. June + July revised UP a combined 55,000 (July: −23K → +21K).</div><div class="s">BLS Employment Situation · Sep 4, 2026 · consensus per CNBC/Kiplinger/BigGo</div></div>
-      <div class="card"><div class="v gold">+59,000</div><div class="m">Food services & drinking places — 36% of the whole month's gain. Local-govt education +42K, factories +16K, health care +13K.</div><div class="s">BLS, Table B-1</div></div>
-      <div class="card"><div class="v orange">−23,000</div><div class="m">Information jobs LOST: computing infrastructure/data processing/web hosting −8K · publishing −7K · broadcasting −5K. "The outlines of the AI displacement." — Hirtle & Co.</div><div class="s">BLS · Kiplinger roundup, Sep 4</div></div>
-      <div class="card"><div class="v">3.1% vs 3.4%</div><div class="m">Pay rose 3.1% over the year ($37.75/hr); prices rose 3.4% (July CPI). On $50,000: a $1,550 raise vs $1,700 of new cost = <b>$150 behind</b>.</div><div class="s">BLS AHE · BLS CPI July · computed Sep 7</div></div>
-      <div class="card"><div class="v gold">+$33,000</div><div class="m">Median pay: bachelor's ~$80,000 vs ~$47,000 high-school only — a ~70% premium. NY Fed's estimated return on a degree: ~12.5%/yr.</div><div class="s">NY Fed Liberty Street Economics</div></div>
-      <div class="card"><div class="v">$103,400 → ~$56,000</div><div class="m">Four-year public in-state sticker ($29,910/yr) vs the average NET after aid (~$14,000/yr). Private sticker ~$62,570/yr, net ~$30,000.</div><div class="s">College Board / Credible 2026 cost data</div></div>
+      <div class="card wide"><div class="v mint">+162,000</div><div class="m">Jobs added in August — against roughly 55,000 expected. Unemployment held at 4.1%. June and July were revised UP a combined 55,000 (July went from −23K to +21K).</div><div class="s">BLS Employment Situation · released Sep 4, 2026 · consensus per CNBC / Kiplinger / BigGo</div></div>
+      <div class="card"><div class="v gold">+59,000</div><div class="m">Food services and drinking places — 36% of the entire month's gain. Local-government education +42K, factories +16K, health care +13K.</div><div class="s">BLS Table B-1</div></div>
+      <div class="card"><div class="v orange">−23,000</div><div class="m">Information jobs LOST: computing infrastructure / data processing / web hosting −8K · publishing −7K · broadcasting −5K. "If you squint, you might see the outlines of the AI displacement." — Hirtle &amp; Co.</div><div class="s">BLS · Kiplinger roundup, Sep 4</div></div>
+      <div class="card"><div class="v sm">3.1% vs 3.4%</div><div class="m">Pay rose 3.1% over the year ($37.75/hr). Prices rose 3.4% — and Friday's CPI confirmed 3.4%, unchanged. On $50,000: a $1,550 raise against $1,700 of new cost = <b>$150 behind</b>.</div><div class="s">BLS Average Hourly Earnings · BLS CPI (Aug, rel. Sep 11) · computed Sep 13</div></div>
+      <div class="card"><div class="v gold">+$33,000</div><div class="m">Median pay: bachelor's ~$80,000 against ~$47,000 for high-school only — about a 70% premium. NY Fed's estimated return on a degree: ~12.5% a year.</div><div class="s">NY Fed Liberty Street Economics</div></div>
+      <div class="card"><div class="v sm">$103,400 → ~$56,000</div><div class="m">Four-year public in-state sticker (~$29,910/yr) against the average NET cost after aid (~$14,000/yr). Private sticker ~$62,570/yr, net ~$30,000.</div><div class="s">College Board / Credible 2026 cost data</div></div>
     </div>
   </section>
 
   <section class="topic" id="t2">
     <div class="num">Topic 2 · 13:00–24:00</div>
-    <h2>Diesel just hit $5.85 — an all-time record. Should the government cap fuel prices?</h2>
-    <p class="plain">Plain English: diesel is the fuel under trucks, trains, tractors and heating oil — so a record diesel price becomes a grocery bill and a heating bill. One side says cap it or tax the windfall; the other says a cap can't fix a supply problem and creates shortages. Who should pay?</p>
+    <h2>Diesel just broke $6.00 for the first time in history. Should the government cap fuel prices?</h2>
+    <p class="plain">Plain English: diesel is the fuel that moves everything you buy — trucks, trains, tractors. It has never cost $6 a gallon before, and it does now. One side says the government should put a ceiling on it. The other says a ceiling is how you get empty pumps.</p>
     <div class="bank">
-      <div class="card wide"><div class="v gold">$5.85</div><div class="m">National average diesel, Fri Sep 4 — an all-time record. Prior record $5.816 (June 2022). A year ago: $3.71 (<b>+57.6%</b>). The day the Iran war began (late Feb): $3.76.</div><div class="s">AAA · Washington Post / NPR / Fox Business, Sep 4</div></div>
-      <div class="card"><div class="v orange">$25K → $45K</div><div class="m">One NY dairy/cabbage farm's 10,000-gallon fill, last year vs now. "We can't just pass it on" — crop prices are set months ahead.</div><div class="s">NPR All Things Considered, Sep 4</div></div>
-      <div class="card"><div class="v">~1/3</div><div class="m">Share of global diesel exports from the Middle East + Russia in 2025. Hormuz (~1/5 of world oil) effectively closed; Ukrainian strikes idled Russian refineries — Russia is now importing fuel.</div><div class="s">GasBuddy / NPR</div></div>
-      <div class="card"><div class="v orange">Record low</div><div class="m">U.S. distillate stockpiles — lowest on record for this time of year; East Coast at all-time lows entering heating season. ~90% of school buses and ~75% of farm equipment run on diesel.</div><div class="s">BigGo/GasBuddy · NPR · Engine Technology Forum</div></div>
-      <div class="card"><div class="v">+14.7% · +24.6% · +39.1%</div><div class="m">Energy · gasoline · fuel oil, year over year in the JULY CPI — before the September record. Headline CPI 3.4%.</div><div class="s">BLS CPI, Aug 12</div></div>
-      <div class="card"><div class="v mint">$1,021 → $1,609</div><div class="m">A 275-gallon heating-oil fill if it tracks diesel (heating oil ≈ diesel): <b>+$588 per fill</b>. Big Oil reported "sky-high profits" on wartime crude (Q2).</div><div class="s">Computed Sep 7 from AAA · NPR Jul 31</div></div>
+      <div class="card wide"><div class="v gold">$6.05</div><div class="m">AAA national average diesel, <b>Friday Sep 11</b> — the first time in history it has ever started with a six. It was $5.85 one week earlier and <b>$3.70 a year ago: +63.5%</b>. California is at $7.98; Washington and Hawaii are both above $7.</div><div class="s">AAA Fuel Prices · Sep 11, 2026 · Fox Business / Newsweek confirm the record</div></div>
+      <div class="card"><div class="v orange">+27.4%</div><div class="m">Gasoline over the last 12 months in the CPI — and it rose 3.9% in August alone, accounting for <b>more than a third of the entire monthly increase</b>. AAA gas is $4.313 today.</div><div class="s">BLS CPI, August 2026 (rel. Sep 11) · AAA Sep 13</div></div>
+      <div class="card"><div class="v orange">+52.0%</div><div class="m">Fuel oil over 12 months (+10.1% in August alone). Heating oil is nearly the same molecule as diesel — which is why winter demand competes with the trucks. Energy overall: +16.3% YoY.</div><div class="s">BLS CPI, August 2026</div></div>
+      <div class="card"><div class="v blue">2.0 points</div><div class="m">Producer prices rose <b>5.4%</b> over the year against consumer prices at <b>3.4%</b>. Businesses are absorbing more than they've passed on — and <b>diesel was named among the leading drivers</b>. That gap is the pipeline.</div><div class="s">BLS PPI, August 2026 (rel. Sep 10)</div></div>
+      <div class="card"><div class="v sm">$25K → $45K</div><div class="m">What one farm's 10,000-gallon tank now costs to fill. Crop prices are locked months ahead, so the extra is eaten now and shows up in the next contract — a September record becomes a November grocery bill.</div><div class="s">NPR, Sep 4, 2026</div></div>
+      <div class="card"><div class="v sm">~1/5 &amp; ~1/3</div><div class="m">The Strait of Hormuz carries about a fifth of the world's oil and has been effectively shut since the conflict began. The Middle East and Russia together were about a third of global diesel exports last year. Distillate stocks are at seasonal record lows.</div><div class="s">GasBuddy / BigGo · EIA distillate stocks · Saudi August output reported lowest since 1990</div></div>
     </div>
   </section>
 
   <section class="topic" id="t3">
     <div class="num">Topic 3 · 24:00–33:00</div>
-    <h2>Apple wants <span style="color:var(--orange)">[$ FILL LIVE]</span> for a phone that folds. Should you EVER finance a phone?</h2>
-    <p class="plain">Plain English: the same phone can cost you $0 of interest, $666, or $1,489 — depending only on which line you sign. Is financing a phone always a sign you can't afford it, or is a real 0% plan the cheapest money a regular person ever borrows?</p>
+    <h2>Apple wants $1,999 for a phone that folds. Should you EVER finance a phone?</h2>
+    <p class="plain">Plain English: Apple's folding phone is here and it costs two thousand dollars. Almost nobody pays that in one go. So the real question isn't whether the phone is worth it — it's whether borrowing for a phone is ever a reasonable thing to do, and what it costs when it goes wrong.</p>
     <div class="bank">
-      <div class="card wide fill"><div class="v">[ iPhone Ultra price ]</div><div class="m">Fill Wed Sep 9 from apple.com after the "Surprise and Shine" event (first under CEO John Ternus). Rumor range ~$1,999–$2,500 by storage. Math below assumes $1,999 — scale it.</div><div class="s">MacRumors / Tom's Guide (rumor) — VERIFY</div></div>
-      <div class="card"><div class="v mint">$83.29/mo</div><div class="m">$1,999 ÷ 24 on a true 0% installment. Total paid = $1,999. Interest: <b>$0</b>. Real — if the agreement's total equals the price.</div><div class="s">Computed Sep 7</div></div>
-      <div class="card"><div class="v gold">$665.92</div><div class="m">Interest if the SAME $83.29/mo goes on a card at 22.15% APR — and it takes <b>32 months</b>, not 24. Total $2,664.92.</div><div class="s">Fed G.19 Q2 2026 avg APR (accounts assessed interest) · computed</div></div>
-      <div class="card"><div class="v orange">7.7 years</div><div class="m">Minimum payments only (~2% of balance) at 22.15%: ~$1,489 of interest on a $1,999 phone.</div><div class="s">Computed Sep 7</div></div>
-      <div class="card"><div class="v">≠ 0%</div><div class="m">"No interest for 24 months" (deferred interest) is NOT 0% — interest accrues the whole time and is charged, backdated, if $1 is left on month 25.</div><div class="s">CFPB deferred-interest guidance</div></div>
-      <div class="card"><div class="v">3 questions</div><div class="m">Installment or promotional? · Does the agreement total equal the price? · Does the budget clear 24 payments without the emergency fund?</div><div class="s">TGW landing frame (education, not advice)</div></div>
+      <div class="card wide"><div class="v gold">$1,999</div><div class="m"><b>iPhone Duo</b> — announced Wednesday Sep 9. Note the name: every rumor called it the "Ultra," and Apple didn't. Pre-orders open Oct 16; it ships <b>Oct 23</b>. Book-style fold, phone when closed, larger display when open.</div><div class="s">Apple, Sep 9, 2026 announcement</div></div>
+      <div class="card"><div class="v mint">$83.29</div><div class="m">Per month on a true 0% 24-month installment. $1,999 ÷ 24. The total equals the price — that part is real, and it is the cheapest version of this.</div><div class="s">Computed Sep 13, 2026</div></div>
+      <div class="card"><div class="v orange">$665.94</div><div class="m">Interest if that same $83.29 a month goes on a credit card at 22.15% APR instead: <b>32 months</b> to clear, total $2,664.94.</div><div class="s">Computed Sep 13 · APR per Fed G.19 Q2 2026</div></div>
+      <div class="card"><div class="v orange">8.8 years</div><div class="m">On <b>minimum payments only</b> (1% of the balance plus that month's interest, $35 floor) $1,999 takes 106 months and costs <b>$2,191.19</b> in interest — <b>$4,190.19</b> total for a $1,999 phone. Say the assumption out loud on air.</div><div class="s">Computed Sep 13, 2026 · corrected from the Sep 7 draft</div></div>
+      <div class="card"><div class="v sm">22.15%</div><div class="m">Average APR on credit cards that actually carry a balance. Across all accounts it's 20.94%; new offers run near 23.79%. APR in plain English: the price tag on borrowing, per year.</div><div class="s">Federal Reserve G.19, Q2 2026</div></div>
+      <div class="card"><div class="v sm">"deferred"</div><div class="m">The one word to look for. "No interest for 24 months" is usually <b>deferred interest</b>: it accrues the whole time and gets charged, backdated to day one, if a single dollar is left on month 25. A true installment plan has no interest to defer.</div><div class="s">Standard promotional-financing terms</div></div>
     </div>
   </section>
 
   <section class="topic" id="t4">
     <div class="num">Topic 4 · 33:00–41:00 · the through-line resolves here</div>
     <h2>The Fed might raise your rates 7 weeks before an election. Should a central bank ever move in an election window?</h2>
-    <p class="plain">Plain English: on Wednesday the Fed decides whether to raise interest rates — which moves your card, car loan and mortgage — and the midterm election is Nov 3. One side: inflation has been above target ~5 years and the calendar shouldn't matter. The other: the Fed's own governor says don't hike, wages are losing to prices, and the optics are real.</p>
+    <p class="plain">Plain English: on Wednesday the Federal Reserve is expected to raise interest rates for the first time in more than three years — which makes borrowing more expensive for everyone — and the midterm elections are seven weeks later. The Fed is designed to ignore the calendar. Should it?</p>
     <div class="bank">
-      <div class="card wide"><div class="v gold">49% → 60%</div><div class="m">Odds of a quarter-point HIKE on Sep 16, before vs after Friday's jobs print (CME FedWatch). Fed Governor Waller (Sep 3) signaled support for NO hike; Chair Warsh (Jackson Hole): "price stability is not self-executing."</div><div class="s">Kiplinger / CNBC, Sep 3–4 · re-verify Sat night</div></div>
-      <div class="card fill"><div class="v">[ CPI __._% ]</div><div class="m">August CPI, Fri Sep 11 8:30am — headline YoY vs 3.4% July; core vs 2.5%. Kalshi (Sep 7): 84% >3.2%, 63% >3.3%, 27% >3.4%.</div><div class="s">BLS — FILL LIVE · Kalshi KXCPIYOY-26AUG</div></div>
-      <div class="card"><div class="v">4.377%</div><div class="m">2-year Treasury yield — highest since January 2025. 10-year ~4.76–4.78% (the rate mortgages are priced off).</div><div class="s">CNBC / Forbes, Sep 4</div></div>
-      <div class="card"><div class="v gold">6.71%</div><div class="m">Freddie Mac 30-year average (Sep 3) — highest in over a year; 6.66% the week before.</div><div class="s">Freddie Mac PMMS</div></div>
-      <div class="card"><div class="v mint">+$58.37/mo</div><div class="m">One 25bp hike passed straight through on a $350,000 30-year: $2,260.80 → $2,319.16. The 760-vs-620 credit-tier gap at the same lender: <b>≈ $359/mo</b> — 6× the hike.</div><div class="s">Computed Sep 7 (6.71% / 6.96% / 8.21%)</div></div>
-      <div class="card"><div class="v">Nov 3</div><div class="m">Midterm election — 7 weeks after the Sep 16 decision. "It's not a given… given the optics of a national election less than two months after the meeting." — Northlight AM</div><div class="s">Kiplinger, Sep 4</div></div>
+      <div class="card wide"><div class="v mint">85.5%</div><div class="m">Market-implied odds of a 25bp <b>hike</b> on Wednesday (CME FedWatch, Sep 12). It was 60.6% on Sep 8 and 44.4% on Aug 7. Worth saying out loud: <b>Kalshi had it at 57% and Polymarket at 49% the same week</b> — three markets, three answers, and that disagreement is its own lesson.</div><div class="s">CME FedWatch · Kalshi · Polymarket, week of Sep 7–12, 2026</div></div>
+      <div class="card"><div class="v gold">1,148 days</div><div class="m">Since the last Fed rate increase — <b>July 26, 2023</b>. The target range has been 3.50–3.75% after six cuts totalling 175bp. An entire generation of first-time borrowers has never seen this committee go up.</div><div class="s">Federal Reserve · FOMC history</div></div>
+      <div class="card"><div class="v orange">4.975%</div><div class="m">The 10-year Treasury at Friday's close — its <b>highest since October 2023</b>. Mortgages are priced off the 10-year, not off the Fed directly. Freddie Mac's 30-year printed <b>6.76%</b> on Sep 10 (6.71% prior, 6.35% a year ago).</div><div class="s">Friday Sep 11 close · Freddie Mac PMMS, Sep 10, 2026</div></div>
+      <div class="card"><div class="v sm">3.4% / 2.4%</div><div class="m">August CPI, released Friday — the last inflation number the committee sees. Headline +0.4% for the month and <b>3.4% over the year, identical to July</b>; core +0.3% and 2.4%. Shelter +0.3%. Airline fares +23.4% YoY.</div><div class="s">BLS CPI, August 2026 (rel. Fri Sep 11)</div></div>
+      <div class="card"><div class="v gold">+$58.49</div><div class="m">What a quarter-point passed straight through does to a $350,000 30-year mortgage: <b>$2,272.42 → $2,330.91 a month</b> — $701.87 a year, about $21,000 over the life of the loan.</div><div class="s">Computed Sep 13 at PMMS 6.76% → 7.01%</div></div>
+      <div class="card"><div class="v mint">$359.47</div><div class="m">The credit-tier gap on that exact same $350,000 — a 760 file at 6.76% against a 620 file at 8.26%. <b>Six times the hike.</b> The Fed decides the flip; your file decides the tier. Midterms are Tue Nov 3; Wednesday is an SEP / dot-plot meeting.</div><div class="s">Computed Sep 13, 2026</div></div>
     </div>
   </section>
 
   <section class="close" id="close">
-    <div class="num">The close · 41:00–47:00 · standing format</div>
-    <h2>OUR TOP 3 STOCKS</h2>
-    <p class="plain">Each host names his top 3 stocks and his own reasons — live, unscripted. Nothing is pre-filled or suggested by the engine.</p>
+    <div class="num">The close · 41:00–47:00</div>
+    <h2>Our Top 3 Stocks</h2>
+    <p class="plain">Each host names three, live, with his own reasons. Nothing here is pre-filled, pre-researched or suggested — the frame is empty on purpose.</p>
     <div class="cols">
-      <div class="col w"><h3>TEAM WOLF</h3><div class="slot">1 ·</div><div class="slot">2 ·</div><div class="slot">3 ·</div></div>
-      <div class="col d"><h3>TEAM D</h3><div class="slot">1 ·</div><div class="slot">2 ·</div><div class="slot">3 ·</div></div>
+      <div class="col w"><h3>Team Wolf</h3>
+        <div class="slot">1 ·</div><div class="slot">2 ·</div><div class="slot">3 ·</div></div>
+      <div class="col d"><h3>Team D Waugh</h3>
+        <div class="slot">1 ·</div><div class="slot">2 ·</div><div class="slot">3 ·</div></div>
     </div>
-    <div class="guard">Watchlist conversation, not recommendations · opinions labeled ("here's my read") · no price targets · earned money only, never margin · <b>educational content only — not financial advice.</b></div>
+    <p class="guard">Watchlist conversation, not recommendations · label every opinion out loud ("here's my read") · <b>no price targets, no share-count targets, no "this will go up"</b> · earned money only, never margin, never borrowed money into a brokerage · close the segment with "educational content only — not financial advice."</p>
     <div class="bet">
-      <div><div class="k">⚖ The staked bet</div><div class="v">HIKE or HOLD — Wed Sep 16, 2pm ET</div></div>
-      <div><div class="k">Reference</div><div class="v">Odds ~60% hike (Sep 4) · CPI Fri</div></div>
-      <div><div class="k">Comment-trigger</div><div class="v">HIKE → The Hike Sheet</div></div>
+      <div><div class="k">The bet</div><div class="v">HIKE or HOLD</div></div>
+      <div><div class="k">Settles</div><div class="v">Wed Sep 16 · 2:00pm ET</div></div>
+      <div><div class="k">Comment trigger</div><div class="v" style="color:var(--mint)">HIKE</div></div>
     </div>
+    <p class="guard">Reference for the settle: market-implied 85.5% hike (CME, Sep 12) · fed funds 3.50–3.75% → 3.75–4.00% on a 25bp move · prime 6.75% → 7.00% · SEP/dot-plot meeting, press conference 2:30pm ET.</p>
   </section>
-  <footer>ThinkinGenWealth · Debate Board v2 · built Mon Sep 7, 2026 from live primary sources · educational content only — not financial advice · two lanes, never crossed</footer>
+
+  <footer>
+    TGW DEBATE BOARD · EPISODE 5 · BUILT SUN SEP 13, 2026 FROM LIVE DATA<br>
+    Educational content only — not financial advice. No price targets, no share-count targets, no predictions.<br>
+    Sources on every card. Nothing on this board is a host position — the debate is organic.
+  </footer>
 </div>
 </body></html>
